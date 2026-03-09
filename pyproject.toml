@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zpe-finance"
+version = "0.1.0"
+description = "ZPE financial time-series codec and pattern search"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.1",
+]
+
+[project.optional-dependencies]
+market = ["yfinance>=0.2.66"]
+comparators = ["zstandard>=0.23.0", "lz4>=4.4.4"]
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+pythonpath = ["python"]
+addopts = "-q"

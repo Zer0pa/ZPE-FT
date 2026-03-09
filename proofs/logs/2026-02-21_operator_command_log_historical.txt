@@ -1,0 +1,104 @@
+2026-02-21T10:03:23.882032+00:00	GateA	0	python3 scripts/gate_a_freeze.py	start
+2026-02-21T10:04:22.432300+00:00	GateA	0	write dataset_lock/schema_inventory/resource_probe	complete
+2026-02-21T10:04:22.503618+00:00	GateA	0	python3 scripts/gate_a_freeze.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=58.9
+2026-02-21T10:04:22.921130+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase lock_only	start
+2026-02-21T10:04:22.931857+00:00	GateE-INGEST	0	write max_resource_lock.json	lock_only complete
+2026-02-21T10:04:22.966365+00:00	GateA	0	python3 scripts/run_appendix_e_ingestion.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220 --phase lock_only	ok duration_sec=0.5
+2026-02-21T10:04:28.206146+00:00	GateB	0	maturin develop --manifest-path core/Cargo.toml	ok duration_sec=5.2
+2026-02-21T10:04:30.908593+00:00	GateB	0	pytest -q tests/test_codec_core.py tests/test_packet_roundtrip.py	ok duration_sec=2.7
+2026-02-21T10:04:31.125746+00:00	GateB	0	python3 scripts/run_gate_b_fidelity.py	start
+2026-02-21T10:04:55.167064+00:00	GateB	0	write ft_reconstruction_fidelity.json	max_rmse_ticks=0.000000
+2026-02-21T10:04:55.189346+00:00	GateB	0	python3 scripts/run_gate_b_fidelity.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=24.3
+2026-02-21T10:04:55.414562+00:00	GateC	0	python3 scripts/run_gate_c_benchmarks.py	start
+2026-02-21T10:06:36.450489+00:00	GateC	0	write ft_ohlcv_benchmark.json + ft_tick_benchmark.json	ohlcv_cr=19.191, tick_cr=20.567
+2026-02-21T10:06:36.484170+00:00	GateC	0	python3 scripts/run_gate_c_benchmarks.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=101.3
+2026-02-21T10:06:36.727072+00:00	GateC	0	python3 scripts/run_pattern_eval.py	start
+2026-02-21T10:06:48.158156+00:00	GateC	0	write ft_pattern_search_eval.json	mean_p_at_10=0.9000
+2026-02-21T10:06:48.185192+00:00	GateC	0	python3 scripts/run_pattern_eval.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=11.7
+2026-02-21T10:06:48.385170+00:00	GateC	0	python3 scripts/run_latency_benchmark.py	start
+2026-02-21T10:07:58.120939+00:00	GateC	0	write ft_query_latency_benchmark.json	p95_ms=0.057
+2026-02-21T10:07:58.219949+00:00	GateC	0	python3 scripts/run_latency_benchmark.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=70.0
+2026-02-21T10:07:58.535061+00:00	GateD	0	python3 scripts/run_gate_d_falsification.py	start
+2026-02-21T10:08:14.222460+00:00	GateD	0	write falsification_results.md	overall_pass=True,uncaught_crashes=0
+2026-02-21T10:08:14.260955+00:00	GateD	0	python3 scripts/run_gate_d_falsification.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=16.0
+2026-02-21T10:08:14.585315+00:00	GateD	0	python3 scripts/run_determinism_replay.py	start
+2026-02-21T10:09:55.774425+00:00	GateD	0	write determinism_replay_results.json	unique_hash_count=1
+2026-02-21T10:09:55.820323+00:00	GateD	0	python3 scripts/run_determinism_replay.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220 --runs 5	ok duration_sec=101.6
+2026-02-21T10:09:57.284171+00:00	GateD	0	pytest -q tests/test_adversarial.py	ok duration_sec=1.5
+2026-02-21T10:09:57.637973+00:00	GateE	0	python3 scripts/run_gate_e_db_roundtrip.py	start
+2026-02-21T10:10:24.857315+00:00	GateE	0	write ft_db_roundtrip_results.json	pass=True
+2026-02-21T10:10:24.890019+00:00	GateE	0	python3 scripts/run_gate_e_db_roundtrip.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=27.6
+2026-02-21T10:10:28.007156+00:00	GateE	0	pytest -q tests	ok duration_sec=3.1
+2026-02-21T10:10:28.368083+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-21T10:11:31.737860+00:00	GateM1	0	write gorilla_eval_results.json	gorilla_status=PASS,bfcl_status=INCONCLUSIVE
+2026-02-21T10:11:31.849196+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=63.8
+2026-02-21T10:11:32.232567+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T10:18:01.658167+00:00	GateM2	0	write tsbs_db_benchmark_results.json	tsbs_status=PASS,duckdb_roundtrip=True
+2026-02-21T10:18:01.713894+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=389.8
+2026-02-21T10:18:01.942891+00:00	GateM3	0	python3 scripts/run_gate_m3_zipline.py	start
+2026-02-21T10:18:19.832105+00:00	GateM3	0	write zipline_roundtrip_results.json	status=PASS
+2026-02-21T10:18:19.854840+00:00	GateM3	0	python3 scripts/run_gate_m3_zipline.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=18.1
+2026-02-21T10:18:20.071460+00:00	GateM4	0	python3 scripts/run_gate_m4_compliance.py	start
+2026-02-21T10:19:09.058886+00:00	GateM4	0	write compliance_mode_results.json	status=PASS
+2026-02-21T10:19:09.080828+00:00	GateM4	0	python3 scripts/run_gate_m4_compliance.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=49.2
+2026-02-21T10:19:09.278859+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T10:19:15.711678+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T10:19:15.735010+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220 --phase full	ok duration_sec=6.7
+2026-02-21T10:19:15.940044+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T10:19:15.945339+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49
+2026-02-21T10:19:15.963487+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py --artifact-root artifacts/2026-02-21_zpe_ft_wave1_final --seed 20260220	ok duration_sec=0.2
+2026-02-21T10:20:29.550223+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T10:24:42.054130+00:00	GateM2	0	write tsbs_db_benchmark_results.json	tsbs_status=PASS,duckdb_roundtrip=True
+2026-02-21T10:24:42.405878+00:00	GateM3	0	python3 scripts/run_gate_m3_zipline.py	start
+2026-02-21T10:24:57.817696+00:00	GateM3	0	write zipline_roundtrip_results.json	status=PASS
+2026-02-21T10:24:58.031096+00:00	GateM4	0	python3 scripts/run_gate_m4_compliance.py	start
+2026-02-21T10:25:53.660663+00:00	GateM4	0	write compliance_mode_results.json	status=PASS
+2026-02-21T10:25:53.895818+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T10:25:57.556220+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T10:25:57.790337+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T10:25:57.796949+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49
+2026-02-21T11:04:52.368241+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T11:04:55.784575+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T11:04:59.031992+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T11:04:59.046747+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49
+2026-02-21T11:34:46.796224+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-21T11:38:00.530056+00:00	GateM1	0	write gorilla_eval_results.json	gorilla_status=PASS,bfcl_status=PASS
+2026-02-21T11:38:19.668718+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T11:41:35.030441+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T11:51:54.858683+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T11:55:58.709779+00:00	GateM2	0	write tsbs_db_benchmark_results.json	tsbs_status=PASS,duckdb_roundtrip=True
+2026-02-21T11:56:04.611612+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T11:58:31.177433+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T11:58:36.910763+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T11:58:36.924866+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=48
+2026-02-21T11:59:24.057708+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-21T12:03:00.439811+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-21T12:04:23.839548+00:00	GateM1	0	write gorilla_eval_results.json	gorilla_status=PASS,bfcl_status=INCONCLUSIVE
+2026-02-21T12:04:29.456523+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T12:06:21.104179+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T12:06:22.127011+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T12:06:22.134895+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49
+2026-02-21T15:21:56.456530+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-21T15:23:31.178714+00:00	GateM1	0	write gorilla_eval_results.json	gorilla_status=PASS,bfcl_status=INCONCLUSIVE
+2026-02-21T15:23:31.488149+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-21T15:25:34.342985+00:00	GateM2	0	write tsbs_db_benchmark_results.json	tsbs_status=PASS,duckdb_roundtrip=True
+2026-02-21T15:25:34.600805+00:00	GateM3	0	python3 scripts/run_gate_m3_zipline.py	start
+2026-02-21T15:26:38.117342+00:00	GateM3	0	write zipline_roundtrip_results.json	status=PASS
+2026-02-21T15:26:38.798861+00:00	GateM4	0	python3 scripts/run_gate_m4_compliance.py	start
+2026-02-21T15:27:47.480594+00:00	GateM4	0	write compliance_mode_results.json	status=PASS
+2026-02-21T15:27:48.082255+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-21T15:29:51.484404+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-21T15:29:52.213997+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-21T15:29:52.230589+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49
+2026-02-22T02:45:05.542934+00:00	GateM1	0	python3 scripts/run_gate_m1_gorilla.py	start
+2026-02-22T02:47:54.360058+00:00	GateM1	0	write gorilla_eval_results.json	gorilla_status=PASS,bfcl_status=INCONCLUSIVE
+2026-02-22T02:47:54.667665+00:00	GateM2	0	python3 scripts/run_gate_m2_tsbs_db.py	start
+2026-02-22T02:49:43.944293+00:00	GateM2	0	write tsbs_db_benchmark_results.json	tsbs_status=PASS,duckdb_roundtrip=True
+2026-02-22T02:49:44.164254+00:00	GateM3	0	python3 scripts/run_gate_m3_zipline.py	start
+2026-02-22T02:50:32.543832+00:00	GateM3	0	write zipline_roundtrip_results.json	status=PASS
+2026-02-22T02:50:32.754592+00:00	GateM4	0	python3 scripts/run_gate_m4_compliance.py	start
+2026-02-22T02:51:20.052847+00:00	GateM4	0	write compliance_mode_results.json	status=PASS
+2026-02-22T02:51:20.255909+00:00	GateE-INGEST	0	python3 scripts/run_appendix_e_ingestion.py --phase full	start
+2026-02-22T02:53:12.511181+00:00	GateE-INGEST	0	write Appendix E mandatory artifacts	appendix_e_pass=True
+2026-02-22T02:53:12.744478+00:00	GateE	0	python3 scripts/build_handoff_artifacts.py	start
+2026-02-22T02:53:12.752148+00:00	GateE	0	write handoff/scorecard/contracts	go_no_go=GO,total_score=49

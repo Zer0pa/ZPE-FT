@@ -1,0 +1,3 @@
+Gate B fidelity executed
+max_rmse_ticks=0.000000
+pass=True

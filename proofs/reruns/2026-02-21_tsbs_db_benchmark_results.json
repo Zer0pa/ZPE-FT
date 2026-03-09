@@ -1,0 +1,108 @@
+{
+  "attempts": [
+    {
+      "command": "git clone --depth 1 https://github.com/timescale/tsbs.git '/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_resources/tsbs'",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT",
+      "exit_code": 0,
+      "stderr": "fatal: destination path '/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_resources/tsbs' already exists and is not an empty directory.\n",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_tools/go/bin/go' version",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "go version go1.26.0 darwin/amd64\n",
+      "timeout": false
+    },
+    {
+      "command": "'/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_tools/go/bin/go' run ./cmd/tsbs_generate_data --help",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_resources/tsbs",
+      "exit_code": 1,
+      "stderr": "Usage of /Users/prinivenpillay/Library/Caches/go-build/e4/e4a261f651e7f453a25755728c05ec2bd938147c1aecc33f5e01736a8b1f7a66-d/tsbs_generate_data:\n      --debug int                              Control level of debug output\n      --file string                            Write the output to this path\n      --format string                          Format to generate. (choices: cassandra, clickhouse, influx, mongo, siridb, timescaledb, akumuli, cratedb, prometheus, victoriametrics, timestream, questdb)\n      --initial-scale uint                     Initial scaling variable specific to the use case (e.g., devices in 'devops'). 0 means to use -scale value\n      --interleaved-generation-group-id uint   Group (0-indexed) to perform round-robin serialization within. Use this to scale up data generation to multiple processes.\n      --interleaved-generation-groups uint     The number of round-robin serialization groups. Use this to scale up data generation to multiple processes. (default 1)\n      --log-interval duration                  Duration between data points (default 10s)\n      --max-data-points uint                   Limit the number of data points to generate, 0 = no limit\n      --max-metric-count uint                  Max number of metric fields to generate per host. Used only in devops-generic use-case (default 100)\n      --profile-file string                    File to which to write go profiling data\n      --scale uint                             Scaling value specific to use case (e.g., devices in 'devops'). (default 1)\n      --seed int                               PRNG seed (default: 0, which uses the current timestamp)\n      --timestamp-end string                   Ending timestamp (RFC3339). (default \"2016-01-02T00:00:00Z\")\n      --timestamp-start string                 Beginning timestamp (RFC3339). (default \"2016-01-01T00:00:00Z\")\n      --use-case string                        Use case to generate.\nexit status 2\n",
+      "stdout": "pflag: help requested\n",
+      "timeout": false
+    },
+    {
+      "command": "'/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_tools/go/bin/go' run ./cmd/tsbs_generate_data --use-case cpu-only --seed 20260220 --scale 1 --timestamp-start 2020-01-01T00:00:00Z --timestamp-end 2020-01-02T00:00:00Z --format influx --log-interval 10s --max-data-points 50000 --file '/Users/prinivenpillay/ZPE Multimodality/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/tsbs_generated_sample.txt'",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT/external_resources/tsbs",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "/usr/local/bin/docker --version",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Docker version 29.2.1, build a5c7197d72\n",
+      "timeout": false
+    },
+    {
+      "command": "/usr/local/bin/docker info --format '{{.ServerVersion}}'",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT",
+      "exit_code": 1,
+      "stderr": "Cannot connect to the Docker daemon at unix:///Users/prinivenpillay/.colima/default/docker.sock. Is the docker daemon running?\n",
+      "stdout": "\n",
+      "timeout": false
+    },
+    {
+      "command": "'/Users/prinivenpillay/ZPE Multimodality/ZPE FT/.venv/bin/python' -m pip install -q duckdb",
+      "cwd": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    }
+  ],
+  "claim_linkage": {
+    "FT-C001": {
+      "compression_ratio": 19.191264136565035,
+      "status": "PASS"
+    },
+    "FT-C004": {
+      "pattern_p_at_10": 0.9,
+      "status": "PASS"
+    },
+    "FT-C005": {
+      "status": "PASS",
+      "tsbs_point_latency_p95_ms": 2.4057499977061525,
+      "tsbs_throughput_rows_per_sec": 1343.1374275679489
+    }
+  },
+  "gate": "M2",
+  "impracticality": [
+    {
+      "claim_impact": "Timescale-equivalence remains INCONCLUSIVE",
+      "code": "IMP-COMPUTE",
+      "error_signature": "Cannot connect to the Docker daemon at unix:///Users/prinivenpillay/.colima/default/docker.sock. Is the docker daemon running?\n",
+      "fallback": "DuckDB non-SQLite roundtrip/random-access benchmark",
+      "resource": "TimescaleDB container path"
+    }
+  ],
+  "non_sqlite_db": {
+    "db_path": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/tsbs_duckdb.duckdb",
+    "engine": "duckdb",
+    "hash_after": "4fcf38da2357d29da455509ee40aec0a1ebe44eca29f4a0948731b2d1d109958",
+    "hash_before": "4fcf38da2357d29da455509ee40aec0a1ebe44eca29f4a0948731b2d1d109958",
+    "insert_throughput_rows_per_sec": 1343.1374275679489,
+    "latency_ms": {
+      "point_p95": 2.4057499977061525,
+      "range_p95": 18.124958005500957
+    },
+    "packet_roundtrip_bit_consistent": true
+  },
+  "timescale_container_path": {
+    "daemon_probe_output": "\n",
+    "docker_command": "/usr/local/bin/docker --version",
+    "docker_daemon_probe_command": "/usr/local/bin/docker info --format '{{.ServerVersion}}'",
+    "status": "INCONCLUSIVE"
+  },
+  "tsbs_resource": {
+    "note": "TSBS generator executed via local Go toolchain with valid output",
+    "status": "PASS",
+    "tsbs_output_path": "/Users/prinivenpillay/ZPE Multimodality/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/tsbs_generated_sample.txt"
+  }
+}
