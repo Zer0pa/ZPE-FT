@@ -1,0 +1,26 @@
+BRANCH codex/phase06-reality-check
+LOCAL 031559748b10216fd0093340e8803af4a45696bc
+REMOTE 031559748b10216fd0093340e8803af4a45696bc
+
+README RAW SHA
+9f427968972212d766d1febd20c977d6b3daab035380fac911ad975b339ad144  -
+9f427968972212d766d1febd20c977d6b3daab035380fac911ad975b339ad144  README.md
+
+README HTML CHECK
+2:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/zpe-masthead.gif"><img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%" data-animated-image="" style="max-width: 100%;"></a>
+11:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/what-this-is.svg"><img src=".github/assets/readme/section-bars/what-this-is.svg" alt="WHAT THIS IS" width="100%" style="max-width: 100%;"></a>
+52:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/evidence-and-claims.svg"><img src=".github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%" style="max-width: 100%;"></a>
+93:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/zpe-masthead-option-3-2.gif"><img src=".github/assets/readme/zpe-masthead-option-3-2.gif" alt="ZPE-FT Masthead Option 3.2" width="100%" data-animated-image="" style="max-width: 100%;"></a>
+96:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/setup-and-verification.svg"><img src=".github/assets/readme/section-bars/setup-and-verification.svg" alt="SETUP AND VERIFICATION" width="100%" style="max-width: 100%;"></a>
+154:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/verification.svg"><img src=".github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%" style="max-width: 100%;"></a>
+172:<li><a href="proofs/FINAL_STATUS.md"><code>proofs/FINAL_STATUS.md</code></a></li>
+178:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/where-to-go.svg"><img src=".github/assets/readme/section-bars/where-to-go.svg" alt="WHERE TO GO" width="100%" style="max-width: 100%;"></a>
+194:<td><a href="docs/DOC_REGISTRY.md"><code>docs/DOC_REGISTRY.md</code></a></td>
+215:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/zpe-masthead-option-3-3.gif"><img src=".github/assets/readme/zpe-masthead-option-3-3.gif" alt="ZPE-FT Masthead Option 3.3" width="100%" data-animated-image="" style="max-width: 100%;"></a>
+218:  <a target="_blank" rel="noopener noreferrer" href=".github/assets/readme/section-bars/contributing-security-support.svg"><img src=".github/assets/readme/section-bars/contributing-security-support.svg" alt="CONTRIBUTING, SECURITY, SUPPORT" width="100%" style="max-width: 100%;"></a>
+
+ARCHITECTURE HTML CHECK
+10:  <a target="_blank" rel="noopener noreferrer" href="../.github/assets/readme/section-bars/architecture-and-theory.svg"><img src="../.github/assets/readme/section-bars/architecture-and-theory.svg" alt="ARCHITECTURE AND THEORY" width="100%" style="max-width: 100%;"></a>
+47:<td><a href="../scripts/run_wave1.py"><code>../scripts/run_wave1.py</code></a></td>
+125:<td><code>python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto</code></td>
+138:<li><a href="../proofs/artifacts/operations/20260321T202948Z_build.log"><code>../proofs/artifacts/operations/20260321T202948Z_build.log</code></a></li>

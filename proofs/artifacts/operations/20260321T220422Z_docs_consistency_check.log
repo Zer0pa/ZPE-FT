@@ -1,0 +1,26 @@
+PASS
+BLOCKED_MISSING_INPUTS:
+  AUDITOR_PLAYBOOK.md
+  PUBLIC_AUDIT_LIMITS.md
+  README.md
+  proofs/FINAL_STATUS.md
+20260321T202948Z_build.log:
+  AUDITOR_PLAYBOOK.md
+  PUBLIC_AUDIT_LIMITS.md
+  README.md
+  RELEASING.md
+  docs/ARCHITECTURE.md
+  docs/FAQ.md
+  proofs/CONSOLIDATED_PROOF_REPORT.md
+  proofs/FINAL_STATUS.md
+  proofs/artifacts/operations/20260321T203814Z_codex_receipt.md
+20260321T202948Z_clean_install_verify.log:
+  AUDITOR_PLAYBOOK.md
+  PUBLIC_AUDIT_LIMITS.md
+  README.md
+  RELEASING.md
+  docs/ARCHITECTURE.md
+  docs/FAQ.md
+  proofs/CONSOLIDATED_PROOF_REPORT.md
+  proofs/FINAL_STATUS.md
+  proofs/artifacts/operations/20260321T203814Z_codex_receipt.md
