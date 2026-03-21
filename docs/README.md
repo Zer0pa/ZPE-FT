@@ -1,16 +1,39 @@
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>
+
 # Docs
 
-This directory contains repo-native FT documentation.
+This directory is the documentation index for the current ZPE-FT repo surface.
+The root [`README.md`](../README.md) owns the front-door summary. The canonical
+doc ownership map lives in [`DOC_REGISTRY.md`](DOC_REGISTRY.md).
 
-## Start Here
+<p>
+  <img src="../.github/assets/readme/section-bars/where-to-go.svg" alt="WHERE TO GO" width="100%">
+</p>
 
-- [FAQ.md](FAQ.md)
-- [ARCHITECTURE.md](ARCHITECTURE.md)
-- [LEGAL_BOUNDARIES.md](LEGAL_BOUNDARIES.md)
-- [specs/ZPFIN_SPEC.md](specs/ZPFIN_SPEC.md)
+Start here:
+- [`DOC_REGISTRY.md`](DOC_REGISTRY.md) for canonical ownership and truth class
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) for the runtime, helper, script, and proof map
+- [`FAQ.md`](FAQ.md) for short reader questions
+- [`SUPPORT.md`](SUPPORT.md) for routing and response expectations
+- [`LEGAL_BOUNDARIES.md`](LEGAL_BOUNDARIES.md) for license, data, and artifact boundary notes
+- [`INTEGRATION_PATTERN.md`](INTEGRATION_PATTERN.md) and [`specs/ZPFIN_SPEC.md`](specs/ZPFIN_SPEC.md) for supporting technical reference
 
-## Related Proof Surface
+<p>
+  <img src="../.github/assets/readme/section-bars/proof-corpus.svg" alt="PROOF CORPUS" width="100%">
+</p>
 
-- [../proofs/FINAL_STATUS.md](../proofs/FINAL_STATUS.md)
-- [../proofs/CONSOLIDATED_PROOF_REPORT.md](../proofs/CONSOLIDATED_PROOF_REPORT.md)
+Proof surfaces:
+- [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md) for the current proof posture
+- [`../proofs/CONSOLIDATED_PROOF_REPORT.md`](../proofs/CONSOLIDATED_PROOF_REPORT.md) for claim-by-claim caveats
+- [`../proofs/HISTORICAL_PATH_LIMITS.md`](../proofs/HISTORICAL_PATH_LIMITS.md) for lineage limits
+- [`../proofs/reruns/README.md`](../proofs/reruns/README.md) for rerun routing
 
+<p>
+  <img src="../.github/assets/readme/section-bars/what-this-directory-is-not.svg" alt="WHAT THIS DIRECTORY IS NOT" width="100%">
+</p>
+
+- not a substitute for the root [`README.md`](../README.md)
+- not a claim warehouse for repeated metrics
+- not a place to upgrade bounded or historical evidence into broader release claims

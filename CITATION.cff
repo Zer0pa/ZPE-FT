@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite the repository itself and read the license boundary before reuse."
+title: "ZPE-FT"
+type: software
+abstract: "Private staged Zero-Point Encoding finance workstream repository containing package source, a carried Wave-1 proof bundle, and bounded real-market refresh artifacts."
+authors:
+  - family-names: "Zer0pa"
+    affiliation: "Zer0pa (Pty) Ltd"
+repository-code: "https://github.com/Zer0pa/ZPE-FT"
+url: "https://github.com/Zer0pa/ZPE-FT"
+license: "LicenseRef-Zer0pa-SAL-6.0"
+contact:
+  - email: "architects@zer0pa.ai"
