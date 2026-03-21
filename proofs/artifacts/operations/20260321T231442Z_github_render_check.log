@@ -1,0 +1,14 @@
+branch=codex/phase06-reality-check
+local_commit=828afe6392dab5992090fa05ffc370e356f2d72d
+remote_commit=828afe6392dab5992090fa05ffc370e356f2d72d
+local_readme_blob=bc41be4216c519924143876bbb1b2c9c6dc64ce3
+remote_readme_blob=bc41be4216c519924143876bbb1b2c9c6dc64ce3
+branch_head_match=PASS
+readme_blob_match=PASS
+html_contains[zpe-masthead.gif]=PASS
+html_contains[zpe-masthead-option-3-2.gif]=PASS
+html_contains[zpe-masthead-option-3-3.gif]=PASS
+html_contains[section-bars/what-this-is.svg]=PASS
+html_contains[section-bars/setup-and-verification.svg]=PASS
+html_contains[docs/SUPPORT.md]=PASS
+html_contains[AUDITOR_PLAYBOOK.md]=PASS
