@@ -43,7 +43,7 @@ Canonical repo coordinates:
 - Public-release posture: `NOT_PUBLIC_READY`
 
 Choose your path:
-- Audit the current truth: [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md), [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md), and [`proofs/FINAL_STATUS.md`](proofs/FINAL_STATUS.md)
+- Audit the current truth: [`docs/AUDITOR_PLAYBOOK.md`](docs/AUDITOR_PLAYBOOK.md), [`docs/PUBLIC_AUDIT_LIMITS.md`](docs/PUBLIC_AUDIT_LIMITS.md), and [`proofs/FINAL_STATUS.md`](proofs/FINAL_STATUS.md)
 - Install or exercise the package: [`pyproject.toml`](pyproject.toml) and the setup section below
 - Understand runtime and proof layout: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - Review release posture: [`RELEASING.md`](RELEASING.md)
@@ -93,7 +93,7 @@ Current evidence you can safely repeat:
 Read the proof posture here:
 - [`proofs/FINAL_STATUS.md`](proofs/FINAL_STATUS.md)
 - [`proofs/CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md)
-- [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
+- [`docs/PUBLIC_AUDIT_LIMITS.md`](docs/PUBLIC_AUDIT_LIMITS.md)
 - [`proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
 
 <p>
@@ -101,7 +101,7 @@ Read the proof posture here:
 </p>
 
 Routes:
-- Fastest honest audit path: [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md)
+- Fastest honest audit path: [`docs/AUDITOR_PLAYBOOK.md`](docs/AUDITOR_PLAYBOOK.md)
 - Canonical doc ownership: [`docs/DOC_REGISTRY.md`](docs/DOC_REGISTRY.md)
 - Docs index: [`docs/README.md`](docs/README.md)
 - Runtime and proof map: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)

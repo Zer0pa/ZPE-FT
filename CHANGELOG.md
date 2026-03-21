@@ -23,6 +23,8 @@
 
 - rewrote the front-door README around one authority block, one status snapshot,
   and explicit controlled-vs-market truth boundaries
+- moved audit-specific docs into `docs/` so the repo root only carries the
+  front-door, package, and policy surfaces
 - aligned the audit, public-audit-limits, architecture, legal, contribution,
   security, and support docs to the current FT repo truth
 - updated proof-summary docs to reflect the March 19 delayed-feed smoke and the

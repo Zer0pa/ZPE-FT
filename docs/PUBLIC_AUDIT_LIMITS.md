@@ -1,5 +1,5 @@
 <p>
-  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
 # Public Audit Limits
@@ -8,7 +8,7 @@ This note defines what the current staged ZPE-FT repo can and cannot establish.
 It is intentionally narrow.
 
 <p>
-  <img src=".github/assets/readme/section-bars/scope.svg" alt="SCOPE" width="100%">
+  <img src="../.github/assets/readme/section-bars/scope.svg" alt="SCOPE" width="100%">
 </p>
 
 ## What The Current Repo Can Establish
@@ -29,7 +29,7 @@ It is intentionally narrow.
 - final enterprise benchmark closure
 
 <p>
-  <img src=".github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
+  <img src="../.github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
 </p>
 
 Claim-scope limits:
@@ -50,7 +50,7 @@ Provenance and surface limits:
 | Telemetry sidecars | Comet / Opik are optional sidecars, not the evidentiary root. | Observability URLs do not replace shipped artifacts. |
 
 <p>
-  <img src=".github/assets/readme/section-bars/setup-and-verification.svg" alt="SETUP AND VERIFICATION" width="100%">
+  <img src="../.github/assets/readme/section-bars/setup-and-verification.svg" alt="SETUP AND VERIFICATION" width="100%">
 </p>
 
 Current audit-path requirements:
@@ -64,12 +64,12 @@ Feature and key notes:
 - the repo-local proof gate may require more local disk and dependencies than
   the base package path
 - current package/build evidence lives in
-  [`proofs/artifacts/operations/20260321T202948Z_build.log`](proofs/artifacts/operations/20260321T202948Z_build.log),
-  [`proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log),
-  and [`proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
+  [`../proofs/artifacts/operations/20260321T202948Z_build.log`](../proofs/artifacts/operations/20260321T202948Z_build.log),
+  [`../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log),
+  and [`../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
 
 <p>
-  <img src=".github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
+  <img src="../.github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
 </p>
 
 - Apply the status labels literally: `INCONCLUSIVE`, `NEEDS_LABELS`, and
@@ -82,5 +82,5 @@ Feature and key notes:
   bounded or lineage evidence only.
 
 <p>
-  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>

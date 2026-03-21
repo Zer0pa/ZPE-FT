@@ -1,5 +1,5 @@
 <p>
-  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
 # Auditor Playbook
@@ -9,7 +9,7 @@ repo. It is not a scientific novelty ruling, a legal opinion, or a substitute
 for deeper diligence.
 
 <p>
-  <img src=".github/assets/readme/section-bars/what-this-is.svg" alt="WHAT THIS IS" width="100%">
+  <img src="../.github/assets/readme/section-bars/what-this-is.svg" alt="WHAT THIS IS" width="100%">
 </p>
 
 Three dimensions of current truth:
@@ -20,7 +20,7 @@ Three dimensions of current truth:
   Timescale equivalence remain unresolved.
 
 <p>
-  <img src=".github/assets/readme/section-bars/quick-start.svg" alt="QUICK START" width="100%">
+  <img src="../.github/assets/readme/section-bars/quick-start.svg" alt="QUICK START" width="100%">
 </p>
 
 1. Acquire the current private repo snapshot you have been granted access to:
@@ -55,15 +55,15 @@ Expected current truth:
 - `rust_bridge` may truthfully report `python-fallback` unless you explicitly
   build the optional helper
 - shipped verification logs for this surface live at
-  [`proofs/artifacts/operations/20260321T202948Z_build.log`](proofs/artifacts/operations/20260321T202948Z_build.log),
-  [`proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log),
-  and [`proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
+  [`../proofs/artifacts/operations/20260321T202948Z_build.log`](../proofs/artifacts/operations/20260321T202948Z_build.log),
+  [`../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log),
+  and [`../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
 
 4. Read the current authority surfaces together:
-- [`README.md`](README.md)
+- [`../README.md`](../README.md)
 - [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
-- [`proofs/FINAL_STATUS.md`](proofs/FINAL_STATUS.md)
-- [`proofs/CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md)
+- [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md)
+- [`../proofs/CONSOLIDATED_PROOF_REPORT.md`](../proofs/CONSOLIDATED_PROOF_REPORT.md)
 
 5. If you need the heavier repo-local proof surface, install the proof extras:
 
@@ -78,18 +78,18 @@ Optional repo-local gates:
 - repo-local environment gate for proof work: `python poc/scripts/00_env_check.py --workspace . --repo .`
 
 <p>
-  <img src=".github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
+  <img src="../.github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
 </p>
 
 | Anchor / artifact | Class | What it is for | What it is not for |
 |---|---|---|---|
-| [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/) | controlled authority | promoted local codec claims on the carried Wave-1 corpus | market-authority proof or enterprise benchmark closure |
-| [`proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json`](proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json) | bounded operator/local truth | repo-native delayed-feed acquisition and refresh smoke on SPY/AAPL | public/open-access authority or labeled market-pattern proof |
-| [`proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json`](proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json) | bounded operator/local truth | explicit evidence that the smoke run remains `NEEDS_LABELS` | authority-bearing real-market `P@10` |
-| [`proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) | current blocker surface | exact current reason the open-access enterprise benchmark is blocked | a codec failure verdict |
+| [`../proofs/artifacts/2026-02-21_ft_wave1_final/`](../proofs/artifacts/2026-02-21_ft_wave1_final/) | controlled authority | promoted local codec claims on the carried Wave-1 corpus | market-authority proof or enterprise benchmark closure |
+| [`../proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json`](../proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json) | bounded operator/local truth | repo-native delayed-feed acquisition and refresh smoke on SPY/AAPL | public/open-access authority or labeled market-pattern proof |
+| [`../proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json`](../proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json) | bounded operator/local truth | explicit evidence that the smoke run remains `NEEDS_LABELS` | authority-bearing real-market `P@10` |
+| [`../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) | current blocker surface | exact current reason the open-access enterprise benchmark is blocked | a codec failure verdict |
 
 <p>
-  <img src=".github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
+  <img src="../.github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
 </p>
 
 Current evidence you can safely repeat after audit:
@@ -103,7 +103,7 @@ Current evidence you can safely repeat after audit:
 - Open-access enterprise benchmark: `BLOCKED_MISSING_INPUTS`
 
 <p>
-  <img src=".github/assets/readme/section-bars/evidence-dispute.svg" alt="EVIDENCE DISPUTE" width="100%">
+  <img src="../.github/assets/readme/section-bars/evidence-dispute.svg" alt="EVIDENCE DISPUTE" width="100%">
 </p>
 
 If your replay disagrees, capture:
@@ -116,9 +116,9 @@ If your replay disagrees, capture:
 
 Then read:
 - [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-- [`docs/FAQ.md`](docs/FAQ.md)
+- [`ARCHITECTURE.md`](ARCHITECTURE.md)
+- [`FAQ.md`](FAQ.md)
 
 <p>
-  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>

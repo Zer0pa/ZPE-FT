@@ -21,8 +21,8 @@ Contribution baseline:
   <img src=".github/assets/readme/section-bars/before-you-start.svg" alt="BEFORE YOU START" width="100%">
 </p>
 
-1. Read [`README.md`](README.md), [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md),
-   and [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md).
+1. Read [`README.md`](README.md), [`docs/AUDITOR_PLAYBOOK.md`](docs/AUDITOR_PLAYBOOK.md),
+   and [`docs/PUBLIC_AUDIT_LIMITS.md`](docs/PUBLIC_AUDIT_LIMITS.md).
 2. If you touch claim-bearing code or proof logic, attach concrete before/after
    evidence.
 3. If you touch docs, keep cross-document tokens coherent:

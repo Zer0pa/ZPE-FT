@@ -23,14 +23,14 @@ Front door and policy:
 | [`../GOVERNANCE.md`](../GOVERNANCE.md) | status semantics and evidence policy | you need status or closure rules | public repo truth |
 | [`../RELEASING.md`](../RELEASING.md) | release gate and publish boundary | you need release posture or publish conditions | public repo truth |
 | [`../LICENSE`](../LICENSE) | legal source of truth | you need license terms | public repo truth |
-| [`../AUDITOR_PLAYBOOK.md`](../AUDITOR_PLAYBOOK.md) | shortest honest audit path | you are auditing repo claims | supporting authority |
-| [`../PUBLIC_AUDIT_LIMITS.md`](../PUBLIC_AUDIT_LIMITS.md) | audit boundary and limit matrix | you need the bounded reading rules | supporting authority |
 
 Technical and routing docs:
 
 | Path | Owns | Use when | Truth class |
 |---|---|---|---|
 | [`README.md`](README.md) | docs routing layer | you are starting inside `docs/` | public repo truth |
+| [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md) | shortest honest audit path | you are auditing repo claims | supporting authority |
+| [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) | audit boundary and limit matrix | you need the bounded reading rules | supporting authority |
 | [`FAQ.md`](FAQ.md) | reader questions | you need short answers before reading deeper docs | public repo truth |
 | [`SUPPORT.md`](SUPPORT.md) | support routing | you need the correct channel or escalation path | public repo truth |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | runtime/helper/script/proof map | you need the technical layout | public repo truth |

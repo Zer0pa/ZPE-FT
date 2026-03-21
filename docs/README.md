@@ -13,8 +13,8 @@ doc ownership map lives in [`DOC_REGISTRY.md`](DOC_REGISTRY.md).
 </p>
 
 Auditor start here:
-- [`../AUDITOR_PLAYBOOK.md`](../AUDITOR_PLAYBOOK.md) for the shortest honest audit path
-- [`../PUBLIC_AUDIT_LIMITS.md`](../PUBLIC_AUDIT_LIMITS.md) for the bounded reading rules
+- [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md) for the shortest honest audit path
+- [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the bounded reading rules
 - [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md) for the current gate posture
 
 Engineer start here:
