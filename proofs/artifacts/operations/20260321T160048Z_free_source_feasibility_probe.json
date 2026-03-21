@@ -1,0 +1,197 @@
+{
+  "conclusion": {
+    "can_materialize_declared_24m_1m_stock_contract_from_current_free_source_probe": false,
+    "local_credential_gap": "No Alpaca credentials were present in the current shell environment during this probe.",
+    "reason": "Recent 1m windows and daily 2y bars are reachable, but older 1m and 5m stock windows fall outside Yahoo retention; the declared Phase 06 CSV contract is therefore not currently materializable from this free-source path alone.",
+    "tick_proxy_reach": "Recent 1m proxy bars for ES=F and EURUSD=X are reachable from Yahoo, but that does not satisfy the declared NBBO tick schema by itself."
+  },
+  "credentials_present": {
+    "alpaca_api_key": false,
+    "alpaca_api_secret": false,
+    "comet_api_key": false
+  },
+  "declared_requirement_summary": {
+    "authority_rule": "missing declared series or unlabeled FT-C004 truth blocks Phase 06 closure",
+    "ohlcv_contract": "30 stock and ETF series at 1m granularity for 24 months",
+    "tick_contract": "3 tick/NBBO-style series with stable schema and provenance"
+  },
+  "phase06_config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/examples/phase06_benchmark_request.example.json",
+  "probe_results": [
+    {
+      "columns": [
+        "('Adj Close', 'SPY')",
+        "('Close', 'SPY')",
+        "('High', 'SPY')",
+        "('Low', 'SPY')",
+        "('Open', 'SPY')",
+        "('Volume', 'SPY')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "end": "2026-03-18",
+        "interval": "1m",
+        "progress": false,
+        "start": "2026-03-10",
+        "threads": false
+      },
+      "error": "",
+      "first_index": "2026-03-10 13:30:00+00:00",
+      "label": "spy_recent_1m_window",
+      "last_index": "2026-03-17 19:59:00+00:00",
+      "rows": 2340,
+      "success": true,
+      "symbol": "SPY"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'SPY')",
+        "('Close', 'SPY')",
+        "('High', 'SPY')",
+        "('Low', 'SPY')",
+        "('Open', 'SPY')",
+        "('Volume', 'SPY')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "end": "2025-02-01",
+        "interval": "1m",
+        "progress": false,
+        "start": "2025-01-01",
+        "threads": false
+      },
+      "error": "empty_frame",
+      "first_index": "",
+      "label": "spy_old_1m_window",
+      "last_index": "",
+      "rows": 0,
+      "success": false,
+      "symbol": "SPY"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'SPY')",
+        "('Close', 'SPY')",
+        "('High', 'SPY')",
+        "('Low', 'SPY')",
+        "('Open', 'SPY')",
+        "('Volume', 'SPY')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "end": "2025-03-15",
+        "interval": "5m",
+        "progress": false,
+        "start": "2025-01-01",
+        "threads": false
+      },
+      "error": "empty_frame",
+      "first_index": "",
+      "label": "spy_old_5m_window",
+      "last_index": "",
+      "rows": 0,
+      "success": false,
+      "symbol": "SPY"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'SPY')",
+        "('Close', 'SPY')",
+        "('High', 'SPY')",
+        "('Low', 'SPY')",
+        "('Open', 'SPY')",
+        "('Volume', 'SPY')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "end": "2026-03-21",
+        "interval": "1d",
+        "progress": false,
+        "start": "2024-03-21",
+        "threads": false
+      },
+      "error": "",
+      "first_index": "2024-03-21 00:00:00",
+      "label": "spy_2y_daily",
+      "last_index": "2026-03-20 00:00:00",
+      "rows": 501,
+      "success": true,
+      "symbol": "SPY"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'AAPL')",
+        "('Close', 'AAPL')",
+        "('High', 'AAPL')",
+        "('Low', 'AAPL')",
+        "('Open', 'AAPL')",
+        "('Volume', 'AAPL')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "end": "2026-03-21",
+        "interval": "1d",
+        "progress": false,
+        "start": "2024-03-21",
+        "threads": false
+      },
+      "error": "",
+      "first_index": "2024-03-21 00:00:00",
+      "label": "aapl_2y_daily",
+      "last_index": "2026-03-20 00:00:00",
+      "rows": 501,
+      "success": true,
+      "symbol": "AAPL"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'ES=F')",
+        "('Close', 'ES=F')",
+        "('High', 'ES=F')",
+        "('Low', 'ES=F')",
+        "('Open', 'ES=F')",
+        "('Volume', 'ES=F')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "interval": "1m",
+        "period": "5d",
+        "progress": false,
+        "threads": false
+      },
+      "error": "",
+      "first_index": "2026-03-16 04:00:00+00:00",
+      "label": "es_f_recent_1m_proxy",
+      "last_index": "2026-03-20 20:59:00+00:00",
+      "rows": 6500,
+      "success": true,
+      "symbol": "ES=F"
+    },
+    {
+      "columns": [
+        "('Adj Close', 'EURUSD=X')",
+        "('Close', 'EURUSD=X')",
+        "('High', 'EURUSD=X')",
+        "('Low', 'EURUSD=X')",
+        "('Open', 'EURUSD=X')",
+        "('Volume', 'EURUSD=X')"
+      ],
+      "download_kwargs": {
+        "auto_adjust": false,
+        "interval": "1m",
+        "period": "5d",
+        "progress": false,
+        "threads": false
+      },
+      "error": "",
+      "first_index": "2026-03-16 00:00:00+00:00",
+      "label": "eurusd_recent_1m_proxy",
+      "last_index": "2026-03-20 21:29:00+00:00",
+      "rows": 7045,
+      "success": true,
+      "symbol": "EURUSD=X"
+    }
+  ],
+  "repo": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
+  "timestamp_utc": "2026-03-21T16:08:50.666682+00:00",
+  "workspace": "/Users/Zer0pa/ZPE/ZPE FT"
+}
