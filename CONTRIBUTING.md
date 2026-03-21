@@ -11,6 +11,7 @@ ZPE-FT contributions are evidence-first.
 </p>
 
 Contribution baseline:
+- evidence first
 - do not upgrade claims without evidence
 - do not hide negative, mixed, or inconclusive results
 - keep changes scoped and reviewable
@@ -35,12 +36,21 @@ Contribution baseline:
   <img src=".github/assets/readme/section-bars/evidence-discipline-as-community-norm.svg" alt="EVIDENCE DISCIPLINE AS COMMUNITY NORM" width="100%">
 </p>
 
+Every pull request should state:
+- changed paths
+- claim impact: none, bounded, or changed
+- evidence path or test output for every claim-bearing change
+- doc render or link-check result if docs changed
+- whether any historical artifact was added, removed, or reclassified
+
+Minimum evidence by change type:
+
 | Change type | What is required |
 |---|---|
 | Package/runtime change | test output or replay artifact |
 | Proof or benchmark change | artifact path plus exact claim impact |
 | Docs change | path/render check plus cross-doc coherence |
-| Historical artifact cleanup | explicit preservation note if raw lineage is retained |
+| Historical artifact cleanup | explicit note describing what was removed and what retained surface now carries truth |
 
 <p>
   <img src=".github/assets/readme/section-bars/scope-discipline.svg" alt="SCOPE DISCIPLINE" width="100%">
@@ -58,3 +68,7 @@ Contribution baseline:
 
 By contributing, you agree your contribution is provided under the terms of the
 Zer0pa Source-Available License v6.0 in [`LICENSE`](LICENSE).
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

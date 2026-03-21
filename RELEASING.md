@@ -47,3 +47,7 @@ Current release truth:
   benchmark is still blocked and the broader DB equivalence story is unresolved
 
 Until those gates close, release execution remains manual and evidence-gated.
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

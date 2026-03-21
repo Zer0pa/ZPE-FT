@@ -87,8 +87,6 @@ Optional repo-local gates:
 | [`proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json`](proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json) | bounded operator/local truth | repo-native delayed-feed acquisition and refresh smoke on SPY/AAPL | public/open-access authority or labeled market-pattern proof |
 | [`proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json`](proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json) | bounded operator/local truth | explicit evidence that the smoke run remains `NEEDS_LABELS` | authority-bearing real-market `P@10` |
 | [`proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) | current blocker surface | exact current reason the open-access enterprise benchmark is blocked | a codec failure verdict |
-| [`proofs/reruns/2026-02-21_tsbs_db_benchmark_results.json`](proofs/reruns/2026-02-21_tsbs_db_benchmark_results.json) | historical operator evidence | chronology for the deferred Timescale-adjacent path | current portable instructions or a closed equivalence gate |
-| [`proofs/logs/2026-02-21_operator_command_log_historical.txt`](proofs/logs/2026-02-21_operator_command_log_historical.txt) | historical lineage | raw workstation command lineage | current repo-native operating instructions |
 
 <p>
   <img src=".github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
@@ -120,3 +118,7 @@ Then read:
 - [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/FAQ.md`](docs/FAQ.md)
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

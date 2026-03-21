@@ -16,14 +16,14 @@ As of 2026-03-21, this private staged repo contains:
 
 ## Current Position
 
-| Coordinate | State |
-|---|---|
-| Package/install truth | `SUPPORTED` via [`20260321T202948Z_build.log`](artifacts/operations/20260321T202948Z_build.log) and [`20260321T202948Z_clean_install_verify.log`](artifacts/operations/20260321T202948Z_clean_install_verify.log) |
-| Controlled codec authority | `SUPPORTED` |
-| Delayed-feed acquisition smoke | `BOUNDED` |
-| Open-access enterprise benchmark | `BLOCKED_MISSING_INPUTS` |
-| Blind-clone verification | not run in this phase |
-| Public release posture | `NOT_PUBLIC_READY` |
+| Gate | Status | Evidence |
+|---|---|---|
+| Package/install truth | `SUPPORTED` | [`20260321T202948Z_build.log`](artifacts/operations/20260321T202948Z_build.log), [`20260321T202948Z_clean_install_verify.log`](artifacts/operations/20260321T202948Z_clean_install_verify.log), and [`20260321T202948Z_pytest_alignment.log`](artifacts/operations/20260321T202948Z_pytest_alignment.log) |
+| Controlled codec authority | `SUPPORTED` | [`CONSOLIDATED_PROOF_REPORT.md`](CONSOLIDATED_PROOF_REPORT.md) and [`artifacts/2026-02-21_ft_wave1_final/`](artifacts/2026-02-21_ft_wave1_final/) |
+| Delayed-feed acquisition smoke | `BOUNDED` | [`reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json`](reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json) |
+| Open-access enterprise benchmark | `BLOCKED_MISSING_INPUTS` | [`reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
+| Blind-clone verification | `NOT_RUN` | no retained artifact in the current phase |
+| Public release posture | `NOT_PUBLIC_READY` | [`../RELEASING.md`](../RELEASING.md) plus the current blocker packet |
 
 ## Strongest Current Readings
 
@@ -35,6 +35,8 @@ As of 2026-03-21, this private staged repo contains:
 - SQLite roundtrip is supported
 - Timescale equivalence remains `INCONCLUSIVE`
 - the March 19 delayed-feed smoke is real but non-closing
+- older path-bearing copied gate runbooks and February leftovers were intentionally removed from the retained repo surface
+- some retained supporting artifacts still preserve historical machine-local traces and must be read as evidence, not as live instructions
 
 ## Open Limit
 
@@ -44,3 +46,7 @@ Phase 06 buyer-authority gate:
 - the auditable query catalog / truth labels are still missing for authority use
 - the current closing packet is
   [`proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json)
+
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

@@ -14,6 +14,12 @@ Canonical repo and license coordinates live in [`README.md`](README.md) and
   <img src=".github/assets/readme/section-bars/what-this-is.svg" alt="WHAT THIS IS" width="100%">
 </p>
 
+This repo is governed by retained artifacts and by the workstream owner's
+decision authority. Only the workstream owner may ratify enterprise-benchmark
+closure, public-release posture, or any claim that upgrades bounded evidence
+into broader authority. Agents, boards, and summary docs do not outrank the
+shipped repo artifacts.
+
 <p>
   <img src=".github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
 </p>
@@ -55,6 +61,12 @@ Governance baseline:
 </p>
 
 Owner-ratified closure is still required for:
+- the workstream owner to accept or reject any request to upgrade repo status
+  beyond `NOT_PUBLIC_READY`
 - open-access enterprise benchmark completion
 - any public release or PyPI publication decision
 - any claim that converts the March smoke into public market authority
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

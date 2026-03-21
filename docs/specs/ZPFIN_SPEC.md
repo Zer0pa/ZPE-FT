@@ -1,3 +1,7 @@
+<p>
+  <img src="../../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>
+
 # ZPFIN_SPEC
 
 ## Version
@@ -42,3 +46,7 @@
 - Identical input arrays + identical seed must produce byte-identical packet outputs.
 - CRC mismatch is a hard decode error.
 - Overflow decoding must consume all overflow bytes.
+
+<p>
+  <img src="../../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

@@ -1,0 +1,94 @@
+{
+  "catalog_id": "phase06_query_catalog_pending_v1",
+  "status": "PENDING_LABEL_AUDIT",
+  "target_query_count": 50,
+  "window_lengths": [32, 64, 128],
+  "truth_rule": "FT-C004 remains NEEDS_LABELS until relevant_positions or analyst-reviewed audit references are attached per query.",
+  "families": [
+    "breakout_continuation",
+    "bull_bear_flag",
+    "double_bottom_top",
+    "head_shoulders_reversal",
+    "gap_continuation_failure",
+    "mean_reversion_reversal",
+    "microstructure_sweep"
+  ],
+  "coverage": {
+    "ohlcv_symbols": [
+      "SPY",
+      "QQQ",
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "TSLA",
+      "BRK.B",
+      "AVGO",
+      "LLY",
+      "JPM",
+      "BAC",
+      "GS",
+      "MS",
+      "C",
+      "WFC",
+      "BLK",
+      "SCHW",
+      "CME",
+      "SPGI",
+      "XLF",
+      "DIA",
+      "IWM",
+      "XLK",
+      "XLE",
+      "XLV",
+      "XLI",
+      "SOXX"
+    ],
+    "tick_symbols": [
+      "AAPL",
+      "ES1!",
+      "EURUSD"
+    ]
+  },
+  "query_slots": [
+    {
+      "slot_id": "ohlcv_breakout_01",
+      "family": "breakout_continuation",
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "slot_id": "ohlcv_flag_01",
+      "family": "bull_bear_flag",
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "slot_id": "ohlcv_reversal_01",
+      "family": "double_bottom_top",
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "slot_id": "ohlcv_gap_01",
+      "family": "gap_continuation_failure",
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "slot_id": "ohlcv_meanrev_01",
+      "family": "mean_reversion_reversal",
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "slot_id": "tick_microstructure_01",
+      "family": "microstructure_sweep",
+      "series_kind": "tick",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    }
+  ],
+  "queries": []
+}

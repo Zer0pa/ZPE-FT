@@ -22,7 +22,7 @@ an OSI open-source license.
 | Source code | In scope under the repo license |
 | Documentation | In scope under the repo license |
 | Shipped proof artifacts | Distributed as repo content under [`LICENSE`](../LICENSE), while underlying data provenance and usage notes remain artifact-specific |
-| Historical reruns and logs | Retained as evidence artifacts and lineage records; some include third-party outputs or machine-local traces and are not a blanket relicensing of every embedded output |
+| Historical reruns, copied contract refs, and operator prompts | Retained only where needed for evidence or execution context; some include third-party outputs or machine-local traces and are not a blanket relicensing of every embedded output |
 
 ## Data And Evidence Boundaries
 
@@ -34,7 +34,12 @@ an OSI open-source license.
 
 ## Historical Proof Caveat
 
-Some preserved proof files contain third-party tool outputs, machine-local
-paths, or workstation-specific error signatures. Keep them as evidence
-artifacts and lineage records, not as current operating instructions or a broad
-rights statement over every embedded external output.
+Some preserved proof files and copied contract references contain third-party
+tool outputs, machine-local paths, or workstation-specific error signatures.
+Keep them as evidence artifacts or operator-local context, not as current
+operating instructions or a broad rights statement over every embedded
+external output.
+
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

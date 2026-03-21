@@ -4,13 +4,15 @@
 
 # Security Policy
 
-Do not report security issues through casual chat or public summaries.
+Report security issues privately. Do not use public issues, pull requests,
+discussions, chat, public summaries, or proof-of-concept commits for
+vulnerability disclosure.
 
 <p>
   <img src=".github/assets/readme/section-bars/reporting-a-vulnerability.svg" alt="REPORTING A VULNERABILITY" width="100%">
 </p>
 
-Report privately to:
+Private email only:
 - `architects@zer0pa.ai`
 
 Include:
@@ -37,6 +39,8 @@ Include:
 - benchmark misses or ordinary model-performance debate
 - historical path defects already marked as historical-only unless they expose a
   new active risk
+- public vulnerability reports or proof-of-concept commits created before
+  coordinated disclosure
 
 <p>
   <img src=".github/assets/readme/section-bars/response-expectations.svg" alt="RESPONSE EXPECTATIONS" width="100%">
@@ -44,3 +48,7 @@ Include:
 
 Security reports are prioritised over normal repo questions. This document is a
 routing policy only; it does not change the legal terms in [`LICENSE`](LICENSE).
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

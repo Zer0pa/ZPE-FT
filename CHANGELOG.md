@@ -17,7 +17,7 @@
 - governance boundary in [`GOVERNANCE.md`](GOVERNANCE.md)
 - release gate in [`RELEASING.md`](RELEASING.md)
 - citation metadata in [`CITATION.cff`](CITATION.cff)
-- repo-local copy of the canonical docs playbook in [`proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md`](proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md)
+- operator-local copy of the canonical docs playbook in [`proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md`](proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md)
 
 ### Changed
 
@@ -35,3 +35,7 @@
 - no public release is declared here
 - the open-access enterprise benchmark remains blocked on missing Phase 06
   inputs and authority labels
+
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

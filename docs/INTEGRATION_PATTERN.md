@@ -1,17 +1,17 @@
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>
+
 # ZPE Finance Integration Pattern
 
 ## Scope
 
 This note records the actual integration and packaging pattern visible in the
-accessible local repos on 2026-03-21:
+accessible sibling repos on 2026-03-21.
 
-- Finance repo: `/Users/Zer0pa/ZPE/ZPE FT/zpe-finance`
-- IMC repo: `/Users/Zer0pa/ZPE/ZPE-IMC`
-- Robotics repo: `/Users/Zer0pa/ZPE/ZPE Robotics/zpe-robotics`
-
-It is written to prevent plan drift. Where the closure brief assumes an
-existing shared Rust/PyO3 pattern, this document records what is actually on
-disk.
+It is written to prevent plan drift. It is an operator-local reference, not a
+release authority surface. Where the closure brief assumes an existing shared
+Rust/PyO3 pattern, this document records what was actually accessible on disk.
 
 ## Executive Truth
 
@@ -20,10 +20,9 @@ disk.
 2. The accessible `ZPE-IMC` repo does not expose a shared PyO3 finance-ready
    Rust core. Its live package surface is also `setuptools`-based Python, with
    a separate WASM tokenizer crate.
-3. The accessible robotics workstream template is the inner repo
-   `/Users/Zer0pa/ZPE/ZPE Robotics/zpe-robotics`, and it is also
-   `setuptools`-based Python. It does not provide a released `maturin` or PyO3
-   wheel pattern for finance to mirror.
+3. The accessible robotics workstream template is the inner `zpe-robotics`
+   repo, and it is also `setuptools`-based Python. It does not provide a
+   released `maturin` or PyO3 wheel pattern for finance to mirror.
 4. The current cross-lane reusable pattern is therefore:
    Python package first, optional helper-native code second, explicit proof and
    receipt surfaces, and Comet project constants wired per lane.
@@ -78,7 +77,7 @@ export matching the closure brief.
 
 ### Accessible live package
 
-The live package surface under `/Users/Zer0pa/ZPE/ZPE-IMC/v0.0/code` is:
+The accessible IMC package surface under `v0.0/code` is:
 
 - Build backend: `setuptools.build_meta`
 - Package name: `zpe-multimodal`
@@ -111,9 +110,7 @@ that `zpe-finance` can depend on in the same way the brief assumes.
 
 ### Authoritative robotics repo
 
-The usable robotics template is the inner repo:
-
-- `/Users/Zer0pa/ZPE/ZPE Robotics/zpe-robotics`
+The usable robotics template is the inner `zpe-robotics` repo.
 
 The outer robotics workspace is not the source-of-truth code boundary.
 
@@ -229,3 +226,7 @@ Any finance closure plan must therefore choose one of two honest paths:
 2. Design and implement a genuinely new shared Rust-core pattern, knowing that
    this is net-new engineering in this workspace rather than adoption of an
    already-shipped template.
+
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

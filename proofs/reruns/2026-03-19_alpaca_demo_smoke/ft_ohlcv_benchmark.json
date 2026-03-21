@@ -16,6 +16,6 @@
       "threshold": 10.0
     }
   ],
-  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
+  "source_manifest": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
   "threshold": 10.0
 }

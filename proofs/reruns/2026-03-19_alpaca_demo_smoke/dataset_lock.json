@@ -1,5 +1,5 @@
 {
-  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
+  "config_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
   "config_sha256": "cb2d7017843bc735292fa5e1b5ce697d230f10d5aa69a358c164555861b6383f",
   "datasets": [
     {
@@ -15,7 +15,7 @@
       "delimiter": ",",
       "kind": "ohlcv",
       "license_note": "Internal delayed-feed qualification only",
-      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/spy_1m_20260317.npz",
+      "normalized_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/spy_1m_20260317.npz",
       "provenance": "Alpaca delayed stock bars via demo account",
       "row_count": 390,
       "scales": {},
@@ -58,7 +58,7 @@
         }
       },
       "series_id": "spy_1m_20260317",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv",
+      "source_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv",
       "source_sha256": "5b6a07185ee47c9ec2ec7918551f90d846878b7c41930fcd65daeee14834fa68",
       "symbol": "SPY",
       "tick_size": 0.01,
@@ -80,7 +80,7 @@
       "delimiter": ",",
       "kind": "tick",
       "license_note": "Internal delayed-feed qualification only",
-      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/aapl_quotes_20260317_open.npz",
+      "normalized_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/aapl_quotes_20260317_open.npz",
       "provenance": "Alpaca delayed stock quotes via demo account",
       "row_count": 1647,
       "scales": {},
@@ -117,7 +117,7 @@
         }
       },
       "series_id": "aapl_quotes_20260317_open",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv",
+      "source_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv",
       "source_sha256": "2a661d036b185de2fbcf2791df4cf5c37a8222fb9800fea142ca38fe6171e668",
       "symbol": "AAPL",
       "tick_size": 0.01,

@@ -23,6 +23,7 @@ and [`../LICENSE`](../LICENSE).
 | Python package | Installable codec/search surface | [`../python/zpe_finance/`](../python/zpe_finance/) |
 | Optional native helper | Repo-local helper for nibble packing, hashing, and search primitives | [`../core/`](../core/) |
 | Packet contract | FT packet-format reference | [`specs/ZPFIN_SPEC.md`](specs/ZPFIN_SPEC.md) |
+| Example request configs | Repo-local example manifests for acquisition, corpus freeze, and query catalog work | [`examples/`](examples/) |
 | Base install metadata | Build, dependency, and extra declarations | [`../pyproject.toml`](../pyproject.toml) |
 | Gate runner | Controlled Wave-1 replay entrypoint that writes a fresh local rerun output | [`../scripts/run_wave1.py`](../scripts/run_wave1.py) |
 | Real-market acquisition | Delayed-feed acquisition helper | [`../scripts/fetch_alpaca_corpus.py`](../scripts/fetch_alpaca_corpus.py) |
@@ -38,19 +39,18 @@ and [`../LICENSE`](../LICENSE).
 | Controlled authority | [`../proofs/artifacts/2026-02-21_ft_wave1_final/`](../proofs/artifacts/2026-02-21_ft_wave1_final/) | promoted codec claims on the carried Wave-1 corpus |
 | Bounded operator/local smoke | [`../proofs/reruns/2026-03-19_alpaca_demo_smoke/`](../proofs/reruns/2026-03-19_alpaca_demo_smoke/) | delayed-feed acquisition/freeze/refresh reality on a two-series sample |
 | Current enterprise blocker | [`../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) | open-access benchmark is not closed |
-| Historical operator reruns | [`../proofs/reruns/2026-02-21_tsbs_db_benchmark_results.json`](../proofs/reruns/2026-02-21_tsbs_db_benchmark_results.json), [`../proofs/logs/2026-02-21_operator_command_log_historical.txt`](../proofs/logs/2026-02-21_operator_command_log_historical.txt) | lineage only; not live operating instructions |
 
 <p>
   <img src="../.github/assets/readme/section-bars/setup-and-verification.svg" alt="SETUP AND VERIFICATION" width="100%">
 </p>
 
-| Runtime surface | Truthful entrypoint |
-|---|---|
-| Base package sanity | `python -m pip install -e .` then import `zpe_finance` |
-| Heavier repo-local proof work | `python -m pip install -e ".[test,proof]"` |
-| Optional helper path | `python -m pip install -e ".[native]"` then `cd core && maturin develop --release` |
-| Controlled Wave-1 replay | `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto` |
-| Repo-local env gate | `python poc/scripts/00_env_check.py --workspace . --repo .` |
+| Runtime surface | Truthful entrypoint | Boundary |
+|---|---|---|
+| Base package sanity | `python -m pip install -e .` then import `zpe_finance` | package import, local codec use, and docs audit |
+| Heavier repo-local proof work | `python -m pip install -e ".[test,proof]"` | proof and rerun work inside this repo |
+| Optional helper path | `python -m pip install -e ".[native]"` then `cd core && maturin develop --release` | only when you intentionally exercise the repo-local helper |
+| Controlled Wave-1 replay | `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto` | writes a fresh local rerun destination; it does not replace the carried authority bundle |
+| Repo-local env gate | `python poc/scripts/00_env_check.py --workspace . --repo .` | operator/local proof setup, not the front-door package path |
 
 The `artifacts/2026-02-20_zpe_ft_wave1` path is a local rerun destination. The
 carried promoted evidence bundle remains
@@ -61,6 +61,10 @@ Current package/build/install evidence:
 - [`../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log)
 - [`../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
 
+Older path-bearing reruns and logs were intentionally removed from the retained
+repo surface during the current cleanup. The unresolved Timescale path remains
+excluded from promoted claims until a fresh repo-relative rerun replaces it.
+
 <p>
   <img src="../.github/assets/readme/section-bars/open-risks-non-blocking.svg" alt="OPEN RISKS (NON-BLOCKING)" width="100%">
 </p>
@@ -70,3 +74,7 @@ Current package/build/install evidence:
 - Timescale equivalence remains unresolved
 - the open-access enterprise benchmark remains blocked until the missing Phase
   06 exports and auditable labels exist
+
+<p>
+  <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
+</p>

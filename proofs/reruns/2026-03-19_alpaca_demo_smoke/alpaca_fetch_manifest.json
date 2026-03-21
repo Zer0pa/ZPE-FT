@@ -1,12 +1,12 @@
 {
-  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_request.json",
-  "generated_spec_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
+  "config_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_request.json",
+  "generated_spec_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
   "series": [
     {
       "end": "2026-03-17T20:00:00Z",
       "feed": "iex",
       "kind": "ohlcv",
-      "output_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv",
+      "output_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv",
       "rows": 390,
       "series_id": "spy_1m_20260317",
       "start": "2026-03-17T13:30:00Z",
@@ -17,7 +17,7 @@
       "end": "2026-03-17T13:30:10Z",
       "feed": "iex",
       "kind": "tick",
-      "output_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv",
+      "output_path": "./proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv",
       "rows": 1647,
       "series_id": "aapl_quotes_20260317_open",
       "start": "2026-03-17T13:30:00Z",
