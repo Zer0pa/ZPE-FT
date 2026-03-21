@@ -238,19 +238,28 @@ def main() -> int:
             }
         )
 
-    install_duckdb_cmd = run_command_capture([sys.executable, "-m", "pip", "install", "-q", "duckdb"], cwd=str(repo_root))
-    attempts.append(install_duckdb_cmd)
-    append_validation_markdown(
-        validation_md,
-        "M2 DuckDB install",
-        install_duckdb_cmd,
-        "OK" if install_duckdb_cmd["exit_code"] == 0 else "FAIL",
-    )
+    duckdb_probe = {
+        "command": f"{sys.executable} -c 'import duckdb'",
+        "cwd": str(repo_root),
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "timeout": False,
+    }
+    try:
+        import duckdb  # type: ignore
+    except Exception as exc:
+        duckdb_probe["exit_code"] = 1
+        duckdb_probe["stderr"] = f"{type(exc).__name__}: {exc}"
+        attempts.append(duckdb_probe)
+        append_validation_markdown(validation_md, "M2 DuckDB import", duckdb_probe, "FAIL")
+        raise SystemExit(
+            "DuckDB is not installed. Install comparator/proof dependencies first "
+            "(python -m pip install -e '.[comparators]' or '.[proof]')."
+        )
 
-    if install_duckdb_cmd["exit_code"] != 0:
-        raise SystemExit("DuckDB install failed; cannot execute non-SQLite benchmark")
-
-    import duckdb  # type: ignore
+    attempts.append(duckdb_probe)
+    append_validation_markdown(validation_md, "M2 DuckDB import", duckdb_probe, "OK")
 
     bars = generate_ohlcv_bars(num_bars=120_000, seed=args.seed + 21, tick_size=0.01)
     payload = encode_ohlcv(bars, tick_size=0.01, instrument="SPY")

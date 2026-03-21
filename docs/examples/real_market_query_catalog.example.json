@@ -1,0 +1,32 @@
+{
+  "catalog_id": "pilot_sidecar_refresh_queries_v1",
+  "queries": [
+    {
+      "query_id": "spy_flag_001",
+      "series_id": "spy_1m",
+      "start_index": 10432,
+      "length": 64,
+      "label": "bull_flag",
+      "min_score": 0.75,
+      "relevant_positions": [10432, 22891]
+    },
+    {
+      "query_id": "spy_gap_002",
+      "series_id": "spy_1m",
+      "start_index": 55321,
+      "length": 32,
+      "label": "gap_continuation",
+      "min_score": 0.75,
+      "relevant_positions": [55321]
+    },
+    {
+      "query_id": "spy_nbbo_micro_003",
+      "series_id": "spy_nbbo",
+      "start_index": 180000,
+      "length": 128,
+      "label": "microstructure_sweep",
+      "min_score": 0.8,
+      "relevant_positions": [180000, 412250]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
+  "config_sha256": "cb2d7017843bc735292fa5e1b5ce697d230f10d5aa69a358c164555861b6383f",
+  "datasets": [
+    {
+      "columns": {
+        "close": "close_px",
+        "high": "high_px",
+        "low": "low_px",
+        "open": "open_px",
+        "timestamp": "ts",
+        "volume": "volume"
+      },
+      "content_sha256": "a6fd474a9293f09d873122c1ef7e6564b85df284bcc76ea05d0a7fed267fcb03",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Internal delayed-feed qualification only",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/spy_1m_20260317.npz",
+      "provenance": "Alpaca delayed stock bars via demo account",
+      "row_count": 390,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            390
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            390
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            390
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            390
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            390
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            390
+          ]
+        }
+      },
+      "series_id": "spy_1m_20260317",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv",
+      "source_sha256": "5b6a07185ee47c9ec2ec7918551f90d846878b7c41930fcd65daeee14834fa68",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "timestamp_end": 1773777540000,
+      "timestamp_format": "epoch_ms",
+      "timestamp_start": 1773754200000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "ask": "ask_px",
+        "ask_size": "ask_sz",
+        "bid": "bid_px",
+        "bid_size": "bid_sz",
+        "timestamp": "ts"
+      },
+      "content_sha256": "19fdbe40b88e34a820766c50349313082e27571638236210ff8221e9bb748f2c",
+      "delimiter": ",",
+      "kind": "tick",
+      "license_note": "Internal delayed-feed qualification only",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/normalized/aapl_quotes_20260317_open.npz",
+      "provenance": "Alpaca delayed stock quotes via demo account",
+      "row_count": 1647,
+      "scales": {},
+      "schema": {
+        "ask": {
+          "dtype": "float64",
+          "shape": [
+            1647
+          ]
+        },
+        "ask_size": {
+          "dtype": "float64",
+          "shape": [
+            1647
+          ]
+        },
+        "bid": {
+          "dtype": "float64",
+          "shape": [
+            1647
+          ]
+        },
+        "bid_size": {
+          "dtype": "float64",
+          "shape": [
+            1647
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            1647
+          ]
+        }
+      },
+      "series_id": "aapl_quotes_20260317_open",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv",
+      "source_sha256": "2a661d036b185de2fbcf2791df4cf5c37a8222fb9800fea142ca38fe6171e668",
+      "symbol": "AAPL",
+      "tick_size": 0.01,
+      "timestamp_end": 1773754209892499227,
+      "timestamp_format": "epoch_ns",
+      "timestamp_start": 1773754200001059169,
+      "timestamp_unit": "ns",
+      "timezone": "UTC"
+    }
+  ],
+  "gate": "EV-01"
+}

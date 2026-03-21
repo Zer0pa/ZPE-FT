@@ -1,0 +1,41 @@
+# FT Public Track Task 0 Environment Check
+
+Timestamp: 2026-03-21T20:37:44+00:00
+Workspace: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance
+Repo: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance
+
+## Machine
+- Platform: macOS-15.5-x86_64-i386-64bit-Mach-O
+- CPU: Apple M1
+
+## Policy
+- Disk gate: 15.0 GiB free
+- RunPod: explicit approval required
+- Sovereign boundary: Phase 06 buyer authority remains the top gate
+
+## Disk
+- Status: FAIL
+- Free GiB: 4.02
+
+## Imports
+- yfinance: PASS (import ok (version 1.2.0))
+- pandas_datareader: PASS (import ok (version 0.10.0))
+- requests: PASS (import ok (version 2.32.5))
+- pandas: PASS (import ok (version 2.3.3))
+- numpy: PASS (import ok (version 2.4.3))
+- scipy: PASS (import ok (version 1.17.1))
+- sklearn: PASS (import ok (version 1.8.0))
+
+## Repo Tests
+- Status: PASS
+- Detail: exit code 0
+
+## ADB
+- Status: CONNECTED
+- Devices: FY25013101C8
+
+## Verdict
+- Gate: FAIL
+- Blocking conditions:
+  - free disk 4.02 GiB is below the 15.0 GiB gate
+- Next action: stop at Task 0 until the listed blockers are cleared

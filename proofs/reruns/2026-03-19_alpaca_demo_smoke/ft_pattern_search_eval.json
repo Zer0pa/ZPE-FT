@@ -1,0 +1,293 @@
+{
+  "claim_id": "FT-C004",
+  "mean_p_at_10": null,
+  "pass": false,
+  "pattern_results": [
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_00",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 32,
+      "top_k": [
+        {
+          "position": 32,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_01",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 64,
+      "top_k": [
+        {
+          "position": 64,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_02",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 78,
+      "top_k": [
+        {
+          "position": 78,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_03",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 101,
+      "top_k": [
+        {
+          "position": 101,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_04",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 125,
+      "top_k": [
+        {
+          "position": 125,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_05",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 128,
+      "top_k": [
+        {
+          "position": 128,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_06",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 138,
+      "top_k": [
+        {
+          "position": 138,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "spy_1m_20260317_auto_07",
+      "relevant_positions": [],
+      "series_id": "spy_1m_20260317",
+      "start_index": 147,
+      "top_k": [
+        {
+          "position": 147,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_00",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 32,
+      "top_k": [
+        {
+          "position": 32,
+          "score": 1.0
+        },
+        {
+          "position": 1186,
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_01",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 64,
+      "top_k": [
+        {
+          "position": 64,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_02",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 128,
+      "top_k": [
+        {
+          "position": 128,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_03",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 258,
+      "top_k": [
+        {
+          "position": 258,
+          "score": 1.0
+        },
+        {
+          "position": 1555,
+          "score": 0.84375
+        },
+        {
+          "position": 354,
+          "score": 0.78125
+        },
+        {
+          "position": 626,
+          "score": 0.78125
+        },
+        {
+          "position": 1524,
+          "score": 0.78125
+        },
+        {
+          "position": 1553,
+          "score": 0.78125
+        },
+        {
+          "position": 1557,
+          "score": 0.78125
+        },
+        {
+          "position": 506,
+          "score": 0.75
+        },
+        {
+          "position": 790,
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_04",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 281,
+      "top_k": [
+        {
+          "position": 281,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_05",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 326,
+      "top_k": [
+        {
+          "position": 326,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_06",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 484,
+      "top_k": [
+        {
+          "position": 484,
+          "score": 1.0
+        },
+        {
+          "position": 45,
+          "score": 0.8125
+        },
+        {
+          "position": 377,
+          "score": 0.8125
+        },
+        {
+          "position": 375,
+          "score": 0.75
+        },
+        {
+          "position": 390,
+          "score": 0.75
+        },
+        {
+          "position": 1002,
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_quotes_20260317_open_auto_07",
+      "relevant_positions": [],
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 498,
+      "top_k": [
+        {
+          "position": 498,
+          "score": 1.0
+        }
+      ]
+    }
+  ],
+  "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/starter_query_catalog.generated.json",
+  "scored_queries": 0,
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
+  "status": "NEEDS_LABELS",
+  "threshold": 0.85,
+  "unscored_queries": 16
+}

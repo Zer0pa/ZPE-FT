@@ -1,0 +1,21 @@
+{
+  "aggregate": {
+    "mean_compression_ratio": 13.192389006342495,
+    "min_compression_ratio": 13.192389006342495
+  },
+  "claim_id": "FT-C001",
+  "pass": true,
+  "series": [
+    {
+      "compressed_bytes": 1419,
+      "compression_ratio": 13.192389006342495,
+      "pass": true,
+      "raw_bytes": 18720,
+      "series_id": "spy_1m_20260317",
+      "symbol": "SPY",
+      "threshold": 10.0
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
+  "threshold": 10.0
+}

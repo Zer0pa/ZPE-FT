@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
-import json
 import os
 import shlex
 import subprocess
@@ -12,7 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Mapping, Sequence
 
-import numpy as np
+from zpe_finance.comet_logging import CometRunLogger
+from zpe_finance.metrics import dataset_digest, schema_inventory
 
 
 def utc_now_iso() -> str:
@@ -36,9 +35,65 @@ def ensure_artifact_root(root: str | Path) -> Path:
     return path
 
 
+def _json_safe(value: Any) -> Any:
+    if isinstance(value, Path):
+        return str(value)
+    if isinstance(value, (str, int, float, bool)) or value is None:
+        return value
+    if isinstance(value, dict):
+        return {str(key): _json_safe(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple, set)):
+        return [_json_safe(item) for item in value]
+    return str(value)
+
+
+def _git_value(repo_root: Path, *args: str) -> str:
+    attempt = run_command_capture(["git", *args], cwd=str(repo_root))
+    if attempt["exit_code"] != 0:
+        return ""
+    return str((attempt["stdout"] or "").strip())
+
+
+def start_comet_logger(
+    artifact_root: Path,
+    script_name: str,
+    *,
+    args: argparse.Namespace | None = None,
+    tags: Sequence[str] = (),
+    parameters: Mapping[str, Any] | None = None,
+    others: Mapping[str, Any] | None = None,
+) -> CometRunLogger:
+    repo_root = Path(__file__).resolve().parents[1]
+    script_parameters: dict[str, Any] = {
+        "artifact_root": str(artifact_root),
+        "repo_root": str(repo_root),
+    }
+    if args is not None:
+        script_parameters.update({str(key): _json_safe(value) for key, value in vars(args).items()})
+    if parameters:
+        script_parameters.update({str(key): _json_safe(value) for key, value in parameters.items()})
+
+    git_parameters = {
+        "git_branch": _git_value(repo_root, "branch", "--show-current"),
+        "git_commit": _git_value(repo_root, "rev-parse", "HEAD"),
+        "git_remote_origin": _git_value(repo_root, "remote", "get-url", "origin"),
+    }
+    script_parameters.update({key: value for key, value in git_parameters.items() if value})
+
+    return CometRunLogger.start(
+        artifact_root=artifact_root,
+        script_name=script_name,
+        tags=tags,
+        parameters=script_parameters,
+        others=others,
+    )
+
+
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    from zpe_finance.metrics import write_json as metrics_write_json
+
+    metrics_write_json(path, payload)
 
 
 def append_command_log(
@@ -141,25 +196,3 @@ def append_validation_markdown(
     )
     with path.open("a", encoding="utf-8") as f:
         f.write("\n".join(lines))
-
-
-def dataset_digest(mapping: Mapping[str, np.ndarray]) -> str:
-    h = hashlib.sha256()
-    for key in sorted(mapping.keys()):
-        arr = np.asarray(mapping[key])
-        h.update(key.encode("utf-8"))
-        h.update(str(arr.dtype).encode("utf-8"))
-        h.update(str(arr.shape).encode("utf-8"))
-        h.update(arr.tobytes(order="C"))
-    return h.hexdigest()
-
-
-def schema_inventory(mapping: Mapping[str, np.ndarray]) -> Dict[str, Dict[str, Any]]:
-    inventory: Dict[str, Dict[str, Any]] = {}
-    for key, arr in mapping.items():
-        a = np.asarray(arr)
-        inventory[key] = {
-            "dtype": str(a.dtype),
-            "shape": list(a.shape),
-        }
-    return inventory

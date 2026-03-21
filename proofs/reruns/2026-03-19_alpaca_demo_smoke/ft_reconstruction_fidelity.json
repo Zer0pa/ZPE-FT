@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "max_rmse_ticks": 0.0
+  },
+  "pass": true,
+  "series": [
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "spy_1m_20260317"
+    },
+    {
+      "kind": "tick",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "tick_ask_rmse_ticks": 0.0,
+        "tick_bid_rmse_ticks": 0.0
+      },
+      "series_id": "aapl_quotes_20260317_open"
+    }
+  ],
+  "threshold_rmse_ticks": 0.5
+}

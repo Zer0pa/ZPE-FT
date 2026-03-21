@@ -1,0 +1,21 @@
+{
+  "aggregate": {
+    "mean_compression_ratio": 8.403061224489797,
+    "min_compression_ratio": 8.403061224489797
+  },
+  "claim_id": "FT-C002",
+  "pass": true,
+  "series": [
+    {
+      "compressed_bytes": 11760,
+      "compression_ratio": 8.403061224489797,
+      "pass": true,
+      "raw_bytes": 98820,
+      "series_id": "aapl_quotes_20260317_open",
+      "symbol": "AAPL",
+      "threshold": 8.0
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
+  "threshold": 8.0
+}

@@ -1,0 +1,35 @@
+{
+  "claim_id": "FT-C005",
+  "corpus_points": 2037,
+  "latencies_ms": {
+    "best": 0.001957996573764831,
+    "p50": 0.008290997357107699,
+    "p95": 0.23979199613677338
+  },
+  "pass": true,
+  "queries": 16,
+  "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/starter_query_catalog.generated.json",
+  "series": [
+    {
+      "latencies_ms": {
+        "best": 0.0020000006770715117,
+        "p50": 0.006916998245287687,
+        "p95": 0.010458003089297563
+      },
+      "queries": 8,
+      "series_id": "spy_1m_20260317"
+    },
+    {
+      "latencies_ms": {
+        "best": 0.001957996573764831,
+        "p50": 0.034000004234258085,
+        "p95": 0.24074999964796007
+      },
+      "queries": 8,
+      "series_id": "aapl_quotes_20260317_open"
+    }
+  ],
+  "single_core_target": true,
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json",
+  "threshold_ms": 100.0
+}

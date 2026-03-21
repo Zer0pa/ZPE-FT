@@ -1,0 +1,96 @@
+name: package-verification
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  base-package:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install base verification tooling
+        run: |
+          python -m pip install --upgrade pip build
+          python -m pip install -e ".[test]"
+      - name: Run test suite
+        run: python -m pytest -q
+      - name: Build sdist and wheel
+        run: python -m build
+      - name: Verify wheel install in a clean virtualenv
+        shell: bash
+        run: |
+          python -m venv /tmp/zpe-ft-wheel
+          source /tmp/zpe-ft-wheel/bin/activate
+          python -m pip install --upgrade pip
+          python -m pip install dist/*.whl
+          python - <<'PY'
+          import zpe_finance
+          from zpe_finance.rust_bridge import rust_version
+
+          assert callable(zpe_finance.encode_ohlcv)
+          assert callable(zpe_finance.decode_ohlcv)
+          print("exports", sorted(zpe_finance.__all__))
+          print("rust_bridge", rust_version())
+          PY
+
+  proof-extras:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install proof harness dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[test,proof]"
+      - name: Run proof-track environment gate
+        run: python poc/scripts/00_env_check.py --workspace . --repo .
+
+  observability-extras:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install observability extras
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[observability]"
+      - name: Verify optional observability imports
+        run: |
+          python - <<'PY'
+          import comet_ml  # noqa: F401
+          import opik  # noqa: F401
+          print("optional observability imports ok")
+          PY
+
+  native-helper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install native-helper tooling
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[test,native]"
+      - name: Build and install the optional Rust helper
+        run: |
+          cd core
+          maturin build --release -i python
+          cd ..
+          python -m pip install --force-reinstall core/target/wheels/zpe_finance_rs-*.whl
+      - name: Verify native-helper tests
+        run: python -m pytest -q tests/test_codec_core.py tests/test_packet_roundtrip.py

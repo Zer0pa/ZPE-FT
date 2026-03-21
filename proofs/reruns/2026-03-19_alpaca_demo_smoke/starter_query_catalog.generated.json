@@ -1,0 +1,118 @@
+{
+  "catalog_id": "generated_real_market_catalog",
+  "queries": [
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_00",
+      "series_id": "spy_1m_20260317",
+      "start_index": 32
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_01",
+      "series_id": "spy_1m_20260317",
+      "start_index": 64
+    },
+    {
+      "length": 128,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_02",
+      "series_id": "spy_1m_20260317",
+      "start_index": 78
+    },
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_03",
+      "series_id": "spy_1m_20260317",
+      "start_index": 101
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_04",
+      "series_id": "spy_1m_20260317",
+      "start_index": 125
+    },
+    {
+      "length": 128,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_05",
+      "series_id": "spy_1m_20260317",
+      "start_index": 128
+    },
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_06",
+      "series_id": "spy_1m_20260317",
+      "start_index": 138
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "spy_1m_20260317_auto_07",
+      "series_id": "spy_1m_20260317",
+      "start_index": 147
+    },
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_00",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 32
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_01",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 64
+    },
+    {
+      "length": 128,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_02",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 128
+    },
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_03",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 258
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_04",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 281
+    },
+    {
+      "length": 128,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_05",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 326
+    },
+    {
+      "length": 32,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_06",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 484
+    },
+    {
+      "length": 64,
+      "min_score": 0.75,
+      "query_id": "aapl_quotes_20260317_open_auto_07",
+      "series_id": "aapl_quotes_20260317_open",
+      "start_index": 498
+    }
+  ],
+  "status": "AUTO_GENERATED_UNSCORED"
+}

@@ -1,0 +1,49 @@
+{
+  "corpus_id": "pilot_sidecar_refresh_v1",
+  "authority_metric": "AM-C05_FROZEN",
+  "buyer_workload": "query-by-example over historical price action",
+  "query_catalog_path": "real_market_query_catalog.example.json",
+  "series": [
+    {
+      "series_id": "spy_1m",
+      "kind": "ohlcv",
+      "source_path": "buyer_exports/spy_1m.csv",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "provenance": "Buyer-approved minute-bar export",
+      "license_note": "Internal benchmark rights confirmed",
+      "timezone": "America/New_York",
+      "timestamp_format": "iso8601",
+      "columns": {
+        "timestamp": "window_start",
+        "open": "open",
+        "high": "high",
+        "low": "low",
+        "close": "close",
+        "volume": "volume"
+      }
+    },
+    {
+      "series_id": "spy_nbbo",
+      "kind": "tick",
+      "source_path": "buyer_exports/spy_nbbo_top.csv",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "provenance": "Buyer-approved top-of-book export",
+      "license_note": "Internal benchmark rights confirmed",
+      "timezone": "America/New_York",
+      "timestamp_format": "epoch_ns",
+      "columns": {
+        "timestamp": "ts_event",
+        "bid": "bid_px_00",
+        "ask": "ask_px_00",
+        "bid_size": "bid_sz_00",
+        "ask_size": "ask_sz_00"
+      },
+      "scales": {
+        "bid": 1e-9,
+        "ask": 1e-9
+      }
+    }
+  ]
+}

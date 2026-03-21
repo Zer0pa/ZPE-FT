@@ -1,0 +1,32 @@
+{
+  "corpus_id": "alpaca_delayed_stock_smoke_v1",
+  "authority_metric": "AM-C05_FROZEN",
+  "buyer_workload": "query-by-example over delayed US equity price action",
+  "dataset_dir": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports",
+  "series": [
+    {
+      "series_id": "spy_1m_20260317",
+      "kind": "ohlcv",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "start": "2026-03-17T13:30:00Z",
+      "end": "2026-03-17T20:00:00Z",
+      "timeframe": "1Min",
+      "feed": "iex",
+      "adjustment": "raw",
+      "provenance": "Alpaca delayed stock bars via demo account",
+      "license_note": "Internal delayed-feed qualification only"
+    },
+    {
+      "series_id": "aapl_quotes_20260317_open",
+      "kind": "tick",
+      "symbol": "AAPL",
+      "tick_size": 0.01,
+      "start": "2026-03-17T13:30:00Z",
+      "end": "2026-03-17T13:30:10Z",
+      "feed": "iex",
+      "provenance": "Alpaca delayed stock quotes via demo account",
+      "license_note": "Internal delayed-feed qualification only"
+    }
+  ]
+}

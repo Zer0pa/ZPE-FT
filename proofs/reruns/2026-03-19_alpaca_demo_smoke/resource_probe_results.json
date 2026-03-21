@@ -1,0 +1,22 @@
+{
+  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/alpaca_real_market_corpus_spec.generated.json",
+  "config_sha256": "cb2d7017843bc735292fa5e1b5ce697d230f10d5aa69a358c164555861b6383f",
+  "inputs": [
+    {
+      "bytes": 19583,
+      "exists": true,
+      "series_id": "spy_1m_20260317",
+      "sha256": "5b6a07185ee47c9ec2ec7918551f90d846878b7c41930fcd65daeee14834fa68",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/spy_1m_20260317_bars.csv"
+    },
+    {
+      "bytes": 76487,
+      "exists": true,
+      "series_id": "aapl_quotes_20260317_open",
+      "sha256": "2a661d036b185de2fbcf2791df4cf5c37a8222fb9800fea142ca38fe6171e668",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/buyer_exports/aapl_quotes_20260317_open_quotes.csv"
+    }
+  ],
+  "probe_timestamp_utc": "2026-03-19T08:50:46.323925+00:00",
+  "query_catalog": null
+}

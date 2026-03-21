@@ -1,0 +1,2 @@
+2026-03-21T12:30:56.943498+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /workspace/zpe-ft/zpe-finance/docs/examples/phase06_benchmark_request.example.json	start
+2026-03-21T12:30:57.017518+00:00	EV-01	2	blocked: named benchmark inputs missing	missing_series=33 missing_query_catalog=False

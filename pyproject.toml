@@ -6,14 +6,34 @@ build-backend = "setuptools.build_meta"
 name = "zpe-finance"
 version = "0.1.0"
 description = "ZPE financial time-series codec and pattern search"
+readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.11"
+keywords = ["finance", "time-series", "codec", "search"]
 dependencies = [
   "numpy>=2.1",
 ]
 
+[project.urls]
+Repository = "https://github.com/Zer0pa/ZPE-FT"
+
 [project.optional-dependencies]
 market = ["yfinance>=0.2.66"]
-comparators = ["zstandard>=0.23.0", "lz4>=4.4.4"]
+comparators = ["duckdb>=1.2", "zstandard>=0.23.0", "lz4>=4.4.4"]
+observability = ["comet_ml>=3.0.0", "opik>=1.10"]
+native = ["maturin>=1.8"]
+proof = [
+  "duckdb>=1.2",
+  "lz4>=4.4.4",
+  "pandas>=2.2,<3",
+  "pandas_datareader>=0.10.0",
+  "requests>=2.32",
+  "scikit-learn>=1.5",
+  "scipy>=1.13",
+  "yfinance>=0.2.66",
+  "zstandard>=0.23.0",
+]
+test = ["pytest>=8.0"]
 
 [tool.setuptools]
 package-dir = {"" = "python"}

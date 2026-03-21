@@ -1,0 +1,21 @@
+{
+  "claim_id": "FT-C006",
+  "pass": true,
+  "series": [
+    {
+      "after_hash": "beeecfa3ae01ce74b2772d55baaf76e6a4d6800b0c8d5d86eb3db2c44609d92a",
+      "before_hash": "beeecfa3ae01ce74b2772d55baaf76e6a4d6800b0c8d5d86eb3db2c44609d92a",
+      "bit_consistent": true,
+      "payload_bytes": 1419,
+      "series_id": "spy_1m_20260317"
+    },
+    {
+      "after_hash": "4bce154e4b672ec996931768280ee1089b76f33ac200335f0f869b41f1232fcc",
+      "before_hash": "4bce154e4b672ec996931768280ee1089b76f33ac200335f0f869b41f1232fcc",
+      "bit_consistent": true,
+      "payload_bytes": 11760,
+      "series_id": "aapl_quotes_20260317_open"
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json"
+}

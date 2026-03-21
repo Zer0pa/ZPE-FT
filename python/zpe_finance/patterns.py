@@ -22,10 +22,25 @@ def deltas_to_tokens(deltas: np.ndarray) -> np.ndarray:
     return tokens
 
 
-def bars_to_tokens(close: np.ndarray, tick_size: float) -> np.ndarray:
-    close_ticks = np.rint(np.asarray(close, dtype=np.float64) / tick_size).astype(np.int64)
+def _prices_to_tokens(prices: np.ndarray, tick_size: float) -> np.ndarray:
+    if tick_size <= 0:
+        raise ValueError("tick_size must be positive")
+    close_ticks = np.rint(np.asarray(prices, dtype=np.float64) / tick_size).astype(np.int64)
     deltas = np.diff(close_ticks, prepend=close_ticks[0])
     return deltas_to_tokens(deltas)
+
+
+def bars_to_tokens(close: np.ndarray, tick_size: float) -> np.ndarray:
+    return _prices_to_tokens(close, tick_size)
+
+
+def ticks_to_tokens(bid: np.ndarray, ask: np.ndarray, tick_size: float) -> np.ndarray:
+    bid_arr = np.asarray(bid, dtype=np.float64)
+    ask_arr = np.asarray(ask, dtype=np.float64)
+    if bid_arr.shape != ask_arr.shape:
+        raise ValueError("bid and ask must have the same shape")
+    mid = (bid_arr + ask_arr) * 0.5
+    return _prices_to_tokens(mid, tick_size)
 
 
 def _repeat(token: int, length: int) -> List[int]:

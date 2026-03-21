@@ -1,0 +1,18 @@
+{
+  "enabled": false,
+  "experiment_key": "",
+  "experiment_url": "",
+  "logged_assets": [],
+  "metrics": {},
+  "others": {
+    "blocked_reason": "missing_inputs",
+    "gate": "EV-01",
+    "missing_query_catalog": false,
+    "missing_series_count": 33
+  },
+  "project_name": "zpe-ft",
+  "reason": "api_key_missing",
+  "script_name": "freeze_real_market_corpus",
+  "status": "blocked",
+  "workspace": "zer0pa"
+}
