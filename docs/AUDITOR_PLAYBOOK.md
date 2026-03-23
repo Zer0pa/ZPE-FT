@@ -4,26 +4,27 @@
 
 # Auditor Playbook
 
-This is the shortest honest audit path for the current private staged ZPE-FT
-repo. It is not a scientific novelty ruling, a legal opinion, or a substitute
-for deeper diligence.
+This is the shortest honest audit path for the current ZPE-FT repo surface. It
+is not a novelty ruling, a legal opinion, or a substitute for deeper diligence.
 
 <p>
   <img src="../.github/assets/readme/section-bars/what-this-is.svg" alt="WHAT THIS IS" width="100%">
 </p>
 
 Three dimensions of current truth:
-- Dimension 1: the `zpe_finance` package source, build path, and clean install/import path are evidenced in shipped logs.
+
+- Dimension 1: the `zpe_finance` package source, build path, and clean
+  install/import path are evidenced in shipped logs.
 - Dimension 2: the promoted codec claims are carried by the controlled
-  `2026-02-21` Wave-1 final bundle.
-- Dimension 3: the repo is honest that the open-access enterprise benchmark and
-  Timescale equivalence remain unresolved.
+  `2026-02-21_ft_wave1_final` Wave-1 bundle.
+- Dimension 3: the repo is explicit that the open-access enterprise benchmark
+  and Timescale equivalence remain unresolved.
 
 <p>
   <img src="../.github/assets/readme/section-bars/quick-start.svg" alt="QUICK START" width="100%">
 </p>
 
-1. Acquire the current private repo snapshot you have been granted access to:
+1. Acquire the current repo snapshot:
 
 ```bash
 git clone https://github.com/Zer0pa/ZPE-FT.git
@@ -51,19 +52,21 @@ PY
 ```
 
 Expected current truth:
+
 - the package imports cleanly
 - `rust_bridge` may truthfully report `python-fallback` unless you explicitly
   build the optional helper
 - shipped verification logs for this surface live at
-  [`../proofs/artifacts/operations/20260321T202948Z_build.log`](../proofs/artifacts/operations/20260321T202948Z_build.log),
-  [`../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log),
-  and [`../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
+  `../proofs/artifacts/operations/20260321T202948Z_build.log`,
+  `../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`,
+  and `../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`
 
-4. Read the current authority surfaces together:
-- [`../README.md`](../README.md)
-- [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
-- [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md)
-- [`../proofs/CONSOLIDATED_PROOF_REPORT.md`](../proofs/CONSOLIDATED_PROOF_REPORT.md)
+4. Read the authority surfaces together:
+
+- `../README.md`
+- `PUBLIC_AUDIT_LIMITS.md`
+- `../proofs/FINAL_STATUS.md`
+- `../proofs/CONSOLIDATED_PROOF_REPORT.md`
 
 5. If you need the heavier repo-local proof surface, install the proof extras:
 
@@ -72,10 +75,15 @@ python -m pip install -e ".[test,proof]"
 ```
 
 Optional repo-local gates:
-- controlled Wave-1 replay: `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto`
-  This writes a fresh local rerun destination. It does not replace the carried
-  authority bundle under `proofs/artifacts/2026-02-21_ft_wave1_final/`.
-- repo-local environment gate for proof work: `python poc/scripts/00_env_check.py --workspace . --repo .`
+
+- controlled Wave-1 replay:
+  `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto`
+- repo-local environment gate for proof work:
+  `python poc/scripts/00_env_check.py --workspace . --repo .`
+
+Those commands write or verify repo-local outputs. They do not replace the
+carried controlled authority bundle under
+`proofs/artifacts/2026-02-21_ft_wave1_final/`.
 
 <p>
   <img src="../.github/assets/readme/section-bars/evidence-and-claims.svg" alt="EVIDENCE AND CLAIMS" width="100%">
@@ -93,10 +101,11 @@ Optional repo-local gates:
 </p>
 
 Current evidence you can safely repeat after audit:
+
 - OHLCV compression: `19.19x` on the carried Wave-1 controlled corpus
 - Tick compression: `20.57x` on the carried Wave-1 controlled corpus
 - Reconstruction fidelity: supported on the carried bundle
-- Pattern search: mean `P@10 = 0.9` on the carried canonical-template corpus
+- Pattern search: mean `P@10 = 0.90` on the carried canonical-template corpus
 - SQLite roundtrip: supported on the carried bundle
 - Delayed-feed smoke: real but bounded; not authority for enterprise claims
 - Timescale equivalence: `INCONCLUSIVE`
@@ -107,6 +116,7 @@ Current evidence you can safely repeat after audit:
 </p>
 
 If your replay disagrees, capture:
+
 - commit hash or snapshot identity
 - exact command
 - stdout / stderr
@@ -115,9 +125,10 @@ If your replay disagrees, capture:
   smoke, or the open-access benchmark blocker surface
 
 Then read:
-- [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md)
-- [`ARCHITECTURE.md`](ARCHITECTURE.md)
-- [`FAQ.md`](FAQ.md)
+
+- `PUBLIC_AUDIT_LIMITS.md`
+- `ARCHITECTURE.md`
+- `FAQ.md`
 
 <p>
   <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">

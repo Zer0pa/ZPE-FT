@@ -2,50 +2,145 @@
   <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
-# Docs
+Navigation index for the ZPE-FT documentation surface.
 
-This directory is the documentation index for the current ZPE-FT repo surface.
-The root [`README.md`](../README.md) owns the front-door summary. The canonical
-doc ownership map lives in [`DOC_REGISTRY.md`](DOC_REGISTRY.md).
+This directory carries the audit path, runtime map, support routing, packet
+contract, and integration notes for the current repo. The proof corpus lives in
+`../proofs/` and is intentionally routed from here rather than duplicated.
+
+---
 
 <p>
-  <img src="../.github/assets/readme/section-bars/where-to-go.svg" alt="WHERE TO GO" width="100%">
+  <img src="../.github/assets/readme/section-bars/faq-and-support.svg" alt="FAQ AND SUPPORT" width="100%">
 </p>
+<table width="100%" border="1" bordercolor="#b8c0ca" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th align="left">Document</th>
+      <th align="left">What it is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`docs/FAQ.md`</td>
+      <td>Short first-contact answers about authority, release posture, helper expectations, and proof limits</td>
+    </tr>
+    <tr>
+      <td>`docs/AUDITOR_PLAYBOOK.md`</td>
+      <td>Shortest honest audit path for the current repo surface</td>
+    </tr>
+    <tr>
+      <td>`docs/PUBLIC_AUDIT_LIMITS.md`</td>
+      <td>Bounded-reading rules and explicit non-claims for public audits</td>
+    </tr>
+    <tr>
+      <td>`docs/SUPPORT.md`</td>
+      <td>Routing guide for bugs, evidence disputes, security reports, and licensing questions</td>
+    </tr>
+  </tbody>
+</table>
 
-Auditor start here:
-- [`AUDITOR_PLAYBOOK.md`](AUDITOR_PLAYBOOK.md) for the shortest honest audit path
-- [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the bounded reading rules
-- [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md) for the current gate posture
+---
 
-Engineer start here:
-- [`ARCHITECTURE.md`](ARCHITECTURE.md) for the runtime, helper, script, and proof map
-- [`INTEGRATION_PATTERN.md`](INTEGRATION_PATTERN.md) for repo-local build/integration notes
-- [`specs/ZPFIN_SPEC.md`](specs/ZPFIN_SPEC.md) for the packet contract
-- [`examples/`](examples/) for repo-local request/config examples
+<p>
+  <img src="../.github/assets/readme/section-bars/interface-contracts.svg" alt="INTERFACE CONTRACTS" width="100%">
+</p>
+The authoritative technical contract surface for downstream readers lives here.
 
-Policy and routing:
-- [`DOC_REGISTRY.md`](DOC_REGISTRY.md) for canonical ownership and truth class
-- [`FAQ.md`](FAQ.md) for short reader questions
-- [`SUPPORT.md`](SUPPORT.md) for routing and response expectations
-- [`LEGAL_BOUNDARIES.md`](LEGAL_BOUNDARIES.md) for license, data, and artifact boundary notes
+<table width="100%" border="1" bordercolor="#b8c0ca" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th align="left">Document</th>
+      <th align="left">What it is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`docs/specs/ZPFIN_SPEC.md`</td>
+      <td>Packet-format contract for the `.zpfin` surface and codec framing</td>
+    </tr>
+    <tr>
+      <td>`docs/ARCHITECTURE.md`</td>
+      <td>Canonical map of package, helper, script, proof, and release-truth surfaces</td>
+    </tr>
+    <tr>
+      <td>`docs/INTEGRATION_PATTERN.md`</td>
+      <td>Repo-local integration and observability pattern, including Comet and Opik tracking hooks</td>
+    </tr>
+    <tr>
+      <td>`docs/examples/`</td>
+      <td>Example request/config shapes for acquisition, corpus freeze, and benchmark inputs</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<p>
+  <img src="../.github/assets/readme/section-bars/runbooks.svg" alt="RUNBOOKS" width="100%">
+</p>
+Operator-local execution prompts and retained technical supplements live under
+`../proofs/runbooks/`. They are preserved for lineage and execution context,
+not promoted as the front-door public audit path.
+
+---
 
 <p>
   <img src="../.github/assets/readme/section-bars/proof-corpus.svg" alt="PROOF CORPUS" width="100%">
 </p>
+Read the current proof subset through these retained surfaces:
 
-Proof surfaces:
-- [`../proofs/FINAL_STATUS.md`](../proofs/FINAL_STATUS.md) for the current proof posture
-- [`../proofs/CONSOLIDATED_PROOF_REPORT.md`](../proofs/CONSOLIDATED_PROOF_REPORT.md) for claim-by-claim caveats
-- [`../proofs/HISTORICAL_PATH_LIMITS.md`](../proofs/HISTORICAL_PATH_LIMITS.md) for lineage limits
-- [`../proofs/reruns/README.md`](../proofs/reruns/README.md) for rerun routing
+<table width="100%" border="1" bordercolor="#b8c0ca" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th align="left">Document</th>
+      <th align="left">What it is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`../proofs/FINAL_STATUS.md`</td>
+      <td>Current proof posture and governing blocker state</td>
+    </tr>
+    <tr>
+      <td>`../proofs/CONSOLIDATED_PROOF_REPORT.md`</td>
+      <td>Claim-by-claim evidence summary with bounded-reading notes</td>
+    </tr>
+    <tr>
+      <td>`../proofs/HISTORICAL_PATH_LIMITS.md`</td>
+      <td>What older reruns and path-bearing artifacts still mean, and what they no longer mean</td>
+    </tr>
+    <tr>
+      <td>`../proofs/reruns/README.md`</td>
+      <td>Routing guide for retained rerun directories and blocker packets</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<p>
+  <img src="../.github/assets/readme/section-bars/engineering-references.svg" alt="ENGINEERING REFERENCES" width="100%">
+</p>
+Use these stable in-repo references when you need canonical ownership or policy:
+
+- `docs/DOC_REGISTRY.md`
+- `docs/LEGAL_BOUNDARIES.md`
+- `README.md`
+- `RELEASING.md`
+- `GOVERNANCE.md`
+
+---
 
 <p>
   <img src="../.github/assets/readme/section-bars/what-this-directory-is-not.svg" alt="WHAT THIS DIRECTORY IS NOT" width="100%">
 </p>
+This directory does not contain:
 
-- not a substitute for the root [`README.md`](../README.md)
-- not a claim warehouse for repeated metrics
-- not a place to upgrade bounded or historical evidence into broader release claims
+- release authority by itself; the root `README.md` and `../proofs/` still govern
+- a license override for `LICENSE`
+- a claim warehouse that upgrades bounded evidence into broader authority
+- the external missing Phase 06 inputs that still block the open-access benchmark
 
 <p>
   <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">

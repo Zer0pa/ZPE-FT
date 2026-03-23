@@ -4,11 +4,12 @@
 
 # Final Status
 
-As of 2026-03-21, this private staged repo contains:
+As of 2026-03-21, the current source-available repo surface contains:
+
 - an FT package surface with shipped build and install evidence
 - a controlled Wave-1 final bundle with promoted local codec evidence
 - a bounded delayed-feed March smoke rerun
-- an honest missing-inputs blocker for the open-access enterprise benchmark
+- an explicit missing-inputs blocker for the open-access enterprise benchmark
 
 <p>
   <img src="../.github/assets/readme/section-bars/verification.svg" alt="VERIFICATION" width="100%">
@@ -35,13 +36,15 @@ As of 2026-03-21, this private staged repo contains:
 - SQLite roundtrip is supported
 - Timescale equivalence remains `INCONCLUSIVE`
 - the March 19 delayed-feed smoke is real but non-closing
-- older path-bearing copied gate runbooks and February leftovers were intentionally removed from the retained repo surface
-- some retained supporting artifacts still preserve historical machine-local traces and must be read as evidence, not as live instructions
+- older path-bearing copied gate runbooks and February leftovers were
+  intentionally removed from the retained repo surface
+- some retained supporting artifacts still preserve historical machine-local
+  traces and must be read as evidence, not as live instructions
 
 ## Open Limit
 
-The open limit is no longer only Timescale. The governing open limit is the
-Phase 06 buyer-authority gate:
+The governing open limit is the Phase 06 buyer-authority gate:
+
 - `33` named corpus exports are still missing
 - the auditable query catalog / truth labels are still missing for authority use
 - the current closing packet is
