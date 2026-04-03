@@ -36,55 +36,19 @@
 
 ## What This Is
 
-ZPE-FT is a deterministic financial time-series compression, replay, and query surface for bounded market-data workflows.
+ZPE-FT is a deterministic financial time-series codec — OHLCV bars, tick streams, pattern search, and market replay in a single compressed format. Built for teams that need to store, query, and replay delayed-feed market data with bounded fidelity guarantees and no incumbent lock-in.
 
-## Commercial Wedge
+The current evidence is anchored on the Wave-1 controlled proof surface (February 21, 2026). Repo-local install verifies and the pytest surface passes. Phase 06 contract freeze is blocked on missing inputs — an engineering boundary, not a capability failure. Comet observability hooks are wired for proof tracking. An optional Rust native helper provides a lower-level fallback path.
 
-This is for **market-data infrastructure teams, quant research/backtesting teams, and internal time-series tooling teams** who need to store and replay financial time-series efficiently with bounded fidelity guarantees. The business value is deterministic codec and search surface for delayed-feed research archives, bounded replay, and query on carried bundles — without incumbent vendor lock-in.
+The repo is **private-stage**. This is a source-available snapshot with retained evidence — not a release-ready package. The public release gate is not closed.
 
-## Technical Wedge
-
-The technical edge is a deterministic financial codec with search and replay built into the compressed format. Current evidence is anchored on the Wave-1 controlled proof surface (February 21, 2026). Phase 06 contract freeze is currently blocked on missing inputs — this is an engineering boundary, not a capability failure.
-
-## Current Readiness
-
-**`PRIVATE_STAGE`** — Wave-1 proof exists, repo-local install verifies, but Phase 06 is blocked and public release gate is not closed. Source-available snapshot, not a release-ready package.
-
-## What Is Proved
-
-- Wave-1 controlled proof surface with preserved lineage
-- Repo-local install and pytest surface passes
-- Rust bridge fallback path for optional native helper
-- Comet observability hooks for proof tracking
-- Clean install and build evidence shipped in `proofs/artifacts/operations/`
-
-## What Is Not Being Claimed
-
-- Public release readiness — Phase 06 BLOCKED_MISSING_INPUTS
-- Broad incumbent displacement — this is a bounded codec, not a Bloomberg/Refinitiv replacement
-- Full contract freeze — Phase 06 did not close
-- Universal financial data coverage — current proof surface is bounded
-- Runtime coupling to ZPE-IMC
-
-## Ideal First Buyer
-
-Market-data infrastructure team or quant research platform seeking deterministic time-series compression with bounded replay and query.
-
-## Deployment Model
-
-SDK — Python package with optional Rust native helper. Private repo checkout today; no public package available.
-
-## Authority / Proof Anchors
+**Not claimed:** public release readiness, broad incumbent displacement, full contract freeze, universal financial data coverage, or runtime coupling to ZPE-IMC.
 
 | Anchor | Artifact |
 |---|---|
-| Final status | [`proofs/FINAL_STATUS.md`](proofs/FINAL_STATUS.md) |
-| Controlled proof report | [`proofs/CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
-| Phase 06 blocked status | [`proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
-
-## Role In The Zer0pa Family
-
-ZPE-FT is a secondary product candidate in the Zer0pa deterministic encoding family. [ZPE-IMC](https://github.com/Zer0pa/ZPE-IMC) is the umbrella integration layer; this repo is the domain-specific financial time-series wedge. Not currently the lead commercial front door.
+| Final status | [`FINAL_STATUS.md`](proofs/FINAL_STATUS.md) |
+| Controlled proof report | [`CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
+| Phase 06 blocked status | [`missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
 
 ---
 
