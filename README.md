@@ -32,6 +32,26 @@
   </tr>
 </table>
 
+---
+
+## What This Is
+
+ZPE-FT is a deterministic financial time-series codec — OHLCV bars, tick streams, pattern search, and market replay in a single compressed format. Built for teams that need to store, query, and replay delayed-feed market data with bounded fidelity guarantees and no incumbent lock-in.
+
+The current evidence is anchored on the Wave-1 controlled proof surface (February 21, 2026). Repo-local install verifies and the pytest surface passes. Phase 06 contract freeze is blocked on missing inputs — an engineering boundary, not a capability failure. Comet observability hooks are wired for proof tracking. An optional Rust native helper provides a lower-level fallback path.
+
+The repo is **private-stage**. This is a source-available snapshot with retained evidence — not a release-ready package. The public release gate is not closed.
+
+**Not claimed:** public release readiness, broad incumbent displacement, full contract freeze, universal financial data coverage, or runtime coupling to ZPE-IMC.
+
+| Anchor | Artifact |
+|---|---|
+| Final status | [`FINAL_STATUS.md`](proofs/FINAL_STATUS.md) |
+| Controlled proof report | [`CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
+| Phase 06 blocked status | [`missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
+
+---
+
 <a id="quickstart-and-license"></a>
 <h2 align="center">Quickstart And License</h2>
 
