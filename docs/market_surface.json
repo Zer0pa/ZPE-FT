@@ -1,0 +1,25 @@
+{
+  "repo_name": "ZPE-FT",
+  "repo_role": "secondary_product_candidate",
+  "status": "private_stage",
+  "plain_english_summary": "Deterministic financial time-series compression, replay, and query surface for bounded market-data workflows.",
+  "commercial_wedge": "Store and replay financial time-series efficiently with deterministic fidelity guarantees. Bounded codec for delayed-feed archives, replay, and query.",
+  "technical_wedge": "Deterministic financial codec with search and replay. Wave-1 controlled proof surface. Optional Rust native helper. Phase 06 contract freeze blocked on missing inputs.",
+  "ideal_first_buyer": "Market-data infrastructure team or quant research platform",
+  "deployment_model": "SDK — Python package with optional Rust native helper",
+  "proof_anchors": [
+    "proofs/FINAL_STATUS.md",
+    "proofs/CONSOLIDATED_PROOF_REPORT.md",
+    "proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"
+  ],
+  "not_claimed": [
+    "Public release readiness (Phase 06 BLOCKED_MISSING_INPUTS)",
+    "Broad incumbent displacement",
+    "Full contract freeze",
+    "Universal financial data coverage",
+    "Runtime coupling to ZPE-IMC"
+  ],
+  "family_position": "Secondary product candidate in the Zer0pa deterministic encoding family. Not the lead commercial front door.",
+  "license": "LicenseRef-Zer0pa-SAL-6.0",
+  "contact": "architects@zer0pa.ai"
+}
