@@ -1,0 +1,217 @@
+{
+  "claim_id": "FT-C006",
+  "pass": true,
+  "series": [
+    {
+      "after_hash": "56369dd79a3c0c2cba0bf054f9a0e95e70edcf47284f29c503bbf423ee423ca6",
+      "before_hash": "56369dd79a3c0c2cba0bf054f9a0e95e70edcf47284f29c503bbf423ee423ca6",
+      "bit_consistent": true,
+      "payload_bytes": 11149,
+      "series_id": "spy_1m_8d"
+    },
+    {
+      "after_hash": "9dc881a170d88a8d74689b16e43367d1e0da8f616545a75e35bcaf713e44f40c",
+      "before_hash": "9dc881a170d88a8d74689b16e43367d1e0da8f616545a75e35bcaf713e44f40c",
+      "bit_consistent": true,
+      "payload_bytes": 11281,
+      "series_id": "qqq_1m_8d"
+    },
+    {
+      "after_hash": "bf1c7e07924f0c73c4ec409f6d1ccc9eba02b0f6414901c709f66e96c949594f",
+      "before_hash": "bf1c7e07924f0c73c4ec409f6d1ccc9eba02b0f6414901c709f66e96c949594f",
+      "bit_consistent": true,
+      "payload_bytes": 9461,
+      "series_id": "aapl_1m_8d"
+    },
+    {
+      "after_hash": "bd1d70e94d72da5ad63032371aea9407367356da8802fc474b4c2ff7381486f6",
+      "before_hash": "bd1d70e94d72da5ad63032371aea9407367356da8802fc474b4c2ff7381486f6",
+      "bit_consistent": true,
+      "payload_bytes": 10697,
+      "series_id": "msft_1m_8d"
+    },
+    {
+      "after_hash": "ce063deaafa03f49ea029a7a5a48f3e9c22149281287969150fa3b6e275a0346",
+      "before_hash": "ce063deaafa03f49ea029a7a5a48f3e9c22149281287969150fa3b6e275a0346",
+      "bit_consistent": true,
+      "payload_bytes": 9216,
+      "series_id": "nvda_1m_8d"
+    },
+    {
+      "after_hash": "93f077f4b4d28f32a56697db6ed3933cea5af57f09001f1963ac9782fa67523c",
+      "before_hash": "93f077f4b4d28f32a56697db6ed3933cea5af57f09001f1963ac9782fa67523c",
+      "bit_consistent": true,
+      "payload_bytes": 9366,
+      "series_id": "amzn_1m_8d"
+    },
+    {
+      "after_hash": "ac093a01258234361ad43a0aecf8243f7490e627f81eaf2fa1fdfe66fe7f6c33",
+      "before_hash": "ac093a01258234361ad43a0aecf8243f7490e627f81eaf2fa1fdfe66fe7f6c33",
+      "bit_consistent": true,
+      "payload_bytes": 10114,
+      "series_id": "googl_1m_8d"
+    },
+    {
+      "after_hash": "a0894863ee05393d1920433cd4f9dbb93d259b6df5275662065695b7d9d04e5e",
+      "before_hash": "a0894863ee05393d1920433cd4f9dbb93d259b6df5275662065695b7d9d04e5e",
+      "bit_consistent": true,
+      "payload_bytes": 14345,
+      "series_id": "meta_1m_8d"
+    },
+    {
+      "after_hash": "12440f1de41dd11cefd74ae888324dde0fd8e2d6c9105cf6c91564b5dd756f73",
+      "before_hash": "12440f1de41dd11cefd74ae888324dde0fd8e2d6c9105cf6c91564b5dd756f73",
+      "bit_consistent": true,
+      "payload_bytes": 11883,
+      "series_id": "tsla_1m_8d"
+    },
+    {
+      "after_hash": "3a5e34ace4f217e1cbff160009a26b728cf65b0fa421b63c8029a43d835c948e",
+      "before_hash": "3a5e34ace4f217e1cbff160009a26b728cf65b0fa421b63c8029a43d835c948e",
+      "bit_consistent": true,
+      "payload_bytes": 10862,
+      "series_id": "brkb_1m_8d"
+    },
+    {
+      "after_hash": "0883ddb07001107042973e489fb4111294fcd58d562fe8dfcbfac4cd83738fca",
+      "before_hash": "0883ddb07001107042973e489fb4111294fcd58d562fe8dfcbfac4cd83738fca",
+      "bit_consistent": true,
+      "payload_bytes": 11911,
+      "series_id": "avgo_1m_8d"
+    },
+    {
+      "after_hash": "45de7ded1fe8297fbfc282cb85cf9b957f1cc8cf691d65cb9aff2745b28ab1c9",
+      "before_hash": "45de7ded1fe8297fbfc282cb85cf9b957f1cc8cf691d65cb9aff2745b28ab1c9",
+      "bit_consistent": true,
+      "payload_bytes": 16192,
+      "series_id": "lly_1m_8d"
+    },
+    {
+      "after_hash": "4a62990dd6ce0d939847a3504100a6d64751428612c475b3f9c44fb4c82d21a6",
+      "before_hash": "4a62990dd6ce0d939847a3504100a6d64751428612c475b3f9c44fb4c82d21a6",
+      "bit_consistent": true,
+      "payload_bytes": 10286,
+      "series_id": "jpm_1m_8d"
+    },
+    {
+      "after_hash": "25b373afc7202d6fe27b95ee2762f6f13cfc965de6f39b0ebd236d9a6d799718",
+      "before_hash": "25b373afc7202d6fe27b95ee2762f6f13cfc965de6f39b0ebd236d9a6d799718",
+      "bit_consistent": true,
+      "payload_bytes": 7596,
+      "series_id": "bac_1m_8d"
+    },
+    {
+      "after_hash": "31fe6b00a1ff3fe0d94d26f26f104d878d597767b4b400119cfbd99f800d1501",
+      "before_hash": "31fe6b00a1ff3fe0d94d26f26f104d878d597767b4b400119cfbd99f800d1501",
+      "bit_consistent": true,
+      "payload_bytes": 15909,
+      "series_id": "gs_1m_8d"
+    },
+    {
+      "after_hash": "d8153705111c9ac54b3a8e0aa5005a3dc148c43b9c9dc7202560ea628389f5ce",
+      "before_hash": "d8153705111c9ac54b3a8e0aa5005a3dc148c43b9c9dc7202560ea628389f5ce",
+      "bit_consistent": true,
+      "payload_bytes": 9540,
+      "series_id": "ms_1m_8d"
+    },
+    {
+      "after_hash": "3a616f40ae3169ca6889a6712018825212593941a5bac989161cb107c0b3a0eb",
+      "before_hash": "3a616f40ae3169ca6889a6712018825212593941a5bac989161cb107c0b3a0eb",
+      "bit_consistent": true,
+      "payload_bytes": 8692,
+      "series_id": "c_1m_8d"
+    },
+    {
+      "after_hash": "7b127aac2ee5e1caee4a9898dce44b0d2d587bcb6a03c722fbcd0eb97371a92c",
+      "before_hash": "7b127aac2ee5e1caee4a9898dce44b0d2d587bcb6a03c722fbcd0eb97371a92c",
+      "bit_consistent": true,
+      "payload_bytes": 7976,
+      "series_id": "wfc_1m_8d"
+    },
+    {
+      "after_hash": "704ec8a956305d4c885fc71b128ec9ec8a1499207e7659636976d829477cf688",
+      "before_hash": "704ec8a956305d4c885fc71b128ec9ec8a1499207e7659636976d829477cf688",
+      "bit_consistent": true,
+      "payload_bytes": 16201,
+      "series_id": "blk_1m_8d"
+    },
+    {
+      "after_hash": "f3d49c8633df6ee4a4349432ef0d0d608f455bc39f3f088535db44ec18e7a7a2",
+      "before_hash": "f3d49c8633df6ee4a4349432ef0d0d608f455bc39f3f088535db44ec18e7a7a2",
+      "bit_consistent": true,
+      "payload_bytes": 8120,
+      "series_id": "schw_1m_8d"
+    },
+    {
+      "after_hash": "10650a4fe188b1e5126a81cea769b1debc716016c44aedd07fc87abd6cff7b44",
+      "before_hash": "10650a4fe188b1e5126a81cea769b1debc716016c44aedd07fc87abd6cff7b44",
+      "bit_consistent": true,
+      "payload_bytes": 10552,
+      "series_id": "cme_1m_8d"
+    },
+    {
+      "after_hash": "fe35fc753683f499274678136e3d39976f7c7fecaed2277139d62731f4e1be33",
+      "before_hash": "fe35fc753683f499274678136e3d39976f7c7fecaed2277139d62731f4e1be33",
+      "bit_consistent": true,
+      "payload_bytes": 12387,
+      "series_id": "spgi_1m_8d"
+    },
+    {
+      "after_hash": "799f0df75ef6cbb5573e03432edf37d33c912a764b267d7cf7eabfbe193e15cf",
+      "before_hash": "799f0df75ef6cbb5573e03432edf37d33c912a764b267d7cf7eabfbe193e15cf",
+      "bit_consistent": true,
+      "payload_bytes": 7508,
+      "series_id": "xlf_1m_8d"
+    },
+    {
+      "after_hash": "e387928d66310cb1f450ad8b91d8294214b2c559036c855d0fe85735c589ed5f",
+      "before_hash": "e387928d66310cb1f450ad8b91d8294214b2c559036c855d0fe85735c589ed5f",
+      "bit_consistent": true,
+      "payload_bytes": 10083,
+      "series_id": "dia_1m_8d"
+    },
+    {
+      "after_hash": "ced8f2df5fb8a331555cf9eeda2b2fd7ea6440905ce5322f93352b9d00e7c5e9",
+      "before_hash": "ced8f2df5fb8a331555cf9eeda2b2fd7ea6440905ce5322f93352b9d00e7c5e9",
+      "bit_consistent": true,
+      "payload_bytes": 9404,
+      "series_id": "iwm_1m_8d"
+    },
+    {
+      "after_hash": "6db50deb3aacc34cba55a37e386eba00ceebd35d33acb31202db7db4f41046a4",
+      "before_hash": "6db50deb3aacc34cba55a37e386eba00ceebd35d33acb31202db7db4f41046a4",
+      "bit_consistent": true,
+      "payload_bytes": 8399,
+      "series_id": "xlk_1m_8d"
+    },
+    {
+      "after_hash": "2b8755913468c370d047a1bcce31a2bb09d42ff17ac6c37e3e5cb9b97e202775",
+      "before_hash": "2b8755913468c370d047a1bcce31a2bb09d42ff17ac6c37e3e5cb9b97e202775",
+      "bit_consistent": true,
+      "payload_bytes": 7731,
+      "series_id": "xle_1m_8d"
+    },
+    {
+      "after_hash": "81efdc1ca5df832f667e9e2157582894d30ed4efe619690a96e575dac826c731",
+      "before_hash": "81efdc1ca5df832f667e9e2157582894d30ed4efe619690a96e575dac826c731",
+      "bit_consistent": true,
+      "payload_bytes": 8006,
+      "series_id": "xlv_1m_8d"
+    },
+    {
+      "after_hash": "c94ff15bba57757d4c0b3348bb1cd837aeae966564159b7cc7fe783d16148c77",
+      "before_hash": "c94ff15bba57757d4c0b3348bb1cd837aeae966564159b7cc7fe783d16148c77",
+      "bit_consistent": true,
+      "payload_bytes": 8440,
+      "series_id": "xli_1m_8d"
+    },
+    {
+      "after_hash": "f6a4b96fca3df2eba2f41f4bcb21e3946ddd653592c3d77d4a21cad48c5378f3",
+      "before_hash": "f6a4b96fca3df2eba2f41f4bcb21e3946ddd653592c3d77d4a21cad48c5378f3",
+      "bit_consistent": true,
+      "payload_bytes": 11556,
+      "series_id": "soxx_1m_8d"
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json"
+}

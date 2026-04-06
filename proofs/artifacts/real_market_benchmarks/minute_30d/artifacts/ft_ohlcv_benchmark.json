@@ -1,0 +1,282 @@
+{
+  "aggregate": {
+    "mean_compression_ratio": 14.161489091859377,
+    "min_compression_ratio": 8.749089562372694
+  },
+  "claim_id": "FT-C001",
+  "pass": false,
+  "series": [
+    {
+      "compressed_bytes": 11149,
+      "compression_ratio": 12.7179119203516,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "spy_1m_8d",
+      "symbol": "SPY",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 11281,
+      "compression_ratio": 12.569098484176935,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "qqq_1m_8d",
+      "symbol": "QQQ",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 9461,
+      "compression_ratio": 14.986999260120495,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "aapl_1m_8d",
+      "symbol": "AAPL",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10697,
+      "compression_ratio": 13.255305225764232,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "msft_1m_8d",
+      "symbol": "MSFT",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 9216,
+      "compression_ratio": 15.385416666666666,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "nvda_1m_8d",
+      "symbol": "NVDA",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 9366,
+      "compression_ratio": 15.139013452914797,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "amzn_1m_8d",
+      "symbol": "AMZN",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10114,
+      "compression_ratio": 14.019379078505043,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "googl_1m_8d",
+      "symbol": "GOOGL",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 14345,
+      "compression_ratio": 9.884419658417567,
+      "pass": false,
+      "raw_bytes": 141792,
+      "series_id": "meta_1m_8d",
+      "symbol": "META",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 11883,
+      "compression_ratio": 11.93234031810149,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "tsla_1m_8d",
+      "symbol": "TSLA",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10862,
+      "compression_ratio": 13.053949548886024,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "brkb_1m_8d",
+      "symbol": "BRK-B",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 11911,
+      "compression_ratio": 11.904290151960373,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "avgo_1m_8d",
+      "symbol": "AVGO",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 16192,
+      "compression_ratio": 8.756916996047432,
+      "pass": false,
+      "raw_bytes": 141792,
+      "series_id": "lly_1m_8d",
+      "symbol": "LLY",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10286,
+      "compression_ratio": 13.784950418043943,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "jpm_1m_8d",
+      "symbol": "JPM",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 7596,
+      "compression_ratio": 18.666666666666668,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "bac_1m_8d",
+      "symbol": "BAC",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 15909,
+      "compression_ratio": 8.903639449368281,
+      "pass": false,
+      "raw_bytes": 141648,
+      "series_id": "gs_1m_8d",
+      "symbol": "GS",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 9540,
+      "compression_ratio": 14.852830188679246,
+      "pass": true,
+      "raw_bytes": 141696,
+      "series_id": "ms_1m_8d",
+      "symbol": "MS",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 8692,
+      "compression_ratio": 16.312931431201104,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "c_1m_8d",
+      "symbol": "C",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 7976,
+      "compression_ratio": 17.771313941825476,
+      "pass": true,
+      "raw_bytes": 141744,
+      "series_id": "wfc_1m_8d",
+      "symbol": "WFC",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 16201,
+      "compression_ratio": 8.749089562372694,
+      "pass": false,
+      "raw_bytes": 141744,
+      "series_id": "blk_1m_8d",
+      "symbol": "BLK",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 8120,
+      "compression_ratio": 17.46206896551724,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "schw_1m_8d",
+      "symbol": "SCHW",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10552,
+      "compression_ratio": 13.314632297194844,
+      "pass": true,
+      "raw_bytes": 140496,
+      "series_id": "cme_1m_8d",
+      "symbol": "CME",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 12387,
+      "compression_ratio": 11.396464034875272,
+      "pass": true,
+      "raw_bytes": 141168,
+      "series_id": "spgi_1m_8d",
+      "symbol": "SPGI",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 7508,
+      "compression_ratio": 18.885455514118274,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "xlf_1m_8d",
+      "symbol": "XLF",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 10083,
+      "compression_ratio": 14.062481404343945,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "dia_1m_8d",
+      "symbol": "DIA",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 9404,
+      "compression_ratio": 15.077839217354317,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "iwm_1m_8d",
+      "symbol": "IWM",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 8399,
+      "compression_ratio": 16.882009763067032,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "xlk_1m_8d",
+      "symbol": "XLK",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 7731,
+      "compression_ratio": 18.340706247574698,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "xle_1m_8d",
+      "symbol": "XLE",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 8006,
+      "compression_ratio": 17.71071696227829,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "xlv_1m_8d",
+      "symbol": "XLV",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 8440,
+      "compression_ratio": 16.8,
+      "pass": true,
+      "raw_bytes": 141792,
+      "series_id": "xli_1m_8d",
+      "symbol": "XLI",
+      "threshold": 10.0
+    },
+    {
+      "compressed_bytes": 11556,
+      "compression_ratio": 12.26583592938733,
+      "pass": true,
+      "raw_bytes": 141744,
+      "series_id": "soxx_1m_8d",
+      "symbol": "SOXX",
+      "threshold": 10.0
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+  "threshold": 10.0
+}

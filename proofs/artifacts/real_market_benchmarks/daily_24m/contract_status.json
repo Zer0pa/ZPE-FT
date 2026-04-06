@@ -1,0 +1,38 @@
+{
+  "actual_data_window": "2y @ 1d",
+  "authority_class": "bounded_public_non_authority_proxy",
+  "coverage": {
+    "downloaded_or_reused_count": 30,
+    "exact_contract_count": 0,
+    "expected_count": 30,
+    "failed_symbols": [],
+    "proxy_count": 30
+  },
+  "generated_at_utc": "2026-04-06T17:24:24.892300+00:00",
+  "known_deviations": [
+    "Uses daily bars instead of the declared 1-minute authority cadence.",
+    "FT-C004 remains NEEDS_LABELS; unlabeled retrieval is non-authority.",
+    "Minimum OHLCV compression remains below the 10x authority floor (4.7828x).",
+    "No AAPL, ES1, or EURUSD top-of-book tick series are included in this lane."
+  ],
+  "lane_id": "daily_24m",
+  "metrics": {
+    "decode_p95_ms": 2.999415999966004,
+    "encode_p95_ms": 4.246041999977024,
+    "max_rmse_ticks": 0.0,
+    "ohlcv_mean_compression_ratio": 5.996835505400679,
+    "ohlcv_min_compression_ratio": 4.782781984854524,
+    "query_latency_p95_ms": 0.07749999986117473,
+    "tick_mean_compression_ratio": 0.0,
+    "tick_min_compression_ratio": 0.0
+  },
+  "open_blockers": [
+    "Materialize the declared 30-symbol 24-month 1-minute OHLCV authority pack under proofs/phase06_inputs/ohlcv/.",
+    "Materialize the remaining rights-safe tick targets under proofs/phase06_inputs/ticks/: AAPL NBBO/top-of-book, ES1 top-of-book, EURUSD top-of-book.",
+    "Attach labeled or auditable FT-C004 truth; unlabeled queries remain non-authority."
+  ],
+  "phase06_contract_match": false,
+  "promotion_forbidden": true,
+  "requested_data_window": "2y @ 1d",
+  "truth_status": "NEEDS_LABELS"
+}

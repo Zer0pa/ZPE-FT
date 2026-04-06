@@ -1,0 +1,28 @@
+{
+  "enabled": false,
+  "experiment_key": "",
+  "experiment_url": "",
+  "logged_assets": [],
+  "metrics": {
+    "decode_p95_ms": 11.877749999939624,
+    "encode_p95_ms": 15.559250000023894,
+    "fidelity_pass": true,
+    "latency_p95_ms": 0.2157500000521395,
+    "latency_pass": true,
+    "max_rmse_ticks": 0.0,
+    "ohlcv_pass": false,
+    "scored_queries": 0,
+    "tick_pass": false
+  },
+  "others": {
+    "gate": "EV-02",
+    "manifest_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+    "pattern_status": "NEEDS_LABELS",
+    "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/starter_query_catalog.generated.json"
+  },
+  "project_name": "zpe-ft",
+  "reason": "sdk_missing",
+  "script_name": "run_real_market_refresh",
+  "status": "completed",
+  "workspace": "zer0pa"
+}

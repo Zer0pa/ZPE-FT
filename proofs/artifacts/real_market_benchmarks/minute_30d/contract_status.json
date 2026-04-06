@@ -1,0 +1,38 @@
+{
+  "actual_data_window": "8d @ 1m per materialized series (requested 30d)",
+  "authority_class": "bounded_public_non_authority_proxy",
+  "coverage": {
+    "downloaded_or_reused_count": 30,
+    "exact_contract_count": 0,
+    "expected_count": 30,
+    "failed_symbols": [],
+    "proxy_count": 30
+  },
+  "generated_at_utc": "2026-04-06T17:24:24.894112+00:00",
+  "known_deviations": [
+    "Provider delivered 8d @ 1m per materialized series (requested 30d) rather than the requested 30d @ 1m.",
+    "FT-C004 remains NEEDS_LABELS; unlabeled retrieval is non-authority.",
+    "Minimum OHLCV compression remains below the 10x authority floor (8.7491x).",
+    "No AAPL, ES1, or EURUSD top-of-book tick series are included in this lane."
+  ],
+  "lane_id": "minute_30d",
+  "metrics": {
+    "decode_p95_ms": 11.877749999939624,
+    "encode_p95_ms": 15.559250000023894,
+    "max_rmse_ticks": 0.0,
+    "ohlcv_mean_compression_ratio": 14.161489091859377,
+    "ohlcv_min_compression_ratio": 8.749089562372694,
+    "query_latency_p95_ms": 0.2157500000521395,
+    "tick_mean_compression_ratio": 0.0,
+    "tick_min_compression_ratio": 0.0
+  },
+  "open_blockers": [
+    "Materialize the declared 30-symbol 24-month 1-minute OHLCV authority pack under proofs/phase06_inputs/ohlcv/.",
+    "Materialize the remaining rights-safe tick targets under proofs/phase06_inputs/ticks/: AAPL NBBO/top-of-book, ES1 top-of-book, EURUSD top-of-book.",
+    "Attach labeled or auditable FT-C004 truth; unlabeled queries remain non-authority."
+  ],
+  "phase06_contract_match": false,
+  "promotion_forbidden": true,
+  "requested_data_window": "30d @ 1m",
+  "truth_status": "NEEDS_LABELS"
+}

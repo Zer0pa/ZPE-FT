@@ -1,0 +1,208 @@
+{
+  "authority_metric": "AM-C05_FROZEN",
+  "buyer_workload": "query-by-example over historical price action",
+  "contract": {
+    "authority_metric": "AM-C05_FROZEN",
+    "baseline_matrix": {
+      "comparison_rule": "Free-data rehearsal only; this config may not be promoted as Phase 06 authority closure.",
+      "tick": [
+        "raw_csv_scan",
+        "top_of_book_scan",
+        "sqlite_sidecar_roundtrip"
+      ]
+    },
+    "buyer_workload": "query-by-example over historical price action",
+    "rights_policy": {
+      "classification": "free_public_proxy_non_authority",
+      "freeze_rule": "Reproducible provenance is required, but this lane remains a rehearsal proxy rather than the authority suite."
+    },
+    "truth_catalog": {
+      "ft_c004": {
+        "mode": "labels_pending_non_authority",
+        "unresolved_rule": "Auto-generated queries on this lane are non-authority and must remain NEEDS_LABELS."
+      }
+    }
+  },
+  "corpus_id": "phase06_partial_tick_20_sessions",
+  "generated_at_utc": "2026-04-06T17:24:04.977674+00:00",
+  "query_catalog_path": "",
+  "series": [
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "content_sha256": "13b6d84d8964ab05c145fdea2498afdd25806c0edc8d60b45eac4595c9134635",
+      "delimiter": ",",
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Bounded 20x1h liquid-session slices are useful, but the sovereign contract still expects the exact 20-session authority pack under proofs/phase06_inputs/ticks/.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/eurusd_dukascopy_tick_20d_1h.npz",
+      "provenance": "Dukascopy freeserv chart/json3 (EUR/USD, requested 20_sessions, actual 20x1h_slices)",
+      "row_count": 192859,
+      "scales": {},
+      "schema": {
+        "ask": {
+          "dtype": "float64",
+          "shape": [
+            192859
+          ]
+        },
+        "ask_size": {
+          "dtype": "float64",
+          "shape": [
+            192859
+          ]
+        },
+        "bid": {
+          "dtype": "float64",
+          "shape": [
+            192859
+          ]
+        },
+        "bid_size": {
+          "dtype": "float64",
+          "shape": [
+            192859
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            192859
+          ]
+        }
+      },
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz",
+      "source_sha256": "9790721ef80bfb5859efb98b0150c4e0aab10df8ec849dca8a62c703ce09c09b",
+      "symbol": "EURUSD",
+      "tick_size": 1e-05,
+      "timestamp_end": 1775230197276,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1773066600001,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "content_sha256": "33c66435e596b82e588542888c4a8dfd2f09e52d6dc5f3d9d464f8a03a592988",
+      "delimiter": ",",
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Dukascopy exposes a single-venue stock CFD top-of-book feed, not AAPL NBBO, and this fetch is bounded to 20x1h liquid-session slices.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/aapl_dukascopy_tick_20d_1h.npz",
+      "provenance": "Dukascopy freeserv chart/json3 (AAPL.US/USD, requested 20_sessions, actual 20x1h_slices)",
+      "row_count": 224292,
+      "scales": {},
+      "schema": {
+        "ask": {
+          "dtype": "float64",
+          "shape": [
+            224292
+          ]
+        },
+        "ask_size": {
+          "dtype": "float64",
+          "shape": [
+            224292
+          ]
+        },
+        "bid": {
+          "dtype": "float64",
+          "shape": [
+            224292
+          ]
+        },
+        "bid_size": {
+          "dtype": "float64",
+          "shape": [
+            224292
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            224292
+          ]
+        }
+      },
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz",
+      "source_sha256": "0522c8e99b7516b116b53cc37eff9c63231e7ef5bd69cde8a463232be7f17cb5",
+      "symbol": "AAPL",
+      "tick_size": 0.001,
+      "timestamp_end": 1775143799810,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1773066600025,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "content_sha256": "23addf1ed15ce2adc1d1ceb1420572156b07f642ce505b2c52fa22581ac2a247",
+      "delimiter": ",",
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Dukascopy exposes an E_SandP-500 CFD/index stream, not ES1 futures top-of-book, and this fetch is bounded to 20x1h liquid-session slices.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/e_sandp_500_dukascopy_tick_20d_1h.npz",
+      "provenance": "Dukascopy freeserv chart/json3 (E_SandP-500, requested 20_sessions, actual 20x1h_slices)",
+      "row_count": 189766,
+      "scales": {},
+      "schema": {
+        "ask": {
+          "dtype": "float64",
+          "shape": [
+            189766
+          ]
+        },
+        "ask_size": {
+          "dtype": "float64",
+          "shape": [
+            189766
+          ]
+        },
+        "bid": {
+          "dtype": "float64",
+          "shape": [
+            189766
+          ]
+        },
+        "bid_size": {
+          "dtype": "float64",
+          "shape": [
+            189766
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            189766
+          ]
+        }
+      },
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz",
+      "source_sha256": "28681ef8913024b5d96c381a0aa3f1f879002ce3194f52188940949f96b325b9",
+      "symbol": "E_SandP-500",
+      "tick_size": 0.001,
+      "timestamp_end": 1775143799448,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1773066600113,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    }
+  ]
+}

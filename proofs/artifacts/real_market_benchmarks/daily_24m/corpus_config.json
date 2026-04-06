@@ -1,0 +1,594 @@
+{
+  "authority_metric": "AM-C05_FROZEN",
+  "baseline_matrix": {
+    "comparison_rule": "Free-data rehearsal only; this config may not be promoted as Phase 06 authority closure.",
+    "ohlcv": [
+      "raw_csv_scan",
+      "sqlite_sidecar_roundtrip"
+    ]
+  },
+  "buyer_workload": "query-by-example over historical price action",
+  "corpus_id": "phase06_partial_daily_24m",
+  "rights_policy": {
+    "classification": "free_public_proxy_non_authority",
+    "freeze_rule": "Reproducible provenance is required, but this lane remains a rehearsal proxy rather than the authority suite."
+  },
+  "series": [
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "spy_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1d_24m.csv.gz",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "qqq_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1d_24m.csv.gz",
+      "symbol": "QQQ",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "aapl_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1d_24m.csv.gz",
+      "symbol": "AAPL",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "msft_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1d_24m.csv.gz",
+      "symbol": "MSFT",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "nvda_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1d_24m.csv.gz",
+      "symbol": "NVDA",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "amzn_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1d_24m.csv.gz",
+      "symbol": "AMZN",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "googl_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1d_24m.csv.gz",
+      "symbol": "GOOGL",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "meta_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1d_24m.csv.gz",
+      "symbol": "META",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "tsla_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1d_24m.csv.gz",
+      "symbol": "TSLA",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "brkb_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1d_24m.csv.gz",
+      "symbol": "BRK-B",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "avgo_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1d_24m.csv.gz",
+      "symbol": "AVGO",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "lly_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1d_24m.csv.gz",
+      "symbol": "LLY",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "jpm_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1d_24m.csv.gz",
+      "symbol": "JPM",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "bac_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1d_24m.csv.gz",
+      "symbol": "BAC",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "gs_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1d_24m.csv.gz",
+      "symbol": "GS",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "ms_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1d_24m.csv.gz",
+      "symbol": "MS",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "c_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1d_24m.csv.gz",
+      "symbol": "C",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "wfc_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1d_24m.csv.gz",
+      "symbol": "WFC",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "blk_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1d_24m.csv.gz",
+      "symbol": "BLK",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "schw_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1d_24m.csv.gz",
+      "symbol": "SCHW",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "cme_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1d_24m.csv.gz",
+      "symbol": "CME",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "spgi_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1d_24m.csv.gz",
+      "symbol": "SPGI",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "xlf_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1d_24m.csv.gz",
+      "symbol": "XLF",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "dia_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1d_24m.csv.gz",
+      "symbol": "DIA",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "iwm_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1d_24m.csv.gz",
+      "symbol": "IWM",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "xlk_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1d_24m.csv.gz",
+      "symbol": "XLK",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "xle_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1d_24m.csv.gz",
+      "symbol": "XLE",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "xlv_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1d_24m.csv.gz",
+      "symbol": "XLV",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "xli_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1d_24m.csv.gz",
+      "symbol": "XLI",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Daily bars are free and useful for rehearsal, but they do not satisfy the 1-minute authority contract.",
+      "provenance": "Yahoo Finance via yfinance (1d, requested 2y, actual 2y)",
+      "series_id": "soxx_1d_24m",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1d_24m.csv.gz",
+      "symbol": "SOXX",
+      "tick_size": 0.01,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    }
+  ],
+  "truth_catalog": {
+    "ft_c004": {
+      "mode": "labels_pending_non_authority",
+      "unresolved_rule": "Auto-generated queries on this lane are non-authority and must remain NEEDS_LABELS."
+    }
+  }
+}

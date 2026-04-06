@@ -1,0 +1,11 @@
+{
+  "aggregate": {
+    "mean_compression_ratio": 0.0,
+    "min_compression_ratio": 0.0
+  },
+  "claim_id": "FT-C001",
+  "pass": false,
+  "series": [],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+  "threshold": 10.0
+}

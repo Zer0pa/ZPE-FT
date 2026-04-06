@@ -577,3 +577,12 @@ Use the proof artifacts and docs below as the public evidence path.
 <p>
   <img src=".github/assets/readme/zpe-masthead-option-3.6.gif" alt="ZPE-FT Authority Insert" width="100%">
 </p>
+
+<h3 align="center">Portfolio Cross-Link</h3>
+
+<table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
+  <tr>
+    <td width="34%" valign="top"><a href="https://github.com/Zer0pa/ZPE-IMC"><code>ZPE-IMC</code></a></td>
+    <td width="66%" valign="top">Sibling Zer0pa workstream used as adjacent portfolio context and documentation reference. It does not substitute for this repo's proof or benchmark state.</td>
+  </tr>
+</table>
