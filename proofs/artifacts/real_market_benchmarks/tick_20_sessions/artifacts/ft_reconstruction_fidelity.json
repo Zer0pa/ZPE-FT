@@ -1,0 +1,36 @@
+{
+  "metrics": {
+    "max_rmse_ticks": 0.0
+  },
+  "pass": true,
+  "series": [
+    {
+      "kind": "tick",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "tick_ask_rmse_ticks": 0.0,
+        "tick_bid_rmse_ticks": 0.0
+      },
+      "series_id": "eurusd_dukascopy_tick_20d_1h"
+    },
+    {
+      "kind": "tick",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "tick_ask_rmse_ticks": 0.0,
+        "tick_bid_rmse_ticks": 0.0
+      },
+      "series_id": "aapl_dukascopy_tick_20d_1h"
+    },
+    {
+      "kind": "tick",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "tick_ask_rmse_ticks": 0.0,
+        "tick_bid_rmse_ticks": 0.0
+      },
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h"
+    }
+  ],
+  "threshold_rmse_ticks": 0.5
+}

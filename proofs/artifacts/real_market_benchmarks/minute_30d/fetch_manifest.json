@@ -1,0 +1,316 @@
+{
+  "entries": [
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "spy_1m_8d",
+      "status": "reused",
+      "symbol": "SPY"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "qqq_1m_8d",
+      "status": "reused",
+      "symbol": "QQQ"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "aapl_1m_8d",
+      "status": "reused",
+      "symbol": "AAPL"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "msft_1m_8d",
+      "status": "reused",
+      "symbol": "MSFT"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "nvda_1m_8d",
+      "status": "reused",
+      "symbol": "NVDA"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "amzn_1m_8d",
+      "status": "reused",
+      "symbol": "AMZN"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "googl_1m_8d",
+      "status": "reused",
+      "symbol": "GOOGL"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "meta_1m_8d",
+      "status": "reused",
+      "symbol": "META"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "tsla_1m_8d",
+      "status": "reused",
+      "symbol": "TSLA"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "brkb_1m_8d",
+      "status": "reused",
+      "symbol": "BRK-B"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "avgo_1m_8d",
+      "status": "reused",
+      "symbol": "AVGO"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "lly_1m_8d",
+      "status": "reused",
+      "symbol": "LLY"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "jpm_1m_8d",
+      "status": "reused",
+      "symbol": "JPM"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "bac_1m_8d",
+      "status": "reused",
+      "symbol": "BAC"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "gs_1m_8d",
+      "status": "reused",
+      "symbol": "GS"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "ms_1m_8d",
+      "status": "reused",
+      "symbol": "MS"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "c_1m_8d",
+      "status": "reused",
+      "symbol": "C"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "wfc_1m_8d",
+      "status": "reused",
+      "symbol": "WFC"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "blk_1m_8d",
+      "status": "reused",
+      "symbol": "BLK"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "schw_1m_8d",
+      "status": "reused",
+      "symbol": "SCHW"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "cme_1m_8d",
+      "status": "reused",
+      "symbol": "CME"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "spgi_1m_8d",
+      "status": "reused",
+      "symbol": "SPGI"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "xlf_1m_8d",
+      "status": "reused",
+      "symbol": "XLF"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "dia_1m_8d",
+      "status": "reused",
+      "symbol": "DIA"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "iwm_1m_8d",
+      "status": "reused",
+      "symbol": "IWM"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "xlk_1m_8d",
+      "status": "reused",
+      "symbol": "XLK"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "xle_1m_8d",
+      "status": "reused",
+      "symbol": "XLE"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "xlv_1m_8d",
+      "status": "reused",
+      "symbol": "XLV"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "xli_1m_8d",
+      "status": "reused",
+      "symbol": "XLI"
+    },
+    {
+      "actual_period": "8d",
+      "interval": "1m",
+      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1m_8d.csv.gz",
+      "period": "30d",
+      "rows": null,
+      "series_id": "soxx_1m_8d",
+      "status": "reused",
+      "symbol": "SOXX"
+    }
+  ],
+  "generated_at_utc": "2026-04-06T17:23:54.181710+00:00",
+  "interval": "1m",
+  "lane_id": "minute_30d",
+  "non_authority_reason": "Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+  "period": "30d",
+  "source": "yfinance",
+  "status_counts": {
+    "downloaded": 0,
+    "empty": 0,
+    "missing_local_file": 0,
+    "reused": 30
+  }
+}

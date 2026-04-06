@@ -1,0 +1,102 @@
+{
+  "freeze_timestamp_utc": "2026-04-06T17:24:04.977825+00:00",
+  "schema_version": "zpe-finance-real-market-v0.1.0",
+  "series": {
+    "aapl_dukascopy_tick_20d_1h": {
+      "ask": {
+        "dtype": "float64",
+        "shape": [
+          224292
+        ]
+      },
+      "ask_size": {
+        "dtype": "float64",
+        "shape": [
+          224292
+        ]
+      },
+      "bid": {
+        "dtype": "float64",
+        "shape": [
+          224292
+        ]
+      },
+      "bid_size": {
+        "dtype": "float64",
+        "shape": [
+          224292
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          224292
+        ]
+      }
+    },
+    "e_sandp_500_dukascopy_tick_20d_1h": {
+      "ask": {
+        "dtype": "float64",
+        "shape": [
+          189766
+        ]
+      },
+      "ask_size": {
+        "dtype": "float64",
+        "shape": [
+          189766
+        ]
+      },
+      "bid": {
+        "dtype": "float64",
+        "shape": [
+          189766
+        ]
+      },
+      "bid_size": {
+        "dtype": "float64",
+        "shape": [
+          189766
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          189766
+        ]
+      }
+    },
+    "eurusd_dukascopy_tick_20d_1h": {
+      "ask": {
+        "dtype": "float64",
+        "shape": [
+          192859
+        ]
+      },
+      "ask_size": {
+        "dtype": "float64",
+        "shape": [
+          192859
+        ]
+      },
+      "bid": {
+        "dtype": "float64",
+        "shape": [
+          192859
+        ]
+      },
+      "bid_size": {
+        "dtype": "float64",
+        "shape": [
+          192859
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          192859
+        ]
+      }
+    }
+  }
+}

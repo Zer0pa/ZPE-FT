@@ -1,0 +1,24 @@
+2026-04-06T17:19:49.485744+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:19:52.981750+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:19:53.349922+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:19:58.202395+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False latency_p95_ms=23.4830 pattern_status=NEEDS_LABELS
+2026-04-06T17:20:26.297167+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:20:29.723012+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:20:30.070573+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:20:34.824248+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False latency_p95_ms=22.3701 pattern_status=NEEDS_LABELS
+2026-04-06T17:20:44.610685+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:20:49.880716+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:20:50.472917+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:20:57.824605+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False latency_p95_ms=39.5038 pattern_status=NEEDS_LABELS
+2026-04-06T17:21:14.684756+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:21:18.287512+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:21:18.661030+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:21:23.570852+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False latency_p95_ms=23.1874 pattern_status=NEEDS_LABELS
+2026-04-06T17:23:14.146777+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:23:17.793773+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:23:18.190790+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:23:30.373394+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False encode_p95_ms=899.8629 decode_p95_ms=563.1275 latency_p95_ms=22.8973 pattern_status=NEEDS_LABELS
+2026-04-06T17:23:59.836753+00:00	EV-01	0	python3 scripts/freeze_real_market_corpus.py --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json	start
+2026-04-06T17:24:04.979805+00:00	EV-01	0	write real_market_corpus_manifest/dataset_lock/schema_inventory/resource_probe	series=3 contract_keys=5
+2026-04-06T17:24:05.535580+00:00	EV-02	0	python3 scripts/run_real_market_refresh.py --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json	start
+2026-04-06T17:24:24.553940+00:00	EV-02	0	write FT real-market refresh artifacts	ohlcv_pass=False tick_pass=False encode_p95_ms=1281.2870 decode_p95_ms=978.3470 latency_p95_ms=39.1440 pattern_status=NEEDS_LABELS

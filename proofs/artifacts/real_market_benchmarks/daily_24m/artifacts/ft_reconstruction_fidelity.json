@@ -1,0 +1,339 @@
+{
+  "metrics": {
+    "max_rmse_ticks": 0.0
+  },
+  "pass": true,
+  "series": [
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "spy_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "qqq_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "aapl_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "msft_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "nvda_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "amzn_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "googl_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "meta_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "tsla_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "brkb_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "avgo_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "lly_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "jpm_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "bac_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "gs_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "ms_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "c_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "wfc_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "blk_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "schw_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "cme_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "spgi_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "xlf_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "dia_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "iwm_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "xlk_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "xle_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "xlv_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "xli_1d_24m"
+    },
+    {
+      "kind": "ohlcv",
+      "max_rmse_ticks": 0.0,
+      "metrics": {
+        "ohlcv_close_rmse_ticks": 0.0,
+        "ohlcv_high_rmse_ticks": 0.0,
+        "ohlcv_low_rmse_ticks": 0.0,
+        "ohlcv_open_rmse_ticks": 0.0
+      },
+      "series_id": "soxx_1d_24m"
+    }
+  ],
+  "threshold_rmse_ticks": 0.5
+}

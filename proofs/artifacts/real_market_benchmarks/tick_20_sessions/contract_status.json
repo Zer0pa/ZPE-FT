@@ -1,0 +1,40 @@
+{
+  "actual_data_window": "20x1h_slices @ tick per materialized series (requested 20_sessions)",
+  "authority_class": "bounded_public_non_authority_proxy",
+  "coverage": {
+    "downloaded_or_reused_count": 3,
+    "exact_contract_count": 0,
+    "expected_count": 3,
+    "failed_symbols": [],
+    "proxy_count": 3
+  },
+  "generated_at_utc": "2026-04-06T17:24:24.894701+00:00",
+  "known_deviations": [
+    "Dukascopy supplies bounded one-hour liquid-session top-of-book slices here, not the exact 20-session authority export.",
+    "The AAPL file is a single-provider top-of-book feed rather than an exact NBBO pack.",
+    "The ES1 file is populated with Dukascopy E_SandP-500, which is useful but not the exact ES1 contract.",
+    "The EURUSD file is useful top-of-book rehearsal data, but it is still a bounded proxy slice rather than the exact authority pack under proofs/phase06_inputs/ticks/.",
+    "FT-C004 remains NEEDS_LABELS; unlabeled retrieval is non-authority.",
+    "Minimum tick compression remains below the 8x authority floor (7.1596x)."
+  ],
+  "lane_id": "tick_20_sessions",
+  "metrics": {
+    "decode_p95_ms": 978.3469999999852,
+    "encode_p95_ms": 1281.2870419998035,
+    "max_rmse_ticks": 0.0,
+    "ohlcv_mean_compression_ratio": 0.0,
+    "ohlcv_min_compression_ratio": 0.0,
+    "query_latency_p95_ms": 39.14395900005729,
+    "tick_mean_compression_ratio": 11.10704231620164,
+    "tick_min_compression_ratio": 7.159625756381968
+  },
+  "open_blockers": [
+    "Materialize the declared 30-symbol 24-month 1-minute OHLCV authority pack under proofs/phase06_inputs/ohlcv/.",
+    "Materialize the remaining rights-safe tick targets under proofs/phase06_inputs/ticks/: AAPL NBBO/top-of-book, ES1 top-of-book, EURUSD top-of-book.",
+    "Attach labeled or auditable FT-C004 truth; unlabeled queries remain non-authority."
+  ],
+  "phase06_contract_match": false,
+  "promotion_forbidden": true,
+  "requested_data_window": "20_sessions @ tick",
+  "truth_status": "NEEDS_LABELS"
+}

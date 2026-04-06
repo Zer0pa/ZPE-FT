@@ -1,0 +1,2010 @@
+{
+  "authority_metric": "AM-C05_FROZEN",
+  "buyer_workload": "query-by-example over historical price action",
+  "contract": {
+    "authority_metric": "AM-C05_FROZEN",
+    "baseline_matrix": {
+      "comparison_rule": "Free-data rehearsal only; this config may not be promoted as Phase 06 authority closure.",
+      "ohlcv": [
+        "raw_csv_scan",
+        "sqlite_sidecar_roundtrip"
+      ]
+    },
+    "buyer_workload": "query-by-example over historical price action",
+    "rights_policy": {
+      "classification": "free_public_proxy_non_authority",
+      "freeze_rule": "Reproducible provenance is required, but this lane remains a rehearsal proxy rather than the authority suite."
+    },
+    "truth_catalog": {
+      "ft_c004": {
+        "mode": "labels_pending_non_authority",
+        "unresolved_rule": "Auto-generated queries on this lane are non-authority and must remain NEEDS_LABELS."
+      }
+    }
+  },
+  "corpus_id": "phase06_partial_minute_30d",
+  "generated_at_utc": "2026-04-06T17:23:55.798022+00:00",
+  "query_catalog_path": "",
+  "series": [
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "d22667ceb7a0945d93cdfd0a925e6507fc273b0cc9625ec6da6fc72c93f6a412",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/spy_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "spy_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1m_8d.csv.gz",
+      "source_sha256": "146045584d3acb5d3fe4b15e1735955f87991d6c724c4f7b8fa3229070d75986",
+      "symbol": "SPY",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "c31efdde00fbc66e34b819715c8b92e21cd7494a2e9a023555c595dd74ea2451",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/qqq_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "qqq_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1m_8d.csv.gz",
+      "source_sha256": "b80d89baa07c27716c12ccf6ffdba9a451539eaad548b950b32d91abc2e62bc1",
+      "symbol": "QQQ",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "3a983cec96bbe2b23d1c324eba3e5b16b78e3d0f5c646c71b85553060f4d9814",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/aapl_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "aapl_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1m_8d.csv.gz",
+      "source_sha256": "ce48ede77e5b2884dd8abcae66442bd89f9dfc9c7cbb095c175fd9a2dab76675",
+      "symbol": "AAPL",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "0610f3e26caba81bd9ba930748acaf6043887727672a3f6c2899454d25781f3f",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/msft_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "msft_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1m_8d.csv.gz",
+      "source_sha256": "77b229665ef8423cc860ad987cc3eaa70de34b5aa3341709db60f28a678a11eb",
+      "symbol": "MSFT",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "2a99484ad3c9e8922a143a6f32b9eef29c2d6b2b25d5812797b27560a3b992ec",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/nvda_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "nvda_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1m_8d.csv.gz",
+      "source_sha256": "0b3e6d14a464075ebd0e37f1ed4255dbd5710ad0e70f321390b9b00515c7d802",
+      "symbol": "NVDA",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "0998f563f3cf87a808816f8990bce7ce3c7bb4d6b11598b1d5d4d863ac3150c0",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/amzn_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "amzn_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1m_8d.csv.gz",
+      "source_sha256": "2d3c748ff7fd6f40b33ec1cd3e6782cef79c393cd9d0593320b570eccd74da0d",
+      "symbol": "AMZN",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "38bff58e49b8fec832c5839562693d96e14782442a7e2071c47f68cffd7c83f5",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/googl_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "googl_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1m_8d.csv.gz",
+      "source_sha256": "a663f9b523b489181f0577c44e23ab51f36216f93ec0c3cf65cda7e7c177e2b7",
+      "symbol": "GOOGL",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "34ec61321db77b5a77d747b871358b9a681291f8a3e8fd5fd5bf2f6ffaa1703f",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/meta_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "meta_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1m_8d.csv.gz",
+      "source_sha256": "031dd2c6b84b7fb74ee058982c8de879effbe443f40fa8e1a51fa2c4b18c696f",
+      "symbol": "META",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "25c7a59ce0cb48028d12969eb9c3ce9a1a76c12c541109ca17f799cf2e9910d4",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/tsla_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "tsla_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1m_8d.csv.gz",
+      "source_sha256": "c6bea910e1cb27753920e55cf277f642a4ef012671095e8646fb9e839c6adcd4",
+      "symbol": "TSLA",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "2e654ec149df91d8ccd59b09fe593b4dab7262f1d5f6af4af5766607ada30348",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/brkb_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "brkb_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1m_8d.csv.gz",
+      "source_sha256": "eb45970ec678f4f4caa4cdfa857eb1b8750eb32c274e5e66790b5abfe8af57c4",
+      "symbol": "BRK-B",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "a5c9f3c4bec98191719f093b23c61373de6b5541c3fb5ca9d75b3ebc7f80b44f",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/avgo_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "avgo_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1m_8d.csv.gz",
+      "source_sha256": "ad4d15d77bedb64911d88dd574f2cd759ca0287c4f04f5861859036efbc3f378",
+      "symbol": "AVGO",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "d80ace749bf4f3db4291a48ce5a45a11447d043ec0386b43f6e1f35053d73a65",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/lly_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "lly_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1m_8d.csv.gz",
+      "source_sha256": "07f5c913a94655e3fb1f0fcfc05773728074ab0a4b7b853cd7df5ba5aff72df0",
+      "symbol": "LLY",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "690e9358e23dd221ffa963218738eb316c07ba7d41a33f8e4e1af79e79d7990d",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/jpm_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "jpm_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1m_8d.csv.gz",
+      "source_sha256": "1ba87554ea31019e2a75622d4e2c6f9ea67f80ab571b3e26582e439b0cb09ca5",
+      "symbol": "JPM",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "e92af46c3c84a347783d2fed744dab0e418dd9eabd75d55c4071346fbc6ea025",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/bac_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "bac_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1m_8d.csv.gz",
+      "source_sha256": "931d0c3dca7e08fbb79946efc662fda5b7e306d1466b7357c3d4b3003e667a4a",
+      "symbol": "BAC",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "1d882b56a686368021f71427c4ab48466ad8aff91795af01679e0e5c4a1d12ad",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/gs_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2951,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2951
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2951
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2951
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2951
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2951
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2951
+          ]
+        }
+      },
+      "series_id": "gs_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1m_8d.csv.gz",
+      "source_sha256": "d69dab4671b4a03afea9481eabef771f79fb8ea800d86c189e9d2c00e6d7a44d",
+      "symbol": "GS",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "3c12d7fdb08df4d097d6c633c2e34958ea66ba3556a4acfb1c327568d6aa89a4",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/ms_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2952,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2952
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2952
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2952
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2952
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2952
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2952
+          ]
+        }
+      },
+      "series_id": "ms_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1m_8d.csv.gz",
+      "source_sha256": "cf935de0a24a0e13f24fd7cae9cbd269bbbb9effa23a19459d165cd65e531e76",
+      "symbol": "MS",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495640000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "6d25acb4e29b9ecad230cc4c9f343e681e1e83c30cc04eb9cfc8a2f45f5f693d",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/c_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "c_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1m_8d.csv.gz",
+      "source_sha256": "abcc11fc896b6e07f66898c9666483b10ba3f4332c34c41e69244557406b1b35",
+      "symbol": "C",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "9d9e5a7f47b3bdf5014a1e55d9b05506445f5a4dafed4ac6373ed93363b4c787",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/wfc_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2953,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2953
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        }
+      },
+      "series_id": "wfc_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1m_8d.csv.gz",
+      "source_sha256": "295e69cc3cd7e6fa1b28df4cb22a080464f152b5998184f3bf45976124ef5104",
+      "symbol": "WFC",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "7b9b3942f747b8965a15ec185b9cfb58cb8add18c3398e6b3660074d6c8d9fdc",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/blk_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2953,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2953
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        }
+      },
+      "series_id": "blk_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1m_8d.csv.gz",
+      "source_sha256": "2f18bcdfc08f9a7dcf10f68ae443924d60398644489f4b40b57f4599b65a6d0c",
+      "symbol": "BLK",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "58445088629eb2352c050cf595285c9ed5bb4a721bbfc9ec26923d0e45681668",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/schw_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "schw_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1m_8d.csv.gz",
+      "source_sha256": "4a98b9582285714117dc021e65d6145dceb15f2f3cfadc9684ae572454e3d7fa",
+      "symbol": "SCHW",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "6aa422b234a06957d3665e41899aff6987d7f22f98d55e1f7d041927e31641bb",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/cme_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2927,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2927
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2927
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2927
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2927
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2927
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2927
+          ]
+        }
+      },
+      "series_id": "cme_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1m_8d.csv.gz",
+      "source_sha256": "272110fc29ba563f62a731d8b6d921f8688007c5aa0dd6da8f114bfb802a2a9d",
+      "symbol": "CME",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "b9781aa226f4e91799281517c2709806b1b476edd54d5a7e86489b660cb10597",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/spgi_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2941,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2941
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2941
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2941
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2941
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2941
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2941
+          ]
+        }
+      },
+      "series_id": "spgi_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1m_8d.csv.gz",
+      "source_sha256": "74cac734a6b39dd3dc6a1f102330be5eea15962a0a9c585c983f1a7d7624219a",
+      "symbol": "SPGI",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "86840b177585a29043aa01b47c156937dc6d422c954e56d74320b862b315c60d",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/xlf_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "xlf_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1m_8d.csv.gz",
+      "source_sha256": "8c1126f605b24179582dc334330538ac8fb0acd9ddea582b4ff2b67f90c0e4f4",
+      "symbol": "XLF",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "7850af341c1a4c4edde8b36909bca943bb2c573a21a7329f030bf983e40792e6",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/dia_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "dia_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1m_8d.csv.gz",
+      "source_sha256": "c06070b85bde1fc410ae4ff19da5e8e21eab14c62c665cd16e75a04f10258d7a",
+      "symbol": "DIA",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "eafb0c8ea077f6590cdb75daf6bbf6fd3eaa2d19ce70fc242dab97c8181d75c2",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/iwm_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "iwm_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1m_8d.csv.gz",
+      "source_sha256": "74733669a44ceb1f08902338d61be727dac2e5838a9da41b1589fd5ef9af0c39",
+      "symbol": "IWM",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "375bc5e9c03b0f7a4e526b9958bac82156dbad019856a2adc8c02aa8b7356c38",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/xlk_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "xlk_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1m_8d.csv.gz",
+      "source_sha256": "64ea9e97e6c52648f62adef7b195bbe68665c3a9cc01f97b38e0ec2946bd93d9",
+      "symbol": "XLK",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "e546da7db35912f25c81528516313eb89d033519b42961f0d0098eb311319b95",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/xle_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "xle_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1m_8d.csv.gz",
+      "source_sha256": "a046e989955ee15b215bff5d643dd64cc5dae2d69d0f29abd168e1b557dd8767",
+      "symbol": "XLE",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "e74d12388efa5248c860ee848976071d2a3aa9f01908f2e227e1b7e18e8b50be",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/xlv_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "xlv_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1m_8d.csv.gz",
+      "source_sha256": "959ebdea217c76149751e7eca036143b6fe2720f13770630b0c763820374fa95",
+      "symbol": "XLV",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "a39d60a6833392620bb8687016da2b28ac4abe608540c2b291eeddcfb9dca1dc",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/xli_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2954,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2954
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2954
+          ]
+        }
+      },
+      "series_id": "xli_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1m_8d.csv.gz",
+      "source_sha256": "e2c47632d7d8101e88e8b5e888907c5e50a438904b2efa6b781dd3ee707b4bed",
+      "symbol": "XLI",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "open": "open",
+        "timestamp": "timestamp",
+        "volume": "volume"
+      },
+      "content_sha256": "c528961802738142da02ed0d978bb234be39b75bf5a77bb64c89909e5b0d3fcf",
+      "delimiter": ",",
+      "kind": "ohlcv",
+      "license_note": "Free/public proxy lane only. Yahoo 1-minute data is currently capped below the requested 30-day window on this machine; the runner falls back to the provider maximum and still treats the result as non-authority.",
+      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/normalized/soxx_1m_8d.npz",
+      "provenance": "Yahoo Finance via yfinance (1m, requested 30d, actual 8d)",
+      "row_count": 2953,
+      "scales": {},
+      "schema": {
+        "close": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "high": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "low": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "open": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        },
+        "timestamp": {
+          "dtype": "int64",
+          "shape": [
+            2953
+          ]
+        },
+        "volume": {
+          "dtype": "float64",
+          "shape": [
+            2953
+          ]
+        }
+      },
+      "series_id": "soxx_1m_8d",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1m_8d.csv.gz",
+      "source_sha256": "233576937271e0cbe9a6fadbf65d62bb409c9b5aca328a653480594a0649d538",
+      "symbol": "SOXX",
+      "tick_size": 0.01,
+      "timestamp_end": 1775495700000,
+      "timestamp_format": "iso8601",
+      "timestamp_start": 1774445400000,
+      "timestamp_unit": "ms",
+      "timezone": "UTC"
+    }
+  ]
+}

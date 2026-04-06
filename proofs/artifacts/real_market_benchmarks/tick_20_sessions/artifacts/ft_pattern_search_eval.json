@@ -1,0 +1,489 @@
+{
+  "claim_id": "FT-C004",
+  "mean_p_at_10": null,
+  "pass": false,
+  "pattern_results": [
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_00",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 32,
+      "top_k": [
+        {
+          "position": 32,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_01",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 64,
+      "top_k": [
+        {
+          "position": 64,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_02",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 128,
+      "top_k": [
+        {
+          "position": 128,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_03",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 27574,
+      "top_k": [
+        {
+          "position": 27574,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_04",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 27597,
+      "top_k": [
+        {
+          "position": 27597,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_05",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 27642,
+      "top_k": [
+        {
+          "position": 27642,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_06",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 55116,
+      "top_k": [
+        {
+          "position": 55116,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "eurusd_dukascopy_tick_20d_1h_auto_07",
+      "relevant_positions": [],
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "start_index": 55130,
+      "top_k": [
+        {
+          "position": 55130,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_00",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 32,
+      "top_k": [
+        {
+          "position": 32,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_01",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 64,
+      "top_k": [
+        {
+          "position": 64,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_02",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 128,
+      "top_k": [
+        {
+          "position": 128,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_03",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 32064,
+      "top_k": [
+        {
+          "position": 32064,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_04",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 32087,
+      "top_k": [
+        {
+          "position": 32087,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_05",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 32133,
+      "top_k": [
+        {
+          "position": 32133,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_06",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 64097,
+      "top_k": [
+        {
+          "position": 64097,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "aapl_dukascopy_tick_20d_1h_auto_07",
+      "relevant_positions": [],
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "start_index": 64110,
+      "top_k": [
+        {
+          "position": 64110,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_00",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 32,
+      "top_k": [
+        {
+          "position": 32,
+          "score": 1.0
+        },
+        {
+          "position": 4209,
+          "score": 0.84375
+        },
+        {
+          "position": 47353,
+          "score": 0.84375
+        },
+        {
+          "position": 13483,
+          "score": 0.8125
+        },
+        {
+          "position": 22837,
+          "score": 0.8125
+        },
+        {
+          "position": 23167,
+          "score": 0.8125
+        },
+        {
+          "position": 100915,
+          "score": 0.8125
+        },
+        {
+          "position": 127862,
+          "score": 0.8125
+        },
+        {
+          "position": 150560,
+          "score": 0.8125
+        },
+        {
+          "position": 168305,
+          "score": 0.8125
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_01",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 64,
+      "top_k": [
+        {
+          "position": 64,
+          "score": 1.0
+        },
+        {
+          "position": 5749,
+          "score": 0.75
+        },
+        {
+          "position": 14098,
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_02",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 128,
+      "top_k": [
+        {
+          "position": 128,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_03",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 27132,
+      "top_k": [
+        {
+          "position": 27132,
+          "score": 1.0
+        },
+        {
+          "position": 20570,
+          "score": 0.84375
+        },
+        {
+          "position": 36128,
+          "score": 0.84375
+        },
+        {
+          "position": 88064,
+          "score": 0.84375
+        },
+        {
+          "position": 153487,
+          "score": 0.84375
+        },
+        {
+          "position": 175324,
+          "score": 0.84375
+        },
+        {
+          "position": 10880,
+          "score": 0.8125
+        },
+        {
+          "position": 25616,
+          "score": 0.8125
+        },
+        {
+          "position": 35750,
+          "score": 0.8125
+        },
+        {
+          "position": 40257,
+          "score": 0.8125
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_04",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 27155,
+      "top_k": [
+        {
+          "position": 27155,
+          "score": 1.0
+        },
+        {
+          "position": 126803,
+          "score": 0.765625
+        },
+        {
+          "position": 166773,
+          "score": 0.75
+        },
+        {
+          "position": 178839,
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "length": 128,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_05",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 27200,
+      "top_k": [
+        {
+          "position": 27200,
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "length": 32,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_06",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 54232,
+      "top_k": [
+        {
+          "position": 54232,
+          "score": 1.0
+        },
+        {
+          "position": 80578,
+          "score": 0.875
+        },
+        {
+          "position": 41486,
+          "score": 0.84375
+        },
+        {
+          "position": 49009,
+          "score": 0.84375
+        },
+        {
+          "position": 64877,
+          "score": 0.84375
+        },
+        {
+          "position": 68936,
+          "score": 0.84375
+        },
+        {
+          "position": 74987,
+          "score": 0.84375
+        },
+        {
+          "position": 91544,
+          "score": 0.84375
+        },
+        {
+          "position": 103135,
+          "score": 0.84375
+        },
+        {
+          "position": 120401,
+          "score": 0.84375
+        }
+      ]
+    },
+    {
+      "length": 64,
+      "p_at_10": null,
+      "query_id": "e_sandp_500_dukascopy_tick_20d_1h_auto_07",
+      "relevant_positions": [],
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "start_index": 54246,
+      "top_k": [
+        {
+          "position": 54246,
+          "score": 1.0
+        },
+        {
+          "position": 20668,
+          "score": 0.78125
+        },
+        {
+          "position": 51870,
+          "score": 0.75
+        },
+        {
+          "position": 173021,
+          "score": 0.75
+        }
+      ]
+    }
+  ],
+  "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
+  "scored_queries": 0,
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+  "status": "NEEDS_LABELS",
+  "threshold": 0.85,
+  "unscored_queries": 24
+}

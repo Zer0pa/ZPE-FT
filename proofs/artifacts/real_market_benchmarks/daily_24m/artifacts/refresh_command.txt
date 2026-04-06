@@ -1,0 +1,7 @@
+command: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/scripts/run_real_market_refresh.py --artifact-root /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts --manifest /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json --latency-repetitions 3
+exit_code: 0
+
+stdout:
+
+
+stderr:

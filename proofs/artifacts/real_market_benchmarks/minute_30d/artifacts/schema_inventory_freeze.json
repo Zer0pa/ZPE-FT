@@ -1,0 +1,1146 @@
+{
+  "freeze_timestamp_utc": "2026-04-06T17:23:55.798141+00:00",
+  "schema_version": "zpe-finance-real-market-v0.1.0",
+  "series": {
+    "aapl_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "amzn_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "avgo_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "bac_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "blk_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2953
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      }
+    },
+    "brkb_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "c_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "cme_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2927
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2927
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2927
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2927
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2927
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2927
+        ]
+      }
+    },
+    "dia_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "googl_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "gs_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2951
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2951
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2951
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2951
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2951
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2951
+        ]
+      }
+    },
+    "iwm_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "jpm_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "lly_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "meta_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "ms_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2952
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2952
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2952
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2952
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2952
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2952
+        ]
+      }
+    },
+    "msft_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "nvda_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "qqq_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "schw_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "soxx_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2953
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      }
+    },
+    "spgi_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2941
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2941
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2941
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2941
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2941
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2941
+        ]
+      }
+    },
+    "spy_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "tsla_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "wfc_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2953
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2953
+        ]
+      }
+    },
+    "xle_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "xlf_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "xli_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "xlk_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    },
+    "xlv_1m_8d": {
+      "close": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "high": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "low": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "open": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      },
+      "timestamp": {
+        "dtype": "int64",
+        "shape": [
+          2954
+        ]
+      },
+      "volume": {
+        "dtype": "float64",
+        "shape": [
+          2954
+        ]
+      }
+    }
+  }
+}

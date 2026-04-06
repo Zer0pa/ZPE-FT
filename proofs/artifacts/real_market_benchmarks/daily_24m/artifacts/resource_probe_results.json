@@ -1,0 +1,222 @@
+{
+  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/corpus_config.json",
+  "config_sha256": "84d8a7f41ad44eb232c8d6ea51500ba01589311a8b997c695f73dd888bed6f6a",
+  "inputs": [
+    {
+      "bytes": 10553,
+      "exists": true,
+      "series_id": "spy_1d_24m",
+      "sha256": "50b7498bce3d1d9df5adfa52a50607d35c23048a12739ee2df11f444071e5075",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10731,
+      "exists": true,
+      "series_id": "qqq_1d_24m",
+      "sha256": "05fbe4c47795f66ebdf9b777895fd92832926ece3515f71062d0b0931365f9b3",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10452,
+      "exists": true,
+      "series_id": "aapl_1d_24m",
+      "sha256": "650a67535786dc9eb1c8a9d7c7b2fe508309f1f44d6dbceb0b3f302f1c2d7f46",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10618,
+      "exists": true,
+      "series_id": "msft_1d_24m",
+      "sha256": "62f340f5cdf01d330c0eb1287bcaa832e9df922f7ed098413b9ffeef8b1ca594",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 11136,
+      "exists": true,
+      "series_id": "nvda_1d_24m",
+      "sha256": "77a9f72bfc404c13f0bc2215d9e67c196112eb039b1ac39f45076e1d7c0d8743",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10256,
+      "exists": true,
+      "series_id": "amzn_1d_24m",
+      "sha256": "f54966c56a7b5e8cc74d148c3e60a10e8977979268b44859587cd693663ca534",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10425,
+      "exists": true,
+      "series_id": "googl_1d_24m",
+      "sha256": "42f5470e37db2b2b0edb20055109a70b1539441e7db1eba1ae06d38960ba261e",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10962,
+      "exists": true,
+      "series_id": "meta_1d_24m",
+      "sha256": "870971bd6464692d989ce1c3ab49ac2831112408514ae4d85e8e12e48b4885fc",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 11185,
+      "exists": true,
+      "series_id": "tsla_1d_24m",
+      "sha256": "3920177b027f17d94b95a620f44484057172437ede2e1a6c42c9854127f4c33f",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9979,
+      "exists": true,
+      "series_id": "brkb_1d_24m",
+      "sha256": "0e860c23ef7c23b431eafd94a30db5e9b6ea21a8c7a9bc8e57ac1bce6a22337b",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 11381,
+      "exists": true,
+      "series_id": "avgo_1d_24m",
+      "sha256": "b8f199f20cb9e20ee17de8757a7d71a549645daf87e70534d603eb6625e5e06e",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10676,
+      "exists": true,
+      "series_id": "lly_1d_24m",
+      "sha256": "bde6a05fc9bbffb443f7d792f02a7396bc7faedb6429b6a120a5bfa37455e5af",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10259,
+      "exists": true,
+      "series_id": "jpm_1d_24m",
+      "sha256": "b1da5de7ebe0a11894ba99cad2ec6d156b716cdb9dc9927c35505d1b7620721e",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9224,
+      "exists": true,
+      "series_id": "bac_1d_24m",
+      "sha256": "64b4716053f35d87981517ffe92f71ad8b77e8eb88b364484bbf391692420169",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10657,
+      "exists": true,
+      "series_id": "gs_1d_24m",
+      "sha256": "cb025dd837bc71f5c4d42227242d20137358154980a52ce2fe1180dd69ea4dc1",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9961,
+      "exists": true,
+      "series_id": "ms_1d_24m",
+      "sha256": "dc2c5776b4da2b0d41f4148f39a1aa757ee3087727f3acb9b14939d33c087a13",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9767,
+      "exists": true,
+      "series_id": "c_1d_24m",
+      "sha256": "1a4b2ec940e948bd68761b9a1061693d63a4582db82c9d085a90d661a0ef2411",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9650,
+      "exists": true,
+      "series_id": "wfc_1d_24m",
+      "sha256": "557a534f64b31becfae8c76d8adf30c590c811f108759f316c80d7d246eeda5a",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10539,
+      "exists": true,
+      "series_id": "blk_1d_24m",
+      "sha256": "b922108649284b2ef5e93516c59ec09945328ab77b9110cb29f0f0034498fe80",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9371,
+      "exists": true,
+      "series_id": "schw_1d_24m",
+      "sha256": "97e01fc8c717d00e577f9ab7c29b5387478f320c2d3a544300db8d65f4f780ce",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9793,
+      "exists": true,
+      "series_id": "cme_1d_24m",
+      "sha256": "2816f08f2880ff87895ca88aa6a0569d87bbb67c5ee52f83a60b951d71807a80",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10258,
+      "exists": true,
+      "series_id": "spgi_1d_24m",
+      "sha256": "d54af4816cb9811845fe8191bb64e7eac3535c9e89e70455bc7ed380e3feb1ad",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 8977,
+      "exists": true,
+      "series_id": "xlf_1d_24m",
+      "sha256": "6270b52e6ef2005a4a5e32ec633a9906b64acb46d78a2d859bcd4725a1e680c3",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9855,
+      "exists": true,
+      "series_id": "dia_1d_24m",
+      "sha256": "fade5ddf877cacb15e18601fa8fa30be2ade3413dfd4a12dabd5d3710662c1af",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10176,
+      "exists": true,
+      "series_id": "iwm_1d_24m",
+      "sha256": "4bd5a3cb9a57c16b68f6d500faf3b1d30e16680c6df41daa3d38df4f17cda880",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10236,
+      "exists": true,
+      "series_id": "xlk_1d_24m",
+      "sha256": "0fe4d1683979c80b0c0b289ad836762fc5f631efff1621719f55a7c981a783e5",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9466,
+      "exists": true,
+      "series_id": "xle_1d_24m",
+      "sha256": "21c8f83946701047eb8f14aedc59a29bb5a34cdaeb0bb7188f59ffa61329d5e3",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9390,
+      "exists": true,
+      "series_id": "xlv_1d_24m",
+      "sha256": "e380968e2e84776bf3b539d64069cae597b86311ddc7f9a833f46305e31689e3",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 9570,
+      "exists": true,
+      "series_id": "xli_1d_24m",
+      "sha256": "4626e279090f402882edd0a01e898881d8dd6668ef6bcb52aa0640cd5963e8a7",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1d_24m.csv.gz"
+    },
+    {
+      "bytes": 10347,
+      "exists": true,
+      "series_id": "soxx_1d_24m",
+      "sha256": "e36a2271076d846d271608c4e08ab80a6f29556ce0091dbf5bdd3a635047748e",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1d_24m.csv.gz"
+    }
+  ],
+  "missing_inputs": {
+    "query_catalog": null,
+    "series": []
+  },
+  "probe_timestamp_utc": "2026-04-06T17:23:52.610152+00:00",
+  "query_catalog": null
+}

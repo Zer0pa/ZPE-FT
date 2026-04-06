@@ -1,0 +1,44 @@
+{
+  "claim_id": "FT-C005",
+  "corpus_points": 606917,
+  "latencies_ms": {
+    "best": 0.1206669999191945,
+    "p50": 3.4363340000709286,
+    "p95": 39.14395900005729
+  },
+  "pass": true,
+  "queries": 24,
+  "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
+  "series": [
+    {
+      "latencies_ms": {
+        "best": 0.1206669999191945,
+        "p50": 1.932584000087445,
+        "p95": 3.707250000161366
+      },
+      "queries": 8,
+      "series_id": "eurusd_dukascopy_tick_20d_1h"
+    },
+    {
+      "latencies_ms": {
+        "best": 1.5559579999262496,
+        "p50": 2.9125840001142933,
+        "p95": 8.720207999886043
+      },
+      "queries": 8,
+      "series_id": "aapl_dukascopy_tick_20d_1h"
+    },
+    {
+      "latencies_ms": {
+        "best": 13.459000000011656,
+        "p50": 28.295500000012908,
+        "p95": 40.2523329998985
+      },
+      "queries": 8,
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h"
+    }
+  ],
+  "single_core_target": true,
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+  "threshold_ms": 100.0
+}

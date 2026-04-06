@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "experiment_key": "",
+  "experiment_url": "",
+  "logged_assets": [],
+  "metrics": {
+    "series_count": 3
+  },
+  "others": {
+    "buyer_workload": "query-by-example over historical price action",
+    "corpus_id": "phase06_partial_tick_20_sessions",
+    "gate": "EV-01"
+  },
+  "project_name": "zpe-ft",
+  "reason": "sdk_missing",
+  "script_name": "freeze_real_market_corpus",
+  "status": "completed",
+  "workspace": "zer0pa"
+}

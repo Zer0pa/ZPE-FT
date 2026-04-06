@@ -1,0 +1,39 @@
+{
+  "aggregate": {
+    "mean_compression_ratio": 11.10704231620164,
+    "min_compression_ratio": 7.159625756381968
+  },
+  "claim_id": "FT-C002",
+  "pass": false,
+  "series": [
+    {
+      "compressed_bytes": 777628,
+      "compression_ratio": 14.880559856383773,
+      "pass": true,
+      "raw_bytes": 11571540,
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "symbol": "EURUSD",
+      "threshold": 8.0
+    },
+    {
+      "compressed_bytes": 1192943,
+      "compression_ratio": 11.28094133583918,
+      "pass": true,
+      "raw_bytes": 13457520,
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "symbol": "AAPL",
+      "threshold": 8.0
+    },
+    {
+      "compressed_bytes": 1590301,
+      "compression_ratio": 7.159625756381968,
+      "pass": false,
+      "raw_bytes": 11385960,
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "symbol": "E_SandP-500",
+      "threshold": 8.0
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+  "threshold": 8.0
+}

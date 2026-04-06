@@ -1,0 +1,28 @@
+{
+  "claim_id": "FT-C006",
+  "pass": true,
+  "series": [
+    {
+      "after_hash": "9c203b60561bb3db248414f8151f6cada5dbedc77ffaa77bff752c96f3f919d4",
+      "before_hash": "9c203b60561bb3db248414f8151f6cada5dbedc77ffaa77bff752c96f3f919d4",
+      "bit_consistent": true,
+      "payload_bytes": 777628,
+      "series_id": "eurusd_dukascopy_tick_20d_1h"
+    },
+    {
+      "after_hash": "85daead47a2e583671e9e57eb33bf96b5f9143c3c80f86bce5c558cc23f688ed",
+      "before_hash": "85daead47a2e583671e9e57eb33bf96b5f9143c3c80f86bce5c558cc23f688ed",
+      "bit_consistent": true,
+      "payload_bytes": 1192943,
+      "series_id": "aapl_dukascopy_tick_20d_1h"
+    },
+    {
+      "after_hash": "1dc4d3db890cd3d3b87ae04a7df41e7b9274bdf1fed5f6afebfc7c961af7d4f7",
+      "before_hash": "1dc4d3db890cd3d3b87ae04a7df41e7b9274bdf1fed5f6afebfc7c961af7d4f7",
+      "bit_consistent": true,
+      "payload_bytes": 1590301,
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h"
+    }
+  ],
+  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json"
+}

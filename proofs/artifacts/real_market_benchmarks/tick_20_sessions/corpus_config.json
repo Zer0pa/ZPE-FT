@@ -1,0 +1,79 @@
+{
+  "authority_metric": "AM-C05_FROZEN",
+  "baseline_matrix": {
+    "comparison_rule": "Free-data rehearsal only; this config may not be promoted as Phase 06 authority closure.",
+    "tick": [
+      "raw_csv_scan",
+      "top_of_book_scan",
+      "sqlite_sidecar_roundtrip"
+    ]
+  },
+  "buyer_workload": "query-by-example over historical price action",
+  "corpus_id": "phase06_partial_tick_20_sessions",
+  "rights_policy": {
+    "classification": "free_public_proxy_non_authority",
+    "freeze_rule": "Reproducible provenance is required, but this lane remains a rehearsal proxy rather than the authority suite."
+  },
+  "series": [
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Bounded 20x1h liquid-session slices are useful, but the sovereign contract still expects the exact 20-session authority pack under proofs/phase06_inputs/ticks/.",
+      "provenance": "Dukascopy freeserv chart/json3 (EUR/USD, requested 20_sessions, actual 20x1h_slices)",
+      "series_id": "eurusd_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz",
+      "symbol": "EURUSD",
+      "tick_size": 1e-05,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Dukascopy exposes a single-venue stock CFD top-of-book feed, not AAPL NBBO, and this fetch is bounded to 20x1h liquid-session slices.",
+      "provenance": "Dukascopy freeserv chart/json3 (AAPL.US/USD, requested 20_sessions, actual 20x1h_slices)",
+      "series_id": "aapl_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz",
+      "symbol": "AAPL",
+      "tick_size": 0.001,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    },
+    {
+      "columns": {
+        "ask": "ask",
+        "ask_size": "ask_size",
+        "bid": "bid",
+        "bid_size": "bid_size",
+        "timestamp": "timestamp"
+      },
+      "kind": "tick",
+      "license_note": "Bounded public tick lane only. Dukascopy exposes an E_SandP-500 CFD/index stream, not ES1 futures top-of-book, and this fetch is bounded to 20x1h liquid-session slices.",
+      "provenance": "Dukascopy freeserv chart/json3 (E_SandP-500, requested 20_sessions, actual 20x1h_slices)",
+      "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
+      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz",
+      "symbol": "E_SandP-500",
+      "tick_size": 0.001,
+      "timestamp_format": "iso8601",
+      "timezone": "UTC"
+    }
+  ],
+  "truth_catalog": {
+    "ft_c004": {
+      "mode": "labels_pending_non_authority",
+      "unresolved_rule": "Auto-generated queries on this lane are non-authority and must remain NEEDS_LABELS."
+    }
+  }
+}

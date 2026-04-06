@@ -38,6 +38,12 @@ def _percentile(values: list[float], p: float) -> float:
     return float(ordered[max(0, min(idx, len(ordered) - 1))])
 
 
+def _mean(values: list[float]) -> float:
+    if not values:
+        return 0.0
+    return float(sum(values) / len(values))
+
+
 def _tokens_for_series(entry: dict[str, Any], series: dict[str, np.ndarray]) -> np.ndarray:
     tick_size = float(entry["tick_size"])
     if entry["kind"] == "ohlcv":
@@ -154,6 +160,7 @@ def main() -> int:
     parser.add_argument("--manifest", required=True, help="Path to real_market_corpus_manifest.json")
     parser.add_argument("--query-catalog", default="", help="Optional query catalog override")
     parser.add_argument("--latency-repetitions", type=int, default=5)
+    parser.add_argument("--codec-repetitions", type=int, default=3)
     parser.add_argument("--top-k", type=int, default=10)
     args = parser.parse_args()
 
@@ -199,6 +206,9 @@ def main() -> int:
         tick_series = []
         fidelity_series = []
         db_series = []
+        codec_latency_series = []
+        encode_latency_values: list[float] = []
+        decode_latency_values: list[float] = []
         latency_values: list[float] = []
         latency_series: list[dict[str, Any]] = []
         scored_queries: list[float] = []
@@ -210,10 +220,17 @@ def main() -> int:
                 series_id = str(entry["series_id"])
                 series = loaded_series[series_id]
                 tick_size = float(entry["tick_size"])
+                encode_samples: list[float] = []
+                decode_samples: list[float] = []
 
                 if entry["kind"] == "ohlcv":
-                    payload = encode_ohlcv(series, tick_size=tick_size, instrument=str(entry["symbol"]))
-                    decoded = decode_ohlcv(payload)
+                    for _ in range(max(1, int(args.codec_repetitions))):
+                        t0 = time.perf_counter()
+                        payload = encode_ohlcv(series, tick_size=tick_size, instrument=str(entry["symbol"]))
+                        encode_samples.append(float((time.perf_counter() - t0) * 1000.0))
+                        t1 = time.perf_counter()
+                        decoded = decode_ohlcv(payload)
+                        decode_samples.append(float((time.perf_counter() - t1) * 1000.0))
                     rmse_metrics = _evaluate_ohlcv_fidelity(series, decoded, tick_size)
                     ratio = raw_bytes_ohlcv(len(series["timestamp"])) / len(payload)
                     ohlcv_series.append(
@@ -228,8 +245,13 @@ def main() -> int:
                         }
                     )
                 else:
-                    payload = encode_ticks(series, tick_size=tick_size, instrument=str(entry["symbol"]))
-                    decoded = decode_ticks(payload)
+                    for _ in range(max(1, int(args.codec_repetitions))):
+                        t0 = time.perf_counter()
+                        payload = encode_ticks(series, tick_size=tick_size, instrument=str(entry["symbol"]))
+                        encode_samples.append(float((time.perf_counter() - t0) * 1000.0))
+                        t1 = time.perf_counter()
+                        decoded = decode_ticks(payload)
+                        decode_samples.append(float((time.perf_counter() - t1) * 1000.0))
                     rmse_metrics = _evaluate_tick_fidelity(series, decoded, tick_size)
                     ratio = raw_bytes_tick(len(series["timestamp"])) / len(payload)
                     tick_series.append(
@@ -243,6 +265,25 @@ def main() -> int:
                             "pass": ratio >= 8.0,
                         }
                     )
+
+                encode_latency_values.extend(encode_samples)
+                decode_latency_values.extend(decode_samples)
+                codec_latency_series.append(
+                    {
+                        "series_id": series_id,
+                        "kind": entry["kind"],
+                        "encode_ms": {
+                            "mean": _mean(encode_samples),
+                            "p95": _percentile(encode_samples, 0.95),
+                            "best": min(encode_samples) if encode_samples else 0.0,
+                        },
+                        "decode_ms": {
+                            "mean": _mean(decode_samples),
+                            "p95": _percentile(decode_samples, 0.95),
+                            "best": min(decode_samples) if decode_samples else 0.0,
+                        },
+                    }
+                )
 
                 fidelity_series.append(
                     {
@@ -358,6 +399,25 @@ def main() -> int:
             "pass": max_rmse <= 0.5,
         }
 
+        codec_latency_report = {
+            "claim_id": "FT-C003",
+            "source_manifest": str(manifest_path),
+            "series": codec_latency_series,
+            "aggregate": {
+                "encode_ms": {
+                    "mean": _mean(encode_latency_values),
+                    "p95": _percentile(encode_latency_values, 0.95),
+                    "best": min(encode_latency_values) if encode_latency_values else 0.0,
+                },
+                "decode_ms": {
+                    "mean": _mean(decode_latency_values),
+                    "p95": _percentile(decode_latency_values, 0.95),
+                    "best": min(decode_latency_values) if decode_latency_values else 0.0,
+                },
+            },
+            "pass": bool(encode_latency_values and decode_latency_values),
+        }
+
         latency_report = {
             "claim_id": "FT-C005",
             "source_manifest": str(manifest_path),
@@ -398,6 +458,7 @@ def main() -> int:
         ohlcv_report_path = artifact_root / "ft_ohlcv_benchmark.json"
         tick_report_path = artifact_root / "ft_tick_benchmark.json"
         fidelity_report_path = artifact_root / "ft_reconstruction_fidelity.json"
+        codec_latency_report_path = artifact_root / "ft_encode_decode_latency.json"
         latency_report_path = artifact_root / "ft_query_latency_benchmark.json"
         pattern_report_path = artifact_root / "ft_pattern_search_eval.json"
         db_report_path = artifact_root / "ft_db_roundtrip_results.json"
@@ -405,6 +466,7 @@ def main() -> int:
         write_json(ohlcv_report_path, ohlcv_report)
         write_json(tick_report_path, tick_report)
         write_json(fidelity_report_path, fidelity_report)
+        write_json(codec_latency_report_path, codec_latency_report)
         write_json(latency_report_path, latency_report)
         write_json(pattern_report_path, pattern_report)
         write_json(db_report_path, db_report)
@@ -416,6 +478,8 @@ def main() -> int:
             note=(
                 f"ohlcv_pass={ohlcv_report['pass']} "
                 f"tick_pass={tick_report['pass']} "
+                f"encode_p95_ms={codec_latency_report['aggregate']['encode_ms']['p95']:.4f} "
+                f"decode_p95_ms={codec_latency_report['aggregate']['decode_ms']['p95']:.4f} "
                 f"latency_p95_ms={latency_report['latencies_ms']['p95']:.4f} "
                 f"pattern_status={pattern_status}"
             ),
@@ -426,6 +490,8 @@ def main() -> int:
                 "ohlcv_pass": ohlcv_report["pass"],
                 "tick_pass": tick_report["pass"],
                 "fidelity_pass": fidelity_report["pass"],
+                "encode_p95_ms": codec_latency_report["aggregate"]["encode_ms"]["p95"],
+                "decode_p95_ms": codec_latency_report["aggregate"]["decode_ms"]["p95"],
                 "latency_pass": latency_report["pass"],
                 "latency_p95_ms": latency_report["latencies_ms"]["p95"],
                 "max_rmse_ticks": fidelity_report["metrics"]["max_rmse_ticks"],
@@ -441,6 +507,7 @@ def main() -> int:
                 ohlcv_report_path,
                 tick_report_path,
                 fidelity_report_path,
+                codec_latency_report_path,
                 latency_report_path,
                 pattern_report_path,
                 db_report_path,

@@ -1,0 +1,79 @@
+{
+  "accepted_truth_modes": [
+    "Attach explicit relevant_positions labels to the query.",
+    "Attach analyst-reviewed audit_refs or equivalent evidence_refs to the query.",
+    "Keep unresolved queries marked NEEDS_LABELS or PENDING_LABEL_AUDIT until one of the above exists."
+  ],
+  "blocked_count": 6,
+  "catalog_id": "phase06_query_catalog_pending_v1",
+  "catalog_path": "/Users/Zer0pa/ZPE/ZPE FT/.gpd/phases/06-open-access-enterprise-wedge-benchmark/phase06_query_catalog.pending.json",
+  "catalog_status": "PENDING_LABEL_AUDIT",
+  "claim_id": "FT-C004",
+  "inspected_items": 6,
+  "next_actions": [
+    "Attach relevant_positions labels or analyst-reviewed audit references to every authority-bearing FT-C004 query.",
+    "Keep unlabeled or auto-generated queries explicitly non-authority.",
+    "Do not score FT-C004 as pass until the truth surface is ready."
+  ],
+  "open_blockers": [
+    {
+      "audit_ref_count": 0,
+      "family": "breakout_continuation",
+      "id": "ohlcv_breakout_01",
+      "relevant_positions_count": 0,
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "audit_ref_count": 0,
+      "family": "bull_bear_flag",
+      "id": "ohlcv_flag_01",
+      "relevant_positions_count": 0,
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "audit_ref_count": 0,
+      "family": "double_bottom_top",
+      "id": "ohlcv_reversal_01",
+      "relevant_positions_count": 0,
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "audit_ref_count": 0,
+      "family": "gap_continuation_failure",
+      "id": "ohlcv_gap_01",
+      "relevant_positions_count": 0,
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "audit_ref_count": 0,
+      "family": "mean_reversion_reversal",
+      "id": "ohlcv_meanrev_01",
+      "relevant_positions_count": 0,
+      "series_kind": "ohlcv",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    },
+    {
+      "audit_ref_count": 0,
+      "family": "microstructure_sweep",
+      "id": "tick_microstructure_01",
+      "relevant_positions_count": 0,
+      "series_kind": "tick",
+      "truth_status": "PENDING_LABEL_AUDIT"
+    }
+  ],
+  "query_source_field": "query_slots",
+  "ready_count": 0,
+  "ready_items": [],
+  "required_fields_for_promotion": [
+    "query_id or slot_id",
+    "truth_status",
+    "relevant_positions or analyst_review_refs/audit_refs"
+  ],
+  "status": "blocked_missing_authority_truth",
+  "target_query_count": 50,
+  "truth_rule": "FT-C004 remains NEEDS_LABELS until relevant_positions or analyst-reviewed audit references are attached per query."
+}

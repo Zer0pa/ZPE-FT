@@ -1,0 +1,53 @@
+{
+  "authority_boundary": "These bounded public-data artifacts reduce execution risk, but they cannot be promoted into Phase 06 authority evidence.",
+  "authority_class": "bounded_public_non_authority_proxy_bundle",
+  "generated_at_utc": "2026-04-06T17:24:24.895032+00:00",
+  "known_deviations": [
+    "Uses daily bars instead of the declared 1-minute authority cadence.",
+    "FT-C004 remains NEEDS_LABELS; unlabeled retrieval is non-authority.",
+    "Minimum OHLCV compression remains below the 10x authority floor (4.7828x).",
+    "No AAPL, ES1, or EURUSD top-of-book tick series are included in this lane.",
+    "Provider delivered 8d @ 1m per materialized series (requested 30d) rather than the requested 30d @ 1m.",
+    "Minimum OHLCV compression remains below the 10x authority floor (8.7491x).",
+    "Dukascopy supplies bounded one-hour liquid-session top-of-book slices here, not the exact 20-session authority export.",
+    "The AAPL file is a single-provider top-of-book feed rather than an exact NBBO pack.",
+    "The ES1 file is populated with Dukascopy E_SandP-500, which is useful but not the exact ES1 contract.",
+    "The EURUSD file is useful top-of-book rehearsal data, but it is still a bounded proxy slice rather than the exact authority pack under proofs/phase06_inputs/ticks/.",
+    "Minimum tick compression remains below the 8x authority floor (7.1596x)."
+  ],
+  "lane_contract_statuses": [
+    {
+      "actual_data_window": "2y @ 1d",
+      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/contract_status.json",
+      "lane_id": "daily_24m",
+      "truth_status": "NEEDS_LABELS"
+    },
+    {
+      "actual_data_window": "8d @ 1m per materialized series (requested 30d)",
+      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/contract_status.json",
+      "lane_id": "minute_30d",
+      "truth_status": "NEEDS_LABELS"
+    },
+    {
+      "actual_data_window": "20x1h_slices @ tick per materialized series (requested 20_sessions)",
+      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/contract_status.json",
+      "lane_id": "tick_20_sessions",
+      "truth_status": "NEEDS_LABELS"
+    }
+  ],
+  "open_blockers": [
+    "Materialize the declared 30-symbol 24-month 1-minute OHLCV authority pack under proofs/phase06_inputs/ohlcv/.",
+    "Materialize the remaining rights-safe tick targets under proofs/phase06_inputs/ticks/: AAPL NBBO/top-of-book, ES1 top-of-book, EURUSD top-of-book.",
+    "Attach labeled or auditable FT-C004 truth; unlabeled queries remain non-authority."
+  ],
+  "phase06_contract_match": false,
+  "promotion_forbidden": true,
+  "references": [
+    "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-01-benchmark-spec.md",
+    "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-01-query-and-truth-spec.md",
+    "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-02-SUMMARY.md",
+    "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-03-SUMMARY.md"
+  ],
+  "truth_report_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json",
+  "truth_status": "blocked_missing_authority_truth"
+}
