@@ -32,7 +32,7 @@ Changelog = "https://github.com/Zer0pa/ZPE-FT/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 market = ["pandas>=2.2,<3", "yfinance>=0.2.66"]
-comparators = ["duckdb>=1.2", "zstandard>=0.23.0", "lz4>=4.4.4"]
+comparators = ["duckdb>=1.2", "lz4>=4.4.4", "zstandard>=0.23.0"]
 observability = ["comet_ml>=3.0.0", "opik>=1.10"]
 native = ["maturin>=1.8"]
 docs = ["mkdocs>=1.6"]
@@ -46,6 +46,7 @@ proof = [
   "scipy>=1.13",
   "yfinance>=0.2.66",
   "zstandard>=0.23.0",
+  "kagglehub>=1.0.0",
 ]
 test = ["build>=1.4.2", "pytest>=8.0"]
 dev = [
@@ -60,6 +61,7 @@ dev = [
   "scipy>=1.13",
   "yfinance>=0.2.66",
   "zstandard>=0.23.0",
+  "kagglehub>=1.0.0",
 ]
 
 [tool.setuptools]

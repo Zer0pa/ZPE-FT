@@ -1,0 +1,185 @@
+{
+  "benchmarks": [
+    {
+      "baseline": {
+        "best_ms": 5.689207995601464,
+        "compressed_bytes": 54556,
+        "compression_ratio": 2.2110125375760687,
+        "file": "proofs/artifacts/public_benchmarks/_tmp/yahoo_spy_10y_daily.parquet",
+        "hits": 34,
+        "name": "parquet_zstd_duckdb",
+        "p50_ms": 6.504042001324706,
+        "p95_ms": 43.90445799799636,
+        "query_sql": "WITH priced AS (\n  SELECT\n    row_id AS rid,\n    CAST(ROUND((close) / 0.01) AS BIGINT) AS px\n  FROM read_parquet('proofs/artifacts/public_benchmarks/_tmp/yahoo_spy_10y_daily.parquet')\n),\ndeltas AS (\n  SELECT\n    rid,\n    COALESCE(px - LAG(px) OVER (ORDER BY rid), 0) AS delta\n  FROM priced\n),\ntokens AS (\n  SELECT\n    rid,\n    CASE WHEN delta <= -8 THEN 0 WHEN delta <= -3 THEN 1 WHEN delta <= -1 THEN 2 WHEN delta = 0 THEN 3 WHEN delta = 1 THEN 4 WHEN delta <= 3 THEN 5 WHEN delta <= 7 THEN 6 ELSE 7 END AS token\n  FROM deltas\n)\nSELECT COUNT(*) AS hits\nFROM tokens t0\nJOIN tokens t1 ON t1.rid = t0.rid + 1 AND t1.token = 7\nJOIN tokens t2 ON t2.rid = t0.rid + 2 AND t2.token = 7\nJOIN tokens t3 ON t3.rid = t0.rid + 3 AND t3.token = 0\nJOIN tokens t4 ON t4.rid = t0.rid + 4 AND t4.token = 0\nJOIN tokens t5 ON t5.rid = t0.rid + 5 AND t5.token = 7\nWHERE t0.token = 7"
+      },
+      "dataset_id": "yahoo_spy_10y_daily",
+      "date_end": "2026-04-07",
+      "date_start": "2016-04-08",
+      "granularity": "1d",
+      "improvement": {
+        "latency_vs_baseline_x": 62.896674806470116,
+        "size_vs_baseline_x": 2.6880173433188808
+      },
+      "instrument": "SPY",
+      "kind": "ohlcv",
+      "notes": "SPY is used as the public S&P 500 ETF proxy for this benchmark.",
+      "period": "10y",
+      "raw_bytes": 120624,
+      "roundtrip": {
+        "close_rmse_ticks": 0.0
+      },
+      "rows": 2513,
+      "source": "Yahoo Finance (yfinance)",
+      "source_artifact": {
+        "fetch_mode": "yfinance"
+      },
+      "source_url": "https://pypi.org/project/yfinance/",
+      "status": "ok",
+      "zpe": {
+        "compressed_bytes": 20296,
+        "compression_ratio": 5.943240047299961,
+        "query": {
+          "best_ms": 0.6789170001866296,
+          "hits": 34,
+          "length": 6,
+          "p50_ms": 0.6809999977122061,
+          "p95_ms": 0.6980410034884699,
+          "pattern": [
+            7,
+            7,
+            7,
+            0,
+            0,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "baseline": {
+        "best_ms": 48.941582994302735,
+        "compressed_bytes": 3082046,
+        "compression_ratio": 3.8717137901251313,
+        "file": "proofs/artifacts/public_benchmarks/_tmp/binance_btcusdt_aggtrades_2017_09.parquet",
+        "hits": 625,
+        "name": "parquet_zstd_duckdb",
+        "p50_ms": 52.39091700059362,
+        "p95_ms": 55.64225000125589,
+        "query_sql": "WITH priced AS (\n  SELECT\n    row_id AS rid,\n    CAST(ROUND((((bid + ask) * 0.5)) / 0.01) AS BIGINT) AS px\n  FROM read_parquet('proofs/artifacts/public_benchmarks/_tmp/binance_btcusdt_aggtrades_2017_09.parquet')\n),\ndeltas AS (\n  SELECT\n    rid,\n    COALESCE(px - LAG(px) OVER (ORDER BY rid), 0) AS delta\n  FROM priced\n),\ntokens AS (\n  SELECT\n    rid,\n    CASE WHEN delta <= -8 THEN 0 WHEN delta <= -3 THEN 1 WHEN delta <= -1 THEN 2 WHEN delta = 0 THEN 3 WHEN delta = 1 THEN 4 WHEN delta <= 3 THEN 5 WHEN delta <= 7 THEN 6 ELSE 7 END AS token\n  FROM deltas\n)\nSELECT COUNT(*) AS hits\nFROM tokens t0\nJOIN tokens t1 ON t1.rid = t0.rid + 1 AND t1.token = 3\nJOIN tokens t2 ON t2.rid = t0.rid + 2 AND t2.token = 2\nJOIN tokens t3 ON t3.rid = t0.rid + 3 AND t3.token = 3\nJOIN tokens t4 ON t4.rid = t0.rid + 4 AND t4.token = 3\nJOIN tokens t5 ON t5.rid = t0.rid + 5 AND t5.token = 3\nWHERE t0.token = 3"
+      },
+      "dataset_id": "binance_btcusdt_aggtrades_2017_09",
+      "date_end": "2017-09-30",
+      "date_start": "2017-09-01",
+      "granularity": "aggTrade",
+      "improvement": {
+        "latency_vs_baseline_x": 0.8776253189740999,
+        "size_vs_baseline_x": 2.8144970919428234
+      },
+      "instrument": "BTCUSDT",
+      "kind": "tick",
+      "notes": "Trade tape mapped into the repo tick schema with bid=ask=trade price and bid_size=ask_size=quantity because Binance public monthly aggTrades do not expose top-of-book quotes.",
+      "period": "2017-09",
+      "raw_bytes": 11932800,
+      "roundtrip": {
+        "ask_rmse_ticks": 0.0,
+        "bid_rmse_ticks": 0.0,
+        "decode_p95_ms": 667.3784169979626,
+        "encode_p95_ms": 962.604749998718,
+        "timing_exact": true
+      },
+      "rows": 198880,
+      "source": "Binance Public Data",
+      "source_artifact": {
+        "kind": "zip",
+        "rows": 198880,
+        "timestamp_end_ms": 1506815964152,
+        "timestamp_start_ms": 1504224060493
+      },
+      "source_url": "https://data.binance.vision/data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2017-09.zip",
+      "status": "ok",
+      "zpe": {
+        "compressed_bytes": 1095061,
+        "compression_ratio": 10.896927203142107,
+        "query": {
+          "best_ms": 57.43604199960828,
+          "hits": 625,
+          "length": 6,
+          "p50_ms": 60.941791998629924,
+          "p95_ms": 63.400916995306034,
+          "pattern": [
+            3,
+            3,
+            2,
+            3,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "baseline": {
+        "best_ms": 8.252416999312118,
+        "compressed_bytes": 69737,
+        "compression_ratio": 2.2032493511335445,
+        "file": "proofs/artifacts/public_benchmarks/_tmp/kaggle_spy_daily.parquet",
+        "hits": 40,
+        "name": "parquet_zstd_duckdb",
+        "p50_ms": 8.424874999036547,
+        "p95_ms": 13.706624995393213,
+        "query_sql": "WITH priced AS (\n  SELECT\n    row_id AS rid,\n    CAST(ROUND((close) / 0.01) AS BIGINT) AS px\n  FROM read_parquet('proofs/artifacts/public_benchmarks/_tmp/kaggle_spy_daily.parquet')\n),\ndeltas AS (\n  SELECT\n    rid,\n    COALESCE(px - LAG(px) OVER (ORDER BY rid), 0) AS delta\n  FROM priced\n),\ntokens AS (\n  SELECT\n    rid,\n    CASE WHEN delta <= -8 THEN 0 WHEN delta <= -3 THEN 1 WHEN delta <= -1 THEN 2 WHEN delta = 0 THEN 3 WHEN delta = 1 THEN 4 WHEN delta <= 3 THEN 5 WHEN delta <= 7 THEN 6 ELSE 7 END AS token\n  FROM deltas\n)\nSELECT COUNT(*) AS hits\nFROM tokens t0\nJOIN tokens t1 ON t1.rid = t0.rid + 1 AND t1.token = 7\nJOIN tokens t2 ON t2.rid = t0.rid + 2 AND t2.token = 0\nJOIN tokens t3 ON t3.rid = t0.rid + 3 AND t3.token = 7\nJOIN tokens t4 ON t4.rid = t0.rid + 4 AND t4.token = 7\nJOIN tokens t5 ON t5.rid = t0.rid + 5 AND t5.token = 7\nWHERE t0.token = 0"
+      },
+      "dataset_id": "kaggle_spy_daily",
+      "date_end": "2017-11-10",
+      "date_start": "2005-02-25",
+      "granularity": "1d",
+      "improvement": {
+        "latency_vs_baseline_x": 13.214911311532587,
+        "size_vs_baseline_x": 3.317649857278782
+      },
+      "instrument": "SPY",
+      "kind": "ohlcv",
+      "notes": "Daily ETF history from the public Kaggle dataset `price-volume-data-for-all-us-stocks-etfs`.",
+      "period": "full_history",
+      "raw_bytes": 153648,
+      "roundtrip": {
+        "close_rmse_ticks": 0.0
+      },
+      "rows": 3201,
+      "source": "Kaggle financial dataset",
+      "source_artifact": {
+        "csv_bytes": 163787,
+        "csv_path": "/Users/prinivenpillay/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
+        "slug": "borismarjanovic/price-volume-data-for-all-us-stocks-etfs"
+      },
+      "source_url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+      "status": "ok",
+      "zpe": {
+        "compressed_bytes": 21020,
+        "compression_ratio": 7.309609895337774,
+        "query": {
+          "best_ms": 0.9750840035849251,
+          "hits": 40,
+          "length": 6,
+          "p50_ms": 1.0013339997385629,
+          "p95_ms": 1.0372090036980808,
+          "pattern": [
+            0,
+            7,
+            0,
+            7,
+            7,
+            7
+          ]
+        }
+      }
+    }
+  ],
+  "command": "run_public_market_benchmarks.py --artifact-root proofs/artifacts/public_benchmarks --binance-url https://data.binance.vision/data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2017-09.zip --binance-period 2017-09 --query-repetitions 3",
+  "generated_at_utc": "2026-04-08T03:01:52.345052+00:00",
+  "host": {
+    "hostname": "Zer0pa.local",
+    "platform": "macOS-15.5-x86_64-i386-64bit-Mach-O",
+    "python": "3.14.0"
+  }
+}
