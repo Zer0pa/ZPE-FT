@@ -34,7 +34,7 @@
 
 ---
 
-## What This Is
+## Overview
 
 ZPE-FT is a deterministic financial time-series codec — OHLCV bars, tick streams, pattern search, and market replay in a single compressed format. Built for teams that need to store, query, and replay delayed-feed market data with bounded fidelity guarantees and no incumbent lock-in.
 
@@ -53,7 +53,7 @@ The repo is **private-stage**. This is a source-available snapshot with retained
 ---
 
 <a id="quickstart-and-license"></a>
-<h2 align="center">Quickstart And License</h2>
+## Quick Start
 
 ### Quick Verify
 
@@ -110,7 +110,7 @@ Quickest outsider orientation:
 </p>
 
 <a id="what-this-is"></a>
-<h2 align="center">What This Is</h2>
+## What This Is
 
 ZPE-FT is a deterministic financial time-series codec and pattern-search
 workstream. The repo exposes an installable Python package, an optional
@@ -148,12 +148,62 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
   </tbody>
 </table>
 
+| Field | Value |
+|-------|-------|
+| Architecture | MARKET_STREAM |
+| Encoding | OHLCV_DELTA |
+
+## Key Metrics
+
+| Metric | Value | Tag |
+|--------|-------|-----|
+| Data Format | OHLCV + ticks | FINANCIAL_TS |
+| Proof Surface | Wave-1 | CONTROLLED |
+| Phase 06 | BLOCKED | MISSING_INPUTS |
+| Readiness | private-stage | NOT_RELEASED |
+
+## What We Prove
+
+- Deterministic financial time-series encoding (OHLCV + ticks)
+- Pattern search and market replay on compressed format
+- Repo-local install verifies and pytest surface passes
+- Comet observability hooks wired for proof tracking
+
+## What We Don't Claim
+
+- No claim of public release readiness
+- No claim of Phase 06 contract closure (blocked on missing inputs)
+- No claim of real-time trading system integration
+- No claim of regulatory compliance (market data use)
+
 <p>
   <img src=".github/assets/readme/zpe-masthead-option-3.5.gif" alt="ZPE-FT Lower Insert" width="100%">
 </p>
 
 <a id="current-authority"></a>
-<h2 align="center">Current Authority</h2>
+## Current Authority
+
+| Field | Value |
+|-------|-------|
+| Verdict | BLOCKED_MISSING_INPUTS |
+| Commit SHA | 7394b4bd04e0 |
+| Confidence | 67% |
+| Source | proofs/FINAL_STATUS.md |
+
+`Confidence` derives from `4` PASS outcomes across `6` named retained checks in `proofs/FINAL_STATUS.md` and `proofs/CONSOLIDATED_PROOF_REPORT.md`.
+
+## Verification Status
+
+| Code | Check | Verdict |
+|------|-------|---------|
+| V_01 | Package build / install / import truth | PASS |
+| V_02 | FT-C001 OHLCV compression | PASS |
+| V_03 | FT-C002 tick compression | PASS |
+| V_04 | FT-C004 pattern search | PASS |
+| V_05 | Phase 06 contract freeze | FAIL |
+| V_06 | DB breadth beyond SQLite | INC |
+
+### Authority Notes
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -242,12 +292,20 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 </table>
 
 <a id="runtime-proof-wave-1"></a>
-<h2 align="center">Runtime Proof (Wave-1)</h2>
+## Proof Anchors
 
 All promoted FT values should be read through the package/build/install logs,
 the retained controlled Wave-1 bundle, and the blocker packet together.
 
-### Proof Anchors
+| Path | State |
+|------|-------|
+| proofs/FINAL_STATUS.md | VERIFIED |
+| proofs/CONSOLIDATED_PROOF_REPORT.md | VERIFIED |
+| proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log | VERIFIED |
+| proofs/artifacts/2026-02-21_ft_wave1_final/ | VERIFIED |
+| proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json | VERIFIED |
+
+### Anchor Details
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -302,7 +360,7 @@ the retained controlled Wave-1 bundle, and the blocker packet together.
 </p>
 
 <a id="modality-status-snapshot"></a>
-<h2 align="center">Surface Status Snapshot</h2>
+## Surface Status Snapshot
 
 Status is reported per evidence surface, not by rhetorical confidence. Each row
 below reflects the current retained repo truth.
@@ -363,7 +421,7 @@ below reflects the current retained repo truth.
 </table>
 
 <a id="throughput"></a>
-<h2 align="center">Throughput</h2>
+## Throughput
 
 Compression, query latency, and pattern-search headlines remain bounded to the
 retained Wave-1 controlled corpus. They are useful, but they are not the same
@@ -443,7 +501,7 @@ thing as enterprise-market benchmark closure.
 </p>
 
 <a id="public-ml-workbooks"></a>
-<h2 align="center">Public Market Workbooks</h2>
+## Public Market Workbooks
 
 This repo exposes repo-native observability hooks, but it does not currently
 promote an external public workbook as an authority-bearing front-door claim.
@@ -482,7 +540,7 @@ Use the proof artifacts and docs below as the public evidence path.
 </table>
 
 <a id="go-next"></a>
-<h2 align="center">Go Next</h2>
+## Go Next
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="14" cellspacing="0">
   <thead>
@@ -519,6 +577,18 @@ Use the proof artifacts and docs below as the public evidence path.
   </tbody>
 </table>
 
+## Repo Shape
+
+| Field | Value |
+|-------|-------|
+| Proof Anchors | 5 |
+| Modality Lanes | 2 |
+| Authority Source | proofs/FINAL_STATUS.md |
+
+`Modality Lanes` counts the two retained financial data lanes called out in the current proof surface: OHLCV bars and tick streams.
+
+### Directory Map
+
 <table width="100%" border="1" bordercolor="#111111" cellpadding="14" cellspacing="0">
   <thead>
     <tr>
@@ -547,7 +617,7 @@ Use the proof artifacts and docs below as the public evidence path.
 </table>
 
 <a id="open-risks-non-blocking"></a>
-<h2 align="center">Open Risks (Non-Blocking)</h2>
+## Open Risks (Non-Blocking)
 
 - The optional native helper is still a deliberate opt-in path; the truthful
   default quick verify may remain on `python-fallback`.
@@ -560,7 +630,7 @@ Use the proof artifacts and docs below as the public evidence path.
   read as evidence, not as live front-door instructions.
 
 <a id="contributing-security-support"></a>
-<h2 align="center">Contributing, Security, Support</h2>
+## Contributing, Security, Support
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -578,7 +648,7 @@ Use the proof artifacts and docs below as the public evidence path.
   <img src=".github/assets/readme/zpe-masthead-option-3.6.gif" alt="ZPE-FT Authority Insert" width="100%">
 </p>
 
-<h3 align="center">Portfolio Cross-Link</h3>
+## Ecosystem
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
