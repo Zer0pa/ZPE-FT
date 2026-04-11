@@ -181,7 +181,7 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 </p>
 
 <a id="current-authority"></a>
-## Current Authority
+## Commercial Readiness
 
 | Field | Value |
 |-------|-------|
@@ -192,7 +192,7 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 
 `Confidence` derives from `4` PASS outcomes across `6` named retained checks in `proofs/FINAL_STATUS.md` and `proofs/CONSOLIDATED_PROOF_REPORT.md`.
 
-## Verification Status
+## Tests and Verification
 
 | Code | Check | Verdict |
 |------|-------|---------|
