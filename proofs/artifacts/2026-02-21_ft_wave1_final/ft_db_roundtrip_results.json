@@ -1,0 +1,31 @@
+{
+  "claim_id": "FT-C006",
+  "db_backend": "sqlite3",
+  "db_file_bytes": 995328,
+  "decode_fidelity_rmse_ticks": {
+    "ohlcv_close": 0.0,
+    "tick_bid": 0.0
+  },
+  "pass": true,
+  "roundtrip": {
+    "ohlcv": {
+      "after_hash": "8e2a594eb8a405e01b3952d5a45b9d0ba69bbc9d8d701b8120ffc9e2c8b43704",
+      "before_hash": "8e2a594eb8a405e01b3952d5a45b9d0ba69bbc9d8d701b8120ffc9e2c8b43704",
+      "bit_consistent": true,
+      "payload_bytes": 275183,
+      "series_id": "ohlcv_spy"
+    },
+    "tick": {
+      "after_hash": "998921a4ece35a22de05fe67902cccbd7326c644c5b398a3cfb7bc64b136dc0c",
+      "before_hash": "998921a4ece35a22de05fe67902cccbd7326c644c5b398a3cfb7bc64b136dc0c",
+      "bit_consistent": true,
+      "payload_bytes": 699985,
+      "series_id": "tick_eurusd"
+    }
+  },
+  "timescale_equivalence": {
+    "comparability_impact": "SQL extension/operator-path equivalence not proven.",
+    "note": "TimescaleDB not provisioned in-lane; SQLite used as nearest local DB contract.",
+    "status": "INCONCLUSIVE"
+  }
+}

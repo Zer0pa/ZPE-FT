@@ -1,0 +1,22 @@
+{
+  "after_metrics": {
+    "FT-C001_ohlcv_cr": 19.191264136565035,
+    "FT-C002_tick_cr": 20.567244606240102,
+    "FT-C003_max_rmse": 0.0,
+    "FT-C004_mean_p_at_10": 0.9,
+    "FT-C005_p95_latency_ms": 0.05666599463438615,
+    "FT-C006_db_roundtrip_pass": true,
+    "M1_gorilla_status": "PASS",
+    "M2_tsbs_status": "PASS",
+    "M3_zipline_status": "PASS",
+    "M4_compliance_status": "PASS"
+  },
+  "baseline_thresholds": {
+    "FT-C001_ohlcv_cr": 10.0,
+    "FT-C002_tick_cr": 8.0,
+    "FT-C003_rmse": 0.5,
+    "FT-C004_p_at_10": 0.85,
+    "FT-C005_latency_ms": 100.0,
+    "FT-C006_db_roundtrip_bit_consistent": true
+  }
+}

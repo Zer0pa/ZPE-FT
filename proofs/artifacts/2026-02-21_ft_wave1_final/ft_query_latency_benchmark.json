@@ -1,0 +1,15 @@
+{
+  "claim_id": "FT-C005",
+  "corpus_points": 1000000,
+  "latencies_ms": {
+    "best": 0.010540999937802553,
+    "p50": 0.020499996026046574,
+    "p95": 0.05666599463438615
+  },
+  "pass": true,
+  "runs": 40,
+  "single_core_target": true,
+  "stretch_pass": true,
+  "stretch_threshold_ms": 50.0,
+  "threshold_ms": 100.0
+}

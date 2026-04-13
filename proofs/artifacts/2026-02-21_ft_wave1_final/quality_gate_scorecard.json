@@ -1,0 +1,47 @@
+{
+  "appendix_e": {
+    "E-G1_attempt_all_resources": true,
+    "E-G2_external_outputs_for_FT-C003_FT-C006": true,
+    "E-G3_tsbs_throughput_latency_present": true,
+    "E-G4_valid_impracticality_for_skips": true,
+    "E-G5_runpod_artifacts_when_imp_compute": true
+  },
+  "dimension_scores": {
+    "anti_toy_depth": 5,
+    "code_quality_cohesion": 4,
+    "deterministic_reproducibility": 5,
+    "engineering_completeness": 5,
+    "exceed_brief_innovation": 5,
+    "interoperability_readiness": 5,
+    "performance_efficiency": 5,
+    "problem_solving_autonomy": 5,
+    "robustness_failure_transparency": 5,
+    "scientific_claim_hygiene": 5
+  },
+  "gate_status": {
+    "GateA": true,
+    "GateB": true,
+    "GateC": true,
+    "GateD": true,
+    "GateE": true,
+    "GateE_INGEST": true,
+    "GateM1": true,
+    "GateM2": true,
+    "GateM3": true,
+    "GateM4": true
+  },
+  "go_no_go": "GO",
+  "minimum_dimension_floor_required": 4,
+  "minimum_total_required": 45,
+  "non_negotiables": {
+    "appendix_e_attempt_all": true,
+    "claim_evidence_paths_present": true,
+    "determinism_5_of_5": true,
+    "end_to_end_completed": true,
+    "lane_boundary_respected": true,
+    "uncaught_crash_rate_zero": true
+  },
+  "pass": true,
+  "timestamp_utc": "2026-02-22T02:53:12.748485+00:00",
+  "total_score": 49
+}

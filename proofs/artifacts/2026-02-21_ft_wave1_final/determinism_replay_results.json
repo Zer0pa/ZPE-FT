@@ -1,0 +1,47 @@
+{
+  "hash_consistent_runs": 5,
+  "pass": true,
+  "required_hash_consistent_runs": 5,
+  "run_details": [
+    {
+      "digest": "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700",
+      "elapsed_sec": 24.998,
+      "ohlcv_bytes": 225161,
+      "run": 1,
+      "tick_bytes": 583419
+    },
+    {
+      "digest": "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700",
+      "elapsed_sec": 20.045,
+      "ohlcv_bytes": 225161,
+      "run": 2,
+      "tick_bytes": 583419
+    },
+    {
+      "digest": "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700",
+      "elapsed_sec": 17.521,
+      "ohlcv_bytes": 225161,
+      "run": 3,
+      "tick_bytes": 583419
+    },
+    {
+      "digest": "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700",
+      "elapsed_sec": 16.026,
+      "ohlcv_bytes": 225161,
+      "run": 4,
+      "tick_bytes": 583419
+    },
+    {
+      "digest": "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700",
+      "elapsed_sec": 22.6,
+      "ohlcv_bytes": 225161,
+      "run": 5,
+      "tick_bytes": 583419
+    }
+  ],
+  "runs": 5,
+  "unique_hash_count": 1,
+  "unique_hashes": [
+    "900b08aab93645ec9b2dff456ed151d317f045e5269c08e490f16341d6d32700"
+  ]
+}

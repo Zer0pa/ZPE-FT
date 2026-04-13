@@ -1,0 +1,39 @@
+{
+  "api_surface": {
+    "python": [
+      "encode_ohlcv",
+      "decode_ohlcv",
+      "encode_ticks",
+      "decode_ticks",
+      "PatternIndex"
+    ],
+    "rust_core": "zpe_finance_rs"
+  },
+  "compliance_mode": {
+    "evidence": "./proofs/artifacts/2026-02-21_ft_wave1_final/compliance_mode_results.json",
+    "status": "PASS"
+  },
+  "db_adapter": {
+    "evidence": [
+      "./proofs/artifacts/2026-02-21_ft_wave1_final/ft_db_roundtrip_results.json",
+      "./proofs/artifacts/2026-02-21_ft_wave1_final/tsbs_db_benchmark_results.json"
+    ],
+    "primary": "duckdb",
+    "secondary": "sqlite3",
+    "timescale_status": "INCONCLUSIVE"
+  },
+  "packet_format": {
+    "crc_protected": true,
+    "magic": "ZPFN1",
+    "name": ".zpfin",
+    "version": 1
+  },
+  "reproducibility": {
+    "determinism_evidence": "./proofs/artifacts/2026-02-21_ft_wave1_final/determinism_replay_results.json",
+    "seed": 20260220
+  },
+  "zipline_roundtrip": {
+    "evidence": "./proofs/artifacts/2026-02-21_ft_wave1_final/zipline_roundtrip_results.json",
+    "status": "PASS"
+  }
+}

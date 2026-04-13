@@ -1,0 +1,17 @@
+{
+  "artifact_payload_bytes": {
+    "ohlcv_payload": 300192,
+    "tick_payload": 874893
+  },
+  "metrics": {
+    "max_rmse_ticks": 0.0,
+    "ohlcv_close_rmse_ticks": 0.0,
+    "ohlcv_high_rmse_ticks": 0.0,
+    "ohlcv_low_rmse_ticks": 0.0,
+    "ohlcv_open_rmse_ticks": 0.0,
+    "tick_ask_rmse_ticks": 0.0,
+    "tick_bid_rmse_ticks": 0.0
+  },
+  "pass": true,
+  "threshold_rmse_ticks": 0.5
+}

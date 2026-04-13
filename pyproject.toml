@@ -3,11 +3,11 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "zpe-finance"
+name = "zpe-ft"
 version = "0.1.0"
 description = "ZPE financial time-series codec and pattern search"
 readme = "README.md"
-license = "LicenseRef-Zer0pa-SAL-6.0"
+license = "LicenseRef-Zer0pa-SAL-6.2"
 requires-python = ">=3.11"
 keywords = ["finance", "time-series", "codec", "search"]
 dependencies = [

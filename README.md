@@ -155,12 +155,24 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 
 ## Key Metrics
 
-| Metric | Value | Tag |
-|--------|-------|-----|
-| Data Format | OHLCV + ticks | FINANCIAL_TS |
-| Proof Surface | Wave-1 | CONTROLLED |
-| Phase 06 | BLOCKED | MISSING_INPUTS |
-| Readiness | private-stage | NOT_RELEASED |
+| Metric | Value | Baseline |
+|--------|-------|----------|
+| OHLCV_CR | 19.1913× | vs Parquet ZSTD 5.9432× |
+| TICK_CR | 20.5672× | vs Parquet ZSTD 10.8969× |
+| PATTERN_SEARCH | P@10 = 0.90 | — |
+| QUERY_LATENCY | p95 = 0.0567 ms | vs Parquet ZSTD 13.2149-62.8967× faster on daily surfaces; Binance 0.8776× (regression) |
+
+> Source: [`proofs/artifacts/2026-02-21_ft_wave1_final/before_after_metrics.json`](proofs/artifacts/2026-02-21_ft_wave1_final/before_after_metrics.json) | Comparative baselines: [`BENCHMARKS.md`](BENCHMARKS.md)
+
+## Competitive Benchmarks
+
+> Full competitive analysis: [`BENCHMARKS.md`](BENCHMARKS.md) | Source: [`proofs/PHASE3_PUBLIC_BENCHMARKS.json`](proofs/PHASE3_PUBLIC_BENCHMARKS.json)
+
+| Dataset | ZPE size vs Parquet | ZPE query vs Parquet | Notes |
+|---------|---------------------|----------------------|-------|
+| Yahoo SPY 10y daily | 2.6880× smaller | 62.8967× faster | Daily OHLCV surface |
+| Binance BTCUSDT aggTrades | 2.8145× smaller | 0.8776× (regression) | Exact replay preserved; query path slower than DuckDB Parquet |
+| Kaggle SPY daily | 3.3176× smaller | 13.2149× faster | Daily OHLCV surface |
 
 ## What We Prove
 
