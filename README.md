@@ -36,19 +36,59 @@
 
 ## Overview
 
-ZPE-FT is a deterministic financial time-series codec — OHLCV bars, tick streams, pattern search, and market replay in a single compressed format. Built for teams that need to store, query, and replay delayed-feed market data with bounded fidelity guarantees and no incumbent lock-in.
+**ZPE-FT is a deterministic financial time-series codec and pattern-search workstream.**
 
-The current evidence is anchored on the Wave-1 controlled proof surface (February 21, 2026). Repo-local install verifies and the pytest surface passes. Phase 06 contract freeze is blocked on missing inputs — an engineering boundary, not a capability failure. Comet observability hooks are wired for proof tracking. An optional Rust native helper provides a lower-level fallback path.
-
-The repo is **private-stage**. This is a source-available snapshot with retained evidence — not a release-ready package. The public release gate is not closed.
-
-**Not claimed:** public release readiness, broad incumbent displacement, full contract freeze, universal financial data coverage, or runtime coupling to ZPE-IMC.
+The repo exposes an installable Python package, an optional repo-local Rust helper, retained proof bundles for controlled Wave-1 codec claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 
 | Anchor | Artifact |
 |---|---|
 | Final status | [`FINAL_STATUS.md`](proofs/FINAL_STATUS.md) |
 | Controlled proof report | [`CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
 | Phase 06 blocked status | [`missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
+
+## Key Metrics
+
+| Metric | Value | Baseline |
+|--------|-------|----------|
+| COMPRESSION | 5.94–10.9× | vs Parquet+ZSTD ~3–5× |
+| QUERY_LATENCY | 0.70 ms | vs 43.9 ms (baseline) |
+| TICK_RMSE | 0.0 ticks (lossless) | — |
+| DATASETS | 3 | public |
+
+## What We Prove
+
+- 8-state ordinal alphabet encodes market moves as directional primitives
+- Compressed-domain pattern search operates without decompression
+- Deterministic tick-level reconstruction verified as lossless (0.0 RMSE)
+- Bounded benchmark across 3 public datasets (Yahoo, Binance, Kaggle)
+- Repo-local install, pytest surface, and Comet observability hooks wired
+
+## What We Don't Claim
+
+- No claim of public release readiness
+- No claim of Phase 06 contract closure (blocked on missing inputs)
+- No claim of real-time trading system integration
+- No claim of regulatory compliance (market data use)
+
+## Tests and Verification
+
+| Code | Check | Verdict |
+|------|-------|---------|
+| V_01 | PACKAGE_BUILD_/_INSTALL_/_IMPORT... | PASS |
+| V_02 | FT-C001_OHLCV_COMPRESSION | PASS |
+| V_03 | FT-C002_TICK_COMPRESSION | PASS |
+| V_04 | FT-C004_PATTERN_SEARCH | PASS |
+| V_05 | PHASE_06_CONTRACT_FREEZE | FAIL |
+| V_06 | DB_BREADTH_BEYOND_SQLITE | INC |
+
+## Commercial Readiness
+
+| Field | Value |
+|-------|-------|
+| Verdict | BLOCKED_MISSING_INPUTS |
+| Commit SHA | 7394B4B |
+| Confidence | 67% |
+| Source | proofs/FINAL_STATUS.md |
 
 ---
 
@@ -153,55 +193,14 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 | Architecture | MARKET_STREAM |
 | Encoding | OHLCV_DELTA |
 
-## Key Metrics
-
-| Metric | Value | Tag |
-|--------|-------|-----|
-| Data Format | OHLCV + ticks | FINANCIAL_TS |
-| Proof Surface | Wave-1 | CONTROLLED |
-| Phase 06 | BLOCKED | MISSING_INPUTS |
-| Readiness | private-stage | NOT_RELEASED |
-
-## What We Prove
-
-- Deterministic financial time-series encoding (OHLCV + ticks)
-- Pattern search and market replay on compressed format
-- Repo-local install verifies and pytest surface passes
-- Comet observability hooks wired for proof tracking
-
-## What We Don't Claim
-
-- No claim of public release readiness
-- No claim of Phase 06 contract closure (blocked on missing inputs)
-- No claim of real-time trading system integration
-- No claim of regulatory compliance (market data use)
-
 <p>
   <img src=".github/assets/readme/zpe-masthead-option-3.5.gif" alt="ZPE-FT Lower Insert" width="100%">
 </p>
 
 <a id="current-authority"></a>
-## Commercial Readiness
-
-| Field | Value |
-|-------|-------|
-| Verdict | BLOCKED_MISSING_INPUTS |
-| Commit SHA | 7394b4bd04e0 |
-| Confidence | 67% |
-| Source | proofs/FINAL_STATUS.md |
+## Current Authority
 
 `Confidence` derives from `4` PASS outcomes across `6` named retained checks in `proofs/FINAL_STATUS.md` and `proofs/CONSOLIDATED_PROOF_REPORT.md`.
-
-## Tests and Verification
-
-| Code | Check | Verdict |
-|------|-------|---------|
-| V_01 | Package build / install / import truth | PASS |
-| V_02 | FT-C001 OHLCV compression | PASS |
-| V_03 | FT-C002 tick compression | PASS |
-| V_04 | FT-C004 pattern search | PASS |
-| V_05 | Phase 06 contract freeze | FAIL |
-| V_06 | DB breadth beyond SQLite | INC |
 
 ### Authority Notes
 
