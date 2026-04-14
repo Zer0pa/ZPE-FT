@@ -201,6 +201,20 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
 
 > Source: [`BENCHMARKS.md`](BENCHMARKS.md) | [`proofs/PHASE3_PUBLIC_BENCHMARKS.json`](proofs/PHASE3_PUBLIC_BENCHMARKS.json)
 
+## Competitive Benchmarks
+
+> Source: [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/)
+
+**2.81× vs Parquet+ZSTD** on Binance OHLCV; search-on-compressed, deterministic replay.
+
+| Tool | Ratio (raw) | Search |
+|------|------------|--------|
+| bz2 | 16.12× | — |
+| lzma | 13.13× | — |
+| zlib/gzip | 8.35× | — |
+
+zstd/lz4 unavailable at measure time. No general-purpose tool offers search-on-compressed or deterministic replay.
+
 ## What We Prove
 
 > Auditable guarantees backed by committed proof artifacts. Start at `AUDITOR_PLAYBOOK.md`.
