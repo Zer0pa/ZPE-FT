@@ -2,7 +2,7 @@
   <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
-<p align="center"><strong>19.19x controlled-corpus OHLCV compression. 20.57x controlled-corpus tick compression. Repo install verified.</strong></p>
+<p align="center"><strong>14.16× OHLCV on real US-equity minute bars (30 series). 11.11× tick on Dukascopy FX. Controlled-corpus authority: 19.19× OHLCV / 20.57× tick. Repo install verified.</strong></p>
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -208,14 +208,15 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
 
 | Metric | Value | Source |
 |--------|-------|--------|
+| **Real-market OHLCV (30 equities, 1m bars)** | **14.16× mean, 8.75× min** | Non-authority proxy; see [`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json), [`MISSING_DATA_README.md`](MISSING_DATA_README.md) |
+| **Real-market tick (Dukascopy FX)** | **11.11× mean, 7.16× min** | Non-authority proxy; see [`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json), [`MISSING_DATA_README.md`](MISSING_DATA_README.md) |
+| Real-market OHLCV (30 equities, daily bars) | 5.997× mean, 4.78× min | Non-authority proxy; ALL below 10× floor. See [`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json) |
 | OHLCV_CR (Wave-1 controlled) | 19.19× | [`ft_ohlcv_benchmark.json`](proofs/artifacts/2026-02-21_ft_wave1_final/ft_ohlcv_benchmark.json) |
 | TICK_CR (Wave-1 controlled) | 20.57× | [`ft_tick_benchmark.json`](proofs/artifacts/2026-02-21_ft_wave1_final/ft_tick_benchmark.json) |
-| OHLCV_CR (provider-max 1m proxy) | 14.16× | Non-authority proxy; see [`MISSING_DATA_README.md`](MISSING_DATA_README.md) |
-| TICK_CR (Dukascopy tick proxy) | 11.11× | Non-authority proxy; see [`MISSING_DATA_README.md`](MISSING_DATA_README.md) |
 | VS_PARQUET (Binance public) | 2.81× | [`PHASE3_PUBLIC_BENCHMARKS.json`](proofs/PHASE3_PUBLIC_BENCHMARKS.json) |
 | DATASETS | 33 | 30 equity + 3 tick series |
 
-> Authority source: Wave-1 controlled corpus at [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/). Phase 3 public benchmarks at [`BENCHMARKS.md`](BENCHMARKS.md). Proxy lane results are non-authority rehearsal artifacts.
+> **Real-market results first.** Minute-bar and tick proxy results are from bounded public data ([`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json)); they are non-authority rehearsal artifacts with `promotion_forbidden: true`. Wave-1 controlled corpus at [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/). Phase 3 public benchmarks at [`BENCHMARKS.md`](BENCHMARKS.md).
 
 ## Competitive Benchmarks
 
@@ -248,6 +249,7 @@ zstd/lz4 unavailable at measure time. No general-purpose tool offers search-on-c
 - No claim of regulatory compliance (market data use)
 - Provider-max proxy lane results (14.16x OHLCV, 11.11x tick) are non-authority rehearsal artifacts and cannot be promoted into Phase 06 evidence
 - Real-market boundary (`BOUNDARY.json`) shows `phase06_contract_match: false` and minimum OHLCV compression below the 10x authority floor on some proxy lanes
+- Daily-bar compression gap: real-market daily bars (30 equities, 24 months) yield 5.997× mean compression with ALL 30 series below the 10× authority floor (min 4.78×). The codec's compression advantage narrows sharply at lower bar frequencies
 
 <p>
   <img src=".github/assets/readme/zpe-masthead-option-3.5.gif" alt="ZPE-FT Lower Insert" width="100%">
