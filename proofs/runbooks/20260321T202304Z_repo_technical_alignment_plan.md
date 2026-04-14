@@ -1,10 +1,10 @@
 # ZPE-FT Technical Alignment Plan
 
 Timestamp: 2026-03-21T20:23:04Z
-Repo: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance
+Repo: /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance
 Working Instruction Surface:
-- /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/runbooks/REPO_TECHNICAL_ALIGNMENT_EXECUTION_PROMPT.md
-- /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/runbooks/REPO_TECHNICAL_EXECUTION_SUPPLEMENT.md
+- /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/runbooks/REPO_TECHNICAL_ALIGNMENT_EXECUTION_PROMPT.md
+- /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/runbooks/REPO_TECHNICAL_EXECUTION_SUPPLEMENT.md
 
 ## Classification
 - Standalone Python package with an optional repo-local native helper.

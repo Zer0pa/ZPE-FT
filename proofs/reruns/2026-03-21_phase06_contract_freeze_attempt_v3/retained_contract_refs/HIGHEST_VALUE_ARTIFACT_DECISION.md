@@ -78,10 +78,10 @@ Not:
 
 ## Evidence Base
 - Local: `PRD_ZPE_FT.md`
-- Local: `/Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/market_landscape_decision_note.md`
-- Local: `/Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/zipline_roundtrip_results.json`
-- Local: `/Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ft_query_latency_benchmark.json`
-- Local: `/Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ft_db_roundtrip_results.json`
+- Local: `/Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/market_landscape_decision_note.md`
+- Local: `/Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/zipline_roundtrip_results.json`
+- Local: `/Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ft_query_latency_benchmark.json`
+- Local: `/Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ft_db_roundtrip_results.json`
 - Official: [QuestDB capital markets](https://questdb.com/industries/capital-markets/)
 - Official: [ClickHouse time-series guide](https://clickhouse.com/resources/engineering/what-is-time-series-database)
 - Official: [KDB-X overview](https://docs.kx.com/latest/kdb-x/Get_Started/kdb-x-overview.htm)

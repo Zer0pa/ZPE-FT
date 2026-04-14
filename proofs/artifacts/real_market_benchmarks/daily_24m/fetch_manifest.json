@@ -3,7 +3,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/spy_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "spy_1d_24m",
@@ -13,7 +13,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/qqq_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "qqq_1d_24m",
@@ -23,7 +23,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/aapl_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "aapl_1d_24m",
@@ -33,7 +33,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/msft_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "msft_1d_24m",
@@ -43,7 +43,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/nvda_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "nvda_1d_24m",
@@ -53,7 +53,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/amzn_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "amzn_1d_24m",
@@ -63,7 +63,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/googl_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "googl_1d_24m",
@@ -73,7 +73,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/meta_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "meta_1d_24m",
@@ -83,7 +83,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/tsla_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "tsla_1d_24m",
@@ -93,7 +93,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/brk-b_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "brkb_1d_24m",
@@ -103,7 +103,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/avgo_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "avgo_1d_24m",
@@ -113,7 +113,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/lly_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "lly_1d_24m",
@@ -123,7 +123,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/jpm_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "jpm_1d_24m",
@@ -133,7 +133,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/bac_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "bac_1d_24m",
@@ -143,7 +143,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/gs_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "gs_1d_24m",
@@ -153,7 +153,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/ms_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "ms_1d_24m",
@@ -163,7 +163,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/c_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "c_1d_24m",
@@ -173,7 +173,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/wfc_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "wfc_1d_24m",
@@ -183,7 +183,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/blk_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "blk_1d_24m",
@@ -193,7 +193,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/schw_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "schw_1d_24m",
@@ -203,7 +203,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/cme_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "cme_1d_24m",
@@ -213,7 +213,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/spgi_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "spgi_1d_24m",
@@ -223,7 +223,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlf_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "xlf_1d_24m",
@@ -233,7 +233,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/dia_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "dia_1d_24m",
@@ -243,7 +243,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/iwm_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "iwm_1d_24m",
@@ -253,7 +253,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlk_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "xlk_1d_24m",
@@ -263,7 +263,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/xle_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "xle_1d_24m",
@@ -273,7 +273,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/xlv_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "xlv_1d_24m",
@@ -283,7 +283,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/xli_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "xli_1d_24m",
@@ -293,7 +293,7 @@
     {
       "actual_period": "2y",
       "interval": "1d",
-      "path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1d_24m.csv.gz",
+      "path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ohlcv/soxx_1d_24m.csv.gz",
       "period": "2y",
       "rows": null,
       "series_id": "soxx_1d_24m",

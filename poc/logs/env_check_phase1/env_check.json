@@ -6,8 +6,8 @@
     "secondary_device": "Red Magic 10 Pro+ via adb when attached",
     "sovereign_boundary": "Phase 06 buyer authority remains the top gate"
   },
-  "workspace": "/Users/Zer0pa/ZPE/ZPE FT",
-  "repo": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
+  "workspace": "/Users/zer0pa-build/ZPE/ZPE FT",
+  "repo": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
   "machine": {
     "platform": "macOS-15.5-x86_64-i386-64bit-Mach-O",
     "system": "Darwin",
@@ -15,7 +15,7 @@
     "cpu": "Apple M1"
   },
   "disk": {
-    "workspace": "/Users/Zer0pa/ZPE/ZPE FT",
+    "workspace": "/Users/zer0pa-build/ZPE/ZPE FT",
     "free_bytes": 24067215360,
     "free_gib": 22.41,
     "threshold_gib": 15.0,

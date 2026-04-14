@@ -1,4 +1,4 @@
-command: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/scripts/freeze_real_market_corpus.py --artifact-root /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts --config /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/corpus_config.json
+command: /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/scripts/freeze_real_market_corpus.py --artifact-root /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts --config /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/corpus_config.json
 exit_code: 0
 
 stdout:

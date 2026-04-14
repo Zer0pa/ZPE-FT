@@ -1,5 +1,5 @@
 {
-  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json",
+  "config_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json",
   "config_sha256": "44381c59bfc6ab4f9e7d5f3231f652ef761fe8dccdd03ee0018bf437039f2987",
   "inputs": [
     {
@@ -7,21 +7,21 @@
       "exists": true,
       "series_id": "eurusd_dukascopy_tick_20d_1h",
       "sha256": "9790721ef80bfb5859efb98b0150c4e0aab10df8ec849dca8a62c703ce09c09b",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz"
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz"
     },
     {
       "bytes": 1446547,
       "exists": true,
       "series_id": "aapl_dukascopy_tick_20d_1h",
       "sha256": "0522c8e99b7516b116b53cc37eff9c63231e7ef5bd69cde8a463232be7f17cb5",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz"
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz"
     },
     {
       "bytes": 1614614,
       "exists": true,
       "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
       "sha256": "28681ef8913024b5d96c381a0aa3f1f879002ce3194f52188940949f96b325b9",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz"
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz"
     }
   ],
   "missing_inputs": {

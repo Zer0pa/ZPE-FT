@@ -1,13 +1,13 @@
 # Docs Falsification Report
 
 Timestamp: 2026-03-21T23:14:42Z
-Repo: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance
+Repo: /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance
 Branch: codex/phase06-reality-check
 
 ## Unsupported Claims Removed Or Downgraded
-- Root README no longer leads controlled-authority reading with `quality_gate_scorecard.json`; it now leads with the current Phase 06 blocker and routes controlled claims through the retained bundle plus [`proofs/CONSOLIDATED_PROOF_REPORT.md`](/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/CONSOLIDATED_PROOF_REPORT.md).
+- Root README no longer leads controlled-authority reading with `quality_gate_scorecard.json`; it now leads with the current Phase 06 blocker and routes controlled claims through the retained bundle plus [`proofs/CONSOLIDATED_PROOF_REPORT.md`](/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/CONSOLIDATED_PROOF_REPORT.md).
 - Phase 06 blocker language was tightened from generic "missing corpus exports and authority labels" to the specific retained blocker: `33` named corpus exports plus the auditable query catalog and truth labels are still missing.
-- [`docs/INTEGRATION_PATTERN.md`](/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/INTEGRATION_PATTERN.md) was downgraded from a supporting-authority reading to an operator-local reference and stripped of sibling absolute path claims.
+- [`docs/INTEGRATION_PATTERN.md`](/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/INTEGRATION_PATTERN.md) was downgraded from a supporting-authority reading to an operator-local reference and stripped of sibling absolute path claims.
 - Historical cleanup language was narrowed so copied contract refs and operator prompts are now described as lineage or execution context, not front-door authority.
 
 ## Path And Render Issues Found

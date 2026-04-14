@@ -1,9 +1,9 @@
 {
-  "boundary_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/BOUNDARY.json",
+  "boundary_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/BOUNDARY.json",
   "generated_at_utc": "2026-04-06T17:24:24.897519+00:00",
   "lanes": [
     {
-      "artifact_dir": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts",
+      "artifact_dir": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts",
       "freeze_exit_code": 0,
       "ft_db_roundtrip_results.json": {
         "claim_id": "FT-C006",
@@ -220,7 +220,7 @@
             "series_id": "soxx_1d_24m"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json"
       },
       "ft_encode_decode_latency.json": {
         "aggregate": {
@@ -659,7 +659,7 @@
             "series_id": "soxx_1d_24m"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json"
       },
       "ft_ohlcv_benchmark.json": {
         "aggregate": {
@@ -940,7 +940,7 @@
             "threshold": 10.0
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
         "threshold": 10.0
       },
       "ft_pattern_search_eval.json": {
@@ -4421,9 +4421,9 @@
             ]
           }
         ],
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
         "scored_queries": 0,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
         "status": "NEEDS_LABELS",
         "threshold": 0.85,
         "unscored_queries": 240
@@ -4438,7 +4438,7 @@
         },
         "pass": true,
         "queries": 240,
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
         "series": [
           {
             "latencies_ms": {
@@ -4712,7 +4712,7 @@
           }
         ],
         "single_core_target": true,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
         "threshold_ms": 100.0
       },
       "ft_reconstruction_fidelity.json": {
@@ -5062,7 +5062,7 @@
         "claim_id": "FT-C002",
         "pass": false,
         "series": [],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
         "threshold": 8.0
       },
       "lane_id": "daily_24m",
@@ -5071,7 +5071,7 @@
       "status": "completed"
     },
     {
-      "artifact_dir": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts",
+      "artifact_dir": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts",
       "freeze_exit_code": 0,
       "ft_db_roundtrip_results.json": {
         "claim_id": "FT-C006",
@@ -5288,7 +5288,7 @@
             "series_id": "soxx_1m_8d"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json"
       },
       "ft_encode_decode_latency.json": {
         "aggregate": {
@@ -5727,7 +5727,7 @@
             "series_id": "soxx_1m_8d"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json"
       },
       "ft_ohlcv_benchmark.json": {
         "aggregate": {
@@ -6008,7 +6008,7 @@
             "threshold": 10.0
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
         "threshold": 10.0
       },
       "ft_pattern_search_eval.json": {
@@ -9389,9 +9389,9 @@
             ]
           }
         ],
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/starter_query_catalog.generated.json",
         "scored_queries": 0,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
         "status": "NEEDS_LABELS",
         "threshold": 0.85,
         "unscored_queries": 240
@@ -9406,7 +9406,7 @@
         },
         "pass": true,
         "queries": 240,
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/starter_query_catalog.generated.json",
         "series": [
           {
             "latencies_ms": {
@@ -9680,7 +9680,7 @@
           }
         ],
         "single_core_target": true,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
         "threshold_ms": 100.0
       },
       "ft_reconstruction_fidelity.json": {
@@ -10030,7 +10030,7 @@
         "claim_id": "FT-C002",
         "pass": false,
         "series": [],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/artifacts/real_market_corpus_manifest.json",
         "threshold": 8.0
       },
       "lane_id": "minute_30d",
@@ -10039,7 +10039,7 @@
       "status": "completed"
     },
     {
-      "artifact_dir": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts",
+      "artifact_dir": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts",
       "freeze_exit_code": 0,
       "ft_db_roundtrip_results.json": {
         "claim_id": "FT-C006",
@@ -10067,7 +10067,7 @@
             "series_id": "e_sandp_500_dukascopy_tick_20d_1h"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json"
       },
       "ft_encode_decode_latency.json": {
         "aggregate": {
@@ -10128,7 +10128,7 @@
             "series_id": "e_sandp_500_dukascopy_tick_20d_1h"
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json"
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json"
       },
       "ft_ohlcv_benchmark.json": {
         "aggregate": {
@@ -10138,7 +10138,7 @@
         "claim_id": "FT-C001",
         "pass": false,
         "series": [],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
         "threshold": 10.0
       },
       "ft_pattern_search_eval.json": {
@@ -10623,9 +10623,9 @@
             ]
           }
         ],
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
         "scored_queries": 0,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
         "status": "NEEDS_LABELS",
         "threshold": 0.85,
         "unscored_queries": 24
@@ -10640,7 +10640,7 @@
         },
         "pass": true,
         "queries": 24,
-        "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
+        "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/starter_query_catalog.generated.json",
         "series": [
           {
             "latencies_ms": {
@@ -10671,7 +10671,7 @@
           }
         ],
         "single_core_target": true,
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
         "threshold_ms": 100.0
       },
       "ft_reconstruction_fidelity.json": {
@@ -10746,7 +10746,7 @@
             "threshold": 8.0
           }
         ],
-        "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
+        "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/real_market_corpus_manifest.json",
         "threshold": 8.0
       },
       "lane_id": "tick_20_sessions",
@@ -10755,10 +10755,10 @@
       "status": "completed"
     }
   ],
-  "missing_data_readme": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/MISSING_DATA_README.md",
-  "phase06_gap_matrix": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/phase06_inputs/series_gap_matrix.csv",
-  "phase06_gap_readme": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/phase06_inputs/README.md",
-  "repo_root": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
-  "tick_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/tick_fetch_status.json",
-  "truth_report_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json"
+  "missing_data_readme": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/MISSING_DATA_README.md",
+  "phase06_gap_matrix": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/phase06_inputs/series_gap_matrix.csv",
+  "phase06_gap_readme": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/phase06_inputs/README.md",
+  "repo_root": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
+  "tick_status_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/tick_fetch_status.json",
+  "truth_report_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json"
 }

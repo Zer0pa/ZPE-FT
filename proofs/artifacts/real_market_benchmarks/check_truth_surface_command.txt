@@ -1,4 +1,4 @@
-command: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/scripts/check_truth_surface.py --query-catalog /Users/Zer0pa/ZPE/ZPE FT/.gpd/phases/06-open-access-enterprise-wedge-benchmark/phase06_query_catalog.pending.json --output /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json
+command: /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/scripts/check_truth_surface.py --query-catalog /Users/zer0pa-build/ZPE/ZPE FT/.gpd/phases/06-open-access-enterprise-wedge-benchmark/phase06_query_catalog.pending.json --output /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json
 exit_code: 2
 
 stdout:
@@ -10,7 +10,7 @@ stdout:
   ],
   "blocked_count": 6,
   "catalog_id": "phase06_query_catalog_pending_v1",
-  "catalog_path": "/Users/Zer0pa/ZPE/ZPE FT/.gpd/phases/06-open-access-enterprise-wedge-benchmark/phase06_query_catalog.pending.json",
+  "catalog_path": "/Users/zer0pa-build/ZPE/ZPE FT/.gpd/phases/06-open-access-enterprise-wedge-benchmark/phase06_query_catalog.pending.json",
   "catalog_status": "PENDING_LABEL_AUDIT",
   "claim_id": "FT-C004",
   "inspected_items": 6,

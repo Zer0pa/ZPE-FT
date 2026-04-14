@@ -1,4 +1,4 @@
-command: /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/scripts/fetch_dukascopy_ticks.py --repo-root /Users/Zer0pa/ZPE/ZPE FT/zpe-finance --skip-download
+command: /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/.venv/bin/python /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/scripts/fetch_dukascopy_ticks.py --repo-root /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance --skip-download
 exit_code: 0
 
 stdout:

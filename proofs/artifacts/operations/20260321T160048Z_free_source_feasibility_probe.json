@@ -15,7 +15,7 @@
     "ohlcv_contract": "30 stock and ETF series at 1m granularity for 24 months",
     "tick_contract": "3 tick/NBBO-style series with stable schema and provenance"
   },
-  "phase06_config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/examples/phase06_benchmark_request.example.json",
+  "phase06_config_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/examples/phase06_benchmark_request.example.json",
   "probe_results": [
     {
       "columns": [
@@ -191,7 +191,7 @@
       "symbol": "EURUSD=X"
     }
   ],
-  "repo": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
+  "repo": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
   "timestamp_utc": "2026-03-21T16:08:50.666682+00:00",
-  "workspace": "/Users/Zer0pa/ZPE/ZPE FT"
+  "workspace": "/Users/zer0pa-build/ZPE/ZPE FT"
 }

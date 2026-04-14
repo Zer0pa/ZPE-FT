@@ -3476,9 +3476,9 @@
       ]
     }
   ],
-  "query_catalog_source": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
+  "query_catalog_source": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/starter_query_catalog.generated.json",
   "scored_queries": 0,
-  "source_manifest": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
+  "source_manifest": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/real_market_corpus_manifest.json",
   "status": "NEEDS_LABELS",
   "threshold": 0.85,
   "unscored_queries": 240

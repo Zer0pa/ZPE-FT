@@ -4,14 +4,14 @@
 
 # ZPE-FT - ZER0PA Innovation PRD
 Sector: ZPE FT
-Sector Folder: /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/
+Sector Folder: /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/
 Document Class: SECTOR_SPECIFIC_PRD
 Version: 0.4.1
 Created: 2026-03-18
 Last Modified: 2026-03-18
 Status: BASELINE_FROZEN_EXECUTION_READY
 PRD Class: IMMUTABLE_CHARTER + MUTABLE_EXPERIMENT_PROGRAM
-Source Corpus: /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md
+Source Corpus: /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md
 Authority Metric: AM-C05_FROZEN - compressed-space motif-query p95 latency on the frozen single-core workload, with compression, fidelity, search quality, and roundtrip integrity held as hard guardrails
 Comparator State: FROZEN_NARROW_LANE
 PRD Hash: DECISION_FROZEN_2026-03-18
@@ -29,7 +29,7 @@ Charter split note:
 - Provisional immutable charter surface for concept stage: Sections 0-3, 5, 7, 10, 14, 15, 15A-15E, and 16.
 - Mutable experiment program surface: Sections 4, 6, 8, 9, 11, 12, and 13.
 - Concept-stage charter boundary: first-lane closure is `zpe-finance`, backed by `.zpfin` and proven by `pattern-library` on the frozen measured workload. `sidecar-accelerator` is the first deployment wedge after core closure. DB adapters, wider query surfaces, and foundation-model bridges remain explicit follow-on or separate-lane surfaces rather than silently deleted scope.
-- Execution-repo note: control-plane docs and state live in `/Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/`. The active implementation repo for the frozen first lane is `/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/`, with the final PRD mirrored into `/Users/Zer0pa/ZPE/ZPE FT/`.
+- Execution-repo note: control-plane docs and state live in `/Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/`. The active implementation repo for the frozen first lane is `/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/`, with the final PRD mirrored into `/Users/zer0pa-build/ZPE/ZPE FT/`.
 
 ## 1. Mission and Structural Thesis
 
@@ -93,49 +93,49 @@ Resolved for the first frozen lane:
 ### 2.1 In-Scope Artifacts
 | Artifact | Type | Lane | Target Path | State |
 |----------|------|------|-------------|-------|
-| zpe-finance | library | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/ | FIRST_LANE_PRODUCT |
-| zpfin-transport | protocol | L1 | /Users/Zer0pa/ZPE/ZPE FT/format/ZPFIN_SPEC.md | FIRST_LANE_TRANSPORT_PREREQUISITE |
-| rust-codec-search-kernel | code | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/core/ | INTERNAL_FIRST_LANE_SUBSTRATE |
-| pattern-library | retrieval surface | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/python/zpe_finance/ | FIRST_LANE_VALUE_PROOF |
-| sidecar-accelerator | integration | L1 | /Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/zipline_roundtrip_results.json | FOLLOW_ON_DEPLOYMENT_WEDGE |
-| timescaledb-extension | adapter | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/adapters/timescaledb/ | FOLLOW_ON_ADAPTER |
-| clickhouse-codec | adapter | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/adapters/clickhouse/ | FOLLOW_ON_ADAPTER |
-| kdb-q-wrapper | adapter | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/adapters/kdb/ | FOLLOW_ON_ADAPTER |
-| foundation-model-pretokenizer-bridge | model interface | L1 | /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/docs/bridges/foundation-model/ | SEPARATE_LANE_OR_MAXIMALIZATION |
+| zpe-finance | library | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/ | FIRST_LANE_PRODUCT |
+| zpfin-transport | protocol | L1 | /Users/zer0pa-build/ZPE/ZPE FT/format/ZPFIN_SPEC.md | FIRST_LANE_TRANSPORT_PREREQUISITE |
+| rust-codec-search-kernel | code | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/core/ | INTERNAL_FIRST_LANE_SUBSTRATE |
+| pattern-library | retrieval surface | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/python/zpe_finance/ | FIRST_LANE_VALUE_PROOF |
+| sidecar-accelerator | integration | L1 | /Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/zipline_roundtrip_results.json | FOLLOW_ON_DEPLOYMENT_WEDGE |
+| timescaledb-extension | adapter | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/adapters/timescaledb/ | FOLLOW_ON_ADAPTER |
+| clickhouse-codec | adapter | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/adapters/clickhouse/ | FOLLOW_ON_ADAPTER |
+| kdb-q-wrapper | adapter | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/adapters/kdb/ | FOLLOW_ON_ADAPTER |
+| foundation-model-pretokenizer-bridge | model interface | L1 | /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/docs/bridges/foundation-model/ | SEPARATE_LANE_OR_MAXIMALIZATION |
 
 ### 2.2 Out-of-Scope (Explicit)
 - Trading strategies, price prediction, market simulation, or learned models inside the core codec.
 - Wholesale replacement of TimescaleDB, QuestDB, ClickHouse, InfluxDB, or kdb+ in the first ratified lane.
 - Presenting the concept doc’s broader adapter and acquisition rhetoric as already-evidenced current behavior.
 - Treating the frozen synthetic-corpus evidence bundle as proof of broad market dominance, full TSDB replacement, or real-market production readiness.
-- Writing FT sector outputs outside /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/.
+- Writing FT sector outputs outside /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/.
 
 ### 2.3 Sector Boundary and Document Locality
 - Sector-specific PRDs, research, runbooks, outputs, and history live inside the sector folder.
 - Root-level docs are reserved for sector-agnostic canon, methodology, alignment briefs, and cross-sector orchestration doctrine.
 - A sector PRD may cite root canonical docs, but should not duplicate them wholesale.
 - Sibling sector folders are read-only unless an explicit cross-sector integration phase is declared.
-- The canonical execution repo for the frozen FT lane is `/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/`; the outer legacy folder `/Users/Zer0pa/ZPE/ZPE FT/` holds sector-local implementation history, evidence bundles, and the mirrored final PRD.
+- The canonical execution repo for the frozen FT lane is `/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/`; the outer legacy folder `/Users/zer0pa-build/ZPE/ZPE FT/` holds sector-local implementation history, evidence bundles, and the mirrored final PRD.
 - Frozen charter boundary: this PRD treats `zpe-finance` plus `.zpfin` plus `pattern-library` proof on the frozen measured workload as the authority-bearing closure surface. `sidecar-accelerator` is the first deployment wedge after core closure. DB adapters and foundation-model bridges remain visible, but are not first-lane authority scope.
 
 ### 2.4 Source Corpus and Coverage Matrix
 | Source ID | Path | Type | Required For | Status | Notes |
 |-----------|------|------|--------------|--------|-------|
-| CTRL-01 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZER0PA_SCIENTIFIC_METHODOLOGY.md | control doc | 0, 1, 2, 4, 5, 6, 7, 8, 10, 11, 13, 14, 15, 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Governs authority-metric sovereignty, falsification, contradiction visibility, determinism, and commercialization as a real gate. |
-| CTRL-02 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/PRD_ALIGNMENT_BRIEF_2026-03-09.md | control doc | 0, 2, 4, 5, 7, 8, 11, 12, 13, 14, 15, 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Makes immutable charter plus mutable experiment split explicit and requires startup-control artifacts. |
-| CTRL-03 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZER0PA Innovation PRD — Canonical Format Specification.md | control doc | 0 through 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Governs canonical section structure, provenance discipline, and readiness downgrades. |
-| FT-C1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/ZPE Financial Time Series — Concept Document v1.0.md | sector source | 1, 2, 3, 4, 5, 6, 7, 11, 13, 14, 15A | FULLY_READ + EXTRACTED | Conceptual architecture, artifact stack, hard requirements, pattern-library value proposition, adapters, and commercialization. |
-| FT-E1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/EXTERNAL_EVALUATION_SUMMARY_2026-03-09.md | sector source | 1, 2, 3, 5, 6, 7, 11, 14, 15A | FULLY_READ + EXTRACTED | Current measured behavior, current product boundary, benefits, shortcomings, replacement strategy, and readiness verdicts. |
-| FT-S1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/ZPE-FT Wave 1 — Agent Handoff Supplement (1).md | sector source | 1, 2, 3, 4, 5, 6, 11, 13, 14, 15D, 15E | FULLY_READ + EXTRACTED | Exact primitive table, measured metrics recap, five confirmed gaps, Wave 2 code targets, anti-pattern rules, and missing authority surfaces. |
-| FT-LIC-01 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/LICENSE.txt | legal authority | 3, 11, 14, 15, 15E, 16 | FULLY_READ + EXTRACTED | Governing SAL v6.0 license; resolves protected-architecture scope, hosted-service restrictions, and commercial-license boundary. |
-| FT-LG-01 | /Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ | legacy evidence bundle | 4, 5, 7, 10, 11, 14, 15 | FULLY_READ + INDEXED | Local benchmark, replay, comparator, roundtrip, Zipline, TSBS-like, and quality-gate evidence bundle adopted as current best-known narrow-lane evidence. |
-| FT-LG-02 | /Users/Zer0pa/ZPE/ZPE FT/format/ZPFIN_SPEC.md | transport spec | 2, 3, 10, 15E | FULLY_READ + EXTRACTED | Current `.zpfin` framing and determinism rules. |
-| FT-LG-03 | /Users/Zer0pa/ZPE/ZPE FT/runbooks/RUNBOOK_ZPE_FT_MASTER.md | legacy runbook | 4, 9, 11 | FULLY_READ + INDEXED | Execution order, seed policy, dataset lock, gate order, and evidence conventions for the legacy lane. |
+| CTRL-01 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZER0PA_SCIENTIFIC_METHODOLOGY.md | control doc | 0, 1, 2, 4, 5, 6, 7, 8, 10, 11, 13, 14, 15, 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Governs authority-metric sovereignty, falsification, contradiction visibility, determinism, and commercialization as a real gate. |
+| CTRL-02 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/PRD_ALIGNMENT_BRIEF_2026-03-09.md | control doc | 0, 2, 4, 5, 7, 8, 11, 12, 13, 14, 15, 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Makes immutable charter plus mutable experiment split explicit and requires startup-control artifacts. |
+| CTRL-03 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZER0PA Innovation PRD — Canonical Format Specification.md | control doc | 0 through 16 | FULLY_READ + EXTRACTED + CONTROL_ONLY | Governs canonical section structure, provenance discipline, and readiness downgrades. |
+| FT-C1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/ZPE Financial Time Series — Concept Document v1.0.md | sector source | 1, 2, 3, 4, 5, 6, 7, 11, 13, 14, 15A | FULLY_READ + EXTRACTED | Conceptual architecture, artifact stack, hard requirements, pattern-library value proposition, adapters, and commercialization. |
+| FT-E1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/EXTERNAL_EVALUATION_SUMMARY_2026-03-09.md | sector source | 1, 2, 3, 5, 6, 7, 11, 14, 15A | FULLY_READ + EXTRACTED | Current measured behavior, current product boundary, benefits, shortcomings, replacement strategy, and readiness verdicts. |
+| FT-S1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/ZPE-FT Wave 1 — Agent Handoff Supplement (1).md | sector source | 1, 2, 3, 4, 5, 6, 11, 13, 14, 15D, 15E | FULLY_READ + EXTRACTED | Exact primitive table, measured metrics recap, five confirmed gaps, Wave 2 code targets, anti-pattern rules, and missing authority surfaces. |
+| FT-LIC-01 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/LICENSE.txt | legal authority | 3, 11, 14, 15, 15E, 16 | FULLY_READ + EXTRACTED | Governing SAL v6.0 license; resolves protected-architecture scope, hosted-service restrictions, and commercial-license boundary. |
+| FT-LG-01 | /Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ | legacy evidence bundle | 4, 5, 7, 10, 11, 14, 15 | FULLY_READ + INDEXED | Local benchmark, replay, comparator, roundtrip, Zipline, TSBS-like, and quality-gate evidence bundle adopted as current best-known narrow-lane evidence. |
+| FT-LG-02 | /Users/zer0pa-build/ZPE/ZPE FT/format/ZPFIN_SPEC.md | transport spec | 2, 3, 10, 15E | FULLY_READ + EXTRACTED | Current `.zpfin` framing and determinism rules. |
+| FT-LG-03 | /Users/zer0pa-build/ZPE/ZPE FT/runbooks/RUNBOOK_ZPE_FT_MASTER.md | legacy runbook | 4, 9, 11 | FULLY_READ + INDEXED | Execution order, seed policy, dataset lock, gate order, and evidence conventions for the legacy lane. |
 
 ### 2.5 Lane Boundaries
 | Lane ID | Name | Owner Agent(s) | Folder Boundary | Integration Phase |
 |---------|------|----------------|-----------------|-------------------|
-| L1 | Core ZPE-FT hypothesis program | Post-ratification lane quartet | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/ | P5 |
+| L1 | Core ZPE-FT hypothesis program | Post-ratification lane quartet | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/ | P5 |
 
 Lane note:
 - HF-01 through HF-16 remain active inside L1 through CAND-01 through CAND-05.
@@ -219,7 +219,7 @@ Freeze rule:
 - No environment-bound claim may be promoted until one row in this surface is frozen for the relevant authority metric and comparator family.
 
 ### 3.4 Dependency and License Constraints
-- The governing first-lane license is Zer0pa SAL v6.0, as read from `/Users/Zer0pa/ZPE/Zer0pa PRD & Research/LICENSE.txt` and mirrored in `/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/LICENSE`.
+- The governing first-lane license is Zer0pa SAL v6.0, as read from `/Users/zer0pa-build/ZPE/Zer0pa PRD & Research/LICENSE.txt` and mirrored in `/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/LICENSE`.
 - Protected-architecture scope covers the N-primitive directional encoding family with `N >= 2`; P8 is the canonical profile and profile changes such as P16 remain profile variants, not separate inventions.
 - Hosted or managed service deployment of the FT lane, and production or commercial use above the SAL revenue threshold, require a commercial license from Zer0pa.
 - Earlier MIT-core phrasing in concept-era documents is superseded for the current distributed first lane by the SAL authority surface.
@@ -310,22 +310,22 @@ Commercialization control rule:
 ### 4.3 Phase Status Log
 | Date | Phase | Gate | Result | Evidence Path | Agent | Notes |
 |------|-------|------|--------|---------------|-------|-------|
-| 2026-03-18 | P0 | Concept package assembled | PASS | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/PRD_ZPE_FT.md | PRD_SYSTEM | Source-grounded concept PRD exists; authoring-chain detail is archived in sector-local sidecars. |
-| 2026-03-18 | P1 | Freeze package locked | PASS | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md | PRD_SYSTEM | First-lane boundary, sovereign metric, comparators, corpora, environments, minimum artifact, and licensing boundary are now explicit. |
-| 2026-03-18 | P2-P4 | Legacy narrow-lane evidence adopted as current best-known state | PASS | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json | PRD_SYSTEM | Local legacy evidence bundle closes the narrow codec/search/roundtrip/Zipline wedge on frozen synthetic corpora and declared support environments. |
+| 2026-03-18 | P0 | Concept package assembled | PASS | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/PRD_ZPE_FT.md | PRD_SYSTEM | Source-grounded concept PRD exists; authoring-chain detail is archived in sector-local sidecars. |
+| 2026-03-18 | P1 | Freeze package locked | PASS | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md | PRD_SYSTEM | First-lane boundary, sovereign metric, comparators, corpora, environments, minimum artifact, and licensing boundary are now explicit. |
+| 2026-03-18 | P2-P4 | Legacy narrow-lane evidence adopted as current best-known state | PASS | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json | PRD_SYSTEM | Local legacy evidence bundle closes the narrow codec/search/roundtrip/Zipline wedge on frozen synthetic corpora and declared support environments. |
 
 ### 4.4 Startup Control Artifacts
 Before Sprint 1, the orchestrator must create:
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/experiment_program.md - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/source_coverage_matrix.md - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/sector_manifest.md - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/state.json - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/budget_status.json - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/candidate_registry.json - EXISTS
-- /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/event_log.ndjson - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/experiment_program.md - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/source_coverage_matrix.md - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/sector_manifest.md - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/state.json - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/budget_status.json - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/candidate_registry.json - EXISTS
+- /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/event_log.ndjson - EXISTS
 
 ### 4.5 Ratification Freeze Package
 P1 cannot exit until the following freeze package exists explicitly:
@@ -416,7 +416,7 @@ Promotion rule:
 ### 6.3 Falsification Evidence Log
 | Date | DT/KG ID | Result | Evidence Path | Agent | Replay Command |
 |------|----------|--------|---------------|-------|----------------|
-| 2026-03-18 | DT-01 through DT-07, DT-10 support path | PASS_ON_ADOPTED_EVIDENCE | /Users/Zer0pa/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ | LEGACY_EVIDENCE_ADOPTION | See `output/research_pack_index.md` and legacy `RUNBOOK_ZPE_FT_MASTER.md` |
+| 2026-03-18 | DT-01 through DT-07, DT-10 support path | PASS_ON_ADOPTED_EVIDENCE | /Users/zer0pa-build/ZPE/ZPE FT/artifacts/2026-02-21_zpe_ft_wave1_final/ | LEGACY_EVIDENCE_ADOPTION | See `output/research_pack_index.md` and legacy `RUNBOOK_ZPE_FT_MASTER.md` |
 
 ## 7. Baseline Discipline
 
@@ -464,7 +464,7 @@ Freeze rule:
 Status: COMPLETE for the frozen execution PRD.
 
 Archive note:
-- The authoring packet exists under `/Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/`.
+- The authoring packet exists under `/Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/`.
 - Those artifacts remain available for audit, provenance, and memory preservation.
 - They are not active execution gates for the engineering lane.
 
@@ -518,15 +518,15 @@ Each agent must on every session start:
 ### 9.1 Active Runbooks
 | Runbook ID | Lane | Path | Last Updated | Phase Coverage |
 |------------|------|------|--------------|----------------|
-| RB-00 | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_MASTER.md | 2026-03-18 | P5-P6 commercial validation and release staging |
-| RB-01 | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_FALSIFICATION.md | 2026-03-18 | P5 commercial refresh and negative-result discipline |
-| RB-02 | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_REAL_MARKET_FREEZE.md | 2026-03-18 | P5 `EV-01` commercial corpus freeze |
-| RB-03 | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_REAL_MARKET_REFRESH.md | 2026-03-18 | P5 `EV-02` and measurable `EV-03` rerun |
+| RB-00 | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_MASTER.md | 2026-03-18 | P5-P6 commercial validation and release staging |
+| RB-01 | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_FALSIFICATION.md | 2026-03-18 | P5 commercial refresh and negative-result discipline |
+| RB-02 | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_REAL_MARKET_FREEZE.md | 2026-03-18 | P5 `EV-01` commercial corpus freeze |
+| RB-03 | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/RUNBOOK_ZPE_FT_REAL_MARKET_REFRESH.md | 2026-03-18 | P5 `EV-02` and measurable `EV-03` rerun |
 
 ### 9.1A Repo-Native Commercial Refresh Path
 The current repo-native execution chain for P5 is now explicit:
 1. Write a corpus spec JSON that maps buyer-approved OHLCV and top-of-book exports into the FT canonical field contract.
-2. Run `python3 scripts/freeze_real_market_corpus.py --config ... --artifact-root ...` inside `/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/`.
+2. Run `python3 scripts/freeze_real_market_corpus.py --config ... --artifact-root ...` inside `/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/`.
 3. Run `python3 scripts/run_real_market_refresh.py --manifest ... --artifact-root ...` against the frozen manifest.
 4. Treat `FT-C004` as authority-bearing only when the query catalog supplies `relevant_positions` or the equivalent analyst-acceptance surface.
 
@@ -579,10 +579,10 @@ If a runbook step contradicts the PRD, the PRD is authoritative. The runbook mus
 ### 10.2 Parity Verification
 | Parity Pair | Status | Last Verified | Evidence Path |
 |-------------|--------|---------------|---------------|
-| Rust core <-> Python wrapper | UNTESTED | - | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/rust_vs_python.md |
-| Local repo <-> blind clone | UNTESTED | - | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/local_vs_blind_clone.md |
-| Core `.zpfin` path <-> current DB roundtrip path | UNTESTED | - | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/zpfin_vs_db_roundtrip.md |
-| PostgreSQL or Timescale adapter <-> ClickHouse adapter | UNTESTED | - | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/postgres_vs_clickhouse.md |
+| Rust core <-> Python wrapper | UNTESTED | - | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/rust_vs_python.md |
+| Local repo <-> blind clone | UNTESTED | - | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/local_vs_blind_clone.md |
+| Core `.zpfin` path <-> current DB roundtrip path | UNTESTED | - | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/zpfin_vs_db_roundtrip.md |
+| PostgreSQL or Timescale adapter <-> ClickHouse adapter | UNTESTED | - | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/postgres_vs_clickhouse.md |
 
 ### 10.3 Provenance Chain Rule
 Large claims must be reproducible from one command or one runbook path. Public or staging claims are not accepted if they depend on ambient local state absent from the repo or artifact surface.
@@ -592,31 +592,31 @@ Large claims must be reproducible from one command or one runbook path. Public o
 ### 11.1 Required Artifacts Checklist
 | Artifact Type | Lane | Path | Status | Phase |
 |---------------|------|------|--------|-------|
-| Charter lock | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md | EXISTS | P1 |
-| Experiment program | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/experiment_program.md | EXISTS | P1 |
-| Source coverage matrix | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/source_coverage_matrix.md | EXISTS | P0 |
-| Sector manifest | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/sector_manifest.md | EXISTS | P0-P1 |
-| Research pack index | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md | EXISTS | P0-P1 |
-| Archived authoring packet | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/ | EXISTS | P0 |
-| Local copy or index of `LICENSE.txt` authority surface | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/license_authority_surface.md | EXISTS | P1 |
-| Local copy or index of Wave 1 Deep Research report | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/wave1_deep_research_index.md | EXISTS | P1 |
-| PRD draft | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/PRD_ZPE_FT.md | EXISTS | P0 |
-| Section source map | sector | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/section_source_map.md | EXISTS | P0 |
-| State JSON | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/state.json | EXISTS | P1 |
-| Budget status JSON | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/budget_status.json | EXISTS | P1 |
-| Best-known-state JSON | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json | EXISTS | P1 |
-| Candidate registry JSON | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/candidate_registry.json | EXISTS | P1 |
-| Event log NDJSON | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/event_log.ndjson | EXISTS | P1 |
-| Runbooks | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/ | EXISTS | P1 |
-| Command logs | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/command_logs/ | MISSING | P2+ |
-| Quality gate scorecards | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/quality_gates/ | MISSING | P3+ |
-| Claim status deltas | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/claim_status_deltas.md | MISSING | P3+ |
-| Falsification reports | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/falsification_reports/ | MISSING | P3+ |
-| Baseline comparison tables | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/baseline_comparisons/ | MISSING | P3+ |
-| Determinism replay bundles | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/replay_bundles/ | MISSING | P3+ |
-| Parity reports | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/ | MISSING | P3+ |
-| Comet experiment pointers | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/comet_links.md | MISSING | P2+ |
-| Integration readiness contract | L1 | /Users/Zer0pa/ZPE/Zer0pa PRD & Research/ZPE FT/output/integration_readiness.md | EXISTS | P5 |
+| Charter lock | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/charter_lock.md | EXISTS | P1 |
+| Experiment program | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/experiment_program.md | EXISTS | P1 |
+| Source coverage matrix | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/source_coverage_matrix.md | EXISTS | P0 |
+| Sector manifest | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/sector_manifest.md | EXISTS | P0-P1 |
+| Research pack index | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/research_pack_index.md | EXISTS | P0-P1 |
+| Archived authoring packet | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/ | EXISTS | P0 |
+| Local copy or index of `LICENSE.txt` authority surface | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/license_authority_surface.md | EXISTS | P1 |
+| Local copy or index of Wave 1 Deep Research report | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/wave1_deep_research_index.md | EXISTS | P1 |
+| PRD draft | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/PRD_ZPE_FT.md | EXISTS | P0 |
+| Section source map | sector | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/section_source_map.md | EXISTS | P0 |
+| State JSON | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/state.json | EXISTS | P1 |
+| Budget status JSON | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/budget_status.json | EXISTS | P1 |
+| Best-known-state JSON | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/best_known_state.json | EXISTS | P1 |
+| Candidate registry JSON | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/candidate_registry.json | EXISTS | P1 |
+| Event log NDJSON | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/event_log.ndjson | EXISTS | P1 |
+| Runbooks | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/runbooks/ | EXISTS | P1 |
+| Command logs | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/command_logs/ | MISSING | P2+ |
+| Quality gate scorecards | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/quality_gates/ | MISSING | P3+ |
+| Claim status deltas | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/claim_status_deltas.md | MISSING | P3+ |
+| Falsification reports | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/falsification_reports/ | MISSING | P3+ |
+| Baseline comparison tables | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/baseline_comparisons/ | MISSING | P3+ |
+| Determinism replay bundles | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/replay_bundles/ | MISSING | P3+ |
+| Parity reports | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/parity_reports/ | MISSING | P3+ |
+| Comet experiment pointers | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/comet_links.md | MISSING | P2+ |
+| Integration readiness contract | L1 | /Users/zer0pa-build/ZPE/Zer0pa PRD & Research/ZPE FT/output/integration_readiness.md | EXISTS | P5 |
 
 ### 11.2 Artifact Closure Rule
 If it cannot be linked to a concrete artifact path, it is not closed. Prose alone does not constitute evidence.

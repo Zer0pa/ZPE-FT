@@ -1,5 +1,5 @@
 {
-  "config_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json",
+  "config_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/corpus_config.json",
   "config_sha256": "44381c59bfc6ab4f9e7d5f3231f652ef761fe8dccdd03ee0018bf437039f2987",
   "contract": {
     "authority_metric": "AM-C05_FROZEN",
@@ -36,7 +36,7 @@
       "delimiter": ",",
       "kind": "tick",
       "license_note": "Bounded public tick lane only. Bounded 20x1h liquid-session slices are useful, but the sovereign contract still expects the exact 20-session authority pack under proofs/phase06_inputs/ticks/.",
-      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/eurusd_dukascopy_tick_20d_1h.npz",
+      "normalized_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/eurusd_dukascopy_tick_20d_1h.npz",
       "provenance": "Dukascopy freeserv chart/json3 (EUR/USD, requested 20_sessions, actual 20x1h_slices)",
       "row_count": 192859,
       "scales": {},
@@ -73,7 +73,7 @@
         }
       },
       "series_id": "eurusd_dukascopy_tick_20d_1h",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz",
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/eurusd_dukascopy_tick_20d_1h.csv.gz",
       "source_sha256": "9790721ef80bfb5859efb98b0150c4e0aab10df8ec849dca8a62c703ce09c09b",
       "symbol": "EURUSD",
       "tick_size": 1e-05,
@@ -95,7 +95,7 @@
       "delimiter": ",",
       "kind": "tick",
       "license_note": "Bounded public tick lane only. Dukascopy exposes a single-venue stock CFD top-of-book feed, not AAPL NBBO, and this fetch is bounded to 20x1h liquid-session slices.",
-      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/aapl_dukascopy_tick_20d_1h.npz",
+      "normalized_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/aapl_dukascopy_tick_20d_1h.npz",
       "provenance": "Dukascopy freeserv chart/json3 (AAPL.US/USD, requested 20_sessions, actual 20x1h_slices)",
       "row_count": 224292,
       "scales": {},
@@ -132,7 +132,7 @@
         }
       },
       "series_id": "aapl_dukascopy_tick_20d_1h",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz",
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/aapl_dukascopy_tick_20d_1h.csv.gz",
       "source_sha256": "0522c8e99b7516b116b53cc37eff9c63231e7ef5bd69cde8a463232be7f17cb5",
       "symbol": "AAPL",
       "tick_size": 0.001,
@@ -154,7 +154,7 @@
       "delimiter": ",",
       "kind": "tick",
       "license_note": "Bounded public tick lane only. Dukascopy exposes an E_SandP-500 CFD/index stream, not ES1 futures top-of-book, and this fetch is bounded to 20x1h liquid-session slices.",
-      "normalized_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/e_sandp_500_dukascopy_tick_20d_1h.npz",
+      "normalized_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/normalized/e_sandp_500_dukascopy_tick_20d_1h.npz",
       "provenance": "Dukascopy freeserv chart/json3 (E_SandP-500, requested 20_sessions, actual 20x1h_slices)",
       "row_count": 189766,
       "scales": {},
@@ -191,7 +191,7 @@
         }
       },
       "series_id": "e_sandp_500_dukascopy_tick_20d_1h",
-      "source_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz",
+      "source_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/data/ticks/e-sandp-500_dukascopy_tick_20d_1h.csv.gz",
       "source_sha256": "28681ef8913024b5d96c381a0aa3f1f879002ce3194f52188940949f96b325b9",
       "symbol": "E_SandP-500",
       "tick_size": 0.001,

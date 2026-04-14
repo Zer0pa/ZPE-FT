@@ -18,19 +18,19 @@
   "lane_contract_statuses": [
     {
       "actual_data_window": "2y @ 1d",
-      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/contract_status.json",
+      "contract_status_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/daily_24m/contract_status.json",
       "lane_id": "daily_24m",
       "truth_status": "NEEDS_LABELS"
     },
     {
       "actual_data_window": "8d @ 1m per materialized series (requested 30d)",
-      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/contract_status.json",
+      "contract_status_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/minute_30d/contract_status.json",
       "lane_id": "minute_30d",
       "truth_status": "NEEDS_LABELS"
     },
     {
       "actual_data_window": "20x1h_slices @ tick per materialized series (requested 20_sessions)",
-      "contract_status_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/contract_status.json",
+      "contract_status_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/tick_20_sessions/contract_status.json",
       "lane_id": "tick_20_sessions",
       "truth_status": "NEEDS_LABELS"
     }
@@ -48,6 +48,6 @@
     "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-02-SUMMARY.md",
     "../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-03-SUMMARY.md"
   ],
-  "truth_report_path": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json",
+  "truth_report_path": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json",
   "truth_status": "blocked_missing_authority_truth"
 }

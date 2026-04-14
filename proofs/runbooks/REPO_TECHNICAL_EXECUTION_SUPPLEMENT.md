@@ -26,20 +26,20 @@ Then apply the section that matches the repo you are working in.
 
 Use these bindings when deciding which section applies:
 
-- `ZPE Ink -> /Users/Zer0pa/ZPE/ZPE Ink/ZPE-Ink`
-- `ZPE FT -> /Users/Zer0pa/ZPE/ZPE FT/zpe-finance`
-- `ZPE Geo -> /Users/Zer0pa/ZPE/ZPE Geo/zpe-geo`
-- `ZPE Mocap -> /Users/Zer0pa/ZPE/ZPE Mocap/ZPE-Mocap`
-- `ZPE Neuro -> /Users/Zer0pa/ZPE/ZPE Neuro/ZPE-Neuro`
-- `ZPE Robotics -> /Users/Zer0pa/ZPE/ZPE Robotics/zpe-robotics`
-- `ZPE Robotics-GPD -> /Users/Zer0pa/ZPE/ZPE Robotics`
-- `ZPE Video -> /Users/Zer0pa/ZPE/ZPE Video/zpe-video`
-- `ZPE Prosody -> /Users/Zer0pa/ZPE/ZPE Prosody/ZPE-Prosody`
-- `ZPE XR -> /Users/Zer0pa/ZPE/ZPE XR/ZPE-XR`
-- `Bio / Bio Wearable -> /Users/Zer0pa/ZPE/ZPE Bio/zpe-bio`
-- `ZPE IoT -> /Users/Zer0pa/ZPE/ZPE IoT/zpe-iot`
-- `IMC -> /Users/Zer0pa/ZPE-IMC-REPO`
-- `Zer0paShip -> /Users/Zer0pa/Zer0paShip`
+- `ZPE Ink -> /Users/zer0pa-build/ZPE/ZPE Ink/ZPE-Ink`
+- `ZPE FT -> /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance`
+- `ZPE Geo -> /Users/zer0pa-build/ZPE/ZPE Geo/zpe-geo`
+- `ZPE Mocap -> /Users/zer0pa-build/ZPE/ZPE Mocap/ZPE-Mocap`
+- `ZPE Neuro -> /Users/zer0pa-build/ZPE/ZPE Neuro/ZPE-Neuro`
+- `ZPE Robotics -> /Users/zer0pa-build/ZPE/ZPE Robotics/zpe-robotics`
+- `ZPE Robotics-GPD -> /Users/zer0pa-build/ZPE/ZPE Robotics`
+- `ZPE Video -> /Users/zer0pa-build/ZPE/ZPE Video/zpe-video`
+- `ZPE Prosody -> /Users/zer0pa-build/ZPE/ZPE Prosody/ZPE-Prosody`
+- `ZPE XR -> /Users/zer0pa-build/ZPE/ZPE XR/ZPE-XR`
+- `Bio / Bio Wearable -> /Users/zer0pa-build/ZPE/ZPE Bio/zpe-bio`
+- `ZPE IoT -> /Users/zer0pa-build/ZPE/ZPE IoT/zpe-iot`
+- `IMC -> /Users/zer0pa-build/ZPE-IMC-REPO`
+- `Zer0paShip -> /Users/zer0pa-build/Zer0paShip`
 - `Tokenizer -> no authoritative local git repo currently`
 - `Test -> no authoritative local git repo currently`
 
@@ -254,7 +254,7 @@ If you are in `ZPE-Robotics-GPD`:
 If you are working on the Tokenizer control plane:
 
 - treat it as a governed workspace, not an authoritative local git repo
-- current local path is `/Users/Zer0pa/ZPE/ZPE Tokenizer`
+- current local path is `/Users/zer0pa-build/ZPE/ZPE Tokenizer`
 - no authoritative local `.git` repo exists there right now
 - do not dispatch repo-technical execution work as if this were a cloned repo
 - if dossier references are needed, use the actual local file names rather than

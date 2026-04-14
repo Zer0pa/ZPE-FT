@@ -6,8 +6,8 @@
     "secondary_device": "Red Magic 10 Pro+ via adb when attached",
     "sovereign_boundary": "Phase 06 buyer authority remains the top gate"
   },
-  "workspace": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
-  "repo": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
+  "workspace": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
+  "repo": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
   "machine": {
     "platform": "macOS-15.5-x86_64-i386-64bit-Mach-O",
     "system": "Darwin",
@@ -15,7 +15,7 @@
     "cpu": "Apple M1"
   },
   "disk": {
-    "workspace": "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance",
+    "workspace": "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance",
     "free_bytes": 4314578944,
     "free_gib": 4.02,
     "threshold_gib": 15.0,
@@ -61,7 +61,7 @@
   "repo_tests": {
     "status": "PASS",
     "command": [
-      "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/bin/pytest",
+      "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/.venv/bin/pytest",
       "-q"
     ],
     "detail": "exit code 0",
@@ -69,7 +69,7 @@
       "...............                                                          [100%]"
     ],
     "stderr_tail": [
-      "/Users/Zer0pa/ZPE/ZPE FT/zpe-finance/.venv/lib/python3.14/site-packages/opik/rest_api/core/pydantic_utilities.py:13: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.",
+      "/Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/.venv/lib/python3.14/site-packages/opik/rest_api/core/pydantic_utilities.py:13: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.",
       "  from pydantic.v1.datetime_parse import parse_date as parse_date"
     ]
   },

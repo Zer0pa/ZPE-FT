@@ -1,2 +1,2 @@
-2026-04-08T03:01:40.777904+00:00	PHASE3	0	python3 /Users/Zer0pa/ZPE/ZPE FT/zpe-finance/scripts/run_public_market_benchmarks.py --artifact-root proofs/artifacts/public_benchmarks	start public benchmarks
+2026-04-08T03:01:40.777904+00:00	PHASE3	0	python3 /Users/zer0pa-build/ZPE/ZPE FT/zpe-finance/scripts/run_public_market_benchmarks.py --artifact-root proofs/artifacts/public_benchmarks	start public benchmarks
 2026-04-08T03:01:52.432451+00:00	PHASE3	0	write phase3_public_benchmarks.json + phase3_public_benchmarks.md	complete
