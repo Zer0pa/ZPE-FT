@@ -64,6 +64,13 @@ vs Parquet: column store, no native search. vs kdb+: proprietary stack. ZPE-FT: 
 ### Quick Start
 
 ```bash
+# Install from PyPI
+pip install zpe-ft
+```
+
+Or install from source (development):
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
@@ -78,6 +85,13 @@ python -c "import zpe_finance; print(zpe_finance.__all__[:4])"
 ### Quick Verify
 
 Repo checkout verification. Current import surface. Current evidence logs.
+
+```bash
+# Install from PyPI (recommended)
+pip install zpe-ft
+```
+
+Or install from source:
 
 ```bash
 git clone https://github.com/Zer0pa/ZPE-FT.git
