@@ -131,10 +131,9 @@ Fastest evidence path:
 <a id="what-this-is"></a>
 ## What This Is
 
-ZPE-FT is a deterministic financial time-series codec and pattern-search
-workstream. The repo exposes an installable Python package, an optional
-repo-local Rust helper, retained proof bundles for controlled Wave-1 codec
-claims, and explicit blocker artifacts for the still-open enterprise benchmark.
+Store and replay financial time-series with deterministic fidelity. Search compressed OHLCV streams without decoding them.
+
+ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure teams and quant research platforms. Installable Python package, optional Rust helper, retained Wave-1 proof bundles on controlled corpus, and validated delayed-feed acquisition on SPY/AAPL.
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="14" cellspacing="0">
   <thead>
@@ -202,6 +201,8 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 
 ## What We Prove
 
+> Auditable guarantees backed by committed proof artifacts. Start at `AUDITOR_PLAYBOOK.md`.
+
 - Deterministic financial time-series encoding (OHLCV + ticks)
 - Pattern search and market replay on compressed format
 - Repo-local install verifies and pytest surface passes
@@ -228,7 +229,7 @@ claims, and explicit blocker artifacts for the still-open enterprise benchmark.
 | Confidence | 67% |
 | Source | proofs/FINAL_STATUS.md |
 
-`Confidence` derives from `4` PASS outcomes across `6` named retained checks in `proofs/FINAL_STATUS.md` and `proofs/CONSOLIDATED_PROOF_REPORT.md`.
+> **Evaluators:** Phase 06 contract freeze blocked on missing inputs. Evaluation surface available — consult Open Risks before integration planning. Contact hello@zer0pa.com.
 
 ## Tests and Verification
 
@@ -666,6 +667,15 @@ Use the proof artifacts and docs below as the public evidence path.
   do not collapse those states.
 - Historical lineage artifacts may preserve machine-local traces and should be
   read as evidence, not as live front-door instructions.
+
+## Who This Is For
+
+| | |
+|---|---|
+| **Ideal first buyer** | Market-data infrastructure team or quant research platform |
+| **Pain** | Delayed-feed archives and replay pipelines need deterministic fidelity guarantees, not just generic compression |
+| **Deployment** | SDK — Python package with optional Rust native helper |
+| **Family position** | Secondary product candidate in the Zer0pa deterministic encoding family. Not the lead commercial front door |
 
 <a id="contributing-security-support"></a>
 ## Contributing, Security, Support
