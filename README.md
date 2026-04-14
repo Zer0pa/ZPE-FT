@@ -192,12 +192,14 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
 
 ## Key Metrics
 
-| Metric | Value | Tag |
-|--------|-------|-----|
-| Data Format | OHLCV + ticks | FINANCIAL_TS |
-| Proof Surface | Wave-1 | CONTROLLED |
-| Phase 06 | BLOCKED | MISSING_INPUTS |
-| Readiness | private-stage | NOT_RELEASED |
+| Metric | Value | Baseline |
+|--------|-------|----------|
+| OHLCV_CR | 14.16× | provider-max 1min |
+| TICK_CR | 11.11× | tick proxy compression |
+| VS_PARQUET | 2.81× | size vs Parquet ZSTD (Binance) |
+| DATASETS | 33 | 30 equity + 3 tick series |
+
+> Source: [`BENCHMARKS.md`](BENCHMARKS.md) | [`proofs/PHASE3_PUBLIC_BENCHMARKS.json`](proofs/PHASE3_PUBLIC_BENCHMARKS.json)
 
 ## What We Prove
 
