@@ -1,0 +1,58 @@
+{
+  "dataset_id": "kaggle_spy_daily",
+  "status": "ok",
+  "kind": "ohlcv",
+  "source": "Kaggle financial dataset",
+  "source_url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+  "instrument": "SPY",
+  "period": "full_history",
+  "granularity": "1d",
+  "rows": 3201,
+  "raw_bytes": 153648,
+  "baseline": {
+    "name": "parquet_zstd_duckdb",
+    "file": "/tmp/zpeft-kaggle-phase3-work/kaggle_spy_daily.parquet",
+    "compressed_bytes": 69737,
+    "compression_ratio": 2.2032493511335445,
+    "hits": 40,
+    "p50_ms": 11.148917001264635,
+    "p95_ms": 80.35179100261303,
+    "best_ms": 11.113708998891525,
+    "query_sql": "WITH priced AS (\n  SELECT\n    row_id AS rid,\n    CAST(ROUND((close) / 0.01) AS BIGINT) AS px\n  FROM read_parquet('/tmp/zpeft-kaggle-phase3-work/kaggle_spy_daily.parquet')\n),\ndeltas AS (\n  SELECT\n    rid,\n    COALESCE(px - LAG(px) OVER (ORDER BY rid), 0) AS delta\n  FROM priced\n),\ntokens AS (\n  SELECT\n    rid,\n    CASE WHEN delta <= -8 THEN 0 WHEN delta <= -3 THEN 1 WHEN delta <= -1 THEN 2 WHEN delta = 0 THEN 3 WHEN delta = 1 THEN 4 WHEN delta <= 3 THEN 5 WHEN delta <= 7 THEN 6 ELSE 7 END AS token\n  FROM deltas\n)\nSELECT COUNT(*) AS hits\nFROM tokens t0\nJOIN tokens t1 ON t1.rid = t0.rid + 1 AND t1.token = 7\nJOIN tokens t2 ON t2.rid = t0.rid + 2 AND t2.token = 0\nJOIN tokens t3 ON t3.rid = t0.rid + 3 AND t3.token = 7\nJOIN tokens t4 ON t4.rid = t0.rid + 4 AND t4.token = 7\nJOIN tokens t5 ON t5.rid = t0.rid + 5 AND t5.token = 7\nWHERE t0.token = 0"
+  },
+  "zpe": {
+    "compressed_bytes": 21020,
+    "compression_ratio": 7.309609895337774,
+    "query": {
+      "pattern": [
+        0,
+        7,
+        0,
+        7,
+        7,
+        7
+      ],
+      "length": 6,
+      "hits": 40,
+      "p50_ms": 1.3660840049851686,
+      "p95_ms": 1.3807499999529682,
+      "best_ms": 1.3484580049407668
+    }
+  },
+  "improvement": {
+    "size_vs_baseline_x": 3.317649857278782,
+    "latency_vs_baseline_x": 58.194308169726604
+  },
+  "roundtrip": {
+    "close_rmse_ticks": 0.0
+  },
+  "notes": "Daily ETF history from the public Kaggle dataset `price-volume-data-for-all-us-stocks-etfs`.",
+  "source_artifact": {
+    "slug": "borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+    "csv_path": "/Users/prinivenpillay/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
+    "csv_bytes": 163787
+  },
+  "date_start": "2005-02-25",
+  "date_end": "2017-11-10",
+  "generated_at_utc": "2026-04-08T02:55:02.834825+00:00"
+}

@@ -2,12 +2,21 @@
   <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
+<p align="center"><strong>14.1615x provider-max 1m compression. 11.1070x tick proxy compression. Repo install verified.</strong></p>
+
+<table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
+  <tr>
+    <td width="25%" valign="top" align="center"><code>python -m pip install -e .</code></td>
+    <td width="25%" valign="top" align="center"><a href="proofs/artifacts/operations/20260321T202948Z_build.log"><code>build log</code></a></td>
+    <td width="25%" valign="top" align="center"><a href="proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log"><code>clean install log</code></a></td>
+    <td width="25%" valign="top" align="center"><a href="proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log"><code>pytest log</code></a></td>
+  </tr>
+</table>
+
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.0-e5e7eb?labelColor=111111" alt="License: SAL v6.0"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
-  <a href="proofs/FINAL_STATUS.md"><img src="https://img.shields.io/badge/release%20posture-NOT__PUBLIC__READY-e5e7eb?labelColor=111111" alt="Release posture: NOT_PUBLIC_READY"></a>
   <a href="proofs/CONSOLIDATED_PROOF_REPORT.md"><img src="https://img.shields.io/badge/controlled%20proof-2026--02--21%20Wave--1-e5e7eb?labelColor=111111" alt="Controlled proof: 2026-02-21 Wave-1"></a>
-  <a href="proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"><img src="https://img.shields.io/badge/phase%2006-BLOCKED__MISSING__INPUTS-e5e7eb?labelColor=111111" alt="Phase 06: BLOCKED_MISSING_INPUTS"></a>
 </p>
 <p align="center">
   <a href="docs/AUDITOR_PLAYBOOK.md"><img src="https://img.shields.io/badge/quick%20audit-playbook%20%2B%20limits-e5e7eb?labelColor=111111" alt="Quick audit: playbook and limits"></a>
@@ -34,21 +43,32 @@
 
 ---
 
-## Overview
+## At A Glance
 
-ZPE-FT is a deterministic financial time-series codec — OHLCV bars, tick streams, pattern search, and market replay in a single compressed format. Built for teams that need to store, query, and replay delayed-feed market data with bounded fidelity guarantees and no incumbent lock-in.
+Deterministic market-data codec. OHLCV bars. Tick streams. Pattern search.
 
-The current evidence is anchored on the Wave-1 controlled proof surface (February 21, 2026). Repo-local install verifies and the pytest surface passes. Phase 06 contract freeze is blocked on missing inputs — an engineering boundary, not a capability failure. Comet observability hooks are wired for proof tracking. An optional Rust native helper provides a lower-level fallback path.
+30 real-market equity series benchmarked. 3 real-market tick proxy series benchmarked. Optional Rust helper.
 
-The repo is **private-stage**. This is a source-available snapshot with retained evidence — not a release-ready package. The public release gate is not closed.
+Wave-1 proof retained. Install surface verified. Benchmark boundary tracked.
 
-**Not claimed:** public release readiness, broad incumbent displacement, full contract freeze, universal financial data coverage, or runtime coupling to ZPE-IMC.
+Quant researcher. Tick-history archive. Market replay engineer. Backtest pipeline owner.
+
+vs Parquet: column store, no native search. vs kdb+: proprietary stack. ZPE-FT: deterministic compression with native pattern search.
 
 | Anchor | Artifact |
 |---|---|
-| Final status | [`FINAL_STATUS.md`](proofs/FINAL_STATUS.md) |
+| Install evidence | [`20260321T202948Z_clean_install_verify.log`](proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log) |
 | Controlled proof report | [`CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
-| Phase 06 blocked status | [`missing_inputs_packet.json`](proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) |
+| Real-market boundary | [`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json) |
+
+### Quick Start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
+python -c "import zpe_finance; print(zpe_finance.__all__[:4])"
+```
 
 ---
 
@@ -57,8 +77,7 @@ The repo is **private-stage**. This is a source-available snapshot with retained
 
 ### Quick Verify
 
-The steps below verify the current repository surface. They are not a claim
-that the public-release gate is closed.
+Repo checkout verification. Current import surface. Current evidence logs.
 
 ```bash
 git clone https://github.com/Zer0pa/ZPE-FT.git
@@ -75,7 +94,7 @@ print("rust_bridge", rust_version())
 PY
 ```
 
-After a successful run you should see:
+Expected outputs:
 
 - the package imports cleanly from the repo root
 - the exported surface comes from `python/zpe_finance/`
@@ -86,7 +105,7 @@ After a successful run you should see:
   `proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`,
   and `proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`
 
-Quickest outsider orientation:
+Fastest evidence path:
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -116,6 +135,25 @@ ZPE-FT is a deterministic financial time-series codec and pattern-search
 workstream. The repo exposes an installable Python package, an optional
 repo-local Rust helper, retained proof bundles for controlled Wave-1 codec
 claims, and explicit blocker artifacts for the still-open enterprise benchmark.
+
+<table width="100%" border="1" bordercolor="#111111" cellpadding="14" cellspacing="0">
+  <thead>
+    <tr>
+      <th align="left" width="34%">Persona</th>
+      <th align="left" width="66%">Why this repo matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">Quant researcher archiving tick history</td>
+      <td valign="top">Compress delayed-feed history, retain deterministic decode, and search motifs without handing storage over to a proprietary incumbent.</td>
+    </tr>
+    <tr>
+      <td valign="top">Market replay engineer</td>
+      <td valign="top">Package bars and top-of-book streams into a replayable format with bounded fidelity and query hooks for backtest and simulation pipelines.</td>
+    </tr>
+  </tbody>
+</table>
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="14" cellspacing="0">
   <thead>
@@ -648,11 +686,27 @@ Use the proof artifacts and docs below as the public evidence path.
   <img src=".github/assets/readme/zpe-masthead-option-3.6.gif" alt="ZPE-FT Authority Insert" width="100%">
 </p>
 
-## Ecosystem
+<h3 align="center">Portfolio Ecosystem</h3>
 
-<table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
-  <tr>
-    <td width="34%" valign="top"><a href="https://github.com/Zer0pa/ZPE-IMC"><code>ZPE-IMC</code></a></td>
-    <td width="66%" valign="top">Sibling Zer0pa workstream used as adjacent portfolio context and documentation reference. It does not substitute for this repo's proof or benchmark state.</td>
-  </tr>
+<table width="100%" border="1" bordercolor="#111111" cellpadding="12" cellspacing="0">
+  <thead>
+    <tr>
+      <th align="left" width="20%">Repo</th>
+      <th align="left" width="20%">Package</th>
+      <th align="left" width="60%">Wedge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-IMC"><code>ZPE-IMC</code></a></td><td valign="top"><code>zpe-multimodal</code></td><td valign="top">Cross-modal codec. Image, video, audio, point cloud.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-IoT"><code>ZPE-IoT</code></a></td><td valign="top"><code>zpe-iot</code></td><td valign="top">Sensor codec. Telemetry retrieval. Edge deployment.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-XR"><code>ZPE-XR</code></a></td><td valign="top"><code>zpe-xr</code></td><td valign="top">XR motion codec. Sub-mm fidelity. CPU-native.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Robotics"><code>ZPE-Robotics</code></a></td><td valign="top"><code>zpe-robotics</code></td><td valign="top">Robot trajectory codec. Real robot benchmark.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Geo"><code>ZPE-Geo</code></a></td><td valign="top"><code>zpe-geo</code></td><td valign="top">Geospatial trajectory codec. Query-aware retrieval.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-FT"><code>ZPE-FT</code></a></td><td valign="top"><code>zpe-ft</code></td><td valign="top">Market-data codec. OHLCV, ticks, pattern search.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Ink"><code>ZPE-Ink</code></a></td><td valign="top"><code>zpe-ink</code></td><td valign="top">Vector stroke codec. Structured drawing tiers.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Neuro"><code>ZPE-Neuro</code></a></td><td valign="top"><code>zpe-neuro</code></td><td valign="top">EEG codec. Deterministic primitives. Retrieval harness.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Mocap"><code>ZPE-Mocap</code></a></td><td valign="top"><code>zpe-mocap</code></td><td valign="top">Motion capture codec. Verification-led surface.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Prosody"><code>ZPE-Prosody</code></a></td><td valign="top"><code>zpe-prosody</code></td><td valign="top">Prosody codec. Pitch, rhythm, stress.</td></tr>
+    <tr><td valign="top"><a href="https://github.com/Zer0pa/ZPE-Bio"><code>ZPE-Bio</code></a></td><td valign="top"><code>zpe-bio</code></td><td valign="top">ECG and EEG codec. Deterministic round-trip.</td></tr>
+  </tbody>
 </table>

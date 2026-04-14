@@ -18,6 +18,8 @@
 - release gate in [`RELEASING.md`](RELEASING.md)
 - citation metadata in [`CITATION.cff`](CITATION.cff)
 - operator-local copy of the canonical docs playbook in [`proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md`](proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md)
+- public benchmark runner in [`scripts/run_public_market_benchmarks.py`](scripts/run_public_market_benchmarks.py)
+- executed public benchmark helpers in [`python/zpe_finance/public_benchmarks.py`](python/zpe_finance/public_benchmarks.py)
 
 ### Changed
 
@@ -31,6 +33,9 @@
   March 21 blocked enterprise benchmark packet
 - moved the docs surface onto repo-local IMC-style masthead and section-bar
   assets
+- populated [`BENCHMARKS.md`](BENCHMARKS.md) with executed Yahoo Finance,
+  Binance Public Data, and Kaggle benchmark results backed by
+  [`proofs/artifacts/public_benchmarks/`](proofs/artifacts/public_benchmarks/)
 
 ### Not A Release
 

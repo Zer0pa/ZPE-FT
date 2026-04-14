@@ -48,6 +48,15 @@ The helper is optional and repo-local. The truthful default quick verify path
 is the Python surface unless you explicitly build the native helper from
 `core/`.
 
+## Why not Parquet?
+
+Parquet is a strong column-store baseline for archival analytics. It is not a
+native motif-search format, it does not carry ZPE-FT packet semantics, and it
+does not give you deterministic codec/replay behavior by itself. The honest
+comparison is: Parquet for broad tabular interoperability, ZPE-FT for
+deterministic compression plus native search/replay on the retained market-data
+surface.
+
 ## Does the repo prove Timescale equivalence?
 
 No. SQLite roundtrip is supported. Timescale equivalence remains

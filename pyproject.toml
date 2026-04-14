@@ -3,25 +3,39 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "zpe-finance"
+name = "zpe-ft"
 version = "0.1.0"
 description = "ZPE financial time-series codec and pattern search"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-6.0"
 requires-python = ">=3.11"
+authors = [{name = "Zer0pa"}]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Office/Business :: Financial",
+]
 keywords = ["finance", "time-series", "codec", "search"]
 dependencies = [
   "numpy>=2.1",
 ]
 
 [project.urls]
+Homepage = "https://github.com/Zer0pa/ZPE-FT"
+Documentation = "https://github.com/Zer0pa/ZPE-FT/tree/main/docs"
 Repository = "https://github.com/Zer0pa/ZPE-FT"
+Changelog = "https://github.com/Zer0pa/ZPE-FT/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 market = ["pandas>=2.2,<3", "yfinance>=0.2.66"]
-comparators = ["duckdb>=1.2", "zstandard>=0.23.0", "lz4>=4.4.4"]
+comparators = ["duckdb>=1.2", "lz4>=4.4.4", "zstandard>=0.23.0"]
 observability = ["comet_ml>=3.0.0", "opik>=1.10"]
 native = ["maturin>=1.8"]
+docs = ["mkdocs>=1.6"]
 proof = [
   "duckdb>=1.2",
   "lz4>=4.4.4",
@@ -32,9 +46,11 @@ proof = [
   "scipy>=1.13",
   "yfinance>=0.2.66",
   "zstandard>=0.23.0",
+  "kagglehub>=1.0.0",
 ]
-test = ["pytest>=8.0"]
+test = ["build>=1.4.2", "pytest>=8.0"]
 dev = [
+  "build>=1.4.2",
   "duckdb>=1.2",
   "lz4>=4.4.4",
   "pandas>=2.2,<3",
@@ -45,6 +61,7 @@ dev = [
   "scipy>=1.13",
   "yfinance>=0.2.66",
   "zstandard>=0.23.0",
+  "kagglehub>=1.0.0",
 ]
 
 [tool.setuptools]
