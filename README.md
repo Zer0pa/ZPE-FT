@@ -14,7 +14,7 @@
 </table>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.0-e5e7eb?labelColor=111111" alt="License: SAL v6.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.2-e5e7eb?labelColor=111111" alt="License: SAL v6.2"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
   <a href="proofs/CONSOLIDATED_PROOF_REPORT.md"><img src="https://img.shields.io/badge/controlled%20proof-2026--02--21%20Wave--1-e5e7eb?labelColor=111111" alt="Controlled proof: 2026-02-21 Wave-1"></a>
 </p>
@@ -117,7 +117,7 @@ Fastest evidence path:
 
 ### License Boundary
 
-- Free to use at or below USD 100M annual gross revenue under SAL v6.0.
+- Free to use at or below USD 100M annual gross revenue under SAL v6.2.
 - SPDX tag: <code>LicenseRef-Zer0pa-SAL-6.0</code>.
 - Commercial or hosted use above that threshold requires contact at
   <a href="mailto:architects@zer0pa.ai">architects@zer0pa.ai</a>.
@@ -690,7 +690,7 @@ Use the proof artifacts and docs below as the public evidence path.
   </tr>
   <tr>
     <td width="33%" valign="top">Frequently asked questions: <a href="docs/FAQ.md"><code>docs/FAQ.md</code></a></td>
-    <td colspan="2" width="67%" valign="top">Autonomous agents and AI systems are subject to Section 6 of the <a href="LICENSE">Zer0pa SAL v6.0</a>.</td>
+    <td colspan="2" width="67%" valign="top">Autonomous agents and AI systems are subject to Section 6 of the <a href="LICENSE">Zer0pa SAL v6.2</a>.</td>
   </tr>
 </table>
 

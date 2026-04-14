@@ -20,6 +20,6 @@
     "Runtime coupling to ZPE-IMC"
   ],
   "family_position": "Secondary product candidate in the Zer0pa deterministic encoding family. Not the lead commercial front door.",
-  "license": "LicenseRef-Zer0pa-SAL-6.0",
+  "license": "LicenseRef-Zer0pa-SAL-6.2",
   "contact": "hello@zer0pa.com"
 }
