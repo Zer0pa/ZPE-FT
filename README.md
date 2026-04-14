@@ -632,6 +632,8 @@ Use the proof artifacts and docs below as the public evidence path.
   </tbody>
 </table>
 
+**Observability:** [Comet dashboard](https://www.comet.com/zer0pa/zpe-ft/view/new/panels) (public)
+
 ## Repo Shape
 
 | Field | Value |
