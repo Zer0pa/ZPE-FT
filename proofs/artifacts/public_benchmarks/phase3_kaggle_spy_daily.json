@@ -49,7 +49,7 @@
   "notes": "Daily ETF history from the public Kaggle dataset `price-volume-data-for-all-us-stocks-etfs`.",
   "source_artifact": {
     "slug": "borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
-    "csv_path": "/Users/prinivenpillay/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
+    "csv_path": "/Users/zer0pa-build/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
     "csv_bytes": 163787
   },
   "date_start": "2005-02-25",

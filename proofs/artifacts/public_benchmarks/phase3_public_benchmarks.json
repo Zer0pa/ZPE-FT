@@ -149,7 +149,7 @@
       "source": "Kaggle financial dataset",
       "source_artifact": {
         "csv_bytes": 163787,
-        "csv_path": "/Users/prinivenpillay/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
+        "csv_path": "/Users/zer0pa-build/.cache/kagglehub/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/versions/3/Data/ETFs/spy.us.txt",
         "slug": "borismarjanovic/price-volume-data-for-all-us-stocks-etfs"
       },
       "source_url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
