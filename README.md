@@ -232,6 +232,8 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
 
 zstd/lz4 unavailable at measure time. No general-purpose tool offers search-on-compressed or deterministic replay.
 
+Fair domain-aware baseline: numpy quantize + zstd-22 achieves 6.5× on the same real-market data (ZPE-FT: 12.7×, ~2× margin).
+
 ## What We Prove
 
 > Auditable guarantees backed by committed proof artifacts. Start at `AUDITOR_PLAYBOOK.md`.
