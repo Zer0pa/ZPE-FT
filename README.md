@@ -75,6 +75,7 @@ Wave-1 controlled codec claims and public rehearsal benchmarks are different sur
 | Field | Value |
 |---|---|
 | Verdict | `BLOCKED_MISSING_INPUTS` |
+| Release posture | Live work in progress; not a final official release |
 | Ideal first buyer | Market-data infrastructure team or quant research platform |
 | Deployment | SDK — Python package with optional Rust helper |
 | Current blocker | 33 named corpus exports plus auditable FT-C004 truth labels |
