@@ -2,7 +2,8 @@
   <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
-<p align="center"><strong>Search financial patterns on compressed archives. 14.16× OHLCV on real US-equity minute bars (30 series). 11.11× tick on Dukascopy FX. Controlled-corpus authority: 19.19× OHLCV / 20.57× tick. Repo install verified.</strong></p>
+<p align="center"><strong>Search financial patterns on compressed archives. 14.16× OHLCV on real US-equity minute bars (30 series). 11.11× tick on Dukascopy FX. Repo install verified.</strong></p>
+<p align="center"><em>Controlled-corpus authority: 19.19× OHLCV / 20.57× tick (Wave-1 bundle).</em></p>
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -16,7 +17,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.2-e5e7eb?labelColor=111111" alt="License: SAL v6.2"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
-  <a href="proofs/CONSOLIDATED_PROOF_REPORT.md"><img src="https://img.shields.io/badge/controlled%20proof-2026--02--21%20Wave--1-e5e7eb?labelColor=111111" alt="Controlled proof: 2026-02-21 Wave-1"></a>
+  <img src="https://img.shields.io/badge/controlled%20proof-2026--02--21%20Wave--1-e5e7eb?labelColor=111111" alt="Controlled proof: 2026-02-21 Wave-1">
 </p>
 <p align="center">
   <a href="docs/AUDITOR_PLAYBOOK.md"><img src="https://img.shields.io/badge/quick%20audit-playbook%20%2B%20limits-e5e7eb?labelColor=111111" alt="Quick audit: playbook and limits"></a>
@@ -58,7 +59,7 @@ vs Parquet: column store, no native search. vs kdb+: proprietary stack. ZPE-FT: 
 | Anchor | Artifact |
 |---|---|
 | Install evidence | [`20260321T202948Z_clean_install_verify.log`](proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log) |
-| Controlled proof report | [`CONSOLIDATED_PROOF_REPORT.md`](proofs/CONSOLIDATED_PROOF_REPORT.md) |
+| Controlled proof report | `CONSOLIDATED_PROOF_REPORT.md` (removed; see [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/)) |
 | Real-market boundary | [`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json) |
 
 ### Quick Start
@@ -194,7 +195,7 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
     </tr>
     <tr>
       <td valign="top">Where should an outsider start?</td>
-      <td valign="top">Clone from <code>https://github.com/Zer0pa/ZPE-FT.git</code>, run the quick verify steps above, then read <code>docs/AUDITOR_PLAYBOOK.md</code>, <code>docs/PUBLIC_AUDIT_LIMITS.md</code>, and <code>proofs/FINAL_STATUS.md</code> together.</td>
+      <td valign="top">Clone from <code>https://github.com/Zer0pa/ZPE-FT.git</code>, run the quick verify steps above, then read <code>docs/AUDITOR_PLAYBOOK.md</code> and <code>docs/PUBLIC_AUDIT_LIMITS.md</code> together.</td>
     </tr>
   </tbody>
 </table>
@@ -266,7 +267,7 @@ Fair domain-aware baseline: numpy quantize + zstd-22 achieves 6.5× on the same 
 | Verdict | BLOCKED_MISSING_INPUTS |
 | Commit SHA | 7394b4bd04e0 |
 | Confidence | 67% |
-| Source | proofs/FINAL_STATUS.md |
+| Source | proofs/FINAL_STATUS.md (removed) |
 
 > **Evaluators:** Phase 06 contract freeze blocked on missing inputs. Evaluation surface available — consult Open Risks before integration planning. Contact hello@zer0pa.com.
 
@@ -377,8 +378,8 @@ the retained controlled Wave-1 bundle, and the blocker packet together.
 
 | Path | State |
 |------|-------|
-| proofs/FINAL_STATUS.md | VERIFIED |
-| proofs/CONSOLIDATED_PROOF_REPORT.md | VERIFIED |
+| proofs/FINAL_STATUS.md | REMOVED |
+| proofs/CONSOLIDATED_PROOF_REPORT.md | REMOVED |
 | proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log | VERIFIED |
 | proofs/artifacts/2026-02-21_ft_wave1_final/ | VERIFIED |
 | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json | VERIFIED |
@@ -392,7 +393,7 @@ the retained controlled Wave-1 bundle, and the blocker packet together.
   </tr>
   <tr>
     <td width="50%" valign="top"><a href="proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log"><code>proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log</code></a><br><br>Pytest alignment log for the shipped Python package surface.</td>
-    <td width="50%" valign="top"><a href="proofs/CONSOLIDATED_PROOF_REPORT.md"><code>proofs/CONSOLIDATED_PROOF_REPORT.md</code></a><br><br>Claim-by-claim reading guide covering bounded codec evidence and unresolved surfaces.</td>
+    <td width="50%" valign="top"><code>proofs/CONSOLIDATED_PROOF_REPORT.md</code> (removed)<br><br>Claim-by-claim reading guide covering bounded codec evidence and unresolved surfaces. See <a href="proofs/artifacts/2026-02-21_ft_wave1_final/"><code>proofs/artifacts/2026-02-21_ft_wave1_final/</code></a>.</td>
   </tr>
 </table>
 
@@ -642,7 +643,7 @@ Use the proof artifacts and docs below as the public evidence path.
     </tr>
     <tr>
       <td valign="top">Inspect proof posture and claim-by-claim evidence</td>
-      <td valign="top"><a href="proofs/FINAL_STATUS.md"><code>proofs/FINAL_STATUS.md</code></a> and <a href="proofs/CONSOLIDATED_PROOF_REPORT.md"><code>proofs/CONSOLIDATED_PROOF_REPORT.md</code></a></td>
+      <td valign="top"><code>proofs/FINAL_STATUS.md</code> (removed) and <code>proofs/CONSOLIDATED_PROOF_REPORT.md</code> (removed) — see <a href="proofs/artifacts/2026-02-21_ft_wave1_final/"><code>proofs/artifacts/2026-02-21_ft_wave1_final/</code></a></td>
     </tr>
     <tr>
       <td valign="top">Inspect the current enterprise blocker directly</td>
@@ -663,7 +664,7 @@ Use the proof artifacts and docs below as the public evidence path.
 |-------|-------|
 | Proof Anchors | 5 |
 | Modality Lanes | 2 |
-| Authority Source | proofs/FINAL_STATUS.md |
+| Authority Source | proofs/FINAL_STATUS.md (removed) |
 
 `Modality Lanes` counts the two retained financial data lanes called out in the current proof surface: OHLCV bars and tick streams.
 
