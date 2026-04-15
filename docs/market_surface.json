@@ -3,19 +3,22 @@
   "repo_role": "secondary_product_candidate",
   "status": "PRIVATE_STAGE",
   "plain_english_summary": "Deterministic financial time-series compression, replay, and query surface for bounded market-data workflows.",
-  "commercial_wedge": "Search financial patterns on compressed time-series archives with deterministic replay and fidelity guarantees. Bounded codec for delayed-feed archives, replay, and query.",
-  "technical_wedge": "Deterministic financial codec with search and replay. Wave-1 controlled proof surface. Optional Rust native helper. Phase 06 contract freeze blocked on missing inputs.",
+  "commercial_wedge": "Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity. Real-market minute-bar and tick figures are bounded proxy artifacts; the open-access enterprise benchmark remains blocked on missing inputs.",
+  "technical_wedge": "Deterministic financial codec with native search and replay. The carried Wave-1 bundle proves OHLCV/tick compression and price-field fidelity on a controlled corpus; volume is log-quantized and Phase 06 remains blocked on missing inputs.",
   "ideal_first_buyer": "Market-data infrastructure team or quant research platform",
   "deployment_model": "SDK — Python package with optional Rust native helper",
   "proof_anchors": [
-    "proofs/FINAL_STATUS.md",
-    "proofs/CONSOLIDATED_PROOF_REPORT.md",
+    "proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log",
+    "proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md",
+    "proofs/artifacts/2026-02-21_ft_wave1_final/ft_reconstruction_fidelity.json",
+    "proofs/artifacts/real_market_benchmarks/BOUNDARY.json",
     "proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"
   ],
   "not_claimed": [
     "Public release readiness (Phase 06 BLOCKED_MISSING_INPUTS)",
     "Broad incumbent displacement",
     "Full contract freeze",
+    "Lossless volume reconstruction",
     "Universal financial data coverage",
     "Runtime coupling to ZPE-IMC"
   ],
