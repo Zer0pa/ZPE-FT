@@ -2,7 +2,7 @@
   <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">
 </p>
 
-<p align="center"><strong>14.16× OHLCV on real US-equity minute bars (30 series). 11.11× tick on Dukascopy FX. Controlled-corpus authority: 19.19× OHLCV / 20.57× tick. Repo install verified.</strong></p>
+<p align="center"><strong>Search financial patterns on compressed archives. 14.16× OHLCV on real US-equity minute bars (30 series). 11.11× tick on Dukascopy FX. Controlled-corpus authority: 19.19× OHLCV / 20.57× tick. Repo install verified.</strong></p>
 
 <table width="100%" border="1" bordercolor="#111111" cellpadding="16" cellspacing="0">
   <tr>
@@ -214,6 +214,7 @@ ZPE-FT is a codec and pattern-search SDK targeting market-data infrastructure te
 | OHLCV_CR (Wave-1 controlled) | 19.19× | [`ft_ohlcv_benchmark.json`](proofs/artifacts/2026-02-21_ft_wave1_final/ft_ohlcv_benchmark.json) |
 | TICK_CR (Wave-1 controlled) | 20.57× | [`ft_tick_benchmark.json`](proofs/artifacts/2026-02-21_ft_wave1_final/ft_tick_benchmark.json) |
 | VS_PARQUET (Binance public) | 2.81× | [`PHASE3_PUBLIC_BENCHMARKS.json`](proofs/PHASE3_PUBLIC_BENCHMARKS.json) |
+| SEARCH | PatternIndex k-gram | Token-stream pattern search; exact + approximate on compressed archives. See [`search.py`](python/zpe_finance/search.py), [`ft_pattern_search_eval.json`](proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_pattern_search_eval.json) |
 | DATASETS | 33 | 30 equity + 3 tick series |
 
 > **Real-market results first.** Minute-bar and tick proxy results are from bounded public data ([`BOUNDARY.json`](proofs/artifacts/real_market_benchmarks/BOUNDARY.json)); they are non-authority rehearsal artifacts with `promotion_forbidden: true`. Wave-1 controlled corpus at [`proofs/artifacts/2026-02-21_ft_wave1_final/`](proofs/artifacts/2026-02-21_ft_wave1_final/). Phase 3 public benchmarks at [`BENCHMARKS.md`](BENCHMARKS.md).
