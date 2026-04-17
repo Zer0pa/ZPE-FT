@@ -64,7 +64,7 @@ Wave-1 controlled codec claims and public rehearsal benchmarks are different sur
 
 ## What We Don't Claim
 
-- No Phase 06 closure or public release readiness.
+- No Phase 06 closure or passed open-access enterprise benchmark.
 - No broad warehouse or incumbent displacement claim.
 - No lossless volume reconstruction claim.
 - No promoted public-data search-quality claim while FT-C004 remains unlabeled.
@@ -75,12 +75,12 @@ Wave-1 controlled codec claims and public rehearsal benchmarks are different sur
 | Field | Value |
 |---|---|
 | Verdict | `BLOCKED_MISSING_INPUTS` |
-| Release posture | Live work in progress; not a final official release |
+| Release posture | Useful now, improving continuously |
 | Ideal first buyer | Market-data infrastructure team or quant research platform |
 | Deployment | SDK — Python package with optional Rust helper |
 | Current blocker | 33 named corpus exports plus auditable FT-C004 truth labels |
 
-This repo is commercially interesting because the archive-search wedge is real, but it is not commercially released. The truthful outward posture is a bounded private-stage asset with a named blocker packet, not a passed enterprise benchmark.
+This repo is useful now for bounded delayed-feed archive compression, deterministic replay, and archive-native pattern search. Commercial closure still depends on the named missing-input packet and auditable FT-C004 truth, so the open-access enterprise benchmark remains blocked.
 
 ## Tests and Verification
 
@@ -108,7 +108,7 @@ This repo is commercially interesting because the archive-search wedge is real, 
 | Area | Purpose |
 |---|---|
 | `python/`, `core/`, `scripts/` | Installable package, optional helper, and repo-local runners |
-| `docs/` | Audit, architecture, support, and contract surfaces |
+| `docs/` | Audit, architecture, legal, and packet-contract surfaces |
 | `proofs/` | Carried bundles, reruns, blocker packets, and operations logs |
 | Root files | Release metadata, legal terms, and the front door |
 
@@ -137,4 +137,4 @@ print("rust_bridge", rust_version())
 PY
 ```
 
-Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v6.2.
+Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md`, `docs/LEGAL_BOUNDARIES.md`, and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v6.2.

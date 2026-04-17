@@ -1,7 +1,7 @@
 {
   "repo_name": "ZPE-FT",
   "repo_role": "secondary_product_candidate",
-  "status": "PRIVATE_STAGE",
+  "status": "BLOCKED_MISSING_INPUTS",
   "plain_english_summary": "Deterministic financial time-series compression, replay, and query surface for bounded market-data workflows.",
   "commercial_wedge": "Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity. Real-market minute-bar and tick figures are bounded proxy artifacts; the open-access enterprise benchmark remains blocked on missing inputs.",
   "technical_wedge": "Deterministic financial codec with native search and replay. The carried Wave-1 bundle proves OHLCV/tick compression and price-field fidelity on a controlled corpus; volume is log-quantized and Phase 06 remains blocked on missing inputs.",

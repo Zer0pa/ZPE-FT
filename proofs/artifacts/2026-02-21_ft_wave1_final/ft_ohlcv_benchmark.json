@@ -1,0 +1,69 @@
+{
+  "claim_id": "FT-C001",
+  "comparators": {
+    "comparators": {
+      "bz2": {
+        "compressed_bytes": 248118,
+        "compression_ratio": 16.121361610201596,
+        "note": "",
+        "status": "OK"
+      },
+      "gorilla_xor_proxy": {
+        "compressed_bytes": 2436939,
+        "compression_ratio": 1.6414034163350006,
+        "note": "proxy; not byte-identical Gorilla implementation",
+        "status": "OK"
+      },
+      "gzip": {
+        "compressed_bytes": 479320,
+        "compression_ratio": 8.345155637152633,
+        "note": "",
+        "status": "OK"
+      },
+      "lz4": {
+        "comparability_impact": "high-speed comparator reduced",
+        "error": "No module named 'lz4'",
+        "status": "UNAVAILABLE",
+        "substitution": "zlib"
+      },
+      "lzma": {
+        "compressed_bytes": 304628,
+        "compression_ratio": 13.130769331775149,
+        "note": "",
+        "status": "OK"
+      },
+      "sax_proxy": {
+        "compressed_bytes": 27302,
+        "compression_ratio": 146.5094132298,
+        "note": "proxy for symbolic compression when time_series_compression unavailable",
+        "status": "OK"
+      },
+      "time_series_compression": {
+        "comparability_impact": "benchmark comparability reduced",
+        "error": "No module named 'time_series_compression'",
+        "status": "UNAVAILABLE",
+        "substitution": "sax_proxy"
+      },
+      "zlib": {
+        "compressed_bytes": 479308,
+        "compression_ratio": 8.34536456725112,
+        "note": "incumbent baseline",
+        "status": "OK"
+      },
+      "zstd": {
+        "comparability_impact": "modern comparator reduced",
+        "error": "No module named 'zstandard'",
+        "status": "UNAVAILABLE",
+        "substitution": "lzma"
+      }
+    },
+    "raw_bytes": 4000000
+  },
+  "compressed_bytes": 1250569,
+  "compression_ratio": 19.191264136565035,
+  "pass": true,
+  "raw_bytes": 24000000,
+  "stretch_pass": true,
+  "stretch_threshold": 12.0,
+  "threshold": 10.0
+}

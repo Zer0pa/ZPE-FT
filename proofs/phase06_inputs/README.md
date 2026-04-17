@@ -1,6 +1,8 @@
 # Phase 06 Input Ledger
 
-This directory is the exact-input ledger for the sovereign Phase 06 benchmark. It is intentionally useful even when the exact authority files are still absent.
+This directory is the exact-input ledger for the sovereign Phase 06 benchmark.
+It stays useful now as the exact-input contract for closing the enterprise
+gate, even while the authority files are still absent.
 
 ## What This Directory Means
 
@@ -23,4 +25,5 @@ This directory is the exact-input ledger for the sovereign Phase 06 benchmark. I
 
 ## Current Status
 
-As of this snapshot, this directory is a blocker ledger, not an authority-data payload.
+As of this snapshot, this directory is a blocker ledger, not an authority-data
+payload.

@@ -18,8 +18,11 @@ Current truth rule:
   paths for retained reading.
 - Raw rerun status tokens may remain lowercase in JSON; repo docs normalize
   them to uppercase status labels for readability.
-- Copied contract refs remain lineage context, not front-door authority.
-- older rerun leftovers were intentionally removed from the retained repo surface
+- Copied contract refs remain lineage context, not front-door authority; some
+  preserve superseded license and status wording from the moment they were
+  captured.
+- Older rerun leftovers were intentionally removed from the retained repo
+  surface.
 
 <p>
   <img src="../../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">

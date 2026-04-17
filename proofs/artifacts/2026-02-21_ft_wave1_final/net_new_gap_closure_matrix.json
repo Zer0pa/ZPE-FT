@@ -1,0 +1,22 @@
+{
+  "appendix_e_gates": {
+    "E-G1_attempt_all_resources": true,
+    "E-G2_external_outputs_for_FT-C003_FT-C006": true,
+    "E-G3_tsbs_throughput_latency_present": true,
+    "E-G4_valid_impracticality_for_skips": true,
+    "E-G5_runpod_artifacts_when_imp_compute": true
+  },
+  "gate_m_status": {
+    "M1": "PASS",
+    "M2": "PASS",
+    "M3": "PASS",
+    "M4": "PASS"
+  },
+  "overall_appendix_e_pass": true,
+  "resource_attempts": {
+    "Gorilla BFCL harness": true,
+    "TRADES diffusion market sim": true,
+    "TSBS": true,
+    "Zipline-Reloaded": true
+  }
+}

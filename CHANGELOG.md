@@ -12,12 +12,12 @@
 
 ### Added
 
-- canonical documentation registry in [`docs/DOC_REGISTRY.md`](docs/DOC_REGISTRY.md)
-- support routing in [`docs/SUPPORT.md`](docs/SUPPORT.md)
-- governance boundary in [`GOVERNANCE.md`](GOVERNANCE.md)
-- release gate in [`RELEASING.md`](RELEASING.md)
-- citation metadata in [`CITATION.cff`](CITATION.cff)
-- operator-local copy of the canonical docs playbook in [`proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md`](proofs/runbooks/ZER0PA_REPO_DOCS_PLAYBOOK_CANONICAL_2026-03-21.md)
+- quick audit path in [`docs/AUDITOR_PLAYBOOK.md`](docs/AUDITOR_PLAYBOOK.md)
+- explicit public-boundary summary in [`docs/PUBLIC_AUDIT_LIMITS.md`](docs/PUBLIC_AUDIT_LIMITS.md)
+- architecture index in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+- legal boundary note in [`docs/LEGAL_BOUNDARIES.md`](docs/LEGAL_BOUNDARIES.md)
+- Phase 06 input ledger in [`proofs/phase06_inputs/README.md`](proofs/phase06_inputs/README.md)
+- rerun boundary note in [`proofs/reruns/README.md`](proofs/reruns/README.md)
 - public benchmark runner in [`scripts/run_public_market_benchmarks.py`](scripts/run_public_market_benchmarks.py)
 - executed public benchmark helpers in [`python/zpe_finance/public_benchmarks.py`](python/zpe_finance/public_benchmarks.py)
 
@@ -25,21 +25,19 @@
 
 - rewrote the front-door README around one authority block, one status snapshot,
   and explicit controlled-vs-market truth boundaries
-- moved audit-specific docs into `docs/` so the repo root only carries the
-  front-door, package, and policy surfaces
-- aligned the audit, public-audit-limits, architecture, legal, contribution,
-  security, and support docs to the current FT repo truth
+- aligned the audit, public-boundary, architecture, legal, and proof-ledger
+  docs to the current FT repo truth
 - updated proof-summary docs to reflect the March 19 delayed-feed smoke and the
   March 21 blocked enterprise benchmark packet
 - moved the docs surface onto repo-local IMC-style masthead and section-bar
   assets
-- populated [`BENCHMARKS.md`](BENCHMARKS.md) with executed Yahoo Finance,
-  Binance Public Data, and Kaggle benchmark results backed by
+- retained the executed Yahoo Finance, Binance Public Data, and Kaggle
+  benchmark narratives under
   [`proofs/artifacts/public_benchmarks/`](proofs/artifacts/public_benchmarks/)
 
-### Not A Release
+### Current Commercial Boundary
 
-- no public release is declared here
+- repo install, replay, and carried Wave-1 evidence are useful now
 - the open-access enterprise benchmark remains blocked on missing Phase 06
   inputs and authority labels
 

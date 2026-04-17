@@ -1,0 +1,245 @@
+{
+  "claim_id": "FT-C004",
+  "mean_p_at_10": 0.9,
+  "pass": true,
+  "pattern_results": {
+    "bull_flag": {
+      "p_at_10": 0.9,
+      "top_k": [
+        {
+          "position": 5000,
+          "score": 1.0
+        },
+        {
+          "position": 25000,
+          "score": 1.0
+        },
+        {
+          "position": 45000,
+          "score": 1.0
+        },
+        {
+          "position": 65000,
+          "score": 1.0
+        },
+        {
+          "position": 80000,
+          "score": 1.0
+        },
+        {
+          "position": 85000,
+          "score": 1.0
+        },
+        {
+          "position": 105000,
+          "score": 1.0
+        },
+        {
+          "position": 125000,
+          "score": 1.0
+        },
+        {
+          "position": 145000,
+          "score": 1.0
+        },
+        {
+          "position": 165000,
+          "score": 1.0
+        }
+      ],
+      "truth_positions": [
+        5000,
+        25000,
+        45000,
+        65000,
+        85000,
+        105000,
+        125000,
+        145000,
+        165000,
+        185000,
+        200000,
+        210000
+      ]
+    },
+    "cup_handle": {
+      "p_at_10": 0.9,
+      "top_k": [
+        {
+          "position": 5000,
+          "score": 1.0
+        },
+        {
+          "position": 25000,
+          "score": 1.0
+        },
+        {
+          "position": 45000,
+          "score": 1.0
+        },
+        {
+          "position": 65000,
+          "score": 1.0
+        },
+        {
+          "position": 80000,
+          "score": 1.0
+        },
+        {
+          "position": 85000,
+          "score": 1.0
+        },
+        {
+          "position": 105000,
+          "score": 1.0
+        },
+        {
+          "position": 125000,
+          "score": 1.0
+        },
+        {
+          "position": 145000,
+          "score": 1.0
+        },
+        {
+          "position": 165000,
+          "score": 1.0
+        }
+      ],
+      "truth_positions": [
+        5000,
+        25000,
+        45000,
+        65000,
+        85000,
+        105000,
+        125000,
+        145000,
+        165000,
+        185000,
+        200000,
+        210000
+      ]
+    },
+    "double_bottom": {
+      "p_at_10": 0.9,
+      "top_k": [
+        {
+          "position": 5000,
+          "score": 1.0
+        },
+        {
+          "position": 25000,
+          "score": 1.0
+        },
+        {
+          "position": 45000,
+          "score": 1.0
+        },
+        {
+          "position": 65000,
+          "score": 1.0
+        },
+        {
+          "position": 80000,
+          "score": 1.0
+        },
+        {
+          "position": 85000,
+          "score": 1.0
+        },
+        {
+          "position": 105000,
+          "score": 1.0
+        },
+        {
+          "position": 125000,
+          "score": 1.0
+        },
+        {
+          "position": 145000,
+          "score": 1.0
+        },
+        {
+          "position": 165000,
+          "score": 1.0
+        }
+      ],
+      "truth_positions": [
+        5000,
+        25000,
+        45000,
+        65000,
+        85000,
+        105000,
+        125000,
+        145000,
+        165000,
+        185000,
+        200000,
+        210000
+      ]
+    },
+    "head_shoulders": {
+      "p_at_10": 0.9,
+      "top_k": [
+        {
+          "position": 5000,
+          "score": 1.0
+        },
+        {
+          "position": 25000,
+          "score": 1.0
+        },
+        {
+          "position": 45000,
+          "score": 1.0
+        },
+        {
+          "position": 65000,
+          "score": 1.0
+        },
+        {
+          "position": 80000,
+          "score": 1.0
+        },
+        {
+          "position": 85000,
+          "score": 1.0
+        },
+        {
+          "position": 105000,
+          "score": 1.0
+        },
+        {
+          "position": 125000,
+          "score": 1.0
+        },
+        {
+          "position": 145000,
+          "score": 1.0
+        },
+        {
+          "position": 165000,
+          "score": 1.0
+        }
+      ],
+      "truth_positions": [
+        5000,
+        25000,
+        45000,
+        65000,
+        85000,
+        105000,
+        125000,
+        145000,
+        165000,
+        185000,
+        200000,
+        210000
+      ]
+    }
+  },
+  "taxonomy_reference": "FinTSB 4-category mapping via canonical templates",
+  "threshold": 0.85
+}

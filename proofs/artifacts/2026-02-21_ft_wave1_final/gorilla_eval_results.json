@@ -1,0 +1,134 @@
+{
+  "attempts": [
+    {
+      "command": "git clone --depth 1 https://github.com/ghilesmeddour/gorilla-time-series-compression.git './external_resources/gorilla-time-series-compression'",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "fatal: destination path './external_resources/gorilla-time-series-compression' already exists and is not an empty directory.\n",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "git clone --depth 1 https://github.com/ShishirPatil/gorilla.git './external_resources/gorilla-bfcl'",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "fatal: destination path './external_resources/gorilla-bfcl' already exists and is not an empty directory.\n",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.venv/bin/python' -m pip install -q './external_resources/gorilla-time-series-compression'",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.venv/bin/python' -m pip install -q -e './external_resources/gorilla-bfcl/berkeley-function-call-leaderboard'",
+      "cwd": ".",
+      "exit_code": 1,
+      "stderr": "ERROR: Ignored the following versions that require a different python version: 0.21.0 Requires-Python >=3.8,<3.12; 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11; 1.26.0 Requires-Python >=3.9,<3.13; 1.26.1 Requires-Python >=3.9,<3.13; 4.0.0 Requires-Python >=3.7,<3.11\nERROR: Could not find a version that satisfies the requirement faiss-cpu==1.11.0 (from bfcl-eval) (from versions: 1.12.0, 1.13.0, 1.13.1, 1.13.2)\nERROR: No matching distribution found for faiss-cpu==1.11.0\n",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "/usr/local/bin/python3.11 --version",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Python 3.11.14\n",
+      "timeout": false
+    },
+    {
+      "command": "/usr/local/bin/python3.11 -m venv './.tmp_bfcl311'",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.tmp_bfcl311/bin/python' -m pip install -q --upgrade pip",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.tmp_bfcl311/bin/python' -m pip install -q -e './external_resources/gorilla-bfcl/berkeley-function-call-leaderboard'",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.tmp_bfcl311/bin/python' -m pip install -q soundfile",
+      "cwd": ".",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "",
+      "timeout": false
+    },
+    {
+      "command": "'./.tmp_bfcl311/bin/python' -m bfcl_eval --help",
+      "cwd": "./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "                                                                                \n Usage: python -m bfcl_eval [OPTIONS] COMMAND [ARGS]...                         \n                                                                                \n\u256d\u2500 Options \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502 --install-completion            Install completion for the current shell.    \u2502\n\u2502 --show-completion               Show completion for the current shell, to    \u2502\n\u2502                                 copy it or customize the installation.       \u2502\n\u2502 --help                -h        Show this message and exit.                  \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n\u256d\u2500 Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502 models           List available models.                                      \u2502\n\u2502 test-categories  List available test categories.                             \u2502\n\u2502 generate         Generate the LLM response for one or more models on a       \u2502\n\u2502                  test-category (same as openfunctions_evaluation.py).        \u2502\n\u2502 results          List the results available for evaluation.                  \u2502\n\u2502 evaluate         Evaluate results from run of one or more models on a        \u2502\n\u2502                  test-category (same as eval_runner.py).                     \u2502\n\u2502 scores           Display the leaderboard.                                    \u2502\n\u2502 version          Show the bfcl version. PyPI versions are in development,    \u2502\n\u2502                  please rely on the commit hash for reproducibility.         \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n\n",
+      "timeout": false
+    },
+    {
+      "command": "'./.tmp_bfcl311/bin/python' -m bfcl_eval generate --model gorilla-openfunctions-v2 --test-category simple_python --num-threads 1 --run-ids --allow-overwrite",
+      "cwd": "./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard",
+      "exit_code": 0,
+      "stderr": "\nGenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\n                                                                                      \n\nGenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\nGenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\nGenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\n",
+      "stdout": "Generating results for ['gorilla-openfunctions-v2']\nRunning specific test cases. Ignoring `--test-category` argument.\n----------------------------------------------------------------------------------------------------\n\u2757\ufe0f\u2757\ufe0f Error occurred during inference. Continuing to next test case.\n\u2757\ufe0f\u2757\ufe0f Test case ID: simple_python_0, Error: HTTPSConnectionPool(host='luigi.millennium.berkeley.edu', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError(\"HTTPSConnection(host='luigi.millennium.berkeley.edu', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))\nTraceback (most recent call last):\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connection.py\", line 204, in _new_conn\n    sock = connection.create_connection(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/util/connection.py\", line 85, in create_connection\n    raise err\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/util/connection.py\", line 73, in create_connection\n    sock.connect(sa)\nConnectionRefusedError: [Errno 61] Connection refused\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 787, in urlopen\n    response = self._make_request(\n               ^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 488, in _make_request\n    raise new_e\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 464, in _make_request\n    self._validate_conn(conn)\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 1093, in _validate_conn\n    conn.connect()\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connection.py\", line 759, in connect\n    self.sock = sock = self._new_conn()\n                       ^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connection.py\", line 219, in _new_conn\n    raise NewConnectionError(\nurllib3.exceptions.NewConnectionError: HTTPSConnection(host='luigi.millennium.berkeley.edu', port=443): Failed to establish a new connection: [Errno 61] Connection refused\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/adapters.py\", line 644, in send\n    resp = conn.urlopen(\n           ^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n              ^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/urllib3/util/retry.py\", line 535, in increment\n    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='luigi.millennium.berkeley.edu', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError(\"HTTPSConnection(host='luigi.millennium.berkeley.edu', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard/bfcl_eval/_llm_response_generation.py\", line 194, in multi_threaded_inference\n    result, metadata = handler.inference(\n                       ^^^^^^^^^^^^^^^^^^\n  File \"./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard/bfcl_eval/model_handler/base_handler.py\", line 84, in inference\n    return self.inference_single_turn_FC(test_entry, include_input_log)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard/bfcl_eval/model_handler/base_handler.py\", line 695, in inference_single_turn_FC\n    api_response, query_latency = self._query_FC(inference_data)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./external_resources/gorilla-bfcl/berkeley-function-call-leaderboard/bfcl_eval/model_handler/api_inference/gorilla.py\", line 55, in _query_FC\n    api_response = requests.post(\n                   ^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/api.py\", line 115, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/sessions.py\", line 589, in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/sessions.py\", line 703, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./.tmp_bfcl311/lib/python3.11/site-packages/requests/adapters.py\", line 677, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='luigi.millennium.berkeley.edu', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError(\"HTTPSConnection(host='luigi.millennium.berkeley.edu', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))\n----------------------------------------------------------------------------------------------------\n",
+      "timeout": false
+    }
+  ],
+  "bfcl_eval": {
+    "error_signature": "\ngenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\n                                                                                      \n\ngenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\ngenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\ngenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\n\ngenerating results for ['gorilla-openfunctions",
+    "note": "BFCL generate failed",
+    "status": "INCONCLUSIVE"
+  },
+  "claim_linkage": {
+    "FT-C003": {
+      "external_comparator_output_present": true,
+      "gorilla_rmse_ticks": 0.0,
+      "status": "PASS",
+      "zpe_rmse_ticks": 0.0
+    },
+    "FT-C006": {
+      "external_comparator_output_present": true,
+      "gorilla_db_roundtrip_bit_consistent": true,
+      "status": "PASS",
+      "zpe_db_roundtrip_pass": true
+    }
+  },
+  "gate": "M1",
+  "gorilla_time_series_eval": {
+    "compression_ratio_pairs": 3.304812116267421,
+    "db_roundtrip_bit_consistent": true,
+    "encoded_bytes": 580971,
+    "hash_after": "442494a6465c3b6115c8f12a8ed681159c54c3a8c95700652b547fa02414c405",
+    "hash_before": "442494a6465c3b6115c8f12a8ed681159c54c3a8c95700652b547fa02414c405",
+    "pairs_count": 120000,
+    "raw_pair_bytes": 1920000,
+    "rmse_ticks": 0.0,
+    "status": "PASS"
+  },
+  "impracticality": [
+    {
+      "claim_impact": "No direct impact on FT core codec metrics; function-calling comparator remains INCONCLUSIVE",
+      "code": "IMP-ACCESS",
+      "command": "'./.tmp_bfcl311/bin/python' -m bfcl_eval generate --model gorilla-openfunctions-v2 --test-category simple_python --num-threads 1 --run-ids --allow-overwrite",
+      "error_signature": "\ngenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\n                                                                                      \n\ngenerating results for gorilla-openfunctions-v2:   0%|          | 0/1 [00:00<?, ?it/s]\ngenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\ngenerating results for gorilla-openfunctions-v2: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00,  1.32it/s]\n\ngenerating results for ['gorilla-openfunctions",
+      "fallback": "direct Gorilla time-series comparator results",
+      "resource": "gorilla_bfcl_harness"
+    }
+  ],
+  "resource": "Gorilla comparator + BFCL"
+}

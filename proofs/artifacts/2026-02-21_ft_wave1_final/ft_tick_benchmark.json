@@ -1,0 +1,67 @@
+{
+  "claim_id": "FT-C002",
+  "comparators": {
+    "comparators": {
+      "bz2": {
+        "compressed_bytes": 680156,
+        "compression_ratio": 11.762007539446833,
+        "note": "",
+        "status": "OK"
+      },
+      "gorilla_xor_proxy": {
+        "compressed_bytes": 4916538,
+        "compression_ratio": 1.6271612260497121,
+        "note": "proxy; not byte-identical Gorilla implementation",
+        "status": "OK"
+      },
+      "gzip": {
+        "compressed_bytes": 1219404,
+        "compression_ratio": 6.560582054839905,
+        "note": "",
+        "status": "OK"
+      },
+      "lz4": {
+        "comparability_impact": "high-speed comparator reduced",
+        "error": "No module named 'lz4'",
+        "status": "UNAVAILABLE",
+        "substitution": "zlib"
+      },
+      "lzma": {
+        "compressed_bytes": 703444,
+        "compression_ratio": 11.372618147286778,
+        "note": "",
+        "status": "OK"
+      },
+      "sax_proxy": {
+        "compressed_bytes": 26674,
+        "compression_ratio": 299.91752268126265,
+        "note": "proxy for symbolic compression when time_series_compression unavailable",
+        "status": "OK"
+      },
+      "time_series_compression": {
+        "comparability_impact": "benchmark comparability reduced",
+        "error": "No module named 'time_series_compression'",
+        "status": "UNAVAILABLE",
+        "substitution": "sax_proxy"
+      },
+      "zlib": {
+        "compressed_bytes": 1219392,
+        "compression_ratio": 6.560646617330604,
+        "note": "incumbent baseline",
+        "status": "OK"
+      },
+      "zstd": {
+        "comparability_impact": "modern comparator reduced",
+        "error": "No module named 'zstandard'",
+        "status": "UNAVAILABLE",
+        "substitution": "lzma"
+      }
+    },
+    "raw_bytes": 8000000
+  },
+  "compressed_bytes": 2917260,
+  "compression_ratio": 20.567244606240102,
+  "pass": true,
+  "raw_bytes": 60000000,
+  "threshold": 8.0
+}

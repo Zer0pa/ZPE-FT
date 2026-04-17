@@ -12,7 +12,7 @@
 
 [`LICENSE`](../LICENSE) is the legal source of truth.
 
-This repo is distributed under Zer0pa Source-Available License v6.0. It is not
+This repo is distributed under Zer0pa Source-Available License v6.2. It is not
 an OSI open-source license.
 
 ## Covered Surfaces
@@ -35,10 +35,10 @@ an OSI open-source license.
 ## Historical Proof Caveat
 
 Some preserved proof files and copied contract references contain third-party
-tool outputs, machine-local paths, or workstation-specific error signatures.
-Keep them as evidence artifacts or operator-local context, not as current
-operating instructions or a broad rights statement over every embedded
-external output.
+tool outputs, machine-local paths, workstation-specific error signatures, or
+superseded license/status wording from the time they were captured. Keep them
+as evidence artifacts or operator-local context, not as current operating
+instructions or a broad rights statement over every embedded external output.
 
 <p>
   <img src="../.github/assets/readme/zpe-masthead.gif" alt="ZPE-FT Masthead" width="100%">

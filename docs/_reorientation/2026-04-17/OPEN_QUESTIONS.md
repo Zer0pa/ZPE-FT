@@ -1,0 +1,4 @@
+# Reorientation Open Questions — 2026-04-17
+
+- Novelty schedule scope for search: I reviewed [`python/zpe_finance/search.py`](../../../python/zpe_finance/search.py), the README, and the carried Wave-1 proof bundle. I can support the existence of archive-native motif search in the product, but I cannot resolve alone whether that surface is schedule-worthy novelty or product integration of known k-gram and subsequence methods.
+- Novelty schedule scope for `.zpfin`: I reviewed [`python/zpe_finance/packet.py`](../../../python/zpe_finance/packet.py) and the packet spec in [`docs/specs/ZPFIN_SPEC.md`](../../specs/ZPFIN_SPEC.md). I can support the packet contract as a real product boundary, but the license agent should decide whether it belongs in the per-product novelty schedule as a distinct item or only as supporting structure around the codec.
