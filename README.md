@@ -34,6 +34,11 @@ ZPE-FT is a deterministic financial time-series codec and search surface for tea
 
 The honest commercial wedge is narrow and specific: archive-native pattern search plus deterministic replay on delayed-feed market data, with strong compression on the controlled Wave-1 bundle and a bounded repo-native acquisition path. The repo install surface is real. The public-data rehearsal lanes are useful but non-authority. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
 
+| Field | Value |
+|-------|-------|
+| Architecture | MARKET_TICK_STREAM |
+| Encoding | FT_NIBBLE_DELTA_V1 |
+
 ## Key Metrics
 
 | Metric | Value | Baseline |
