@@ -32,16 +32,18 @@
 
 ZPE-FT is a deterministic financial time-series codec and search surface for teams that need to archive delayed-feed market data, replay it exactly, and query patterns without first inflating the archive back into a warehouse table.
 
-The honest commercial wedge is narrow and specific: compressed delayed-feed archives with deterministic replay, carried price-field fidelity on the controlled Wave-1 bundle, and a bounded repo-native acquisition path. The repo install surface is real. The public-data rehearsal lanes are useful but non-authority. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
+The honest commercial wedge is narrow and specific: archive-native pattern search plus deterministic replay on delayed-feed market data, with strong compression on the controlled Wave-1 bundle and a bounded repo-native acquisition path. The repo install surface is real. The public-data rehearsal lanes are useful but non-authority. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
 
 ## Key Metrics
 
 | Metric | Value | Baseline |
 |---|---|---|
-| Wave-1 OHLCV compression | 19.19x | zlib 8.35x |
-| Wave-1 tick compression | 20.57x | zlib 6.56x |
-| Public BTCUSDT archive compression | 10.90x | Parquet+ZSTD 3.87x |
-| Price-field fidelity | 0.0 max RMSE ticks | — |
+| PATTERN_SEARCH_P10 | 90% | top-10 precision |
+| DETERMINISTIC_REPLAY | 5/5 | hash-consistent runs |
+| WAVE1_OHLCV_CR | 19.19x | zlib 8.35x |
+| WAVE1_TICK_CR | 20.57x | zlib 6.56x |
+
+> Source: [`proofs/artifacts/2026-02-21_ft_wave1_final/ft_pattern_search_eval.json`](proofs/artifacts/2026-02-21_ft_wave1_final/ft_pattern_search_eval.json), [`proofs/artifacts/2026-02-21_ft_wave1_final/determinism_replay_results.json`](proofs/artifacts/2026-02-21_ft_wave1_final/determinism_replay_results.json), [`proofs/artifacts/2026-02-21_ft_wave1_final/before_after_metrics.json`](proofs/artifacts/2026-02-21_ft_wave1_final/before_after_metrics.json)
 
 ## Competitive Benchmarks
 
@@ -74,13 +76,12 @@ Wave-1 controlled codec claims and public rehearsal benchmarks are different sur
 
 | Field | Value |
 |---|---|
-| Verdict | `BLOCKED_MISSING_INPUTS` |
-| Release posture | Useful now, improving continuously |
-| Ideal first buyer | Market-data infrastructure team or quant research platform |
-| Deployment | SDK — Python package with optional Rust helper |
-| Current blocker | 33 named corpus exports plus auditable FT-C004 truth labels |
+| Verdict | `BLOCKED` |
+| Commit SHA | `59a2ec90bf38` |
+| Confidence | `98%` |
+| Source | [`proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md`](proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md) |
 
-This repo is useful now for bounded delayed-feed archive compression, deterministic replay, and archive-native pattern search. Commercial closure still depends on the named missing-input packet and auditable FT-C004 truth, so the open-access enterprise benchmark remains blocked.
+This repo is useful now for archive-native pattern search, deterministic replay, and bounded delayed-feed compression. The current buyer wedge is market-data infrastructure teams or quant research platforms via the Python SDK, and the governing blocker packet remains `BLOCKED_MISSING_INPUTS`: 33 named corpus exports plus auditable FT-C004 truth are still missing.
 
 ## Tests and Verification
 
@@ -99,6 +100,10 @@ This repo is useful now for bounded delayed-feed archive compression, determinis
 |---|---|
 | `proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log` | Public clone install and import truth |
 | `proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md` | Claim-by-claim carried Wave-1 bundle summary |
+| `proofs/artifacts/2026-02-21_ft_wave1_final/before_after_metrics.json` | Controlled Wave-1 compression summary for the promoted codec claims |
+| `proofs/artifacts/2026-02-21_ft_wave1_final/ft_pattern_search_eval.json` | Controlled pattern-search precision evidence on the carried bundle |
+| `proofs/artifacts/2026-02-21_ft_wave1_final/determinism_replay_results.json` | Five-run deterministic replay evidence for byte-identical outputs |
+| `proofs/artifacts/2026-02-21_ft_wave1_final/quality_gate_scorecard.json` | Governing quality gate score used for the readiness confidence reading |
 | `proofs/artifacts/2026-02-21_ft_wave1_final/ft_reconstruction_fidelity.json` | Controlled price-field and top-of-book fidelity evidence |
 | `proofs/artifacts/real_market_benchmarks/BOUNDARY.json` | Public rehearsal boundary and promotion ban |
 | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | Sovereign blocker packet for the open-access enterprise benchmark |
