@@ -6,7 +6,7 @@
 <p align="center"><em>Repo install is real. Carried Wave-1 codec evidence is real. The open-access enterprise benchmark is still blocked on missing inputs and auditable query truth.</em></p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.2-e5e7eb?labelColor=111111" alt="License: SAL v6.2"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v6.2-e5e7eb?labelColor=111111" alt="License: SAL v7.0"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
   <a href="proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md"><img src="https://img.shields.io/badge/controlled%20bundle-Wave--1%20carried-e5e7eb?labelColor=111111" alt="Controlled bundle: Wave-1 carried"></a>
   <a href="proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"><img src="https://img.shields.io/badge/current%20gate-BLOCKED__MISSING__INPUTS-e5e7eb?labelColor=111111" alt="Current gate: BLOCKED_MISSING_INPUTS"></a>
@@ -137,4 +137,4 @@ print("rust_bridge", rust_version())
 PY
 ```
 
-Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v6.2.
+Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.0.
