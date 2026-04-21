@@ -134,4 +134,4 @@ print("rust_bridge", rust_version())
 PY
 ```
 
-Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v6.2.
+Start with `docs/AUDITOR_PLAYBOOK.md`, then read `docs/PUBLIC_AUDIT_LIMITS.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.0.
