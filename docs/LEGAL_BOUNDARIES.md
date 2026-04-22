@@ -12,7 +12,7 @@
 
 [`LICENSE`](../LICENSE) is the legal source of truth.
 
-This repo is distributed under Zer0pa Source-Available License v6.0. It is not
+This repo is distributed under Zer0pa Source-Available License v7.0. It is not
 an OSI open-source license.
 
 ## Covered Surfaces
