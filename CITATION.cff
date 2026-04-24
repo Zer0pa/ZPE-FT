@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use ZPE-FT, please cite this repository record and read the license
+  boundary before reuse.
+type: software
+title: "ZPE-FT: Deterministic financial time-series codec and search surface"
+authors:
+  - name: "Zer0pa (Pty) Ltd"
+    email: architects@zer0pa.ai
+version: 0.1.0
+repository-code: https://github.com/Zer0pa/ZPE-FT
+url: https://github.com/Zer0pa/ZPE-FT
+license: LicenseRef-Zer0pa-SAL-7.0
+abstract: >-
+  ZPE-FT deterministically encodes delayed-feed OHLCV bars and bounded
+  top-of-book proxy feeds so teams can archive market data compactly, replay
+  retained price fields exactly, and query patterns without inflating archives
+  back into warehouse tables. The current public repo carries retained public
+  benchmarks, bounded proxy bundles, and the sovereign Phase 06 blocker ledger.
+keywords:
+  - finance
+  - market data
+  - time-series compression
+  - OHLCV
+  - top-of-book
+  - pattern search
+  - delayed feed

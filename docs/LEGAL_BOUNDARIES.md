@@ -28,9 +28,10 @@ an OSI open-source license.
 
 | Artifact family | Boundary |
 |---|---|
-| `2026-02-21_ft_wave1_final` | carried controlled proof bundle |
+| `proofs/artifacts/real_market_benchmarks/` | bounded public proxy bundles; promotion forbidden for Phase 06 authority claims |
 | `2026-03-19_alpaca_demo_smoke` | internal delayed-feed qualification only |
 | `2026-03-21_phase06_contract_freeze_attempt_v3` | benchmark-blocker packet, not a market-rights grant |
+| `proofs/phase06_inputs/` | blocker ledger for the absent exact authority pack |
 
 ## Historical Proof Caveat
 

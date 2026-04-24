@@ -1,0 +1,28 @@
+{
+  "title": "ZPE-FT",
+  "description": "Deterministic financial time-series codec and search surface for delayed-feed market data. The current public repo carries retained public benchmarks, bounded proxy bundles, and the sovereign Phase 06 blocker ledger.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "finance",
+    "market-data",
+    "time-series",
+    "ohlcv",
+    "ticks",
+    "compression",
+    "pattern-search"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-FT",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ]
+}

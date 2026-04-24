@@ -10,16 +10,17 @@ This directory is the exact-input ledger for the sovereign Phase 06 benchmark. I
 
 ## Boundary
 
-- Daily `2y` proxies, provider-max `1m_8d` proxies, and bounded Dukascopy tick slices live under `data/ohlcv/`, `data/ticks/`, and `proofs/artifacts/real_market_benchmarks/`; they are useful, but they are not this directory.
+- The retained daily, minute, and tick proxy bundles live under `proofs/artifacts/real_market_benchmarks/`; they are useful, but they are not this directory.
 - Populating this directory with exact files is necessary but not sufficient. `FT-C004` still requires labeled or auditable truth.
 
 ## Required References
 
 - `../artifacts/real_market_benchmarks/BOUNDARY.json`
 - `../artifacts/real_market_benchmarks/ft_c004_truth_requirements.json`
-- `../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-01-benchmark-spec.md`
-- `../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-01-query-and-truth-spec.md`
-- `../.gpd/phases/06-open-access-enterprise-wedge-benchmark/06-ftc004-truth-gap.md`
+- `../reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`
+- `../reruns/2026-03-21_phase06_contract_freeze_attempt_v3/retained_contract_refs/PRD_ZPE_FT.md`
+- `../reruns/2026-03-21_phase06_contract_freeze_attempt_v3/retained_contract_refs/REAL_MARKET_ATTACK_PLAN.md`
+- `../reruns/2026-03-21_phase06_contract_freeze_attempt_v3/retained_contract_refs/phase06_query_catalog.pending.json`
 
 ## Current Status
 

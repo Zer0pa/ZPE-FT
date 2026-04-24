@@ -1,28 +1,30 @@
 {
   "repo_name": "ZPE-FT",
-  "repo_role": "secondary_product_candidate",
-  "status": "PRIVATE_STAGE",
+  "repo_role": "independent_encoding_product",
+  "status": "BLOCKED",
   "plain_english_summary": "Deterministic financial time-series compression, replay, and query surface for bounded market-data workflows.",
-  "commercial_wedge": "Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity. Real-market minute-bar and tick figures are bounded proxy artifacts; the open-access enterprise benchmark remains blocked on missing inputs.",
-  "technical_wedge": "Deterministic financial codec with native search and replay. The carried Wave-1 bundle proves OHLCV/tick compression and price-field fidelity on a controlled corpus; volume is log-quantized and Phase 06 remains blocked on missing inputs.",
+  "commercial_wedge": "Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity. Retained public benchmark and proxy artifacts are real, but the sovereign Phase 06 benchmark remains blocked on missing exact inputs and FT-C004 truth.",
+  "technical_wedge": "Deterministic financial codec with native search and replay. The retained public and bounded-proxy artifacts show compression, replay, and fidelity on non-authority surfaces; Phase 06 remains blocked on the absent exact authority pack and unresolved truth labels.",
   "ideal_first_buyer": "Market-data infrastructure team or quant research platform",
   "deployment_model": "SDK — Python package with optional Rust native helper",
   "proof_anchors": [
-    "proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log",
-    "proofs/artifacts/2026-02-21_ft_wave1_final/claim_status_delta.md",
-    "proofs/artifacts/2026-02-21_ft_wave1_final/ft_reconstruction_fidelity.json",
+    "proofs/artifacts/operations/20260321T160048Z_pytest.log",
+    "proofs/PHASE3_PUBLIC_BENCHMARKS.json",
+    "proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json",
     "proofs/artifacts/real_market_benchmarks/BOUNDARY.json",
+    "proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json",
+    "proofs/phase06_inputs/series_gap_matrix.csv",
     "proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"
   ],
   "not_claimed": [
-    "Public release readiness (Phase 06 BLOCKED_MISSING_INPUTS)",
+    "Phase 06 closure or public release readiness",
     "Broad incumbent displacement",
-    "Full contract freeze",
+    "Exact authority-pack coverage in the current tracked repo",
     "Lossless volume reconstruction",
     "Universal financial data coverage",
     "Runtime coupling to ZPE-IMC"
   ],
-  "family_position": "Secondary product candidate in the Zer0pa deterministic encoding family. Not the lead commercial front door.",
+  "family_position": "Independent encoding product in the Zer0pa portfolio. Current public surface is useful, but it remains BLOCKED on the sovereign Phase 06 gate.",
   "license": "LicenseRef-Zer0pa-SAL-7.0",
   "contact": "architects@zer0pa.ai"
 }
