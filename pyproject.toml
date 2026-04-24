@@ -9,25 +9,29 @@ description = "ZPE financial time-series codec and pattern search"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-7.0"
 requires-python = ">=3.11"
-authors = [{name = "Zer0pa"}]
+authors = [{name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"}]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
   "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Science/Research",
+  "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.11",
   "Topic :: Office/Business :: Financial",
+  "Topic :: Scientific/Engineering",
 ]
-keywords = ["finance", "time-series", "codec", "search"]
+keywords = ["financial-time-series", "market-data", "compression", "deterministic-replay", "pattern-search"]
 dependencies = [
   "numpy>=2.1",
 ]
 
 [project.urls]
 Homepage = "https://github.com/Zer0pa/ZPE-FT"
-Documentation = "https://github.com/Zer0pa/ZPE-FT/tree/main/docs"
+Documentation = "https://github.com/Zer0pa/ZPE-FT#readme"
 Repository = "https://github.com/Zer0pa/ZPE-FT"
+Issues = "https://github.com/Zer0pa/ZPE-FT/issues"
 Changelog = "https://github.com/Zer0pa/ZPE-FT/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]

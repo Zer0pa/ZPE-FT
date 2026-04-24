@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use ZPE-FT, please cite it using the metadata below."
+title: "ZPE-FT"
+type: software
+version: "0.1.0"
+license: "LicenseRef-Zer0pa-SAL-7.0"
+abstract: "Deterministic financial time-series codec and search surface for delayed-feed market-data archives, replay, and pattern queries."
+authors:
+  - name: "Zer0pa (Pty) Ltd"
+repository-code: "https://github.com/Zer0pa/ZPE-FT"
+url: "https://github.com/Zer0pa/ZPE-FT"
+keywords:
+  - "financial-time-series"
+  - "market-data"
+  - "compression"
+  - "deterministic-replay"
+  - "pattern-search"
+contact:
+  - email: "architects@zer0pa.ai"
