@@ -4,7 +4,7 @@
 
 <p align="center"><strong>Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity.</strong></p>
 <p align="center"><em>One of 17 independent codec products in the Zer0pa portfolio. Retained public-benchmark, bounded replay, and blocker artifacts are real. The open-access enterprise benchmark is still blocked on missing inputs and auditable query truth.</em></p>
-<p align="center"><strong>Public benchmark (3 datasets, parquet+zstd+DuckDB baseline):</strong> 5.9–10.9× smaller than raw · 2.7–3.3× smaller than parquet+zstd · up to 62.9× faster pattern query vs DuckDB · exact tick fidelity (RMSE = 0.0) · <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json">proof artifact</a></p>
+<p align="center"><strong>Public benchmark (3 datasets, parquet+zstd+DuckDB baseline):</strong> 5.9–10.9× smaller than raw (aggregate across 3 datasets) · 2.7–3.3× smaller than parquet+zstd (aggregate across 3 datasets) · up to 62.9× faster pattern query vs DuckDB (OHLCV datasets; tick at scale: latency parity) · exact tick fidelity (RMSE = 0.0) · <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json">proof artifact</a></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.0-e5e7eb?labelColor=111111" alt="License: SAL v7.0"></a>
@@ -20,13 +20,13 @@
 
 # ZPE-FT
 
-| What This Is | Verified Claims | What We Don't Claim |
-|---|---|---|
-| [Jump](#what-this-is) | [Jump](#verified-claims) | [Jump](#what-we-dont-claim) |
+| What This Is | Verified Claims | Comp Benchmarks | What We Don't Claim |
+|---|---|---|---|
+| [Jump](#what-this-is) | [Jump](#verified-claims) | [Jump](#comp-benchmarks-vs-parquetzstdduckdb) | [Jump](#what-we-dont-claim) |
 
-| Commercial Readiness | Repo Shape | Quick Start |
-|---|---|---|
-| [Jump](#commercial-readiness) | [Jump](#repo-shape) | [Jump](#quick-start) |
+| Commercial Readiness | Tests and Verification | Proof Anchors | Repo Shape | Quick Start |
+|---|---|---|---|---|
+| [Jump](#commercial-readiness) | [Jump](#tests-and-verification) | [Jump](#proof-anchors) | [Jump](#repo-shape) | [Jump](#quick-start) |
 
 ## What This Is
 
@@ -83,7 +83,30 @@ CI coverage for all proxy lanes: `tests/test_real_market_corpus.py`, `tests/test
 |-------|-------|
 | Verdict | BLOCKED |
 | Reason | Phase 06 still lacks the declared authority inputs and auditable FT-C004 truth. |
+| Commit SHA | c8c6ea5e9dcc |
+| Confidence | 98% |
 | Source | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`; `proofs/phase06_inputs/series_gap_matrix.csv` |
+
+## Tests and Verification
+
+| Code | Check | Verdict |
+|---|---|---|
+| V_01 | Public SPY 10y daily compression | PASS |
+| V_02 | Public BTCUSDT aggTrades compression | PASS |
+| V_03 | Public Kaggle SPY compression | PASS |
+| V_04 | Bounded replay price-field fidelity | PASS |
+| V_05 | Phase 06 contract freeze | FAIL |
+| V_06 | Public proxy retrieval truth | INC |
+
+## Proof Anchors
+
+| Path | Why it matters |
+|---|---|
+| `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` | Retained public benchmark compression and query evidence |
+| `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` | Bounded replay price-field and top-of-book fidelity evidence |
+| `proofs/artifacts/real_market_benchmarks/BOUNDARY.json` | Public rehearsal boundary and promotion ban |
+| `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | Sovereign blocker packet for the open-access enterprise benchmark |
+| `proofs/phase06_inputs/series_gap_matrix.csv` | Declared missing-input matrix behind the blocked Phase 06 gate |
 
 ## Repo Shape
 
