@@ -43,6 +43,31 @@ The honest commercial wedge is narrow and specific: compressed delayed-feed arch
 | Missing authority inputs keep the sovereign Phase 06 gate blocked. | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | `tests/test_real_market_corpus.py` asserts missing inputs return `blocked_missing_inputs`. |
 | FT-C004 truth remains blocked until labels or audit refs exist. | `proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json` | `tests/test_phase06_partial_scripts.py` and `tests/test_real_market_refresh_extras.py` assert blocked-vs-ready truth-surface outcomes. |
 
+## Comp Benchmarks vs parquet+zstd+DuckDB
+
+The baseline for all comp benchmarks is **Parquet (ZSTD compression) queried via DuckDB** — a representative modern data-warehouse path for financial time-series pattern search. Each row below is a retained artifact from a real public dataset run, not a synthetic fixture.
+
+| Dataset | Rows | ZPE size vs raw | ZPE size vs parquet+zstd | ZPE query p95 vs parquet p95 | Price-field RMSE (ticks) | Proof artifact |
+|---|---|---|---|---|---|---|
+| Yahoo SPY 10y daily (OHLCV) | 2,513 | **5.94x** | **2.69x** | **62.9x faster** (0.70 ms vs 43.9 ms) | 0.0 | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` |
+| Kaggle SPY full history (OHLCV) | 3,201 | **7.31x** | **3.32x** | **13.2x faster** (1.04 ms vs 13.7 ms) | 0.0 | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` |
+| Binance BTCUSDT aggTrades 2017-09 (tick) | 198,880 | **10.90x** | **2.81x** | parity (63.4 ms vs 55.6 ms) | 0.0 | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` |
+
+Notes on scope: the Binance tick dataset is a trade-tape mapping (bid=ask=trade price) because Binance public aggTrades do not expose top-of-book quotes; query-latency parity at ~200k rows is expected for that workload shape. OHLCV latency advantage is largest on daily series; tick at scale has a different profile. These are delayed-feed public datasets, not authority enterprise inputs.
+
+## Retained Proxy-Lane Metrics
+
+These results are from repo-bundled provider-max proxy lanes (not the sovereign Phase 06 authority pack). They are useful evidence of codec behaviour across 30 symbols and tick corpora; they are not the enterprise benchmark.
+
+| Lane | Series | RMSE (ticks) | Query p95 | Encode p95 | Proof artifact |
+|---|---|---|---|---|---|
+| Alpaca demo smoke — SPY 1m bars | 1 OHLCV | **0.0** (exact tick) | 0.01 ms | n/a | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` |
+| Alpaca demo smoke — AAPL tick stream | 1 tick | **0.0** (exact tick); 8.40x compression vs raw | n/a | n/a | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_tick_benchmark.json` |
+| 30-symbol daily 24-month corpus | 30 OHLCV | **0.0 across all 30 series** | 0.077 ms (p95 across 15,000 corpus points) | 4.2 ms | `proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/ft_reconstruction_fidelity.json` |
+| Dukascopy tick 20-session corpus | 3 tick | **0.0 across all 3 series**; 7.2–14.9x compression range (mean 11.1x) | 39.1 ms (p95) | 1,281 ms | `proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/ft_reconstruction_fidelity.json` |
+
+CI coverage for all proxy lanes: `tests/test_real_market_corpus.py`, `tests/test_ohlcv_roundtrip.py`, `tests/test_packet_roundtrip.py`.
+
 ## What We Don't Claim
 
 - No Phase 06 closure or public release readiness.
