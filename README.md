@@ -3,7 +3,8 @@
 </p>
 
 <p align="center"><strong>Search financial patterns on compressed delayed-feed archives with deterministic replay and bounded price-field fidelity.</strong></p>
-<p align="center"><em>Retained public-benchmark, bounded replay, and blocker artifacts are real. The open-access enterprise benchmark is still blocked on missing inputs and auditable query truth.</em></p>
+<p align="center"><em>One of 17 independent codec products in the Zer0pa portfolio. Retained public-benchmark, bounded replay, and blocker artifacts are real. The open-access enterprise benchmark is still blocked on missing inputs and auditable query truth.</em></p>
+<p align="center"><strong>Public benchmark (3 datasets, parquet+zstd+DuckDB baseline):</strong> 5.9–10.9× smaller than raw · 2.7–3.3× smaller than parquet+zstd · up to 62.9× faster pattern query vs DuckDB · exact tick fidelity (RMSE = 0.0) · <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json">proof artifact</a></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.0-e5e7eb?labelColor=111111" alt="License: SAL v7.0"></a>
@@ -31,7 +32,7 @@
 
 ZPE-FT is a deterministic financial time-series codec and search surface for teams that need to archive delayed-feed market data, replay it exactly, and query patterns without first inflating the archive back into a warehouse table.
 
-The honest commercial wedge is narrow and specific: compressed delayed-feed archives with deterministic replay, retained public-benchmark evidence on open datasets, and bounded replay fidelity on the in-repo smoke bundle. Public-data rehearsal lanes are useful but non-authority. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
+The wedge is narrow and specific: compressed delayed-feed archives with deterministic replay, retained public-benchmark evidence on open datasets, and bounded replay fidelity on the in-repo smoke bundle. Public-data rehearsal lanes are useful evidence; they are not authority enterprise inputs. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
 
 ## Verified Claims
 
