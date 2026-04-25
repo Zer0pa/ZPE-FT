@@ -1,2 +1,0 @@
-2026-04-08T02:54:11.507106+00:00	PHASE3	0	python3 /tmp/zpe-ft-phase3/scripts/run_public_market_benchmarks.py --artifact-root /tmp/zpe-ft-phase3-artifacts	start public benchmarks
-2026-04-08T02:56:13.527545+00:00	PHASE3	0	write phase3_public_benchmarks.json + phase3_public_benchmarks.md	complete
