@@ -36,9 +36,10 @@ and [`../LICENSE`](../LICENSE).
 
 | Proof class | Current artifact | Meaning |
 |---|---|---|
-| Controlled authority | [`../proofs/artifacts/2026-02-21_ft_wave1_final/`](../proofs/artifacts/2026-02-21_ft_wave1_final/) | promoted codec claims on the carried Wave-1 corpus |
+| Retained public benchmarks | [`../proofs/artifacts/public_benchmarks/`](../proofs/artifacts/public_benchmarks/) | open-dataset compression and query artifacts retained in the repo |
 | Bounded operator/local smoke | [`../proofs/reruns/2026-03-19_alpaca_demo_smoke/`](../proofs/reruns/2026-03-19_alpaca_demo_smoke/) | delayed-feed acquisition/freeze/refresh reality on a two-series sample |
 | Current enterprise blocker | [`../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`](../proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json) | open-access benchmark is not closed |
+| Authority-input gap matrix | [`../proofs/phase06_inputs/series_gap_matrix.csv`](../proofs/phase06_inputs/series_gap_matrix.csv) | declared missing inputs that keep Phase 06 blocked |
 
 <p>
   <img src="../.github/assets/readme/section-bars/setup-and-verification.svg" alt="SETUP AND VERIFICATION" width="100%">
@@ -49,17 +50,20 @@ and [`../LICENSE`](../LICENSE).
 | Base package sanity | `python -m pip install -e .` then import `zpe_finance` | package import, local codec use, and docs audit |
 | Heavier repo-local proof work | `python -m pip install -e ".[test,proof]"` | proof and rerun work inside this repo |
 | Optional helper path | `python -m pip install -e ".[native]"` then `cd core && maturin develop --release` | only when you intentionally exercise the repo-local helper |
-| Controlled Wave-1 replay | `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto` | writes a fresh local rerun destination; it does not replace the carried authority bundle |
+| Controlled Wave-1 replay | `python scripts/run_wave1.py --artifact-root artifacts/2026-02-20_zpe_ft_wave1 --native-helper auto` | writes a fresh local rerun destination; it does not replace the retained public-benchmark and blocker surfaces |
 | Repo-local env gate | `python poc/scripts/00_env_check.py --workspace . --repo .` | operator/local proof setup, not the front-door package path |
 
 The `artifacts/2026-02-20_zpe_ft_wave1` path is a local rerun destination. The
-carried promoted evidence bundle remains
-[`../proofs/artifacts/2026-02-21_ft_wave1_final/`](../proofs/artifacts/2026-02-21_ft_wave1_final/).
+retained repo evidence currently lives under
+[`../proofs/artifacts/public_benchmarks/`](../proofs/artifacts/public_benchmarks/)
+and
+[`../proofs/reruns/2026-03-19_alpaca_demo_smoke/`](../proofs/reruns/2026-03-19_alpaca_demo_smoke/).
 
-Current package/build/install evidence:
-- [`../proofs/artifacts/operations/20260321T202948Z_build.log`](../proofs/artifacts/operations/20260321T202948Z_build.log)
-- [`../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log`](../proofs/artifacts/operations/20260321T202948Z_clean_install_verify.log)
-- [`../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log`](../proofs/artifacts/operations/20260321T202948Z_pytest_alignment.log)
+Current retained repo-operation evidence:
+- [`../proofs/artifacts/public_benchmarks/command_log.txt`](../proofs/artifacts/public_benchmarks/command_log.txt)
+- [`../proofs/artifacts/operations/20260321T160048Z_pytest.log`](../proofs/artifacts/operations/20260321T160048Z_pytest.log)
+- [`../proofs/artifacts/operations/20260321T231416Z_docs_link_check.log`](../proofs/artifacts/operations/20260321T231416Z_docs_link_check.log)
+- [`../proofs/artifacts/operations/20260321T231416Z_docs_consistency_check.log`](../proofs/artifacts/operations/20260321T231416Z_docs_consistency_check.log)
 
 Older path-bearing reruns and logs were intentionally removed from the retained
 repo surface during the current cleanup. The unresolved Timescale path remains
@@ -69,7 +73,7 @@ excluded from promoted claims until a fresh repo-relative rerun replaces it.
   <img src="../.github/assets/readme/section-bars/open-risks-non-blocking.svg" alt="OPEN RISKS (NON-BLOCKING)" width="100%">
 </p>
 
-- the promoted codec claims remain controlled-corpus claims
+- the retained public benchmark claims remain non-authority surfaces
 - the delayed-feed market smoke remains bounded and non-closing
 - Timescale equivalence remains unresolved
 - the open-access enterprise benchmark remains blocked until the missing Phase

@@ -1,0 +1,25 @@
+{
+  "title": "ZPE-FT",
+  "description": "ZPE-FT is a deterministic financial time-series codec and search surface for teams that need to archive delayed-feed market data, replay it exactly, and query patterns without first inflating the archive back into a warehouse table. The retained repo surface carries public benchmark artifacts, bounded replay fidelity evidence, and the current Phase 06 blocker packet.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "financial-time-series",
+    "market-data",
+    "compression",
+    "deterministic-replay",
+    "pattern-search"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-FT",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
