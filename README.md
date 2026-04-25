@@ -61,10 +61,10 @@ These results are from repo-bundled provider-max proxy lanes (not the sovereign 
 
 | Lane | Series | RMSE (ticks) | Query p95 | Encode p95 | Proof artifact |
 |---|---|---|---|---|---|
-| Alpaca demo smoke — SPY 1m bars | 1 OHLCV | **0.0** (exact tick) | 0.24 ms | n/a | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` |
+| Alpaca demo smoke — SPY 1m bars | 1 OHLCV | **0.0** (exact tick) | 0.01 ms | n/a | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` |
 | Alpaca demo smoke — AAPL tick stream | 1 tick | **0.0** (exact tick); 8.40x compression vs raw | n/a | n/a | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_tick_benchmark.json` |
 | 30-symbol daily 24-month corpus | 30 OHLCV | **0.0 across all 30 series** | 0.077 ms (p95 across 15,000 corpus points) | 4.2 ms | `proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/ft_reconstruction_fidelity.json` |
-| Dukascopy tick 20-session corpus | 3 tick | **0.0 across all 3 series**; 7.2–11.1x compression range (mean 11.1x) | 39.1 ms (p95) | 1,281 ms | `proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/ft_reconstruction_fidelity.json` |
+| Dukascopy tick 20-session corpus | 3 tick | **0.0 across all 3 series**; 7.2–14.9x compression range (mean 11.1x) | 39.1 ms (p95) | 1,281 ms | `proofs/artifacts/real_market_benchmarks/tick_20_sessions/artifacts/ft_reconstruction_fidelity.json` |
 
 CI coverage for all proxy lanes: `tests/test_real_market_corpus.py`, `tests/test_ohlcv_roundtrip.py`, `tests/test_packet_roundtrip.py`.
 
