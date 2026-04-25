@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zpe-ft"
-version = "0.1.0"
+version = "0.1.1"
 description = "ZPE financial time-series codec and pattern search"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-7.0"
