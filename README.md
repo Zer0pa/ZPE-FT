@@ -143,3 +143,10 @@ PY
 ```
 
 Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.0.
+
+## Upcoming Workstreams
+
+This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+- **FT-C004 truth resolution** — Research-Deferred — Investigation Underway. Open question must be diagnosed and a falsifiable claim formulated before Phase 06 enterprise benchmark work commits direction.
+- **Phase 06 enterprise authority inputs** — Operations / External Dependency. Authority datasets pending acquisition; engineer-side scaffolding ready.
