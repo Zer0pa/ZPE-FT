@@ -24,9 +24,9 @@
 |---|---|---|---|---|
 | [Jump](#what-this-is) | [Jump](#key-metrics) | [Jump](#what-we-prove) | [Jump](#competitive-benchmarks) | [Jump](#what-we-dont-claim) |
 
-| Commercial Readiness | Tests and Verification | Proof Anchors | Repo Shape | Quick Start | Upcoming Workstreams |
+| Readiness | Verification Status | Proof Anchors | Repo Shape | Quick Start | Upcoming Workstreams |
 |---|---|---|---|---|---|
-| [Jump](#commercial-readiness) | [Jump](#tests-and-verification) | [Jump](#proof-anchors) | [Jump](#repo-shape) | [Jump](#quick-start) | [Jump](#upcoming-workstreams) |
+| [Jump](#readiness) | [Jump](#verification-status) | [Jump](#proof-anchors) | [Jump](#repo-shape) | [Jump](#quick-start) | [Jump](#upcoming-workstreams) |
 
 ## What This Is
 
@@ -43,7 +43,7 @@ The wedge is narrow and specific: compressed delayed-feed archives with determin
 | Field | Value |
 | ------- | ------- |
 | Architecture | FT |
-| Encoding | Not assigned |
+| Encoding | FT_TICK_DELTA_V1 |
 | Mechanics Asset | `.github/assets/readme/lane-mechanics/FT.gif` |
 
 ## Key Metrics
@@ -66,7 +66,7 @@ The wedge is narrow and specific: compressed delayed-feed archives with determin
 | Section | encoding |
 | Visibility | PUBLIC |
 | Architecture | FT |
-| Encoding | Not assigned |
+| Encoding | FT_TICK_DELTA_V1 |
 | Commit SHA | c8c6ea5e9dcc |
 | License | SAL-7.0 |
 | Authority Source | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
