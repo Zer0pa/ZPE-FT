@@ -30,30 +30,109 @@
 
 ## What This Is
 
-ZPE-FT is a deterministic financial time-series codec and search surface for teams that need to archive delayed-feed market data, replay it exactly, and query patterns without first inflating the archive back into a warehouse table.
+Financial tick-stream encoding. Bounded proof surface for trade-tape replay, missing-input blockers, and auditable FT-C004 truth. Install from PyPI: `pip install zpe-ft`
 
 The wedge is narrow and specific: compressed delayed-feed archives with deterministic replay, retained public-benchmark evidence on open datasets, and bounded replay fidelity on the in-repo smoke bundle. Public-data rehearsal lanes are useful evidence; they are not authority enterprise inputs. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
+
+## Codec Mechanics
+
+<p>
+  <img src=".github/assets/readme/lane-mechanics/FT.gif" alt="ZPE-FT Codec Mechanics animation" width="100%">
+</p>
+
+| Field | Value |
+| ------- | ------- |
+| Architecture | FT |
+| Encoding | Not assigned |
+| Mechanics Asset | `.github/assets/readme/lane-mechanics/FT.gif` |
 
 ## Key Metrics
 
 | Metric | Value | Baseline |
-|---|---|---|
-| SPY 10y daily compression ratio vs raw | **5.94×** smaller | Raw OHLCV bytes |
-| Price-field reconstruction fidelity | **RMSE = 0.0 ticks** (exact) | Parquet lossless round-trip |
-| Pattern query latency vs DuckDB (OHLCV) | **62.9× faster** (0.70 ms vs 43.9 ms p95) | parquet+zstd+DuckDB |
-| 30-symbol 24-month corpus fidelity | **0.0 RMSE across all 30 series**, 15,000 corpus points | Alpaca daily bars, in-repo proxy lane |
+| -------- | ------- | ---------- |
+| SPY 10y daily compression ratio vs raw | 5.94× smaller | Raw OHLCV bytes |
+| Price-field reconstruction fidelity | RMSE = 0.0 ticks (exact) | Parquet lossless round-trip |
+| Pattern query latency vs DuckDB (OHLCV) | 62.9× faster (0.70 ms vs 43.9 ms p95) | parquet+zstd+DuckDB |
+| 30-symbol 24-month corpus fidelity | 0.0 RMSE across all 30 series, 15,000 corpus points | Alpaca daily bars, in-repo proxy lane |
 
 > Source: `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` (public benchmark rows); `proofs/artifacts/real_market_benchmarks/daily_24m/artifacts/ft_reconstruction_fidelity.json` (30-symbol corpus row). All public-dataset results are retained proof artifacts from real runs, not synthetic fixtures. 30-symbol row is a proxy lane, not the sovereign enterprise benchmark.
 
+## Repo Identity
+
+| Field | Value |
+| ------- | ------- |
+| Identifier | ZPE-FT |
+| Repository | https://github.com/Zer0pa/ZPE-FT |
+| Section | encoding |
+| Visibility | PUBLIC |
+| Architecture | FT |
+| Encoding | Not assigned |
+| Commit SHA | c8c6ea5e9dcc |
+| License | SAL-7.0 |
+| Authority Source | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
+
+## Readiness
+
+| Field | Value |
+| ------- | ------- |
+| Verdict | BLOCKED |
+| Checks | 4/6 |
+| Anchors | 5 display anchors |
+| Confidence | 98% |
+| Commit | c8c6ea5e9dcc |
+| Authority | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
+
+### Honest Blocker
+
+No Phase 06 closure or public release readiness; No broad warehouse or incumbent displacement claim; No lossless volume reconstruction claim; No promoted public-data search-quality claim while FT-C004 remains unresolved; No claim that the bounded proxy lanes satisfy the sovereign enterprise benchmark.
+
 ## What We Prove
 
-| Claim | Proof artifact on disk | CI coverage |
-|---|---|---|
-| Public benchmark artifacts are retained for Yahoo SPY, Binance BTCUSDT aggTrades, and Kaggle SPY. | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` | `tests/test_public_benchmarks.py` runs the benchmark script on local fixtures and requires three `status == "ok"` entries. |
-| Repo-bundled OHLCV roundtrip stays within the bounded price-field error threshold and compresses below raw bytes. | `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` | `tests/test_ohlcv_roundtrip.py` asserts `rmse <= 0.5` ticks and encoded payload is smaller than raw. |
-| Freeze and refresh scripts execute on a declared corpus contract and emit benchmark, fidelity, latency, and roundtrip artifacts. | `proofs/reruns/2026-03-19_alpaca_demo_smoke/real_market_corpus_manifest.json` | `tests/test_real_market_corpus.py` runs `freeze_real_market_corpus.py` and `run_real_market_refresh.py` on fixture corpora. |
-| Missing authority inputs keep the sovereign Phase 06 gate blocked. | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | `tests/test_real_market_corpus.py` asserts missing inputs return `blocked_missing_inputs`. |
-| FT-C004 truth remains blocked until labels or audit refs exist. | `proofs/artifacts/real_market_benchmarks/ft_c004_truth_requirements.json` | `tests/test_phase06_partial_scripts.py` and `tests/test_real_market_refresh_extras.py` assert blocked-vs-ready truth-surface outcomes. |
+- Public benchmark artifacts are retained for Yahoo SPY, Binance BTCUSDT aggTrades, and Kaggle SPY.
+- Repo-bundled OHLCV roundtrip stays within the bounded price-field error threshold and compresses below raw bytes.
+- Freeze and refresh scripts execute on a declared corpus contract and emit benchmark, fidelity, latency, and roundtrip artifacts.
+- Missing authority inputs keep the sovereign Phase 06 gate blocked.
+- FT-C004 truth remains blocked until labels or audit refs exist.
+
+## What We Don't Claim
+
+- No Phase 06 closure or public release readiness.
+- No broad warehouse or incumbent displacement claim.
+- No lossless volume reconstruction claim.
+- No promoted public-data search-quality claim while FT-C004 remains unresolved.
+- No claim that the bounded proxy lanes satisfy the sovereign enterprise benchmark.
+
+## Verification Status
+
+| Code | Check | Verdict |
+| ------ | ------- | --------- |
+| V_01 | Public SPY 10y daily compression | PASS |
+| V_02 | Public BTCUSDT aggTrades compression | PASS |
+| V_03 | Public Kaggle SPY compression | PASS |
+| V_04 | Bounded replay price-field fidelity | PASS |
+| V_05 | Phase 06 contract freeze | FAIL |
+| V_06 | Public proxy retrieval truth | INC |
+
+## Proof Anchors
+
+| Path | State |
+| ------ | ------- |
+| `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` | VERIFIED |
+| `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` | VERIFIED |
+| `proofs/artifacts/real_market_benchmarks/BOUNDARY.json` | VERIFIED |
+| `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | VERIFIED |
+| `proofs/phase06_inputs/series_gap_matrix.csv` | VERIFIED |
+
+## Repo Shape
+
+| Field | Value |
+| ------- | ------- |
+| Proof Anchors | 5 display anchors |
+| Modality Lanes | 1 |
+| Architecture | FT |
+| Encoding | Not assigned |
+| Verification | 4/6 checks |
+| Authority Source | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
 
 ## Competitive Benchmarks
 
@@ -68,54 +147,6 @@ The baseline for all comp benchmarks is **Parquet (ZSTD compression) queried via
 | Binance BTCUSDT aggTrades 2017-09 (tick) | 198,880 | **10.90x** | **2.81x** | parity (63.4 ms vs 55.6 ms) | 0.0 | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` |
 
 Notes on scope: the Binance tick dataset is a trade-tape mapping (bid=ask=trade price) because Binance public aggTrades do not expose top-of-book quotes; query-latency parity at ~200k rows is expected for that workload shape. OHLCV latency advantage is largest on daily series; tick at scale has a different profile. These are delayed-feed public datasets, not authority enterprise inputs.
-
-## What We Don't Claim
-
-- No Phase 06 closure or public release readiness.
-- No broad warehouse or incumbent displacement claim.
-- No lossless volume reconstruction claim.
-- No promoted public-data search-quality claim while FT-C004 remains unresolved.
-- No claim that the bounded proxy lanes satisfy the sovereign enterprise benchmark.
-
-## Commercial Readiness
-
-| Field | Value |
-|-------|-------|
-| Authority verdict | BLOCKED |
-| Blocker code | BLOCKED_MISSING_INPUTS per source packet |
-| Reason | Phase 06 still lacks the declared authority inputs and auditable FT-C004 truth. |
-| Confidence | 98% |
-| Source | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`; `proofs/phase06_inputs/series_gap_matrix.csv` |
-
-## Tests and Verification
-
-| Code | Check | Verdict |
-|---|---|---|
-| V_01 | Public SPY 10y daily compression | PASS |
-| V_02 | Public BTCUSDT aggTrades compression | PASS |
-| V_03 | Public Kaggle SPY compression | PASS |
-| V_04 | Bounded replay price-field fidelity | PASS |
-| V_05 | Phase 06 contract freeze | FAIL |
-| V_06 | Public proxy retrieval truth | INC |
-
-## Proof Anchors
-
-| Path | Why it matters |
-|---|---|
-| `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` | Retained public benchmark compression and query evidence |
-| `proofs/reruns/2026-03-19_alpaca_demo_smoke/ft_reconstruction_fidelity.json` | Bounded replay price-field and top-of-book fidelity evidence |
-| `proofs/artifacts/real_market_benchmarks/BOUNDARY.json` | Public rehearsal boundary and promotion ban |
-| `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | Sovereign blocker packet for the open-access enterprise benchmark |
-| `proofs/phase06_inputs/series_gap_matrix.csv` | Declared missing-input matrix behind the blocked Phase 06 gate |
-
-## Repo Shape
-
-| Area | Purpose |
-|---|---|
-| `python/`, `core/`, `scripts/` | Installable package, optional helper, and repo-local runners |
-| `docs/` | Audit, architecture, support, and contract surfaces |
-| `proofs/` | Retained benchmarks, reruns, blocker packets, and operations logs |
-| Root files | Release metadata, legal terms, and the front door |
 
 ## Quick Start
 
