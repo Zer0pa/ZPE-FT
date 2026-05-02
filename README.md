@@ -81,9 +81,9 @@ Notes on scope: the Binance tick dataset is a trade-tape mapping (bid=ask=trade 
 
 | Field | Value |
 |-------|-------|
-| Verdict | BLOCKED |
+| Authority verdict | BLOCKED |
+| Blocker code | BLOCKED_MISSING_INPUTS per source packet |
 | Reason | Phase 06 still lacks the declared authority inputs and auditable FT-C004 truth. |
-| Commit SHA | c8c6ea5e9dcc |
 | Confidence | 98% |
 | Source | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`; `proofs/phase06_inputs/series_gap_matrix.csv` |
 
