@@ -7,7 +7,7 @@ name = "zpe-ft"
 version = "0.1.1"
 description = "ZPE financial time-series codec and pattern search"
 readme = "README.md"
-license = "LicenseRef-Zer0pa-SAL-7.0"
+license = "LicenseRef-Zer0pa-SAL-7.1"
 requires-python = ">=3.11"
 authors = [{name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"}]
 classifiers = [
