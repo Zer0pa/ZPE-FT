@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use ZPE-FT, please cite it using the metadata below."
 title: "ZPE-FT"
 type: software
-version: "0.1.0"
+version: "0.1.1"
 abstract: "Deterministic financial time-series codec and search surface for delayed-feed market-data archives, replay, and pattern queries."
 authors:
   - name: "Zer0pa (Pty) Ltd"
