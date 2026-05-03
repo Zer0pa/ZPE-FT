@@ -7,7 +7,7 @@
 <p align="center"><strong>Public benchmark (3 datasets, parquet+zstd+DuckDB baseline):</strong> 5.9–10.9× smaller than raw (aggregate across 3 datasets) · 2.7–3.3× smaller than parquet+zstd (aggregate across 3 datasets) · up to 62.9× faster pattern query vs DuckDB (OHLCV datasets; tick at scale: latency parity) · exact tick fidelity (RMSE = 0.0) · <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json">proof artifact</a></p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.0-e5e7eb?labelColor=111111" alt="License: SAL v7.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.0-e5e7eb?labelColor=111111" alt="License: SAL v7.1"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
   <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.md"><img src="https://img.shields.io/badge/public%20benchmark-retained-e5e7eb?labelColor=111111" alt="Public benchmark: retained"></a>
   <a href="proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"><img src="https://img.shields.io/badge/current%20gate-BLOCKED__MISSING__INPUTS-e5e7eb?labelColor=111111" alt="Current gate: BLOCKED_MISSING_INPUTS"></a>
@@ -173,7 +173,7 @@ print("rust_bridge", rust_version())
 PY
 ```
 
-Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.0.
+Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.1.
 
 ## Upcoming Workstreams
 
