@@ -7,7 +7,7 @@
 <p align="center"><strong>Public benchmark (3 datasets, parquet+zstd+DuckDB baseline):</strong> 5.9–10.9× smaller than raw (aggregate across 3 datasets) · 2.7–3.3× smaller than parquet+zstd (aggregate across 3 datasets) · up to 62.9× faster pattern query vs DuckDB (OHLCV datasets; tick at scale: latency parity) · exact tick fidelity (RMSE = 0.0) · <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json">proof artifact</a></p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.0-e5e7eb?labelColor=111111" alt="License: SAL v7.1"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-SAL%20v7.1-e5e7eb?labelColor=111111" alt="License: SAL v7.1"></a>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-%3E%3D3.11-e5e7eb?labelColor=111111" alt="Python >=3.11"></a>
   <a href="proofs/artifacts/public_benchmarks/phase3_public_benchmarks.md"><img src="https://img.shields.io/badge/public%20benchmark-retained-e5e7eb?labelColor=111111" alt="Public benchmark: retained"></a>
   <a href="proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json"><img src="https://img.shields.io/badge/current%20gate-BLOCKED__MISSING__INPUTS-e5e7eb?labelColor=111111" alt="Current gate: BLOCKED_MISSING_INPUTS"></a>
@@ -27,6 +27,17 @@
 | Readiness | Verification Status | Proof Anchors | Repo Shape | Quick Start | Upcoming Workstreams |
 |---|---|---|---|---|---|
 | [Jump](#readiness) | [Jump](#verification-status) | [Jump](#proof-anchors) | [Jump](#repo-shape) | [Jump](#quick-start) | [Jump](#upcoming-workstreams) |
+
+## Truth Boundary
+
+> **The retained public-corpus benchmarks below are evidence of bounded codec behavior on delayed and public market feeds. They are not the sovereign Phase 06 enterprise benchmark.** Enterprise authority remains pending on Phase 06 inputs and unresolved FT-C004 truth.
+
+| Surface | Evidence | Public Status |
+| --- | --- | --- |
+| Public corpus — Yahoo SPY · Binance BTC · Kaggle SPY | `proofs/artifacts/public_benchmarks/phase3_public_benchmarks.json` | Public-ready bounded |
+| Proxy lanes — 30-symbol daily, tick corpora | `proofs/artifacts/real_market_benchmarks/BOUNDARY.json` | Retained · non-sovereign |
+| Phase 06 enterprise benchmark | `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json` | Authority-gated · inputs pending |
+| FT-C004 truth | (no labels or audit refs available) | Authority-gated · unresolved |
 
 ## What This Is
 
@@ -67,8 +78,8 @@ The wedge is narrow and specific: compressed delayed-feed archives with determin
 | Visibility | PUBLIC |
 | Architecture | FT |
 | Encoding | FT_TICK_DELTA_V1 |
-| Commit SHA | c8c6ea5e9dcc |
-| License | SAL-7.0 |
+| Commit SHA | 2342c547a62b |
+| License | SAL-7.1 |
 | Authority Source | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
 
 ## Readiness
@@ -79,7 +90,7 @@ The wedge is narrow and specific: compressed delayed-feed archives with determin
 | Checks | 4/6 |
 | Anchors | 5 display anchors |
 | Confidence | 98% |
-| Commit | c8c6ea5e9dcc |
+| Commit | 2342c547a62b |
 | Authority | proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json |
 
 ### Honest Blocker
