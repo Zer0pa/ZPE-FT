@@ -30,6 +30,8 @@
 
 ## What This Is
 
+Delayed-feed market archives still lack a compact, queryable transport layer beneath warehouse-oriented storage.
+
 Financial tick-stream encoding. Bounded proof surface for trade-tape replay, missing-input blockers, and auditable FT-C004 truth. Install from PyPI: `pip install zpe-ft`
 
 The wedge is narrow and specific: compressed delayed-feed archives with deterministic replay, retained public-benchmark evidence on open datasets, and bounded replay fidelity on the in-repo smoke bundle. Public-data rehearsal lanes are useful evidence; they are not authority enterprise inputs. The open-access enterprise benchmark is still blocked on missing inputs and auditable FT-C004 truth.
@@ -178,6 +180,8 @@ Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `pro
 ## Upcoming Workstreams
 
 This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+> **Future trajectory, not currently claimed.** The hinge is not beating every data warehouse. It is keeping delayed-feed market traces compact, replayable, and queryable with retained proof. If the archive stays exact on price fields while query latency stays low, time-series handling becomes less warehouse-shaped and more transport-shaped.
 
 - **FT-C004 truth resolution** — Research-Deferred — Investigation Underway. Open question must be diagnosed and a falsifiable claim formulated before Phase 06 enterprise benchmark work commits direction.
 - **Phase 06 enterprise authority inputs** — Operations / External Dependency. Authority datasets pending acquisition; engineer-side scaffolding ready.
