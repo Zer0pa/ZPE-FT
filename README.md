@@ -2,6 +2,30 @@
 
 ## Install / Developer Commands
 
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-ft`.
+Current release: `0.1.1` on [PyPI](https://pypi.org/project/zpe-ft/).
+Source: [Zer0pa/ZPE-FT](https://github.com/Zer0pa/ZPE-FT/).
+
+```bash
+python3.11 -m pip install zpe-ft
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_finance
+
+print("zpe-ft", md.version("zpe-ft"))
+PY
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.<!-- INSTALL-DX:END -->
+
 #### Quick Start
 
 Install from PyPI:
