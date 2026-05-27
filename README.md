@@ -81,7 +81,7 @@ Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `pro
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<div><b>03 · VALUE</b></div>
+<div><b>03 · VALUE OF MARKET</b></div>
       <div>$78.9<span>B</span></div>
       <div>Financial data infrastructure keeps growing. The storage and search bill on delayed-feed history is the line item nobody has solved.</div>
 </td>
