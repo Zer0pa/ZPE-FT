@@ -1,9 +1,6 @@
 # ZPE-FT
 
-## Install / Developer Commands
-
-<!-- INSTALL-DX:START -->
-#### Package Install
+## Package Install
 
 Installable package: `python3.11 -m pip install zpe-ft`.
 Current release: `0.1.1` on [PyPI](https://pypi.org/project/zpe-ft/).
@@ -13,45 +10,9 @@ Source: [Zer0pa/ZPE-FT](https://github.com/Zer0pa/ZPE-FT/).
 python3.11 -m pip install zpe-ft
 ```
 
-Import smoke:
+For full install, smoke, source, and developer commands, [click here](#install-developer-commands-detailed).
 
-```bash
-python3.11 - <<'PY'
-import importlib.metadata as md
-import zpe_finance
-
-print("zpe-ft", md.version("zpe-ft"))
-PY
-```
-
-Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.<!-- INSTALL-DX:END -->
-
-#### Quick Start
-
-Install from PyPI:
-
-```bash
-pip install zpe-ft
-```
-
-Verify from source:
-
-```bash
-git clone https://github.com/Zer0pa/ZPE-FT.git
-cd ZPE-FT
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -U pip
-python -m pip install -e .
-python - <<'PY'
-import zpe_finance
-from zpe_finance.rust_bridge import rust_version
-print("exports", sorted(zpe_finance.__all__))
-print("rust_bridge", rust_version())
-PY
-```
-
-Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.1.
+---
 
 <table width="100%">
 <tr>
@@ -323,3 +284,60 @@ Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `pro
 </td>
 </tr>
 </table>
+
+---
+
+<a id="install-developer-commands-detailed"></a>
+
+## Install / Developer Commands Detailed
+
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-ft`.
+Current release: `0.1.1` on [PyPI](https://pypi.org/project/zpe-ft/).
+Source: [Zer0pa/ZPE-FT](https://github.com/Zer0pa/ZPE-FT/).
+
+```bash
+python3.11 -m pip install zpe-ft
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_finance
+
+print("zpe-ft", md.version("zpe-ft"))
+PY
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.<!-- INSTALL-DX:END -->
+
+#### Quick Start
+
+Install from PyPI:
+
+```bash
+pip install zpe-ft
+```
+
+Verify from source:
+
+```bash
+git clone https://github.com/Zer0pa/ZPE-FT.git
+cd ZPE-FT
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+python -m pip install -e .
+python - <<'PY'
+import zpe_finance
+from zpe_finance.rust_bridge import rust_version
+print("exports", sorted(zpe_finance.__all__))
+print("rust_bridge", rust_version())
+PY
+```
+
+Start with `docs/ARCHITECTURE.md`, then read `docs/LEGAL_BOUNDARIES.md` and `proofs/reruns/2026-03-21_phase06_contract_freeze_attempt_v3/missing_inputs_packet.json`. `LICENSE` is the legal source of truth; the repo uses SAL v7.1.
