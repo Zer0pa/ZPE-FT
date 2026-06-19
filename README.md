@@ -19,6 +19,7 @@ For full install, smoke, source, and developer commands, [click here](#install-d
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-FT</b> · FINANCIAL TIME-SERIES</span> <span>DEVELOPER-READY · PHASE 06 PENDING</span></div>
       <h1>Market Data That <span>Keeps Its Shape</span></h1>
+      <p><strong>Live experiment. Not a release. Ambition headlined. Claims bounded.</strong></p>
       <p>A compression codec for delayed-feed market archives &mdash; compact, exact, queryable · ZPE-FT · PyPI <em>zpe-ft</em> v0.1.1 · github.com/Zer0pa/ZPE-FT</p>
       <p>Market archives store rows well. They rarely retain the price pattern. Finding a six-month-old chart shape today means rebuilding from scratch, not retrieving. ZPE-FT compresses delayed and public feeds <strong>5.9&ndash;10.9&times;</strong> smaller than raw, replays price fields at <strong>RMSE = 0.0</strong>, and runs OHLCV pattern queries up to <strong>62.9&times;</strong> faster than Parquet+zstd through DuckDB. The public-corpus result is real. The enterprise benchmark still waits on Phase 06 inputs and FT-C004 labels.</p>
 </td>
